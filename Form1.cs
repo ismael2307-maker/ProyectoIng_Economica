@@ -67,6 +67,7 @@ namespace ProyectoIng_Economica
 
         private void btnInteresCompuesto_Click(object sender, EventArgs e)
         {
+            AbrirFormHija(new FrmIntCompuesto());
             hideSubMenu();
         }
 
