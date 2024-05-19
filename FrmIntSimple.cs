@@ -73,12 +73,12 @@ namespace ProyectoIng_Economica
                         n = n1 / 12;
                         f = p * (1 + (i * n));
 
-                        int N = dtgvResultadosF.Rows.Add();
+                        int N = dgvResultadosF.Rows.Add();
 
-                        dtgvResultadosF.Rows[N].Cells[0].Value = p;
-                        dtgvResultadosF.Rows[N].Cells[1].Value = i;
-                        dtgvResultadosF.Rows[N].Cells[2].Value = n;
-                        dtgvResultadosF.Rows[N].Cells[3].Value = f;
+                        dgvResultadosF.Rows[N].Cells[0].Value = p;
+                        dgvResultadosF.Rows[N].Cells[1].Value = i;
+                        dgvResultadosF.Rows[N].Cells[2].Value = n;
+                        dgvResultadosF.Rows[N].Cells[3].Value = f;
 
                     }
 
@@ -89,12 +89,12 @@ namespace ProyectoIng_Economica
                         n = n1;
                         f = p * (1 + (i * n));
 
-                        int N = dtgvResultadosF.Rows.Add();
+                        int N = dgvResultadosF.Rows.Add();
 
-                        dtgvResultadosF.Rows[N].Cells[0].Value = p;
-                        dtgvResultadosF.Rows[N].Cells[1].Value = i;
-                        dtgvResultadosF.Rows[N].Cells[2].Value = n;
-                        dtgvResultadosF.Rows[N].Cells[3].Value = f;
+                        dgvResultadosF.Rows[N].Cells[0].Value = p;
+                        dgvResultadosF.Rows[N].Cells[1].Value = i;
+                        dgvResultadosF.Rows[N].Cells[2].Value = n;
+                        dgvResultadosF.Rows[N].Cells[3].Value = f;
                     }
                     if (cmbInteresF.SelectedItem.Equals("Anual") && cmbPeriodoF.SelectedItem.Equals("Años"))
                     {
@@ -102,12 +102,12 @@ namespace ProyectoIng_Economica
                         n = n1;
                         f = p * (1 + (i * n));
 
-                        int N = dtgvResultadosF.Rows.Add();
+                        int N = dgvResultadosF.Rows.Add();
 
-                        dtgvResultadosF.Rows[N].Cells[0].Value = p;
-                        dtgvResultadosF.Rows[N].Cells[1].Value = i;
-                        dtgvResultadosF.Rows[N].Cells[2].Value = n;
-                        dtgvResultadosF.Rows[N].Cells[3].Value = f;
+                        dgvResultadosF.Rows[N].Cells[0].Value = p;
+                        dgvResultadosF.Rows[N].Cells[1].Value = i;
+                        dgvResultadosF.Rows[N].Cells[2].Value = n;
+                        dgvResultadosF.Rows[N].Cells[3].Value = f;
                     }
                     if (cmbInteresF.SelectedItem.Equals("Mensual") && cmbPeriodoF.SelectedItem.Equals("Meses"))
                     {
@@ -115,12 +115,12 @@ namespace ProyectoIng_Economica
                         n = n1;
                         f = p * (1 + (i * n));
 
-                        int N = dtgvResultadosF.Rows.Add();
+                        int N = dgvResultadosF.Rows.Add();
 
-                        dtgvResultadosF.Rows[N].Cells[0].Value = p;
-                        dtgvResultadosF.Rows[N].Cells[1].Value = i;
-                        dtgvResultadosF.Rows[N].Cells[2].Value = n;
-                        dtgvResultadosF.Rows[N].Cells[3].Value = f;
+                        dgvResultadosF.Rows[N].Cells[0].Value = p;
+                        dgvResultadosF.Rows[N].Cells[1].Value = i;
+                        dgvResultadosF.Rows[N].Cells[2].Value = n;
+                        dgvResultadosF.Rows[N].Cells[3].Value = f;
                     }
                 }
             }
@@ -128,6 +128,11 @@ namespace ProyectoIng_Economica
             {
                 MessageBox.Show("Rellene los campos necasarios");
             }
+
+        }
+
+        private void txtValorFuturoP_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
