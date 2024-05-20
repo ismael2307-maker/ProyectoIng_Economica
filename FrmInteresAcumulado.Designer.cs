@@ -28,19 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInteresAcumulado));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pnlEcuacionInteres = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlComceptoInteres = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dtgvResultados = new System.Windows.Forms.DataGridView();
+            this.columnaValorPresente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaInteres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaPeriodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaTasaInteres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbPeriodoAcumulado = new System.Windows.Forms.ComboBox();
-            this.cmbInteresAcumulado = new System.Windows.Forms.ComboBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtPeriodo = new System.Windows.Forms.TextBox();
@@ -50,20 +49,21 @@
             this.txtValorPresente = new System.Windows.Forms.TextBox();
             this.lblValorPresente = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dtgvResultados = new System.Windows.Forms.DataGridView();
-            this.columnaValorPresente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnaInteres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnaPeriodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnaTasaInteres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label4 = new System.Windows.Forms.Label();
+            this.pnlComceptoInteres = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pnlEcuacionInteres = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.pnlEcuacionInteres.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlComceptoInteres.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvResultados)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.pnlComceptoInteres.SuspendLayout();
+            this.pnlEcuacionInteres.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -82,81 +82,82 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Interés";
             // 
-            // pnlEcuacionInteres
+            // panel2
             // 
-            this.pnlEcuacionInteres.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pnlEcuacionInteres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlEcuacionInteres.Controls.Add(this.label1);
-            this.pnlEcuacionInteres.Controls.Add(this.pictureBox1);
-            this.pnlEcuacionInteres.Location = new System.Drawing.Point(6, 30);
-            this.pnlEcuacionInteres.Name = "pnlEcuacionInteres";
-            this.pnlEcuacionInteres.Size = new System.Drawing.Size(537, 237);
-            this.pnlEcuacionInteres.TabIndex = 5;
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel2.Controls.Add(this.dtgvResultados);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Location = new System.Drawing.Point(557, 273);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(537, 327);
+            this.panel2.TabIndex = 8;
             // 
-            // label1
+            // dtgvResultados
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(189, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 39);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Ecuación ";
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            this.dtgvResultados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dtgvResultados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.dtgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.columnaValorPresente,
+            this.ColumnaInteres,
+            this.ColumnaPeriodo,
+            this.ColumnaTasaInteres});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvResultados.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dtgvResultados.GridColor = System.Drawing.Color.White;
+            this.dtgvResultados.Location = new System.Drawing.Point(45, 77);
+            this.dtgvResultados.Name = "dtgvResultados";
+            this.dtgvResultados.Size = new System.Drawing.Size(445, 185);
+            this.dtgvResultados.TabIndex = 13;
             // 
-            // pictureBox1
+            // columnaValorPresente
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(110, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(322, 193);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.columnaValorPresente.HeaderText = "Valor Presente";
+            this.columnaValorPresente.Name = "columnaValorPresente";
             // 
-            // pnlComceptoInteres
+            // ColumnaInteres
             // 
-            this.pnlComceptoInteres.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pnlComceptoInteres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlComceptoInteres.Controls.Add(this.richTextBox1);
-            this.pnlComceptoInteres.Controls.Add(this.label2);
-            this.pnlComceptoInteres.Location = new System.Drawing.Point(557, 30);
-            this.pnlComceptoInteres.Name = "pnlComceptoInteres";
-            this.pnlComceptoInteres.Size = new System.Drawing.Size(537, 237);
-            this.pnlComceptoInteres.TabIndex = 6;
+            this.ColumnaInteres.HeaderText = "Interes";
+            this.ColumnaInteres.Name = "ColumnaInteres";
             // 
-            // richTextBox1
+            // ColumnaPeriodo
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.White;
-            this.richTextBox1.Location = new System.Drawing.Point(14, 73);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(499, 129);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "Es el costo que se paga por el uso del dinero \nprestado o el rendimiento que se o" +
-    "btiene por \ndepositar dinero en una cuenta de ahorros o \ninversión.";
+            this.ColumnaPeriodo.HeaderText = "Periodo";
+            this.ColumnaPeriodo.Name = "ColumnaPeriodo";
             // 
-            // label2
+            // ColumnaTasaInteres
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(119, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(312, 39);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "¿Qué es el Interés?";
+            this.ColumnaTasaInteres.HeaderText = "Tasa Interés";
+            this.ColumnaTasaInteres.Name = "ColumnaTasaInteres";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(188, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(181, 39);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Resultados";
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel1.Controls.Add(this.cmbPeriodoAcumulado);
-            this.panel1.Controls.Add(this.cmbInteresAcumulado);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnLimpiar);
             this.panel1.Controls.Add(this.btnCalcular);
             this.panel1.Controls.Add(this.txtPeriodo);
@@ -170,30 +171,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(537, 327);
             this.panel1.TabIndex = 7;
-            // 
-            // cmbPeriodoAcumulado
-            // 
-            this.cmbPeriodoAcumulado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPeriodoAcumulado.FormattingEnabled = true;
-            this.cmbPeriodoAcumulado.Items.AddRange(new object[] {
-            "Años",
-            "Meses"});
-            this.cmbPeriodoAcumulado.Location = new System.Drawing.Point(359, 197);
-            this.cmbPeriodoAcumulado.Name = "cmbPeriodoAcumulado";
-            this.cmbPeriodoAcumulado.Size = new System.Drawing.Size(121, 30);
-            this.cmbPeriodoAcumulado.TabIndex = 13;
-            // 
-            // cmbInteresAcumulado
-            // 
-            this.cmbInteresAcumulado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbInteresAcumulado.FormattingEnabled = true;
-            this.cmbInteresAcumulado.Items.AddRange(new object[] {
-            "Anual",
-            "Mensual"});
-            this.cmbInteresAcumulado.Location = new System.Drawing.Point(359, 133);
-            this.cmbInteresAcumulado.Name = "cmbInteresAcumulado";
-            this.cmbInteresAcumulado.Size = new System.Drawing.Size(121, 30);
-            this.cmbInteresAcumulado.TabIndex = 12;
             // 
             // btnLimpiar
             // 
@@ -308,75 +285,96 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Ingresa los datos";
             // 
-            // panel2
+            // pnlComceptoInteres
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel2.Controls.Add(this.dtgvResultados);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(557, 273);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(537, 327);
-            this.panel2.TabIndex = 8;
+            this.pnlComceptoInteres.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pnlComceptoInteres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pnlComceptoInteres.Controls.Add(this.richTextBox1);
+            this.pnlComceptoInteres.Controls.Add(this.label2);
+            this.pnlComceptoInteres.Location = new System.Drawing.Point(557, 30);
+            this.pnlComceptoInteres.Name = "pnlComceptoInteres";
+            this.pnlComceptoInteres.Size = new System.Drawing.Size(537, 237);
+            this.pnlComceptoInteres.TabIndex = 6;
             // 
-            // dtgvResultados
+            // richTextBox1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            this.dtgvResultados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvResultados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.dtgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.columnaValorPresente,
-            this.ColumnaInteres,
-            this.ColumnaPeriodo,
-            this.ColumnaTasaInteres});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvResultados.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvResultados.GridColor = System.Drawing.Color.White;
-            this.dtgvResultados.Location = new System.Drawing.Point(45, 77);
-            this.dtgvResultados.Name = "dtgvResultados";
-            this.dtgvResultados.Size = new System.Drawing.Size(445, 185);
-            this.dtgvResultados.TabIndex = 13;
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.White;
+            this.richTextBox1.Location = new System.Drawing.Point(14, 73);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(499, 129);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "Es el costo que se paga por el uso del dinero \nprestado o el rendimiento que se o" +
+    "btiene por \ndepositar dinero en una cuenta de ahorros o \ninversión.";
             // 
-            // columnaValorPresente
+            // label2
             // 
-            this.columnaValorPresente.HeaderText = "Valor Presente";
-            this.columnaValorPresente.Name = "columnaValorPresente";
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(119, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(312, 39);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "¿Qué es el Interés?";
             // 
-            // ColumnaInteres
+            // pnlEcuacionInteres
             // 
-            this.ColumnaInteres.HeaderText = "Interes";
-            this.ColumnaInteres.Name = "ColumnaInteres";
+            this.pnlEcuacionInteres.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pnlEcuacionInteres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pnlEcuacionInteres.Controls.Add(this.label1);
+            this.pnlEcuacionInteres.Controls.Add(this.pictureBox1);
+            this.pnlEcuacionInteres.Location = new System.Drawing.Point(6, 30);
+            this.pnlEcuacionInteres.Name = "pnlEcuacionInteres";
+            this.pnlEcuacionInteres.Size = new System.Drawing.Size(537, 237);
+            this.pnlEcuacionInteres.TabIndex = 5;
             // 
-            // ColumnaPeriodo
+            // label1
             // 
-            this.ColumnaPeriodo.HeaderText = "Periodo";
-            this.ColumnaPeriodo.Name = "ColumnaPeriodo";
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(189, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(174, 39);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Ecuación ";
             // 
-            // ColumnaTasaInteres
+            // pictureBox1
             // 
-            this.ColumnaTasaInteres.HeaderText = "Tasa Interés";
-            this.ColumnaTasaInteres.Name = "ColumnaTasaInteres";
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(110, 37);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(322, 193);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // label4
+            // label5
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(188, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(181, 39);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Resultados";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(342, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 24);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Anual";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(342, 201);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 24);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Meses";
             // 
             // FrmInteresAcumulado
             // 
@@ -389,16 +387,16 @@
             this.Name = "FrmInteresAcumulado";
             this.Text = "FrmInteresAcumulado";
             this.groupBox1.ResumeLayout(false);
-            this.pnlEcuacionInteres.ResumeLayout(false);
-            this.pnlEcuacionInteres.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlComceptoInteres.ResumeLayout(false);
-            this.pnlComceptoInteres.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvResultados)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.pnlComceptoInteres.ResumeLayout(false);
+            this.pnlComceptoInteres.PerformLayout();
+            this.pnlEcuacionInteres.ResumeLayout(false);
+            this.pnlEcuacionInteres.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -413,8 +411,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cmbPeriodoAcumulado;
-        private System.Windows.Forms.ComboBox cmbInteresAcumulado;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.TextBox txtPeriodo;
@@ -431,5 +427,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaPeriodo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaTasaInteres;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
