@@ -16,5 +16,30 @@ namespace ProyectoIng_Economica
         {
             InitializeComponent();
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPeriodoF_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void txtTasaInteresF_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void txtValorPresenteF_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }

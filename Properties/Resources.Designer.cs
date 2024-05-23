@@ -63,6 +63,46 @@ namespace ProyectoIng_Economica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2024_05_02_222855 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2024-05-02 222855", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2024_05_02_222924 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2024-05-02 222924", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2024_05_02_223013 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2024-05-02 223013", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2024_05_02_223048 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2024-05-02 223048", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2024_05_02_223932 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2024-05-02 223932", resourceCulture);
