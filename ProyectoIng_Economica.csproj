@@ -52,6 +52,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmaAnualidadAnticipada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmaAnualidadAnticipada.Designer.cs">
+      <DependentUpon>FrmaAnualidadAnticipada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnualidadDiferidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnualidadDiferidas.Designer.cs">
+      <DependentUpon>FrmAnualidadDiferidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnualidadesVencidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnualidadesVencidas.Designer.cs">
+      <DependentUpon>FrmAnualidadesVencidas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIntCompuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +88,12 @@
     <Compile Include="FrmIntSimple.Designer.cs">
       <DependentUpon>FrmIntSimple.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPerpetua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPerpetua.Designer.cs">
+      <DependentUpon>FrmPerpetua.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPresentacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +111,15 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmaAnualidadAnticipada.resx">
+      <DependentUpon>FrmaAnualidadAnticipada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnualidadDiferidas.resx">
+      <DependentUpon>FrmAnualidadDiferidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnualidadesVencidas.resx">
+      <DependentUpon>FrmAnualidadesVencidas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmIntCompuesto.resx">
       <DependentUpon>FrmIntCompuesto.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIntSimple.resx">
       <DependentUpon>FrmIntSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPerpetua.resx">
+      <DependentUpon>FrmPerpetua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPresentacion.resx">
       <DependentUpon>FrmPresentacion.cs</DependentUpon>

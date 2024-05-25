@@ -17,11 +17,13 @@ namespace ProyectoIng_Economica
         {
             InitializeComponent();
             customizeDesing();
+            this.MaximumSize = new Size(1920, 1080);
         }
+           
         private void customizeDesing()
         {
             pnlSubMenuInteres.Visible = false;
-            pnlSubMenuAnualidades.Visible = false;
+            pnlSubMenus.Visible = false;
             pnlSubMenuIndicadores.Visible = false;
         }
 
@@ -29,8 +31,8 @@ namespace ProyectoIng_Economica
         {
             if (pnlSubMenuInteres.Visible == true)
                 pnlSubMenuInteres.Visible = false;
-            if (pnlSubMenuAnualidades.Visible == true)
-                pnlSubMenuAnualidades.Visible = false;
+            if (pnlSubMenus.Visible == true)
+                pnlSubMenus.Visible = false;
             if (pnlSubMenuIndicadores.Visible == true)
                 pnlSubMenuIndicadores.Visible = false;
         }
@@ -131,7 +133,37 @@ namespace ProyectoIng_Economica
         private void btnAnualidades_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new FrmPresentacionAnualidades());
-            showSubMenu(pnlSubMenuAnualidades);
+            showSubMenu(pnlSubMenus);
+        }
+
+        private void btnAnualidadesVencidas_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmAnualidadesVencidas());
+            hideSubMenu();
+        }
+
+        private void btnAnualidadesAnticipadas_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmaAnualidadAnticipada());
+            hideSubMenu();
+        }
+
+        private void btnAnualidadesDiferidas_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmAnualidadDiferidas());
+            hideSubMenu();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Indicadores
+            showSubMenu(pnlSubMenuIndicadores);
+        }
+
+        private void btnAnualidadesPerpetuas_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmPerpetua());
+            hideSubMenu();
         }
     }
 }
