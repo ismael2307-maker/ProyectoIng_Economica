@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,10 @@ namespace ProyectoIng_Economica
 {
     public partial class FrmIntSimple : Form
     {
+        public List<InteresSimpleF> Fs = new List<InteresSimpleF> ();
+        public List<InteresSimpleP> Ps = new List<InteresSimpleP> ();
+        public List<InteresSimpleI> Is = new List<InteresSimpleI> ();
+        public List<InteresSimpleN> Ns = new List<InteresSimpleN> ();
         public FrmIntSimple()
         {
             InitializeComponent();
@@ -56,77 +61,25 @@ namespace ProyectoIng_Economica
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            double p, i, n, f;
-            double i1, n1, i2;
-
-            try 
+            try
             {
-                p = double.Parse(txtValorPresenteF.Text);
-                i1 = double.Parse(txtTasaInteresF.Text);
-                n1 = double.Parse(txtPeriodoF.Text);
-
-                if (cmbInteresF.SelectedItem != null && cmbPeriodoF.SelectedItem != null)
+                int ValorPresenteFu = Convert.ToInt32(txtValorPresenteF.Text);
+                double TasaInteresFu = Convert.ToDouble(txtTasaInteresF.Text);
+                int PeriodoFu = Convert.ToInt32(txtPeriodoF.Text);
+                double Futuro = ValorPresenteFu * (1 + (TasaInteresFu * PeriodoFu));
+                Fs.Add(new InteresSimpleF
                 {
-                    if (cmbInteresF.SelectedItem.Equals("Anual") || cmbPeriodoF.SelectedItem.Equals("Meses"))
-                    {
-                        i = i1 / 100;
-                        n = n1 / 12;
-                        f = p * (1 + (i * n));
-
-                        int N = dgvResultadosF.Rows.Add();
-
-                        dgvResultadosF.Rows[N].Cells[0].Value = p;
-                        dgvResultadosF.Rows[N].Cells[1].Value = i;
-                        dgvResultadosF.Rows[N].Cells[2].Value = n;
-                        dgvResultadosF.Rows[N].Cells[3].Value = f;
-
-                    }
-
-                    if (cmbInteresF.SelectedItem.Equals("Mensual") && cmbPeriodoF.SelectedItem.Equals("Años"))
-                    {
-                        i2 = i1 / 100;
-                        i = i2 / 12;
-                        n = n1;
-                        f = p * (1 + (i * n));
-
-                        int N = dgvResultadosF.Rows.Add();
-
-                        dgvResultadosF.Rows[N].Cells[0].Value = p;
-                        dgvResultadosF.Rows[N].Cells[1].Value = i;
-                        dgvResultadosF.Rows[N].Cells[2].Value = n;
-                        dgvResultadosF.Rows[N].Cells[3].Value = f;
-                    }
-                    if (cmbInteresF.SelectedItem.Equals("Anual") && cmbPeriodoF.SelectedItem.Equals("Años"))
-                    {
-                        i = i1 / 100;
-                        n = n1;
-                        f = p * (1 + (i * n));
-
-                        int N = dgvResultadosF.Rows.Add();
-
-                        dgvResultadosF.Rows[N].Cells[0].Value = p;
-                        dgvResultadosF.Rows[N].Cells[1].Value = i;
-                        dgvResultadosF.Rows[N].Cells[2].Value = n;
-                        dgvResultadosF.Rows[N].Cells[3].Value = f;
-                    }
-                    if (cmbInteresF.SelectedItem.Equals("Mensual") && cmbPeriodoF.SelectedItem.Equals("Meses"))
-                    {
-                        i = i1 / 100;
-                        n = n1;
-                        f = p * (1 + (i * n));
-
-                        int N = dgvResultadosF.Rows.Add();
-
-                        dgvResultadosF.Rows[N].Cells[0].Value = p;
-                        dgvResultadosF.Rows[N].Cells[1].Value = i;
-                        dgvResultadosF.Rows[N].Cells[2].Value = n;
-                        dgvResultadosF.Rows[N].Cells[3].Value = f;
-                    }
-                }
+                    ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                    TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                    PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                    Futuro = ValorPresenteFu * (1+TasaInteresFu/100 *  PeriodoFu/12)
+                 });
+                dgvResultadosF.DataSource = null;
+                dgvResultadosF.DataSource = Fs;
             }
-            catch(FormatException x)
+            catch (FormatException x)
             {
-                MessageBox.Show("Rellene los campos necasarios");
+                MessageBox.Show("Rellene los campos necesarios");
             }
 
         }
@@ -139,29 +92,26 @@ namespace ProyectoIng_Economica
         //CALCULAR VALOR PRESENTE
         private void btnCalcularP_Click(object sender, EventArgs e)
         {
-            double p, f, i, n;
-            double i1;
-
-            try
+            try 
             {
-                f = double.Parse(txtValorFuturoP.Text);
-                i1 = double.Parse(txtTasaInteresP.Text);
-                n = double.Parse(txtPeriodoP.Text);
+                int ValorFuturoPe = Convert.ToInt32(txtValorFuturoP.Text);
+                double TasaInteresPe = Convert.ToDouble(txtTasaInteresP.Text);
+                int PeriodoPe = Convert.ToInt32(txtPeriodoP.Text);
+                double Presente = ValorFuturoPe / 1 + (TasaInteresPe * PeriodoPe);
 
-                i = i1 / 100;
-
-                p = f / (1 + (i * n));
-
-                int N = dgvResultadosF.Rows.Add();
-
-                dgvResultadosP.Rows[N].Cells[0].Value = f;
-                dgvResultadosP.Rows[N].Cells[1].Value = i;
-                dgvResultadosP.Rows[N].Cells[2].Value = n;
-                dgvResultadosP.Rows[N].Cells[3].Value = p;
+                Ps.Add(new InteresSimpleP
+                {
+                    ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                    TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                    PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                    Presente = ValorFuturoPe / (1 + (TasaInteresPe/100 * PeriodoPe)),
+                });
+                dgvResultadosP.DataSource = null;
+                dgvResultadosP.DataSource = Ps;
             }
             catch(FormatException x)
             {
-                MessageBox.Show("Rellene los campos necesarios"+x);
+                MessageBox.Show("Rellene los campos necesarios");
             }
         }
 
@@ -175,60 +125,57 @@ namespace ProyectoIng_Economica
         //CALCULAR VALOR DEL INTERES
         private void btnCalcularI_Click(object sender, EventArgs e)
         {
-            double i,f,p,n;
-            double FP,n1;
-
-            
-            try 
+            try
             {
-                f = double.Parse(txtValorFuturoI.Text);
-                p = double.Parse(txtValorPresenteI.Text);
-                n1 = double.Parse(txtPeriodoI.Text);
+                int ValorFuturoIn = Convert.ToInt32(txtValorFuturoI.Text);
+                int ValorPresenteIn = Convert.ToInt32(txtValorPresenteI.Text);
+                int PeriodoIn = Convert.ToInt32(txtPeriodoI.Text);
+                double TasaInteres = ValorFuturoIn / ValorPresenteIn - 1 / PeriodoIn;
 
-                n = n1 / 12;
-                FP = f / p - 1;
-                i = FP / n;
-
-                int N = dgvResultadosF.Rows.Add();
-                dgvResultadosI.Rows[N].Cells[0].Value = f;
-                dgvResultadosI.Rows[N].Cells[1].Value = p;
-                dgvResultadosI.Rows[N].Cells[2].Value = n;
-                dgvResultadosI.Rows[N].Cells[3].Value = i;
-
+                Is.Add(new InteresSimpleI
+                {
+                    ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                    ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                    PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                    TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn/12.0),
+                });
+                dgvResultadosI.DataSource = null;
+                dgvResultadosI.DataSource = Is;
             }
             catch(FormatException x)
             {
-                MessageBox.Show("Rellene los campos necesarios"+x);
+                MessageBox.Show("Rellene los campos necesarios " + x);
+            }catch(DivideByZeroException ex)
+            {
+                MessageBox.Show("El periodo no puede ser cero.", "Error de division por cero"+ex);
             }
         }
 
         private void btnCalcularN_Click(object sender, EventArgs e)
         {
-            double f,p,i;
-            double i1,FP;
-            double n;
-
-            try
+            try 
             {
-                f = double.Parse(txtValorFuturoN.Text);
-                p = double.Parse(txtValorPresenteN.Text);
-                i1 = double.Parse(txtTasaInteresN.Text);
+                int ValorFuturoNe = Convert.ToInt32(txtValorFuturoN.Text);
+                int ValorPresenteNe = Convert.ToInt32(txtValorPresenteN.Text);
+                double TasaInteresNe = Convert.ToDouble(txtTasaInteresN.Text);
+                double Periodo = (ValorFuturoNe / ValorPresenteNe - 1) / (TasaInteresNe);
 
-                i = i1 / 100;
-                FP = f / p - 1;
-                n = FP / i;
-                
-                
+                Ns.Add(new InteresSimpleN
+                {
+                    ValorFuturoN = Convert.ToInt32(txtValorFuturoN.Text),
+                    ValorPresenteN = Convert.ToInt32(txtValorPresenteN.Text),
+                    TasaInteresN = Convert.ToDouble(txtTasaInteresN.Text),
+                    Periodo = (ValorFuturoNe - ValorPresenteNe) / (ValorPresenteNe * (TasaInteresNe / 100)),
+                });
+                dgvResultadosN.DataSource = null;
+                dgvResultadosN.DataSource = Ns;
 
-                int N = dgvResultadosF.Rows.Add();
-                dgvResultadosN.Rows[N].Cells[0].Value = p;
-                dgvResultadosN.Rows[N].Cells[1].Value = i;
-                dgvResultadosN.Rows[N].Cells[2].Value = f;
-                dgvResultadosN.Rows[N].Cells[3].Value = n;
-            }
-            catch (FormatException x)
+            }catch(FormatException x)
             {
-                MessageBox.Show("Rellene los campos necesarios"+x);
+                MessageBox.Show("Rellene los campos necesarios " + x);
+            }catch(DivideByZeroException ex)
+            {
+                MessageBox.Show("El periodo no puede ser cero.", "Error de division por cero" + ex);
             }
         }
 
@@ -325,6 +272,13 @@ namespace ProyectoIng_Economica
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void btnLimpiarI_Click(object sender, EventArgs e)
+        {
+            txtValorFuturoI.Text = "";
+            txtValorPresenteI.Text = "";
+            txtPeriodoI.Text = "";
         }
     }
 }

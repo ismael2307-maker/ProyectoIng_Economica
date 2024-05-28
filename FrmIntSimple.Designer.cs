@@ -29,35 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmIntSimple));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbgDefinicion = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tbgFuturoAcumulado = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dgvResultadosF = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label9 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnLimpiarF = new System.Windows.Forms.Button();
+            this.btnCalcularF = new System.Windows.Forms.Button();
+            this.txtPeriodoF = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtTasaInteresF = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtValorPresenteF = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tbgPresenteAcumulado = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dgvResultadosP = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLimpiarP = new System.Windows.Forms.Button();
@@ -74,11 +67,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tbgInteresAcumulado = new System.Windows.Forms.TabPage();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.dgvResultadosI = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label18 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnLimpiarI = new System.Windows.Forms.Button();
@@ -95,11 +83,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tbgPeriodoAcumulado = new System.Windows.Forms.TabPage();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.dgvResultadosN = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label24 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.btnLimpiar = new System.Windows.Forms.Button();
@@ -114,45 +97,36 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtValorPresenteF = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtTasaInteresF = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtPeriodoF = new System.Windows.Forms.TextBox();
-            this.btnCalcularF = new System.Windows.Forms.Button();
-            this.btnLimpiarF = new System.Windows.Forms.Button();
-            this.cmbInteresF = new System.Windows.Forms.ComboBox();
-            this.cmbPeriodoF = new System.Windows.Forms.ComboBox();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.dgvResultadosP = new System.Windows.Forms.DataGridView();
+            this.dgvResultadosI = new System.Windows.Forms.DataGridView();
+            this.dgvResultadosN = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tbgFuturoAcumulado.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosF)).BeginInit();
+            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tbgPresenteAcumulado.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosP)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tbgInteresAcumulado.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosI)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tbgPeriodoAcumulado.SuspendLayout();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosN)).BeginInit();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosI)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosN)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -176,7 +150,7 @@
             this.tbgDefinicion.Controls.Add(this.pictureBox1);
             this.tbgDefinicion.Location = new System.Drawing.Point(4, 31);
             this.tbgDefinicion.Name = "tbgDefinicion";
-            this.tbgDefinicion.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbgDefinicion.Padding = new System.Windows.Forms.Padding(3);
             this.tbgDefinicion.Size = new System.Drawing.Size(685, 375);
             this.tbgDefinicion.TabIndex = 0;
             this.tbgDefinicion.Text = "Definición";
@@ -199,7 +173,7 @@
             this.tbgFuturoAcumulado.Controls.Add(this.panel4);
             this.tbgFuturoAcumulado.Location = new System.Drawing.Point(4, 31);
             this.tbgFuturoAcumulado.Name = "tbgFuturoAcumulado";
-            this.tbgFuturoAcumulado.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbgFuturoAcumulado.Padding = new System.Windows.Forms.Padding(3);
             this.tbgFuturoAcumulado.Size = new System.Drawing.Size(685, 375);
             this.tbgFuturoAcumulado.TabIndex = 1;
             this.tbgFuturoAcumulado.Text = "Futuro";
@@ -210,67 +184,18 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel6.Controls.Add(this.dgvResultadosF);
             this.panel6.Controls.Add(this.label9);
-            this.panel6.Location = new System.Drawing.Point(357, 212);
+            this.panel6.Location = new System.Drawing.Point(368, 212);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(523, 125);
+            this.panel6.Size = new System.Drawing.Size(547, 125);
             this.panel6.TabIndex = 10;
             // 
             // dgvResultadosF
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            this.dgvResultadosF.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvResultadosF.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.dgvResultadosF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvResultadosF.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvResultadosF.GridColor = System.Drawing.Color.White;
-            this.dgvResultadosF.Location = new System.Drawing.Point(45, 77);
+            this.dgvResultadosF.Location = new System.Drawing.Point(47, 74);
             this.dgvResultadosF.Name = "dgvResultadosF";
-            this.dgvResultadosF.RowHeadersWidth = 82;
-            this.dgvResultadosF.Size = new System.Drawing.Size(445, 185);
+            this.dgvResultadosF.Size = new System.Drawing.Size(508, 174);
             this.dgvResultadosF.TabIndex = 13;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Valor Presente";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Interés";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Periodo";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Futuro";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 200;
             // 
             // label9
             // 
@@ -278,11 +203,143 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label9.Location = new System.Drawing.Point(174, 13);
+            this.label9.Location = new System.Drawing.Point(194, 13);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(181, 39);
             this.label9.TabIndex = 12;
             this.label9.Text = "Resultados";
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel5.Controls.Add(this.btnLimpiarF);
+            this.panel5.Controls.Add(this.btnCalcularF);
+            this.panel5.Controls.Add(this.txtPeriodoF);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.txtTasaInteresF);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.txtValorPresenteF);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Location = new System.Drawing.Point(-196, 212);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(558, 125);
+            this.panel5.TabIndex = 9;
+            // 
+            // btnLimpiarF
+            // 
+            this.btnLimpiarF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLimpiarF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnLimpiarF.FlatAppearance.BorderSize = 0;
+            this.btnLimpiarF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarF.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiarF.Location = new System.Drawing.Point(282, 174);
+            this.btnLimpiarF.Name = "btnLimpiarF";
+            this.btnLimpiarF.Size = new System.Drawing.Size(102, 33);
+            this.btnLimpiarF.TabIndex = 11;
+            this.btnLimpiarF.Text = "Limpiar";
+            this.btnLimpiarF.UseVisualStyleBackColor = false;
+            this.btnLimpiarF.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnCalcularF
+            // 
+            this.btnCalcularF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCalcularF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnCalcularF.FlatAppearance.BorderSize = 0;
+            this.btnCalcularF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcularF.ForeColor = System.Drawing.Color.White;
+            this.btnCalcularF.Location = new System.Drawing.Point(121, 174);
+            this.btnCalcularF.Name = "btnCalcularF";
+            this.btnCalcularF.Size = new System.Drawing.Size(102, 33);
+            this.btnCalcularF.TabIndex = 10;
+            this.btnCalcularF.Text = "Calcular";
+            this.btnCalcularF.UseVisualStyleBackColor = false;
+            this.btnCalcularF.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // txtPeriodoF
+            // 
+            this.txtPeriodoF.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtPeriodoF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtPeriodoF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPeriodoF.ForeColor = System.Drawing.Color.White;
+            this.txtPeriodoF.Location = new System.Drawing.Point(208, 203);
+            this.txtPeriodoF.Name = "txtPeriodoF";
+            this.txtPeriodoF.Size = new System.Drawing.Size(123, 24);
+            this.txtPeriodoF.TabIndex = 9;
+            this.txtPeriodoF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeriodoF_KeyPress);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(27, 201);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 24);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Periodo";
+            // 
+            // txtTasaInteresF
+            // 
+            this.txtTasaInteresF.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTasaInteresF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtTasaInteresF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTasaInteresF.ForeColor = System.Drawing.Color.White;
+            this.txtTasaInteresF.Location = new System.Drawing.Point(207, 136);
+            this.txtTasaInteresF.Name = "txtTasaInteresF";
+            this.txtTasaInteresF.Size = new System.Drawing.Size(123, 24);
+            this.txtTasaInteresF.TabIndex = 7;
+            this.txtTasaInteresF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTasaInteresF_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(27, 136);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(125, 24);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Tasa interés";
+            // 
+            // txtValorPresenteF
+            // 
+            this.txtValorPresenteF.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtValorPresenteF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtValorPresenteF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtValorPresenteF.ForeColor = System.Drawing.Color.White;
+            this.txtValorPresenteF.Location = new System.Drawing.Point(208, 70);
+            this.txtValorPresenteF.Name = "txtValorPresenteF";
+            this.txtValorPresenteF.Size = new System.Drawing.Size(123, 24);
+            this.txtValorPresenteF.TabIndex = 5;
+            this.txtValorPresenteF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorPresenteF_KeyPress);
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(27, 68);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(158, 24);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Valor Presente";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label8.Location = new System.Drawing.Point(138, 13);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(276, 39);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Ingresa los datos";
             // 
             // panel4
             // 
@@ -341,63 +398,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(523, 125);
             this.panel3.TabIndex = 11;
-            // 
-            // dgvResultadosP
-            // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            this.dgvResultadosP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvResultadosP.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.dgvResultadosP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvResultadosP.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvResultadosP.GridColor = System.Drawing.Color.White;
-            this.dgvResultadosP.Location = new System.Drawing.Point(45, 77);
-            this.dgvResultadosP.Name = "dgvResultadosP";
-            this.dgvResultadosP.RowHeadersWidth = 82;
-            this.dgvResultadosP.Size = new System.Drawing.Size(445, 185);
-            this.dgvResultadosP.TabIndex = 13;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Valor Futuro";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Interés";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Periodo";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "Presente";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 200;
             // 
             // label12
             // 
@@ -602,63 +602,6 @@
             this.panel9.Size = new System.Drawing.Size(523, 125);
             this.panel9.TabIndex = 12;
             // 
-            // dgvResultadosI
-            // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
-            this.dgvResultadosI.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvResultadosI.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.dgvResultadosI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosI.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvResultadosI.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvResultadosI.GridColor = System.Drawing.Color.White;
-            this.dgvResultadosI.Location = new System.Drawing.Point(45, 77);
-            this.dgvResultadosI.Name = "dgvResultadosI";
-            this.dgvResultadosI.RowHeadersWidth = 82;
-            this.dgvResultadosI.Size = new System.Drawing.Size(445, 185);
-            this.dgvResultadosI.TabIndex = 13;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "Futuro";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "Presente";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.HeaderText = "Periodo";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.HeaderText = "Interés";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 200;
-            // 
             // label18
             // 
             this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -686,7 +629,7 @@
             this.panel8.Controls.Add(this.label17);
             this.panel8.Location = new System.Drawing.Point(-190, 214);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(514, 125);
+            this.panel8.Size = new System.Drawing.Size(524, 125);
             this.panel8.TabIndex = 11;
             // 
             // btnLimpiarI
@@ -696,12 +639,13 @@
             this.btnLimpiarI.FlatAppearance.BorderSize = 0;
             this.btnLimpiarI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarI.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiarI.Location = new System.Drawing.Point(259, 175);
+            this.btnLimpiarI.Location = new System.Drawing.Point(264, 175);
             this.btnLimpiarI.Name = "btnLimpiarI";
             this.btnLimpiarI.Size = new System.Drawing.Size(102, 33);
             this.btnLimpiarI.TabIndex = 11;
             this.btnLimpiarI.Text = "Limpiar";
             this.btnLimpiarI.UseVisualStyleBackColor = false;
+            this.btnLimpiarI.Click += new System.EventHandler(this.btnLimpiarI_Click);
             // 
             // btnCalcularI
             // 
@@ -710,7 +654,7 @@
             this.btnCalcularI.FlatAppearance.BorderSize = 0;
             this.btnCalcularI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcularI.ForeColor = System.Drawing.Color.White;
-            this.btnCalcularI.Location = new System.Drawing.Point(98, 175);
+            this.btnCalcularI.Location = new System.Drawing.Point(103, 175);
             this.btnCalcularI.Name = "btnCalcularI";
             this.btnCalcularI.Size = new System.Drawing.Size(102, 33);
             this.btnCalcularI.TabIndex = 10;
@@ -724,7 +668,7 @@
             this.txtPeriodoI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPeriodoI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPeriodoI.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodoI.Location = new System.Drawing.Point(185, 203);
+            this.txtPeriodoI.Location = new System.Drawing.Point(190, 203);
             this.txtPeriodoI.Name = "txtPeriodoI";
             this.txtPeriodoI.Size = new System.Drawing.Size(123, 24);
             this.txtPeriodoI.TabIndex = 9;
@@ -736,7 +680,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(4, 201);
+            this.label14.Location = new System.Drawing.Point(9, 201);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(87, 24);
             this.label14.TabIndex = 8;
@@ -748,7 +692,7 @@
             this.txtValorPresenteI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorPresenteI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorPresenteI.ForeColor = System.Drawing.Color.White;
-            this.txtValorPresenteI.Location = new System.Drawing.Point(184, 136);
+            this.txtValorPresenteI.Location = new System.Drawing.Point(189, 136);
             this.txtValorPresenteI.Name = "txtValorPresenteI";
             this.txtValorPresenteI.Size = new System.Drawing.Size(123, 24);
             this.txtValorPresenteI.TabIndex = 7;
@@ -760,7 +704,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(4, 136);
+            this.label15.Location = new System.Drawing.Point(9, 136);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(158, 24);
             this.label15.TabIndex = 6;
@@ -772,7 +716,7 @@
             this.txtValorFuturoI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorFuturoI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorFuturoI.ForeColor = System.Drawing.Color.White;
-            this.txtValorFuturoI.Location = new System.Drawing.Point(185, 70);
+            this.txtValorFuturoI.Location = new System.Drawing.Point(190, 70);
             this.txtValorFuturoI.Name = "txtValorFuturoI";
             this.txtValorFuturoI.Size = new System.Drawing.Size(123, 24);
             this.txtValorFuturoI.TabIndex = 5;
@@ -784,7 +728,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(4, 68);
+            this.label16.Location = new System.Drawing.Point(9, 68);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(133, 24);
             this.label16.TabIndex = 4;
@@ -796,7 +740,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label17.Location = new System.Drawing.Point(94, 13);
+            this.label17.Location = new System.Drawing.Point(104, 13);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(276, 39);
             this.label17.TabIndex = 3;
@@ -855,67 +799,10 @@
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel12.Controls.Add(this.dgvResultadosN);
             this.panel12.Controls.Add(this.label24);
-            this.panel12.Location = new System.Drawing.Point(343, 218);
+            this.panel12.Location = new System.Drawing.Point(343, 217);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(523, 125);
+            this.panel12.Size = new System.Drawing.Size(523, 135);
             this.panel12.TabIndex = 13;
-            // 
-            // dgvResultadosN
-            // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
-            this.dgvResultadosN.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvResultadosN.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.dgvResultadosN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvResultadosN.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvResultadosN.GridColor = System.Drawing.Color.White;
-            this.dgvResultadosN.Location = new System.Drawing.Point(45, 77);
-            this.dgvResultadosN.Name = "dgvResultadosN";
-            this.dgvResultadosN.RowHeadersWidth = 82;
-            this.dgvResultadosN.Size = new System.Drawing.Size(445, 185);
-            this.dgvResultadosN.TabIndex = 13;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "Valor Presente";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.HeaderText = "Interes";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.HeaderText = "Futuro";
-            this.dataGridViewTextBoxColumn15.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.HeaderText = "Periodo";
-            this.dataGridViewTextBoxColumn16.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.Width = 200;
             // 
             // label24
             // 
@@ -1096,163 +983,29 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
-            // label8
+            // dgvResultadosP
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label8.Location = new System.Drawing.Point(103, 13);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(276, 39);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Ingresa los datos";
+            this.dgvResultadosP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultadosP.Location = new System.Drawing.Point(46, 79);
+            this.dgvResultadosP.Name = "dgvResultadosP";
+            this.dgvResultadosP.Size = new System.Drawing.Size(435, 150);
+            this.dgvResultadosP.TabIndex = 13;
             // 
-            // label7
+            // dgvResultadosI
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(9, 68);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(158, 24);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Valor Presente";
+            this.dgvResultadosI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultadosI.Location = new System.Drawing.Point(55, 78);
+            this.dgvResultadosI.Name = "dgvResultadosI";
+            this.dgvResultadosI.Size = new System.Drawing.Size(425, 150);
+            this.dgvResultadosI.TabIndex = 13;
             // 
-            // txtValorPresenteF
+            // dgvResultadosN
             // 
-            this.txtValorPresenteF.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtValorPresenteF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtValorPresenteF.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtValorPresenteF.ForeColor = System.Drawing.Color.White;
-            this.txtValorPresenteF.Location = new System.Drawing.Point(190, 70);
-            this.txtValorPresenteF.Name = "txtValorPresenteF";
-            this.txtValorPresenteF.Size = new System.Drawing.Size(123, 24);
-            this.txtValorPresenteF.TabIndex = 5;
-            this.txtValorPresenteF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorPresenteF_KeyPress);
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(9, 136);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 24);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Tasa interés";
-            // 
-            // txtTasaInteresF
-            // 
-            this.txtTasaInteresF.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtTasaInteresF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtTasaInteresF.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTasaInteresF.ForeColor = System.Drawing.Color.White;
-            this.txtTasaInteresF.Location = new System.Drawing.Point(189, 136);
-            this.txtTasaInteresF.Name = "txtTasaInteresF";
-            this.txtTasaInteresF.Size = new System.Drawing.Size(123, 24);
-            this.txtTasaInteresF.TabIndex = 7;
-            this.txtTasaInteresF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTasaInteresF_KeyPress);
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(9, 201);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 24);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Periodo";
-            // 
-            // txtPeriodoF
-            // 
-            this.txtPeriodoF.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtPeriodoF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtPeriodoF.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPeriodoF.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodoF.Location = new System.Drawing.Point(190, 203);
-            this.txtPeriodoF.Name = "txtPeriodoF";
-            this.txtPeriodoF.Size = new System.Drawing.Size(123, 24);
-            this.txtPeriodoF.TabIndex = 9;
-            this.txtPeriodoF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeriodoF_KeyPress);
-            // 
-            // btnCalcularF
-            // 
-            this.btnCalcularF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCalcularF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnCalcularF.FlatAppearance.BorderSize = 0;
-            this.btnCalcularF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalcularF.ForeColor = System.Drawing.Color.White;
-            this.btnCalcularF.Location = new System.Drawing.Point(103, 174);
-            this.btnCalcularF.Name = "btnCalcularF";
-            this.btnCalcularF.Size = new System.Drawing.Size(102, 33);
-            this.btnCalcularF.TabIndex = 10;
-            this.btnCalcularF.Text = "Calcular";
-            this.btnCalcularF.UseVisualStyleBackColor = false;
-            this.btnCalcularF.Click += new System.EventHandler(this.btnCalcular_Click);
-            // 
-            // btnLimpiarF
-            // 
-            this.btnLimpiarF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLimpiarF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnLimpiarF.FlatAppearance.BorderSize = 0;
-            this.btnLimpiarF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiarF.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiarF.Location = new System.Drawing.Point(264, 174);
-            this.btnLimpiarF.Name = "btnLimpiarF";
-            this.btnLimpiarF.Size = new System.Drawing.Size(102, 33);
-            this.btnLimpiarF.TabIndex = 11;
-            this.btnLimpiarF.Text = "Limpiar";
-            this.btnLimpiarF.UseVisualStyleBackColor = false;
-            this.btnLimpiarF.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // cmbInteresF
-            // 
-            this.cmbInteresF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbInteresF.FormattingEnabled = true;
-            this.cmbInteresF.Items.AddRange(new object[] {
-            "Anual",
-            "Mensual"});
-            this.cmbInteresF.Location = new System.Drawing.Point(359, 133);
-            this.cmbInteresF.Name = "cmbInteresF";
-            this.cmbInteresF.Size = new System.Drawing.Size(121, 30);
-            this.cmbInteresF.TabIndex = 12;
-            // 
-            // cmbPeriodoF
-            // 
-            this.cmbPeriodoF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPeriodoF.FormattingEnabled = true;
-            this.cmbPeriodoF.Items.AddRange(new object[] {
-            "Años",
-            "Meses"});
-            this.cmbPeriodoF.Location = new System.Drawing.Point(359, 197);
-            this.cmbPeriodoF.Name = "cmbPeriodoF";
-            this.cmbPeriodoF.Size = new System.Drawing.Size(121, 30);
-            this.cmbPeriodoF.TabIndex = 13;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel5.Controls.Add(this.cmbPeriodoF);
-            this.panel5.Controls.Add(this.cmbInteresF);
-            this.panel5.Controls.Add(this.btnLimpiarF);
-            this.panel5.Controls.Add(this.btnCalcularF);
-            this.panel5.Controls.Add(this.txtPeriodoF);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.txtTasaInteresF);
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.txtValorPresenteF);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Location = new System.Drawing.Point(-196, 212);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(523, 125);
-            this.panel5.TabIndex = 9;
+            this.dgvResultadosN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultadosN.Location = new System.Drawing.Point(33, 65);
+            this.dgvResultadosN.Name = "dgvResultadosN";
+            this.dgvResultadosN.Size = new System.Drawing.Size(457, 150);
+            this.dgvResultadosN.TabIndex = 13;
             // 
             // FrmIntSimple
             // 
@@ -1270,13 +1023,14 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosF)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tbgPresenteAcumulado.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosP)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -1285,7 +1039,6 @@
             this.tbgInteresAcumulado.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosI)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -1294,14 +1047,14 @@
             this.tbgPeriodoAcumulado.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosN)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosI)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosN)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1316,7 +1069,6 @@
         private System.Windows.Forms.TabPage tbgPeriodoAcumulado;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.DataGridView dgvResultadosF;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label2;
@@ -1335,7 +1087,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dgvResultadosP;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button btnLimpiarI;
@@ -1351,7 +1102,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.DataGridView dgvResultadosI;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label19;
@@ -1367,27 +1117,8 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.DataGridView dgvResultadosN;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ComboBox cmbPeriodoF;
-        private System.Windows.Forms.ComboBox cmbInteresF;
         private System.Windows.Forms.Button btnLimpiarF;
         private System.Windows.Forms.Button btnCalcularF;
         private System.Windows.Forms.TextBox txtPeriodoF;
@@ -1397,5 +1128,9 @@
         private System.Windows.Forms.TextBox txtValorPresenteF;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dgvResultadosF;
+        private System.Windows.Forms.DataGridView dgvResultadosP;
+        private System.Windows.Forms.DataGridView dgvResultadosI;
+        private System.Windows.Forms.DataGridView dgvResultadosN;
     }
 }
