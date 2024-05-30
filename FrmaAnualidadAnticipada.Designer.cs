@@ -244,7 +244,9 @@
             this.cmbPeriodoPresente.FormattingEnabled = true;
             this.cmbPeriodoPresente.Items.AddRange(new object[] {
             "Años",
-            "Meses"});
+            "Meses",
+            "Semestres",
+            "Trimestres"});
             this.cmbPeriodoPresente.Location = new System.Drawing.Point(359, 197);
             this.cmbPeriodoPresente.Name = "cmbPeriodoPresente";
             this.cmbPeriodoPresente.Size = new System.Drawing.Size(121, 30);
@@ -256,7 +258,9 @@
             this.cmbInteresPresente.FormattingEnabled = true;
             this.cmbInteresPresente.Items.AddRange(new object[] {
             "Anual",
-            "Mensual"});
+            "Mensual",
+            "Semestral",
+            "Trimestral"});
             this.cmbInteresPresente.Location = new System.Drawing.Point(359, 133);
             this.cmbInteresPresente.Name = "cmbInteresPresente";
             this.cmbInteresPresente.Size = new System.Drawing.Size(121, 30);
