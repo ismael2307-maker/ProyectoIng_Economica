@@ -280,7 +280,6 @@ namespace ProyectoIng_Economica
         }
 
         //Fin presente
-
         private void btnCalcularFuturo_Click(object sender, EventArgs e)
         {
             int AnualidadFu = Convert.ToInt32(txtValorAnualidadFuturo.Text);
@@ -589,11 +588,191 @@ namespace ProyectoIng_Economica
                     dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
                     dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
                 }
+                else if (cmbInteresAp.SelectedItem.Equals("Semestral") && cmbPeriodoAp.SelectedItem.Equals("Meses"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp / 6))) / (Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp / 6)) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Semestral") && cmbPeriodoAp.SelectedItem.Equals("Semestres"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), PeriodoAp)) / (Math.Pow(1 + (TasaInteresAp / 100), PeriodoAp / 6) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Semestral") && cmbPeriodoAp.SelectedItem.Equals("Trimestres"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp / 2))) / (Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp / 2)) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Anual") && cmbPeriodoAp.SelectedItem.Equals("Años"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), PeriodoAp)) / (Math.Pow(1 + (TasaInteresAp / 100), PeriodoAp) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Anual") && cmbPeriodoAp.SelectedItem.Equals("Meses"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp / 12))) / (Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp / 12)) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Anual") && cmbPeriodoAp.SelectedItem.Equals("Semestres"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp / 2))) / (Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp / 2)) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Anual") && cmbPeriodoAp.SelectedItem.Equals("Trimestres"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp / 4))) / (Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp / 4)) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Mensual") && cmbPeriodoAp.SelectedItem.Equals("Años"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp * 12))) / (Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp * 12)) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Mensual") && cmbPeriodoAp.SelectedItem.Equals("Meses"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), PeriodoAp)) / (Math.Pow(1 + (TasaInteresAp / 100), PeriodoAp) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Mensual") && cmbPeriodoAp.SelectedItem.Equals("Semestres"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp * 6))) / (Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp * 6)) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Mensual") && cmbPeriodoAp.SelectedItem.Equals("Trimestres"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp * 3))) / (Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp * 3)) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Trimestral") && cmbPeriodoAp.SelectedItem.Equals("Años"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp * 4))) / (Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp * 4)) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+
+                else if (cmbInteresAp.SelectedItem.Equals("Trimestral") && cmbPeriodoAp.SelectedItem.Equals("Meses"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp / 3))) / (Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp / 3)) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Trimestral") && cmbPeriodoAp.SelectedItem.Equals("Semestres"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp * 2))) / (Math.Pow(1 + (TasaInteresAp / 100), (PeriodoAp * 2)) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
+                else if (cmbInteresAp.SelectedItem.Equals("Trimestral") && cmbPeriodoAp.SelectedItem.Equals("Trimestres"))
+                {
+                    AAp.Add(new AnualidadAnticipadaAP
+                    {
+                        ValorPresenteAP = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text),
+                        TasaInteresAP = Convert.ToDouble(txtInteresAnualidadAnticipada.Text),
+                        PeriodoAP = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text),
+                        AnualidadPresente = valorPresenteAp * (((TasaInteresAp / 100) * Math.Pow(1 + (TasaInteresAp / 100), PeriodoAp)) / (Math.Pow(1 + (TasaInteresAp / 100), PeriodoAp) - 1)),
+                    });
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = null;
+                    dgvResultadosAnualidadPresenteAnticipada.DataSource = AAp;
+                }
             }
+
         }
-
         //Fin AnualidadPresente
-
         private void txtValorFuturoAnualidadFuturo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
@@ -655,6 +834,187 @@ namespace ProyectoIng_Economica
                         dgvResultadosAnualidadFuturo.DataSource = null;
                         dgvResultadosAnualidadFuturo.DataSource = AAF;
                     }
+                    else if (cmbInteresAf.SelectedItem.Equals("Anual") && cmbPeriodoAf.SelectedItem.Equals("Meses"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf/12)) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Anual") && cmbPeriodoAf.SelectedItem.Equals("Semestres"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf / 2)) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Anual") && cmbPeriodoAf.SelectedItem.Equals("Trimestres"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf / 4)) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Mensual") && cmbPeriodoAf.SelectedItem.Equals("Años"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf * 12)) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Mensual") && cmbPeriodoAf.SelectedItem.Equals("Meses"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), PeriodoAf) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Mensual") && cmbPeriodoAf.SelectedItem.Equals("Semestres"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf * 6)) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Mensual") && cmbPeriodoAf.SelectedItem.Equals("Trimestres"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf * 3)) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Semestral") && cmbPeriodoAf.SelectedItem.Equals("Años"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf * 2)) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Semestral") && cmbPeriodoAf.SelectedItem.Equals("Meses"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf / 6)) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Semestral") && cmbPeriodoAf.SelectedItem.Equals("Semestres"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), PeriodoAf) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Semestral") && cmbPeriodoAf.SelectedItem.Equals("Trimestres"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf / 2)) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Trimestral") && cmbPeriodoAf.SelectedItem.Equals("Años"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf * 2)) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Trimestral") && cmbPeriodoAf.SelectedItem.Equals("Meses"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf / 3)) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Trimestral") && cmbPeriodoAf.SelectedItem.Equals("Semestres"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf * 2)) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Trimestral") && cmbPeriodoAf.SelectedItem.Equals("Trimestres"))
+                    {
+                        AAF.Add(new AnualidadAnticipadaAF
+                        {
+                            ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
+                            TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
+                            PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), PeriodoAf) - 1)),
+                        });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = AAF;
+                    }
+
                 }
             }
             catch (FormatException ex)
