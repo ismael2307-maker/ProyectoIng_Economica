@@ -915,7 +915,7 @@
             this.txtValorFuturoI.Name = "txtValorFuturoI";
             this.txtValorFuturoI.Size = new System.Drawing.Size(123, 22);
             this.txtValorFuturoI.TabIndex = 5;
-            this.txtValorFuturoI.TextChanged += new System.EventHandler(this.txtValorFuturoI_TextChanged);
+            
             this.txtValorFuturoI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorFuturoI_KeyPress);
             // 
             // label16

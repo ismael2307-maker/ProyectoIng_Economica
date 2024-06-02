@@ -31,50 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnualidadDiferidas));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbgDefincion = new System.Windows.Forms.TabPage();
-            this.tbgPresente = new System.Windows.Forms.TabPage();
-            this.tbgFuturo = new System.Windows.Forms.TabPage();
-            this.tbgAnualidadPresente = new System.Windows.Forms.TabPage();
-            this.tbgAnualidadFuturo = new System.Windows.Forms.TabPage();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.cmbPeriodoA = new System.Windows.Forms.ComboBox();
-            this.cmbInteresA = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txtPeriodoAnualidadVencida = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtInteresAnualidadVencida = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtValorPresenteAnualidadVencida = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.dgvResultadosAnualidadPresente = new System.Windows.Forms.DataGridView();
-            this.label18 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.txtPeriodoAnualidadFuturo = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtInteresAnualidadFuturo = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtValorFuturoAnualidadFuturo = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.dgvResultadosAnualidadFuturo = new System.Windows.Forms.DataGridView();
-            this.label24 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tbgPresente = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dgvResultadosPresente = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cmbPeridoPresente = new System.Windows.Forms.ComboBox();
             this.cmbInteresPresente = new System.Windows.Forms.ComboBox();
@@ -87,12 +48,13 @@
             this.txtValorAnualidadPresente = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dgvResultadosPresente = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tbgFuturo = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.dgvResultadosFuturo = new System.Windows.Forms.DataGridView();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.cmbPeriodoFuturo = new System.Windows.Forms.ComboBox();
             this.cmbInteresFuturo = new System.Windows.Forms.ComboBox();
@@ -105,36 +67,74 @@
             this.txtValorAnualidadFuturo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.dgvResultadosFuturo = new System.Windows.Forms.DataGridView();
-            this.label12 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.tbgAnualidadPresente = new System.Windows.Forms.TabPage();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.dgvResultadosAnualidadPresente = new System.Windows.Forms.DataGridView();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.cmbPeriodoA = new System.Windows.Forms.ComboBox();
+            this.cmbInteresA = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtPeriodoAnualidadVencida = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtInteresAnualidadVencida = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtValorPresenteAnualidadVencida = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.tbgAnualidadFuturo = new System.Windows.Forms.TabPage();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.dgvResultadosAnualidadFuturo = new System.Windows.Forms.DataGridView();
+            this.label24 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.txtPeriodoAnualidadFuturo = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtInteresAnualidadFuturo = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtValorFuturoAnualidadFuturo = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tbgDefincion.SuspendLayout();
-            this.tbgPresente.SuspendLayout();
-            this.tbgFuturo.SuspendLayout();
-            this.tbgAnualidadPresente.SuspendLayout();
-            this.tbgAnualidadFuturo.SuspendLayout();
-            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadPresente)).BeginInit();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadFuturo)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.tbgPresente.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosPresente)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tbgFuturo.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosFuturo)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tbgAnualidadPresente.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadPresente)).BeginInit();
+            this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.tbgAnualidadFuturo.SuspendLayout();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadFuturo)).BeginInit();
+            this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -163,6 +163,16 @@
             this.tbgDefincion.Text = "Definicion";
             this.tbgDefincion.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1144, 627);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // tbgPresente
             // 
             this.tbgPresente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -176,524 +186,36 @@
             this.tbgPresente.TabIndex = 1;
             this.tbgPresente.Text = "Presente";
             // 
-            // tbgFuturo
-            // 
-            this.tbgFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.tbgFuturo.Controls.Add(this.panel6);
-            this.tbgFuturo.Controls.Add(this.panel5);
-            this.tbgFuturo.Controls.Add(this.panel4);
-            this.tbgFuturo.Location = new System.Drawing.Point(4, 31);
-            this.tbgFuturo.Name = "tbgFuturo";
-            this.tbgFuturo.Size = new System.Drawing.Size(1150, 633);
-            this.tbgFuturo.TabIndex = 2;
-            this.tbgFuturo.Text = "Futuro";
-            // 
-            // tbgAnualidadPresente
-            // 
-            this.tbgAnualidadPresente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.tbgAnualidadPresente.Controls.Add(this.panel9);
-            this.tbgAnualidadPresente.Controls.Add(this.panel8);
-            this.tbgAnualidadPresente.Controls.Add(this.panel7);
-            this.tbgAnualidadPresente.Location = new System.Drawing.Point(4, 31);
-            this.tbgAnualidadPresente.Name = "tbgAnualidadPresente";
-            this.tbgAnualidadPresente.Size = new System.Drawing.Size(1150, 633);
-            this.tbgAnualidadPresente.TabIndex = 3;
-            this.tbgAnualidadPresente.Text = "Anualidad Presente";
-            // 
-            // tbgAnualidadFuturo
-            // 
-            this.tbgAnualidadFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.tbgAnualidadFuturo.Controls.Add(this.panel12);
-            this.tbgAnualidadFuturo.Controls.Add(this.panel11);
-            this.tbgAnualidadFuturo.Controls.Add(this.panel10);
-            this.tbgAnualidadFuturo.Location = new System.Drawing.Point(4, 31);
-            this.tbgAnualidadFuturo.Name = "tbgAnualidadFuturo";
-            this.tbgAnualidadFuturo.Size = new System.Drawing.Size(1150, 633);
-            this.tbgAnualidadFuturo.TabIndex = 4;
-            this.tbgAnualidadFuturo.Text = "Anualidad Futuro";
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel7.Controls.Add(this.label13);
-            this.panel7.Controls.Add(this.pictureBox4);
-            this.panel7.Location = new System.Drawing.Point(307, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(486, 232);
-            this.panel7.TabIndex = 12;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label13.Location = new System.Drawing.Point(158, 12);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(174, 39);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Ecuación ";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1144, 627);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(49, 66);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(388, 118);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // panel8
-            // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel8.Controls.Add(this.cmbPeriodoA);
-            this.panel8.Controls.Add(this.cmbInteresA);
-            this.panel8.Controls.Add(this.button1);
-            this.panel8.Controls.Add(this.button2);
-            this.panel8.Controls.Add(this.txtPeriodoAnualidadVencida);
-            this.panel8.Controls.Add(this.label14);
-            this.panel8.Controls.Add(this.txtInteresAnualidadVencida);
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Controls.Add(this.txtValorPresenteAnualidadVencida);
-            this.panel8.Controls.Add(this.label16);
-            this.panel8.Controls.Add(this.label17);
-            this.panel8.Location = new System.Drawing.Point(17, 241);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(523, 350);
-            this.panel8.TabIndex = 13;
-            // 
-            // cmbPeriodoA
-            // 
-            this.cmbPeriodoA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPeriodoA.FormattingEnabled = true;
-            this.cmbPeriodoA.Items.AddRange(new object[] {
-            "Años",
-            "Meses"});
-            this.cmbPeriodoA.Location = new System.Drawing.Point(359, 197);
-            this.cmbPeriodoA.Name = "cmbPeriodoA";
-            this.cmbPeriodoA.Size = new System.Drawing.Size(121, 30);
-            this.cmbPeriodoA.TabIndex = 13;
-            // 
-            // cmbInteresA
-            // 
-            this.cmbInteresA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbInteresA.FormattingEnabled = true;
-            this.cmbInteresA.Items.AddRange(new object[] {
-            "Anual",
-            "Mensual"});
-            this.cmbInteresA.Location = new System.Drawing.Point(359, 133);
-            this.cmbInteresA.Name = "cmbInteresA";
-            this.cmbInteresA.Size = new System.Drawing.Size(121, 30);
-            this.cmbInteresA.TabIndex = 12;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(264, 287);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 33);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Limpiar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(103, 287);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 33);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Calcular";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // txtPeriodoAnualidadVencida
-            // 
-            this.txtPeriodoAnualidadVencida.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtPeriodoAnualidadVencida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtPeriodoAnualidadVencida.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPeriodoAnualidadVencida.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodoAnualidadVencida.Location = new System.Drawing.Point(190, 203);
-            this.txtPeriodoAnualidadVencida.Name = "txtPeriodoAnualidadVencida";
-            this.txtPeriodoAnualidadVencida.Size = new System.Drawing.Size(123, 24);
-            this.txtPeriodoAnualidadVencida.TabIndex = 9;
-            // 
-            // label14
-            // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(9, 201);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(87, 24);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "Periodo";
-            // 
-            // txtInteresAnualidadVencida
-            // 
-            this.txtInteresAnualidadVencida.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtInteresAnualidadVencida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtInteresAnualidadVencida.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtInteresAnualidadVencida.ForeColor = System.Drawing.Color.White;
-            this.txtInteresAnualidadVencida.Location = new System.Drawing.Point(189, 136);
-            this.txtInteresAnualidadVencida.Name = "txtInteresAnualidadVencida";
-            this.txtInteresAnualidadVencida.Size = new System.Drawing.Size(123, 24);
-            this.txtInteresAnualidadVencida.TabIndex = 7;
-            // 
-            // label15
-            // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(9, 136);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(125, 24);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "Tasa interés";
-            // 
-            // txtValorPresenteAnualidadVencida
-            // 
-            this.txtValorPresenteAnualidadVencida.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtValorPresenteAnualidadVencida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtValorPresenteAnualidadVencida.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtValorPresenteAnualidadVencida.ForeColor = System.Drawing.Color.White;
-            this.txtValorPresenteAnualidadVencida.Location = new System.Drawing.Point(190, 70);
-            this.txtValorPresenteAnualidadVencida.Name = "txtValorPresenteAnualidadVencida";
-            this.txtValorPresenteAnualidadVencida.Size = new System.Drawing.Size(123, 24);
-            this.txtValorPresenteAnualidadVencida.TabIndex = 5;
-            // 
-            // label16
-            // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(9, 68);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(158, 24);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "Valor Presente";
-            // 
-            // label17
-            // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label17.Location = new System.Drawing.Point(103, 13);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(276, 39);
-            this.label17.TabIndex = 3;
-            this.label17.Text = "Ingresa los datos";
-            // 
-            // panel9
-            // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel9.Controls.Add(this.dgvResultadosAnualidadPresente);
-            this.panel9.Controls.Add(this.label18);
-            this.panel9.Location = new System.Drawing.Point(546, 241);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(621, 350);
-            this.panel9.TabIndex = 14;
-            // 
-            // dgvResultadosAnualidadPresente
-            // 
-            this.dgvResultadosAnualidadPresente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosAnualidadPresente.Location = new System.Drawing.Point(3, 101);
-            this.dgvResultadosAnualidadPresente.Name = "dgvResultadosAnualidadPresente";
-            this.dgvResultadosAnualidadPresente.Size = new System.Drawing.Size(615, 150);
-            this.dgvResultadosAnualidadPresente.TabIndex = 13;
-            // 
-            // label18
-            // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label18.Location = new System.Drawing.Point(272, 13);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(181, 39);
-            this.label18.TabIndex = 12;
-            this.label18.Text = "Resultados";
-            // 
-            // panel10
-            // 
-            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel10.Controls.Add(this.label19);
-            this.panel10.Controls.Add(this.pictureBox5);
-            this.panel10.Location = new System.Drawing.Point(295, 3);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(486, 232);
-            this.panel10.TabIndex = 13;
-            // 
-            // label19
-            // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label19.Location = new System.Drawing.Point(168, 24);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(174, 39);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "Ecuación ";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(49, 66);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(388, 118);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
-            // panel11
-            // 
-            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel11.Controls.Add(this.comboBox1);
-            this.panel11.Controls.Add(this.comboBox2);
-            this.panel11.Controls.Add(this.button3);
-            this.panel11.Controls.Add(this.button4);
-            this.panel11.Controls.Add(this.txtPeriodoAnualidadFuturo);
-            this.panel11.Controls.Add(this.label20);
-            this.panel11.Controls.Add(this.txtInteresAnualidadFuturo);
-            this.panel11.Controls.Add(this.label21);
-            this.panel11.Controls.Add(this.txtValorFuturoAnualidadFuturo);
-            this.panel11.Controls.Add(this.label22);
-            this.panel11.Controls.Add(this.label23);
-            this.panel11.Location = new System.Drawing.Point(8, 241);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(523, 350);
-            this.panel11.TabIndex = 14;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Años",
-            "Meses"});
-            this.comboBox1.Location = new System.Drawing.Point(359, 197);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 30);
-            this.comboBox1.TabIndex = 13;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Anual",
-            "Mensual"});
-            this.comboBox2.Location = new System.Drawing.Point(359, 133);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 30);
-            this.comboBox2.TabIndex = 12;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(264, 287);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 33);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Limpiar";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(103, 287);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(102, 33);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Calcular";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // txtPeriodoAnualidadFuturo
-            // 
-            this.txtPeriodoAnualidadFuturo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtPeriodoAnualidadFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtPeriodoAnualidadFuturo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPeriodoAnualidadFuturo.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodoAnualidadFuturo.Location = new System.Drawing.Point(190, 203);
-            this.txtPeriodoAnualidadFuturo.Name = "txtPeriodoAnualidadFuturo";
-            this.txtPeriodoAnualidadFuturo.Size = new System.Drawing.Size(123, 24);
-            this.txtPeriodoAnualidadFuturo.TabIndex = 9;
-            // 
-            // label20
-            // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(9, 201);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(87, 24);
-            this.label20.TabIndex = 8;
-            this.label20.Text = "Periodo";
-            // 
-            // txtInteresAnualidadFuturo
-            // 
-            this.txtInteresAnualidadFuturo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtInteresAnualidadFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtInteresAnualidadFuturo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtInteresAnualidadFuturo.ForeColor = System.Drawing.Color.White;
-            this.txtInteresAnualidadFuturo.Location = new System.Drawing.Point(189, 136);
-            this.txtInteresAnualidadFuturo.Name = "txtInteresAnualidadFuturo";
-            this.txtInteresAnualidadFuturo.Size = new System.Drawing.Size(123, 24);
-            this.txtInteresAnualidadFuturo.TabIndex = 7;
-            // 
-            // label21
-            // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(9, 136);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(125, 24);
-            this.label21.TabIndex = 6;
-            this.label21.Text = "Tasa interés";
-            // 
-            // txtValorFuturoAnualidadFuturo
-            // 
-            this.txtValorFuturoAnualidadFuturo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtValorFuturoAnualidadFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtValorFuturoAnualidadFuturo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtValorFuturoAnualidadFuturo.ForeColor = System.Drawing.Color.White;
-            this.txtValorFuturoAnualidadFuturo.Location = new System.Drawing.Point(190, 70);
-            this.txtValorFuturoAnualidadFuturo.Name = "txtValorFuturoAnualidadFuturo";
-            this.txtValorFuturoAnualidadFuturo.Size = new System.Drawing.Size(123, 24);
-            this.txtValorFuturoAnualidadFuturo.TabIndex = 5;
-            // 
-            // label22
-            // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(9, 68);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(133, 24);
-            this.label22.TabIndex = 4;
-            this.label22.Text = "Valor Futuro";
-            // 
-            // label23
-            // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label23.Location = new System.Drawing.Point(103, 13);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(276, 39);
-            this.label23.TabIndex = 3;
-            this.label23.Text = "Ingresa los datos";
-            // 
-            // panel12
-            // 
-            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel12.Controls.Add(this.dgvResultadosAnualidadFuturo);
-            this.panel12.Controls.Add(this.label24);
-            this.panel12.Location = new System.Drawing.Point(537, 241);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(621, 350);
-            this.panel12.TabIndex = 15;
-            // 
-            // dgvResultadosAnualidadFuturo
-            // 
-            this.dgvResultadosAnualidadFuturo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosAnualidadFuturo.Location = new System.Drawing.Point(3, 101);
-            this.dgvResultadosAnualidadFuturo.Name = "dgvResultadosAnualidadFuturo";
-            this.dgvResultadosAnualidadFuturo.Size = new System.Drawing.Size(615, 150);
-            this.dgvResultadosAnualidadFuturo.TabIndex = 13;
-            // 
-            // label24
-            // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label24.Location = new System.Drawing.Point(272, 13);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(181, 39);
-            this.label24.TabIndex = 12;
-            this.label24.Text = "Resultados";
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Location = new System.Drawing.Point(302, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(486, 232);
-            this.panel1.TabIndex = 13;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label1.Location = new System.Drawing.Point(168, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 39);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Ecuación ";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(49, 66);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(388, 118);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel3.Controls.Add(this.dgvResultadosPresente);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Location = new System.Drawing.Point(537, 244);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(621, 350);
+            this.panel3.TabIndex = 15;
+            // 
+            // dgvResultadosPresente
+            // 
+            this.dgvResultadosPresente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultadosPresente.Location = new System.Drawing.Point(3, 101);
+            this.dgvResultadosPresente.Name = "dgvResultadosPresente";
+            this.dgvResultadosPresente.Size = new System.Drawing.Size(615, 150);
+            this.dgvResultadosPresente.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label6.Location = new System.Drawing.Point(272, 13);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(181, 39);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Resultados";
             // 
             // panel2
             // 
@@ -752,6 +274,7 @@
             this.btnLimpiarPresente.TabIndex = 11;
             this.btnLimpiarPresente.Text = "Limpiar";
             this.btnLimpiarPresente.UseVisualStyleBackColor = false;
+            this.btnLimpiarPresente.Click += new System.EventHandler(this.btnLimpiarPresente_Click);
             // 
             // btnCalcularPresente
             // 
@@ -777,6 +300,7 @@
             this.txtPeriodoPresente.Name = "txtPeriodoPresente";
             this.txtPeriodoPresente.Size = new System.Drawing.Size(123, 24);
             this.txtPeriodoPresente.TabIndex = 9;
+            this.txtPeriodoPresente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeriodoPresente_KeyPress);
             // 
             // label2
             // 
@@ -800,6 +324,7 @@
             this.txtTasaInteresPresente.Name = "txtTasaInteresPresente";
             this.txtTasaInteresPresente.Size = new System.Drawing.Size(123, 24);
             this.txtTasaInteresPresente.TabIndex = 7;
+            this.txtTasaInteresPresente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTasaInteresPresente_KeyPress);
             // 
             // label3
             // 
@@ -823,6 +348,7 @@
             this.txtValorAnualidadPresente.Name = "txtValorAnualidadPresente";
             this.txtValorAnualidadPresente.Size = new System.Drawing.Size(123, 24);
             this.txtValorAnualidadPresente.TabIndex = 5;
+            this.txtValorAnualidadPresente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorAnualidadPresente_KeyPress);
             // 
             // label4
             // 
@@ -848,71 +374,83 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Ingresa los datos";
             // 
-            // panel3
+            // panel1
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel3.Controls.Add(this.dgvResultadosPresente);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(537, 244);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(621, 350);
-            this.panel3.TabIndex = 15;
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Location = new System.Drawing.Point(302, 6);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(486, 232);
+            this.panel1.TabIndex = 13;
             // 
-            // dgvResultadosPresente
+            // label1
             // 
-            this.dgvResultadosPresente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosPresente.Location = new System.Drawing.Point(3, 101);
-            this.dgvResultadosPresente.Name = "dgvResultadosPresente";
-            this.dgvResultadosPresente.Size = new System.Drawing.Size(615, 150);
-            this.dgvResultadosPresente.TabIndex = 13;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label1.Location = new System.Drawing.Point(168, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(174, 39);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Ecuación ";
             // 
-            // label6
+            // pictureBox2
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label6.Location = new System.Drawing.Point(272, 13);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(181, 39);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Resultados";
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(49, 66);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(388, 118);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
-            // panel4
+            // tbgFuturo
             // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Location = new System.Drawing.Point(299, 12);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(486, 232);
-            this.panel4.TabIndex = 14;
+            this.tbgFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.tbgFuturo.Controls.Add(this.panel6);
+            this.tbgFuturo.Controls.Add(this.panel5);
+            this.tbgFuturo.Controls.Add(this.panel4);
+            this.tbgFuturo.Location = new System.Drawing.Point(4, 31);
+            this.tbgFuturo.Name = "tbgFuturo";
+            this.tbgFuturo.Size = new System.Drawing.Size(1150, 633);
+            this.tbgFuturo.TabIndex = 2;
+            this.tbgFuturo.Text = "Futuro";
             // 
-            // label7
+            // panel6
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label7.Location = new System.Drawing.Point(168, 24);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(174, 39);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Ecuación ";
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel6.Controls.Add(this.dgvResultadosFuturo);
+            this.panel6.Controls.Add(this.label12);
+            this.panel6.Location = new System.Drawing.Point(537, 250);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(621, 350);
+            this.panel6.TabIndex = 16;
             // 
-            // pictureBox3
+            // dgvResultadosFuturo
             // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(49, 66);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(388, 118);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.dgvResultadosFuturo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultadosFuturo.Location = new System.Drawing.Point(3, 101);
+            this.dgvResultadosFuturo.Name = "dgvResultadosFuturo";
+            this.dgvResultadosFuturo.Size = new System.Drawing.Size(615, 150);
+            this.dgvResultadosFuturo.TabIndex = 13;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label12.Location = new System.Drawing.Point(272, 13);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(181, 39);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Resultados";
             // 
             // panel5
             // 
@@ -1067,36 +605,502 @@
             this.label11.TabIndex = 3;
             this.label11.Text = "Ingresa los datos";
             // 
-            // panel6
+            // panel4
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel6.Controls.Add(this.dgvResultadosFuturo);
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.Location = new System.Drawing.Point(537, 250);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(621, 350);
-            this.panel6.TabIndex = 16;
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.pictureBox3);
+            this.panel4.Location = new System.Drawing.Point(299, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(486, 232);
+            this.panel4.TabIndex = 14;
             // 
-            // dgvResultadosFuturo
+            // label7
             // 
-            this.dgvResultadosFuturo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosFuturo.Location = new System.Drawing.Point(3, 101);
-            this.dgvResultadosFuturo.Name = "dgvResultadosFuturo";
-            this.dgvResultadosFuturo.Size = new System.Drawing.Size(615, 150);
-            this.dgvResultadosFuturo.TabIndex = 13;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label7.Location = new System.Drawing.Point(168, 24);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(174, 39);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Ecuación ";
             // 
-            // label12
+            // pictureBox3
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label12.Location = new System.Drawing.Point(272, 13);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(181, 39);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Resultados";
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(49, 66);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(388, 118);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // tbgAnualidadPresente
+            // 
+            this.tbgAnualidadPresente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.tbgAnualidadPresente.Controls.Add(this.panel9);
+            this.tbgAnualidadPresente.Controls.Add(this.panel8);
+            this.tbgAnualidadPresente.Controls.Add(this.panel7);
+            this.tbgAnualidadPresente.Location = new System.Drawing.Point(4, 31);
+            this.tbgAnualidadPresente.Name = "tbgAnualidadPresente";
+            this.tbgAnualidadPresente.Size = new System.Drawing.Size(1150, 633);
+            this.tbgAnualidadPresente.TabIndex = 3;
+            this.tbgAnualidadPresente.Text = "Anualidad Presente";
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel9.Controls.Add(this.dgvResultadosAnualidadPresente);
+            this.panel9.Controls.Add(this.label18);
+            this.panel9.Location = new System.Drawing.Point(546, 241);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(621, 350);
+            this.panel9.TabIndex = 14;
+            // 
+            // dgvResultadosAnualidadPresente
+            // 
+            this.dgvResultadosAnualidadPresente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultadosAnualidadPresente.Location = new System.Drawing.Point(3, 101);
+            this.dgvResultadosAnualidadPresente.Name = "dgvResultadosAnualidadPresente";
+            this.dgvResultadosAnualidadPresente.Size = new System.Drawing.Size(615, 150);
+            this.dgvResultadosAnualidadPresente.TabIndex = 13;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label18.Location = new System.Drawing.Point(272, 13);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(181, 39);
+            this.label18.TabIndex = 12;
+            this.label18.Text = "Resultados";
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel8.Controls.Add(this.cmbPeriodoA);
+            this.panel8.Controls.Add(this.cmbInteresA);
+            this.panel8.Controls.Add(this.button1);
+            this.panel8.Controls.Add(this.button2);
+            this.panel8.Controls.Add(this.txtPeriodoAnualidadVencida);
+            this.panel8.Controls.Add(this.label14);
+            this.panel8.Controls.Add(this.txtInteresAnualidadVencida);
+            this.panel8.Controls.Add(this.label15);
+            this.panel8.Controls.Add(this.txtValorPresenteAnualidadVencida);
+            this.panel8.Controls.Add(this.label16);
+            this.panel8.Controls.Add(this.label17);
+            this.panel8.Location = new System.Drawing.Point(17, 241);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(523, 350);
+            this.panel8.TabIndex = 13;
+            // 
+            // cmbPeriodoA
+            // 
+            this.cmbPeriodoA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPeriodoA.FormattingEnabled = true;
+            this.cmbPeriodoA.Items.AddRange(new object[] {
+            "Años",
+            "Meses"});
+            this.cmbPeriodoA.Location = new System.Drawing.Point(359, 197);
+            this.cmbPeriodoA.Name = "cmbPeriodoA";
+            this.cmbPeriodoA.Size = new System.Drawing.Size(121, 30);
+            this.cmbPeriodoA.TabIndex = 13;
+            // 
+            // cmbInteresA
+            // 
+            this.cmbInteresA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbInteresA.FormattingEnabled = true;
+            this.cmbInteresA.Items.AddRange(new object[] {
+            "Anual",
+            "Mensual"});
+            this.cmbInteresA.Location = new System.Drawing.Point(359, 133);
+            this.cmbInteresA.Name = "cmbInteresA";
+            this.cmbInteresA.Size = new System.Drawing.Size(121, 30);
+            this.cmbInteresA.TabIndex = 12;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(264, 287);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 33);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Limpiar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(103, 287);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(102, 33);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Calcular";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // txtPeriodoAnualidadVencida
+            // 
+            this.txtPeriodoAnualidadVencida.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtPeriodoAnualidadVencida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtPeriodoAnualidadVencida.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPeriodoAnualidadVencida.ForeColor = System.Drawing.Color.White;
+            this.txtPeriodoAnualidadVencida.Location = new System.Drawing.Point(190, 203);
+            this.txtPeriodoAnualidadVencida.Name = "txtPeriodoAnualidadVencida";
+            this.txtPeriodoAnualidadVencida.Size = new System.Drawing.Size(123, 24);
+            this.txtPeriodoAnualidadVencida.TabIndex = 9;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(9, 201);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(87, 24);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Periodo";
+            // 
+            // txtInteresAnualidadVencida
+            // 
+            this.txtInteresAnualidadVencida.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtInteresAnualidadVencida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtInteresAnualidadVencida.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtInteresAnualidadVencida.ForeColor = System.Drawing.Color.White;
+            this.txtInteresAnualidadVencida.Location = new System.Drawing.Point(189, 136);
+            this.txtInteresAnualidadVencida.Name = "txtInteresAnualidadVencida";
+            this.txtInteresAnualidadVencida.Size = new System.Drawing.Size(123, 24);
+            this.txtInteresAnualidadVencida.TabIndex = 7;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(9, 136);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(125, 24);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "Tasa interés";
+            // 
+            // txtValorPresenteAnualidadVencida
+            // 
+            this.txtValorPresenteAnualidadVencida.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtValorPresenteAnualidadVencida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtValorPresenteAnualidadVencida.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtValorPresenteAnualidadVencida.ForeColor = System.Drawing.Color.White;
+            this.txtValorPresenteAnualidadVencida.Location = new System.Drawing.Point(190, 70);
+            this.txtValorPresenteAnualidadVencida.Name = "txtValorPresenteAnualidadVencida";
+            this.txtValorPresenteAnualidadVencida.Size = new System.Drawing.Size(123, 24);
+            this.txtValorPresenteAnualidadVencida.TabIndex = 5;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(9, 68);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(158, 24);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "Valor Presente";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label17.Location = new System.Drawing.Point(103, 13);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(276, 39);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "Ingresa los datos";
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel7.Controls.Add(this.label13);
+            this.panel7.Controls.Add(this.pictureBox4);
+            this.panel7.Location = new System.Drawing.Point(307, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(486, 232);
+            this.panel7.TabIndex = 12;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label13.Location = new System.Drawing.Point(158, 12);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(174, 39);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "Ecuación ";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(49, 66);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(388, 118);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // tbgAnualidadFuturo
+            // 
+            this.tbgAnualidadFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.tbgAnualidadFuturo.Controls.Add(this.panel12);
+            this.tbgAnualidadFuturo.Controls.Add(this.panel11);
+            this.tbgAnualidadFuturo.Controls.Add(this.panel10);
+            this.tbgAnualidadFuturo.Location = new System.Drawing.Point(4, 31);
+            this.tbgAnualidadFuturo.Name = "tbgAnualidadFuturo";
+            this.tbgAnualidadFuturo.Size = new System.Drawing.Size(1150, 633);
+            this.tbgAnualidadFuturo.TabIndex = 4;
+            this.tbgAnualidadFuturo.Text = "Anualidad Futuro";
+            // 
+            // panel12
+            // 
+            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel12.Controls.Add(this.dgvResultadosAnualidadFuturo);
+            this.panel12.Controls.Add(this.label24);
+            this.panel12.Location = new System.Drawing.Point(537, 241);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(621, 350);
+            this.panel12.TabIndex = 15;
+            // 
+            // dgvResultadosAnualidadFuturo
+            // 
+            this.dgvResultadosAnualidadFuturo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultadosAnualidadFuturo.Location = new System.Drawing.Point(3, 101);
+            this.dgvResultadosAnualidadFuturo.Name = "dgvResultadosAnualidadFuturo";
+            this.dgvResultadosAnualidadFuturo.Size = new System.Drawing.Size(615, 150);
+            this.dgvResultadosAnualidadFuturo.TabIndex = 13;
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label24.Location = new System.Drawing.Point(272, 13);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(181, 39);
+            this.label24.TabIndex = 12;
+            this.label24.Text = "Resultados";
+            // 
+            // panel11
+            // 
+            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel11.Controls.Add(this.comboBox1);
+            this.panel11.Controls.Add(this.comboBox2);
+            this.panel11.Controls.Add(this.button3);
+            this.panel11.Controls.Add(this.button4);
+            this.panel11.Controls.Add(this.txtPeriodoAnualidadFuturo);
+            this.panel11.Controls.Add(this.label20);
+            this.panel11.Controls.Add(this.txtInteresAnualidadFuturo);
+            this.panel11.Controls.Add(this.label21);
+            this.panel11.Controls.Add(this.txtValorFuturoAnualidadFuturo);
+            this.panel11.Controls.Add(this.label22);
+            this.panel11.Controls.Add(this.label23);
+            this.panel11.Location = new System.Drawing.Point(8, 241);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(523, 350);
+            this.panel11.TabIndex = 14;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Años",
+            "Meses"});
+            this.comboBox1.Location = new System.Drawing.Point(359, 197);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 30);
+            this.comboBox1.TabIndex = 13;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Anual",
+            "Mensual"});
+            this.comboBox2.Location = new System.Drawing.Point(359, 133);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 30);
+            this.comboBox2.TabIndex = 12;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(264, 287);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(102, 33);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Limpiar";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(103, 287);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(102, 33);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Calcular";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // txtPeriodoAnualidadFuturo
+            // 
+            this.txtPeriodoAnualidadFuturo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtPeriodoAnualidadFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtPeriodoAnualidadFuturo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPeriodoAnualidadFuturo.ForeColor = System.Drawing.Color.White;
+            this.txtPeriodoAnualidadFuturo.Location = new System.Drawing.Point(190, 203);
+            this.txtPeriodoAnualidadFuturo.Name = "txtPeriodoAnualidadFuturo";
+            this.txtPeriodoAnualidadFuturo.Size = new System.Drawing.Size(123, 24);
+            this.txtPeriodoAnualidadFuturo.TabIndex = 9;
+            // 
+            // label20
+            // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(9, 201);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(87, 24);
+            this.label20.TabIndex = 8;
+            this.label20.Text = "Periodo";
+            // 
+            // txtInteresAnualidadFuturo
+            // 
+            this.txtInteresAnualidadFuturo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtInteresAnualidadFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtInteresAnualidadFuturo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtInteresAnualidadFuturo.ForeColor = System.Drawing.Color.White;
+            this.txtInteresAnualidadFuturo.Location = new System.Drawing.Point(189, 136);
+            this.txtInteresAnualidadFuturo.Name = "txtInteresAnualidadFuturo";
+            this.txtInteresAnualidadFuturo.Size = new System.Drawing.Size(123, 24);
+            this.txtInteresAnualidadFuturo.TabIndex = 7;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(9, 136);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(125, 24);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "Tasa interés";
+            // 
+            // txtValorFuturoAnualidadFuturo
+            // 
+            this.txtValorFuturoAnualidadFuturo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtValorFuturoAnualidadFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtValorFuturoAnualidadFuturo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtValorFuturoAnualidadFuturo.ForeColor = System.Drawing.Color.White;
+            this.txtValorFuturoAnualidadFuturo.Location = new System.Drawing.Point(190, 70);
+            this.txtValorFuturoAnualidadFuturo.Name = "txtValorFuturoAnualidadFuturo";
+            this.txtValorFuturoAnualidadFuturo.Size = new System.Drawing.Size(123, 24);
+            this.txtValorFuturoAnualidadFuturo.TabIndex = 5;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(9, 68);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(133, 24);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "Valor Futuro";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label23.Location = new System.Drawing.Point(103, 13);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(276, 39);
+            this.label23.TabIndex = 3;
+            this.label23.Text = "Ingresa los datos";
+            // 
+            // panel10
+            // 
+            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel10.Controls.Add(this.label19);
+            this.panel10.Controls.Add(this.pictureBox5);
+            this.panel10.Location = new System.Drawing.Point(295, 3);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(486, 232);
+            this.panel10.TabIndex = 13;
+            // 
+            // label19
+            // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label19.Location = new System.Drawing.Point(168, 24);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(174, 39);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "Ecuación ";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(49, 66);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(388, 118);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
             // 
             // FrmAnualidadDiferidas
             // 
@@ -1109,43 +1113,43 @@
             this.Text = "FrmAnualidadDiferidas";
             this.tabControl1.ResumeLayout(false);
             this.tbgDefincion.ResumeLayout(false);
-            this.tbgPresente.ResumeLayout(false);
-            this.tbgFuturo.ResumeLayout(false);
-            this.tbgAnualidadPresente.ResumeLayout(false);
-            this.tbgAnualidadFuturo.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadPresente)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadFuturo)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.tbgPresente.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosPresente)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tbgFuturo.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosFuturo)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tbgAnualidadPresente.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadPresente)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.tbgAnualidadFuturo.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadFuturo)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
