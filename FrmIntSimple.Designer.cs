@@ -51,6 +51,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tbgPresenteAcumulado = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dgvResultadosP = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLimpiarP = new System.Windows.Forms.Button();
@@ -67,6 +68,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tbgInteresAcumulado = new System.Windows.Forms.TabPage();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.dgvResultadosI = new System.Windows.Forms.DataGridView();
             this.label18 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnLimpiarI = new System.Windows.Forms.Button();
@@ -83,6 +85,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tbgPeriodoAcumulado = new System.Windows.Forms.TabPage();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.dgvResultadosN = new System.Windows.Forms.DataGridView();
             this.label24 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.btnLimpiar = new System.Windows.Forms.Button();
@@ -97,9 +100,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.dgvResultadosP = new System.Windows.Forms.DataGridView();
-            this.dgvResultadosI = new System.Windows.Forms.DataGridView();
-            this.dgvResultadosN = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -111,22 +111,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tbgPresenteAcumulado.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosP)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tbgInteresAcumulado.SuspendLayout();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosI)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tbgPeriodoAcumulado.SuspendLayout();
             this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosN)).BeginInit();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosI)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosN)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -141,7 +141,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(693, 410);
+            this.tabControl1.Size = new System.Drawing.Size(893, 541);
             this.tabControl1.TabIndex = 0;
             // 
             // tbgDefinicion
@@ -151,7 +151,7 @@
             this.tbgDefinicion.Location = new System.Drawing.Point(4, 31);
             this.tbgDefinicion.Name = "tbgDefinicion";
             this.tbgDefinicion.Padding = new System.Windows.Forms.Padding(3);
-            this.tbgDefinicion.Size = new System.Drawing.Size(685, 375);
+            this.tbgDefinicion.Size = new System.Drawing.Size(885, 506);
             this.tbgDefinicion.TabIndex = 0;
             this.tbgDefinicion.Text = "Definición";
             // 
@@ -161,7 +161,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(679, 369);
+            this.pictureBox1.Size = new System.Drawing.Size(879, 500);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -399,6 +399,14 @@
             this.panel3.Size = new System.Drawing.Size(523, 125);
             this.panel3.TabIndex = 11;
             // 
+            // dgvResultadosP
+            // 
+            this.dgvResultadosP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultadosP.Location = new System.Drawing.Point(46, 79);
+            this.dgvResultadosP.Name = "dgvResultadosP";
+            this.dgvResultadosP.Size = new System.Drawing.Size(435, 150);
+            this.dgvResultadosP.TabIndex = 13;
+            // 
             // label12
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -602,6 +610,14 @@
             this.panel9.Size = new System.Drawing.Size(523, 125);
             this.panel9.TabIndex = 12;
             // 
+            // dgvResultadosI
+            // 
+            this.dgvResultadosI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultadosI.Location = new System.Drawing.Point(55, 78);
+            this.dgvResultadosI.Name = "dgvResultadosI";
+            this.dgvResultadosI.Size = new System.Drawing.Size(425, 150);
+            this.dgvResultadosI.TabIndex = 13;
+            // 
             // label18
             // 
             this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -804,6 +820,14 @@
             this.panel12.Size = new System.Drawing.Size(523, 135);
             this.panel12.TabIndex = 13;
             // 
+            // dgvResultadosN
+            // 
+            this.dgvResultadosN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultadosN.Location = new System.Drawing.Point(33, 65);
+            this.dgvResultadosN.Name = "dgvResultadosN";
+            this.dgvResultadosN.Size = new System.Drawing.Size(457, 150);
+            this.dgvResultadosN.TabIndex = 13;
+            // 
             // label24
             // 
             this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -983,35 +1007,11 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
-            // dgvResultadosP
-            // 
-            this.dgvResultadosP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosP.Location = new System.Drawing.Point(46, 79);
-            this.dgvResultadosP.Name = "dgvResultadosP";
-            this.dgvResultadosP.Size = new System.Drawing.Size(435, 150);
-            this.dgvResultadosP.TabIndex = 13;
-            // 
-            // dgvResultadosI
-            // 
-            this.dgvResultadosI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosI.Location = new System.Drawing.Point(55, 78);
-            this.dgvResultadosI.Name = "dgvResultadosI";
-            this.dgvResultadosI.Size = new System.Drawing.Size(425, 150);
-            this.dgvResultadosI.TabIndex = 13;
-            // 
-            // dgvResultadosN
-            // 
-            this.dgvResultadosN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosN.Location = new System.Drawing.Point(33, 65);
-            this.dgvResultadosN.Name = "dgvResultadosN";
-            this.dgvResultadosN.Size = new System.Drawing.Size(457, 150);
-            this.dgvResultadosN.TabIndex = 13;
-            // 
             // FrmIntSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 410);
+            this.ClientSize = new System.Drawing.Size(893, 541);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmIntSimple";
@@ -1031,6 +1031,7 @@
             this.tbgPresenteAcumulado.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosP)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -1039,6 +1040,7 @@
             this.tbgInteresAcumulado.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosI)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -1047,14 +1049,12 @@
             this.tbgPeriodoAcumulado.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosN)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosI)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosN)).EndInit();
             this.ResumeLayout(false);
 
         }

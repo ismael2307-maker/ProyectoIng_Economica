@@ -50,6 +50,7 @@
     <Compile Include="AnualidadAnticipadaAP.cs" />
     <Compile Include="AnualidadAnticipadaF.cs" />
     <Compile Include="AnualidadAnticipidaP.cs" />
+    <Compile Include="InteresCompuestoI.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +111,7 @@
     <Compile Include="FrmPresentacionAnualidades.Designer.cs">
       <DependentUpon>FrmPresentacionAnualidades.cs</DependentUpon>
     </Compile>
+    <Compile Include="InteresCompuestoP.cs" />
     <Compile Include="InteresSimpleF.cs" />
     <Compile Include="InteresSimpleI.cs" />
     <Compile Include="InteresSimpleN.cs" />

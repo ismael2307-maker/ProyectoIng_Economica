@@ -12,6 +12,8 @@ namespace ProyectoIng_Economica
 {
     public partial class FrmIntCompuesto : Form
     {
+        public List<InteresCompuestoI> IntCompI = new List<InteresCompuestoI>();
+        public List<InteresCompuestoP> IntCompP = new List<InteresCompuestoP>();
         public FrmIntCompuesto()
         {
             InitializeComponent();
@@ -288,6 +290,94 @@ namespace ProyectoIng_Economica
             txtValorPresenteF.Text = "";
             txtTasaInteresF.Text = "";
             txtPeriodoF.Text = "";
+        }
+
+        private void btnCalcularI_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //private void txtValorFuturoI_TextChanged(object sender, EventArgs e)
+        //{
+            
+            
+        //}
+
+        private void txtValorFuturoI_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if((e.KeyChar>= 32 && e.KeyChar<=45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtValorPresenteI_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtPeriodoI_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+
+        }
+
+        private void btnLimpiarI_Click(object sender, EventArgs e)
+        {
+            txtValorFuturoI.Text = "";
+            txtValorPresenteI.Text = "";
+            txtPeriodoI.Text = "";
+
+
+        }
+
+        private void txtValorFuturoN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtValorPresenteN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtTasaInteresN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void btnLimpiarN_Click(object sender, EventArgs e)
+        {
+            txtValorFuturoN.Text = "";
+            txtValorPresenteN.Text = "";
+            txtTasaInteresN.Text = "";
         }
     }
 }
