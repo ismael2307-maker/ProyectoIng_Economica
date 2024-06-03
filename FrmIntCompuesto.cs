@@ -357,6 +357,7 @@ namespace ProyectoIng_Economica
                     });
                     dgvIntCompIn.DataSource = null;
                     dgvIntCompIn.DataSource = IntCompI;
+
                 }
 
             }
