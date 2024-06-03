@@ -12,6 +12,10 @@ namespace ProyectoIng_Economica
         public int ValorPresenteCompI {  get; set; }
         public int PeriodoCompI {  get; set; }
         public double TasaInteresCompI { get; set; }
+        public double IAnual { get; set; }
+        public double IMensual { get; set; }
+        public double ISemestral { get; set; }
+        public double ITrimestral { get; set; }
 
     }
 }

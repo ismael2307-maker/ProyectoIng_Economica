@@ -294,6 +294,72 @@ namespace ProyectoIng_Economica
 
         private void btnCalcularI_Click(object sender, EventArgs e)
         {
+         int ValorFuturoCompI = Convert.ToInt32(txtValorFuturoI.Text);
+         int ValorPresenteCompI = Convert.ToInt32(txtValorPresenteI.Text);
+         int PeriodoCompI = Convert.ToInt32(txtPeriodoI.Text);
+         double TasaInteresCompI = Convert.ToDouble(txtPeriodoI.Text);
+          double IAnual = Convert.ToDouble(txtPeriodoI.Text);
+          double IMensual = Convert.ToDouble(txtPeriodoI.Text);
+         double ISemestral = Convert.ToDouble(txtPeriodoI.Text);
+         double ITrimestral  = Convert.ToDouble(txtPeriodoI.Text);
+
+            if (cmbPeriodoI.SelectedItem != null)
+            {
+                if (cmbPeriodoI.SelectedItem.Equals("Anual"))
+                {
+                    IntCompI.Add(new InteresCompuestoI
+                    {
+                        ValorFuturoCompI = Convert.ToInt32(txtValorFuturoI.Text),
+                        ValorPresenteCompI = Convert.ToInt32(txtValorPresenteI.Text),
+                        PeriodoCompI = Convert.ToInt32(txtPeriodoI.Text),
+                        TasaInteresCompI = Math.Sqrt(ValorFuturoCompI / ValorPresenteCompI) - 1,
+                    }) ;
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = IntCompI;
+                }
+                else if (cmbPeriodoI.SelectedItem.Equals("Mensual"))
+                {
+                    IntCompI.Add(new InteresCompuestoI
+                    {
+
+                        ValorFuturoCompI = Convert.ToInt32(txtValorFuturoI.Text),
+                        ValorPresenteCompI = Convert.ToInt32(txtValorPresenteI.Text),
+                        PeriodoCompI = Convert.ToInt32(txtPeriodoI.Text),
+                        IAnual = Math.Sqrt(ValorFuturoCompI / ValorPresenteCompI) - 1,
+                        IMensual = Math.Pow(1 + IAnual, 1.0 / 12) - 1,
+                    }) ;
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn .DataSource = IntCompI;
+                }
+                else if (cmbPeriodoI.SelectedItem.Equals("Semestral"))
+                {
+                    IntCompI.Add(new InteresCompuestoI
+                    {
+                        ValorFuturoCompI = Convert.ToInt32(txtValorFuturoI.Text),
+                        ValorPresenteCompI = Convert.ToInt32(txtValorPresenteI.Text),
+                        PeriodoCompI = Convert.ToInt32(txtPeriodoI.Text),
+                        IAnual = Math.Sqrt(ValorFuturoCompI / ValorPresenteCompI) - 1,
+                        ISemestral = IAnual * 0.5,
+                    }) ;
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn .DataSource = IntCompI;
+                }
+                else if (cmbPeriodoI.SelectedItem.Equals("Trimestral"))
+                {
+                    IntCompI.Add(new InteresCompuestoI
+                    {
+
+                        ValorFuturoCompI = Convert.ToInt32(txtValorFuturoI.Text),
+                        ValorPresenteCompI = Convert.ToInt32(txtValorPresenteI.Text),
+                        PeriodoCompI = Convert.ToInt32(txtPeriodoI.Text),
+                        IAnual = Math.Sqrt(ValorFuturoCompI/ValorPresenteCompI)-1,
+                        ITrimestral = IAnual * 0.25,
+                    });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = IntCompI;
+                }
+
+            }
 
         }
 
