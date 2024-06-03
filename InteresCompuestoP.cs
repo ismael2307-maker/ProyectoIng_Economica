@@ -12,5 +12,8 @@ namespace ProyectoIng_Economica
         public int ValorPresenteCompP { get; set; }
         public double TasaInteresCompP { get; set; }
         public int PeriodoCompP { get; set; }
+        public double baseLog { get; set; }
+        
+        public double F_P { get; set; }
     }
 }
