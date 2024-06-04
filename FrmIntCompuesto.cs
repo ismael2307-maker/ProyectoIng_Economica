@@ -339,6 +339,7 @@ namespace ProyectoIng_Economica
         private List<object> resultados = new List<object>();
         private void btnCalcularF_Click(object sender, EventArgs e)
         {
+
             double p, i, n, f;
             double i1, n1, i2;
 
@@ -354,6 +355,7 @@ namespace ProyectoIng_Economica
                     {
                         i = i1 / 100;
                         f = p * Math.Pow((1 + i), n1);
+
                         
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n1, Futuro = f });
 
@@ -368,6 +370,7 @@ namespace ProyectoIng_Economica
                         n = n1 / 2;
                         f = p * Math.Pow((1 + i), n);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -380,6 +383,7 @@ namespace ProyectoIng_Economica
                         n = n1 / 4;
                         f = p * Math.Pow((1 + i), n);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -392,6 +396,7 @@ namespace ProyectoIng_Economica
                         n = n1 / 12;
                         f = p * Math.Pow((1 + i), n);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -405,6 +410,7 @@ namespace ProyectoIng_Economica
                         n = n1 * 2;
                         f = p * Math.Pow((1 + i), n);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -416,6 +422,7 @@ namespace ProyectoIng_Economica
                         i = i1 / 100;
                         f = p * Math.Pow((1 + i), n1);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n1, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -428,6 +435,7 @@ namespace ProyectoIng_Economica
                         n = n1 / 2;
                         f = p * Math.Pow((1 + i), n);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -440,6 +448,7 @@ namespace ProyectoIng_Economica
                         n = n1 / 6;
                         f = p * Math.Pow((1 + i), n);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -453,6 +462,7 @@ namespace ProyectoIng_Economica
                         n = n1 * 4;
                         f = p * Math.Pow((1 + i), n);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -465,6 +475,7 @@ namespace ProyectoIng_Economica
                         n = n1 * 2;
                         f = p * Math.Pow((1 + i), n);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -476,6 +487,7 @@ namespace ProyectoIng_Economica
                         i = i1 / 100;
                         f = p * Math.Pow((1 + i), n1);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n1, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -488,6 +500,7 @@ namespace ProyectoIng_Economica
                         n = n1 / 3;
                         f = p * Math.Pow((1 + i), n);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -501,6 +514,7 @@ namespace ProyectoIng_Economica
                         n = n1 * 12;
                         f = p * Math.Pow((1 + i), n);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -513,6 +527,7 @@ namespace ProyectoIng_Economica
                         n = n1 * 6;
                         f = p * Math.Pow((1 + i), n);
 
+                       
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -525,6 +540,7 @@ namespace ProyectoIng_Economica
                         n = n1 * 3;
                         f = p * Math.Pow((1 + i), n);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -536,6 +552,7 @@ namespace ProyectoIng_Economica
                         i = i1 / 100;
                         f = p * Math.Pow((1 + i), n1);
 
+                        
                         resultados.Add(new { Presente = p, Interes = i, Periodo = n1, Futuro = f });
 
                         dgvResultadosFU.DataSource = null;
@@ -550,6 +567,245 @@ namespace ProyectoIng_Economica
                 MessageBox.Show("Rellene los campos necasarios");
             }
 
+        }
+
+        private void btnCalcularP_Click(object sender, EventArgs e)
+        {
+            double p, i, n, f;
+            double i1, n1, i2;
+
+            try
+            {
+                f = double.Parse(txtValorFuturoP.Text);
+                i1 = double.Parse(txtTasaInteresP.Text);
+                n1 = double.Parse(txtPeriodoP.Text);
+
+                if (cmbInteresP.SelectedItem != null && cmbPeriodoP.SelectedItem != null)
+                {
+                    if (cmbInteresP.SelectedItem.Equals("Anual") && cmbPeriodoP.SelectedItem.Equals("Años"))
+                    {
+                        i = i1 / 100;
+                        p = f / (Math.Pow((1 + i), n1));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+
+                    }
+
+                    else if (cmbInteresP.SelectedItem.Equals("Anual") && cmbPeriodoP.SelectedItem.Equals("Semestres"))
+                    {
+                        i = i1 / 100;
+                        n = n1 / 2;
+                        p = f / (Math.Pow((1 + i), n));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                    else if (cmbInteresP.SelectedItem.Equals("Anual") && cmbPeriodoP.SelectedItem.Equals("Trimestres"))
+                    {
+                        i = i1 / 100;
+                        n = n1 / 4;
+                        p = f / (Math.Pow((1 + i), n));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                    if (cmbInteresP.SelectedItem.Equals("Anual") && cmbPeriodoP.SelectedItem.Equals("Meses"))
+                    {
+                        i = i1 / 100;
+                        n = n1 / 12;
+                        p = f / (Math.Pow((1 + i), n));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                    // Cuando tenemos interes semestral con los diferentes periodos
+                    else if (cmbInteresP.SelectedItem.Equals("Semestral") && cmbPeriodoP.SelectedItem.Equals("Años"))
+                    {
+                        i = i1 / 100;
+                        n = n1 * 2;
+                        p = f / (Math.Pow((1 + i), n));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP  .DataSource = resultados.ToList();
+                    }
+
+                    else if (cmbInteresP.SelectedItem.Equals("Semestral") && cmbPeriodoP.SelectedItem.Equals("Semestres"))
+                    {
+                        i = i1 / 100;
+                        p = f / (Math.Pow((1 + i), n1));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                    else if (cmbInteresP.SelectedItem.Equals("Semestral") && cmbPeriodoP.SelectedItem.Equals("Trimestres"))
+                    {
+                        i = i1 / 100;
+                        n = n1 / 2;
+                        p = f / (Math.Pow((1 + i), n));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP                      .DataSource = resultados.ToList();
+                    }
+
+                    else if (cmbInteresP.SelectedItem.Equals("Semestral") && cmbPeriodoP.SelectedItem.Equals("Meses"))
+                    {
+                        i = i1 / 100;
+                        n = n1 / 6;
+                        p = f / (Math.Pow((1 + i), n));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                    // Cuando tenemos interes trimestral con los diferentes periodos
+                    else if (cmbInteresP.SelectedItem.Equals("Trimestral") && cmbPeriodoP.SelectedItem.Equals("Años"))
+                    {
+                        i = i1 / 100;
+                        n = n1 * 4;
+                        p = f / (Math.Pow((1 + i), n));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                    else if (cmbInteresP.SelectedItem.Equals("Trimestral") && cmbPeriodoP.SelectedItem.Equals("Semestres"))
+                    {
+                        i = i1 / 100;
+                        n = n1 * 2;
+                        p = f / (Math.Pow((1 + i), n));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                    else if (cmbInteresP.SelectedItem.Equals("Trimestral") && cmbPeriodoP.SelectedItem.Equals("Trimestres"))
+                    {
+                        i = i1 / 100;
+                        p = f / (Math.Pow((1 + i), n1));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                    else if (cmbInteresP.SelectedItem.Equals("Trimestral") && cmbPeriodoP.SelectedItem.Equals("Meses"))
+                    {
+                        i = i1 / 100;
+                        n = n1 / 3;
+                        p = f / (Math.Pow((1 + i), n));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                    // Cuando tenemos interes mensual con los diferentes periodos
+                    else if (cmbInteresP.SelectedItem.Equals("Mensual") && cmbPeriodoP.SelectedItem.Equals("Años"))
+                    {
+                        i = i1 / 100;
+                        n = n1 * 12;
+                        p = f / (Math.Pow((1 + i), n));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                    else if (cmbInteresP.SelectedItem.Equals("Mensual") && cmbPeriodoP.SelectedItem.Equals("Semestres"))
+                    {
+                        i = i1 / 100;
+                        n = n1 * 6;
+                        p = f / (Math.Pow((1 + i), n));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                    else if (cmbInteresP.SelectedItem.Equals("Mensual") && cmbPeriodoP.SelectedItem.Equals("Trimestres"))
+                    {
+                        i = i1 / 100;
+                        n = n1 * 3;
+                        p = f / (Math.Pow((1 + i), n));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                    else if (cmbInteresP.SelectedItem.Equals("Mensual") && cmbPeriodoP.SelectedItem.Equals("Meses"))
+                    {
+                        i = i1 / 100;
+                        p = f / (Math.Pow((1 + i), n1));
+
+
+                        resultados.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
+
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = resultados.ToList();
+                    }
+
+                }
+            }
+            catch (FormatException x)
+            {
+
+                MessageBox.Show("Rellene los campos necasarios");
+            }
+
+        }
+
+        private void btnLimpiarP_Click(object sender, EventArgs e)
+        {
+            txtValorFuturoP.Clear();
+            txtTasaInteresP.Clear();
+            txtPeriodoP.Clear();
+            txtValorFuturoP.Focus();
         }
     }
 }

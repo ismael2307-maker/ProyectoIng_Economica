@@ -785,5 +785,7 @@ namespace ProyectoIng_Economica
                 MessageBox.Show("Rellene los campos necesarios" + x);
             }
         }
+
+        
     }
 }
