@@ -67,6 +67,7 @@ namespace ProyectoIng_Economica
 
         private void btnCalcularI_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 int ValorFuturoCompI = Convert.ToInt32(txtValorFuturoI.Text);
@@ -91,6 +92,7 @@ namespace ProyectoIng_Economica
                         });
                         dgvIntCompIn.DataSource = null;
                         dgvIntCompIn.DataSource = IntCompI;
+                        NoColumns();
                     }
                     else if (cmbPeriodoI.SelectedItem.Equals("Mensual"))
                     {
@@ -105,6 +107,7 @@ namespace ProyectoIng_Economica
                         });
                         dgvIntCompIn.DataSource = null;
                         dgvIntCompIn.DataSource = IntCompI;
+                        NoColumns() ;
                     }
                     else if (cmbPeriodoI.SelectedItem.Equals("Semestral"))
                     {
@@ -118,6 +121,7 @@ namespace ProyectoIng_Economica
                         });
                         dgvIntCompIn.DataSource = null;
                         dgvIntCompIn.DataSource = IntCompI;
+                        NoColumns();
                     }
                     else if (cmbPeriodoI.SelectedItem.Equals("Trimestral"))
                     {
@@ -132,6 +136,7 @@ namespace ProyectoIng_Economica
                         });
                         dgvIntCompIn.DataSource = null;
                         dgvIntCompIn.DataSource = IntCompI;
+                        NoColumns() ;
 
                     }
 
@@ -144,6 +149,27 @@ namespace ProyectoIng_Economica
             }
 
         }
+
+        private void NoColumns()
+        {
+            if (dgvIntCompIn.Columns.Contains("IMensual"))
+            {
+                dgvIntCompIn.Columns["IMensual"].Visible = false;
+            }
+            else if (dgvIntCompIn.Columns.Contains("IAnual"))
+            {
+                dgvIntCompIn.Columns["IAnual"].Visible = false;
+            }
+            else if (dgvIntCompIn.Columns.Contains("ISemestral"))
+            {
+                dgvIntCompIn.Columns["ISemestral"].Visible= false;
+            }
+            else if (dgvIntCompIn.Columns.Contains("ITrimestral"))
+            {
+                dgvIntCompIn.Columns["ITrimestral"].Visible = false;
+            }
+        }
+           
 
         //private void txtValorFuturoI_TextChanged(object sender, EventArgs e)
         //{

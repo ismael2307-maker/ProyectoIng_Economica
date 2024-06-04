@@ -572,7 +572,7 @@ namespace ProyectoIng_Economica
             int valorPresenteAp = Convert.ToInt32(txtValorPresenteAnualidadAnticipada.Text);
             double TasaInteresAp = Convert.ToDouble(txtInteresAnualidadAnticipada.Text);
             int PeriodoAp = Convert.ToInt32(txtPeriodoAnualidadAnticipada.Text);
-            double AnualidadPresente = valorPresenteAp * (((TasaInteresAp/100) * Math.Pow(1 + (TasaInteresAp/100), PeriodoAp)) / (Math.Pow(1 + (TasaInteresAp/100), PeriodoAp) - 1));
+            double AnualidadPresente = valorPresenteAp * ((TasaInteresAp * Math.Pow(1 + TasaInteresAp, PeriodoAp)) / (Math.Pow(1 + TasaInteresAp, PeriodoAp) - 1));
 
             if (cmbInteresAp.SelectedItem != null && cmbPeriodoAp.SelectedItem !=null) 
             {
