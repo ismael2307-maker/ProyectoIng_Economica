@@ -213,8 +213,6 @@ namespace ProyectoIng_Economica
             txtValorFuturoI.Text = "";
             txtValorPresenteI.Text = "";
             txtPeriodoI.Text = "";
-
-
         }
 
         private void txtValorFuturoN_KeyPress(object sender, KeyPressEventArgs e)

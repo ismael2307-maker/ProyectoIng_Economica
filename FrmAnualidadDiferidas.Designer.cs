@@ -37,6 +37,8 @@
             this.dgvResultadosPresente = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtPeriodo2 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.cmbPeriodoPresente = new System.Windows.Forms.ComboBox();
             this.cmbInteresPresente = new System.Windows.Forms.ComboBox();
             this.btnLimpiarPresente = new System.Windows.Forms.Button();
@@ -56,6 +58,8 @@
             this.dgvResultadosFuturo = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtPeriodo2Futuro = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.cmbPeriodoFuturo = new System.Windows.Forms.ComboBox();
             this.cmbInteresFuturo = new System.Windows.Forms.ComboBox();
             this.btnLimpiarFuturo = new System.Windows.Forms.Button();
@@ -94,10 +98,10 @@
             this.dgvResultadosAnualidadFuturo = new System.Windows.Forms.DataGridView();
             this.label24 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.cmbPeriodoAf = new System.Windows.Forms.ComboBox();
+            this.cmbInteresAf = new System.Windows.Forms.ComboBox();
+            this.btnLimpiarAf = new System.Windows.Forms.Button();
+            this.btnCalcularAf = new System.Windows.Forms.Button();
             this.txtPeriodoAnualidadFuturo = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.txtInteresAnualidadFuturo = new System.Windows.Forms.TextBox();
@@ -108,10 +112,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.txtPeriodo2 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.txtPeriodo2Futuro = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tbgDefincion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -242,6 +242,30 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(523, 350);
             this.panel2.TabIndex = 14;
+            // 
+            // txtPeriodo2
+            // 
+            this.txtPeriodo2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtPeriodo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtPeriodo2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPeriodo2.ForeColor = System.Drawing.Color.White;
+            this.txtPeriodo2.Location = new System.Drawing.Point(189, 241);
+            this.txtPeriodo2.Name = "txtPeriodo2";
+            this.txtPeriodo2.Size = new System.Drawing.Size(123, 24);
+            this.txtPeriodo2.TabIndex = 15;
+            this.txtPeriodo2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeriodo2_KeyPress);
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(9, 241);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(105, 24);
+            this.label25.TabIndex = 14;
+            this.label25.Text = "Periodo 2";
             // 
             // cmbPeriodoPresente
             // 
@@ -485,6 +509,30 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(523, 350);
             this.panel5.TabIndex = 15;
+            // 
+            // txtPeriodo2Futuro
+            // 
+            this.txtPeriodo2Futuro.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtPeriodo2Futuro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtPeriodo2Futuro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPeriodo2Futuro.ForeColor = System.Drawing.Color.White;
+            this.txtPeriodo2Futuro.Location = new System.Drawing.Point(189, 241);
+            this.txtPeriodo2Futuro.Name = "txtPeriodo2Futuro";
+            this.txtPeriodo2Futuro.Size = new System.Drawing.Size(123, 24);
+            this.txtPeriodo2Futuro.TabIndex = 15;
+            this.txtPeriodo2Futuro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeriodo2Futuro_KeyPress);
+            // 
+            // label26
+            // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(9, 241);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(105, 24);
+            this.label26.TabIndex = 14;
+            this.label26.Text = "Periodo 2";
             // 
             // cmbPeriodoFuturo
             // 
@@ -950,10 +998,10 @@
             // 
             this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel11.Controls.Add(this.comboBox1);
-            this.panel11.Controls.Add(this.comboBox2);
-            this.panel11.Controls.Add(this.button3);
-            this.panel11.Controls.Add(this.button4);
+            this.panel11.Controls.Add(this.cmbPeriodoAf);
+            this.panel11.Controls.Add(this.cmbInteresAf);
+            this.panel11.Controls.Add(this.btnLimpiarAf);
+            this.panel11.Controls.Add(this.btnCalcularAf);
             this.panel11.Controls.Add(this.txtPeriodoAnualidadFuturo);
             this.panel11.Controls.Add(this.label20);
             this.panel11.Controls.Add(this.txtInteresAnualidadFuturo);
@@ -966,57 +1014,62 @@
             this.panel11.Size = new System.Drawing.Size(523, 350);
             this.panel11.TabIndex = 14;
             // 
-            // comboBox1
+            // cmbPeriodoAf
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbPeriodoAf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPeriodoAf.FormattingEnabled = true;
+            this.cmbPeriodoAf.Items.AddRange(new object[] {
             "Años",
-            "Meses"});
-            this.comboBox1.Location = new System.Drawing.Point(359, 197);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 30);
-            this.comboBox1.TabIndex = 13;
+            "Meses",
+            "Semestres",
+            "Trimestres"});
+            this.cmbPeriodoAf.Location = new System.Drawing.Point(359, 197);
+            this.cmbPeriodoAf.Name = "cmbPeriodoAf";
+            this.cmbPeriodoAf.Size = new System.Drawing.Size(121, 30);
+            this.cmbPeriodoAf.TabIndex = 13;
             // 
-            // comboBox2
+            // cmbInteresAf
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbInteresAf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbInteresAf.FormattingEnabled = true;
+            this.cmbInteresAf.Items.AddRange(new object[] {
             "Anual",
-            "Mensual"});
-            this.comboBox2.Location = new System.Drawing.Point(359, 133);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 30);
-            this.comboBox2.TabIndex = 12;
+            "Mensual",
+            "Semestral"});
+            this.cmbInteresAf.Location = new System.Drawing.Point(359, 133);
+            this.cmbInteresAf.Name = "cmbInteresAf";
+            this.cmbInteresAf.Size = new System.Drawing.Size(121, 30);
+            this.cmbInteresAf.TabIndex = 12;
             // 
-            // button3
+            // btnLimpiarAf
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(264, 287);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 33);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Limpiar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnLimpiarAf.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLimpiarAf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnLimpiarAf.FlatAppearance.BorderSize = 0;
+            this.btnLimpiarAf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarAf.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiarAf.Location = new System.Drawing.Point(264, 287);
+            this.btnLimpiarAf.Name = "btnLimpiarAf";
+            this.btnLimpiarAf.Size = new System.Drawing.Size(102, 33);
+            this.btnLimpiarAf.TabIndex = 11;
+            this.btnLimpiarAf.Text = "Limpiar";
+            this.btnLimpiarAf.UseVisualStyleBackColor = false;
+            this.btnLimpiarAf.Click += new System.EventHandler(this.btnLimpiarAf_Click);
             // 
-            // button4
+            // btnCalcularAf
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(103, 287);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(102, 33);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Calcular";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnCalcularAf.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCalcularAf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnCalcularAf.FlatAppearance.BorderSize = 0;
+            this.btnCalcularAf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcularAf.ForeColor = System.Drawing.Color.White;
+            this.btnCalcularAf.Location = new System.Drawing.Point(103, 287);
+            this.btnCalcularAf.Name = "btnCalcularAf";
+            this.btnCalcularAf.Size = new System.Drawing.Size(102, 33);
+            this.btnCalcularAf.TabIndex = 10;
+            this.btnCalcularAf.Text = "Calcular";
+            this.btnCalcularAf.UseVisualStyleBackColor = false;
+            this.btnCalcularAf.Click += new System.EventHandler(this.btnCalcularAf_Click);
             // 
             // txtPeriodoAnualidadFuturo
             // 
@@ -1028,6 +1081,7 @@
             this.txtPeriodoAnualidadFuturo.Name = "txtPeriodoAnualidadFuturo";
             this.txtPeriodoAnualidadFuturo.Size = new System.Drawing.Size(123, 24);
             this.txtPeriodoAnualidadFuturo.TabIndex = 9;
+            this.txtPeriodoAnualidadFuturo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeriodoAnualidadFuturo_KeyPress);
             // 
             // label20
             // 
@@ -1051,6 +1105,7 @@
             this.txtInteresAnualidadFuturo.Name = "txtInteresAnualidadFuturo";
             this.txtInteresAnualidadFuturo.Size = new System.Drawing.Size(123, 24);
             this.txtInteresAnualidadFuturo.TabIndex = 7;
+            this.txtInteresAnualidadFuturo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInteresAnualidadFuturo_KeyPress);
             // 
             // label21
             // 
@@ -1074,6 +1129,7 @@
             this.txtValorFuturoAnualidadFuturo.Name = "txtValorFuturoAnualidadFuturo";
             this.txtValorFuturoAnualidadFuturo.Size = new System.Drawing.Size(123, 24);
             this.txtValorFuturoAnualidadFuturo.TabIndex = 5;
+            this.txtValorFuturoAnualidadFuturo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorFuturoAnualidadFuturo_KeyPress);
             // 
             // label22
             // 
@@ -1133,54 +1189,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
-            // 
-            // label25
-            // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(9, 241);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(105, 24);
-            this.label25.TabIndex = 14;
-            this.label25.Text = "Periodo 2";
-            // 
-            // txtPeriodo2
-            // 
-            this.txtPeriodo2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtPeriodo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtPeriodo2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPeriodo2.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodo2.Location = new System.Drawing.Point(189, 241);
-            this.txtPeriodo2.Name = "txtPeriodo2";
-            this.txtPeriodo2.Size = new System.Drawing.Size(123, 24);
-            this.txtPeriodo2.TabIndex = 15;
-            this.txtPeriodo2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeriodo2_KeyPress);
-            // 
-            // label26
-            // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(9, 241);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(105, 24);
-            this.label26.TabIndex = 14;
-            this.label26.Text = "Periodo 2";
-            // 
-            // txtPeriodo2Futuro
-            // 
-            this.txtPeriodo2Futuro.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtPeriodo2Futuro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtPeriodo2Futuro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPeriodo2Futuro.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodo2Futuro.Location = new System.Drawing.Point(189, 241);
-            this.txtPeriodo2Futuro.Name = "txtPeriodo2Futuro";
-            this.txtPeriodo2Futuro.Size = new System.Drawing.Size(123, 24);
-            this.txtPeriodo2Futuro.TabIndex = 15;
-            this.txtPeriodo2Futuro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeriodo2Futuro_KeyPress);
             // 
             // FrmAnualidadDiferidas
             // 
@@ -1265,10 +1273,10 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox cmbPeriodoAf;
+        private System.Windows.Forms.ComboBox cmbInteresAf;
+        private System.Windows.Forms.Button btnLimpiarAf;
+        private System.Windows.Forms.Button btnCalcularAf;
         private System.Windows.Forms.TextBox txtPeriodoAnualidadFuturo;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtInteresAnualidadFuturo;

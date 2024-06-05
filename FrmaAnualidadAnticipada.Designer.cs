@@ -964,7 +964,9 @@
             this.cmbPeriodoAf.FormattingEnabled = true;
             this.cmbPeriodoAf.Items.AddRange(new object[] {
             "Años",
-            "Meses"});
+            "Meses",
+            "Semestres",
+            "Trimestres"});
             this.cmbPeriodoAf.Location = new System.Drawing.Point(359, 197);
             this.cmbPeriodoAf.Name = "cmbPeriodoAf";
             this.cmbPeriodoAf.Size = new System.Drawing.Size(121, 30);
@@ -976,7 +978,9 @@
             this.cmbInteresAf.FormattingEnabled = true;
             this.cmbInteresAf.Items.AddRange(new object[] {
             "Anual",
-            "Mensual"});
+            "Mensual",
+            "Semestral",
+            "Trimestral"});
             this.cmbInteresAf.Location = new System.Drawing.Point(359, 133);
             this.cmbInteresAf.Name = "cmbInteresAf";
             this.cmbInteresAf.Size = new System.Drawing.Size(121, 30);

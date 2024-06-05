@@ -19,7 +19,7 @@ namespace ProyectoIng_Economica
 
         private void txtValorAnualidadPresente_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
                 MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
@@ -68,11 +68,12 @@ namespace ProyectoIng_Economica
 
         private void btnCalcularPresente_Click(object sender, EventArgs e)
         {
-            int Anualidad,Periodo1,Periodo2,p1,p2;
+            int Periodo1,Periodo2,p1,p2;
+            double Anualidad;
             double Interes,i1;
             try
             {
-                Anualidad = Convert.ToInt32(txtValorAnualidadPresente.Text);
+                Anualidad = Convert.ToDouble(txtValorAnualidadPresente.Text);
                 i1 = Convert.ToDouble(txtTasaInteresPresente.Text);
                 p1 = Convert.ToInt32(txtPeriodoPresente.Text);
                 p2 = Convert.ToInt32(txtPeriodo2.Text);
@@ -270,7 +271,7 @@ namespace ProyectoIng_Economica
 
         private void txtValorAnualidadFuturo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
                 MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
@@ -319,11 +320,11 @@ namespace ProyectoIng_Economica
         private List<object> ResultadosFuturo = new List<object>();
         private void btnCalcularFuturo_Click(object sender, EventArgs e)
         {
-            int AnualidadFuturo,p1,p2,Periodo1,Periodo2;
-            double TasaInteres, i1;
+            int p1,p2,Periodo1,Periodo2;
+            double TasaInteres, i1,AnualidadFuturo;
             try
             {
-                AnualidadFuturo = Convert.ToInt32(txtValorAnualidadFuturo.Text);
+                AnualidadFuturo = Convert.ToDouble(txtValorAnualidadFuturo.Text);
                 i1 = Convert.ToDouble(txtTasaInteresFuturo.Text);
                 p1 = Convert.ToInt32(txtPeriodo1Futuro.Text);
                 p2 = Convert.ToInt32(txtPeriodo2Futuro.Text);
@@ -478,51 +479,7 @@ namespace ProyectoIng_Economica
                         dgvResultadosFuturo.DataSource = null;
                         dgvResultadosFuturo.DataSource = ResultadosFuturo.ToList();
                     }
-                    else if (cmbInteresFuturo.SelectedItem.Equals("Semestral") && cmbPeriodoFuturo.SelectedItem.Equals("Meses"))
-                    {
-                        TasaInteres = i1 / 100;
-                        Periodo1 = p1 / 3;
-                        Periodo2 = p2 / 3;
-                        double F = (AnualidadFuturo * (Math.Pow((1 + TasaInteres), (Periodo1 - Periodo2)) - 1) / TasaInteres);
-                        ResultadosFuturo.Add(new { Anualidad = AnualidadFuturo, Interes = TasaInteres, Periodo1F = Periodo1, Periodo2F = Periodo2, Futuro = F });
-
-                        dgvResultadosFuturo.DataSource = null;
-                        dgvResultadosFuturo.DataSource = ResultadosFuturo.ToList();
-                    }
-                    else if (cmbInteresFuturo.SelectedItem.Equals("Semestral") && cmbPeriodoFuturo.SelectedItem.Equals("Semestres"))
-                    {
-                        TasaInteres = i1 / 100;
-                        Periodo1 = p1;
-                        Periodo2 = p2;
-                        double F = (AnualidadFuturo * (Math.Pow((1 + TasaInteres), (Periodo1 - Periodo2)) - 1) / TasaInteres);
-                        ResultadosFuturo.Add(new { Anualidad = AnualidadFuturo, Interes = TasaInteres, Periodo1F = Periodo1, Periodo2F = Periodo2, Futuro = F });
-
-                        dgvResultadosFuturo.DataSource = null;
-                        dgvResultadosFuturo.DataSource = ResultadosFuturo.ToList();
-                    }
-                    else if (cmbInteresFuturo.SelectedItem.Equals("Semestral") && cmbPeriodoFuturo.SelectedItem.Equals("Trimestres"))
-                    {
-                        TasaInteres = i1 / 100;
-                        Periodo1 = p1 / 2;
-                        Periodo2 = p2 / 2;
-                        double F = (AnualidadFuturo * (Math.Pow((1 + TasaInteres), (Periodo1 - Periodo2)) - 1) / TasaInteres);
-                        ResultadosFuturo.Add(new { Anualidad = AnualidadFuturo, Interes = TasaInteres, Periodo1F = Periodo1, Periodo2F = Periodo2, Futuro = F });
-
-                        dgvResultadosFuturo.DataSource = null;
-                        dgvResultadosFuturo.DataSource = ResultadosFuturo.ToList();
-                    }
-                    //Fin de Tasa Interes Semestral
-                    else if (cmbInteresFuturo.SelectedItem.Equals("Trimestral") && cmbPeriodoFuturo.SelectedItem.Equals("Años"))
-                    {
-                        TasaInteres = i1 / 100;
-                        Periodo1 = p1 * 4;
-                        Periodo2 = p2 * 4;
-                        double F = (AnualidadFuturo * (Math.Pow((1 + TasaInteres), (Periodo1 - Periodo2)) - 1) / TasaInteres);
-                        ResultadosFuturo.Add(new { Anualidad = AnualidadFuturo, Interes = TasaInteres, Periodo1F = Periodo1, Periodo2F = Periodo2, Futuro = F });
-
-                        dgvResultadosFuturo.DataSource = null;
-                        dgvResultadosFuturo.DataSource = ResultadosFuturo.ToList();
-                    }
+                    
                     else if (cmbInteresFuturo.SelectedItem.Equals("Trimestral") && cmbPeriodoFuturo.SelectedItem.Equals("Meses"))
                     {
                         TasaInteres = i1 / 100;
@@ -547,6 +504,7 @@ namespace ProyectoIng_Economica
                     }
                     else if (cmbInteresFuturo.SelectedItem.Equals("Trimestral") && cmbPeriodoFuturo.SelectedItem.Equals("Trimestres"))
                     {
+                        double i2;
                         TasaInteres = i1 / 100;
                         Periodo1 = p1;
                         Periodo2 = p2;
@@ -786,6 +744,220 @@ namespace ProyectoIng_Economica
             }
         }
 
-        
+        private void txtValorFuturoAnualidadFuturo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtInteresAnualidadFuturo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtPeriodoAnualidadFuturo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void btnLimpiarAf_Click(object sender, EventArgs e)
+        {
+            txtValorFuturoAnualidadFuturo.Text = "";
+            txtInteresAnualidadFuturo.Text = "";
+            txtPeriodoAnualidadFuturo.Text = "";
+        }
+        private List<object> ResultadosAf = new List<object>();
+        private void btnCalcularAf_Click(object sender, EventArgs e)
+        {
+            double ValorFuturoAf, i1, TasaInteresAf;
+            int n, PeriodoAf;
+            try 
+            {
+                ValorFuturoAf = Convert.ToDouble(txtValorFuturoAnualidadFuturo.Text);
+                i1 = Convert.ToDouble(txtInteresAnualidadFuturo.Text);
+                n = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text);
+
+                if (cmbInteresAf.SelectedItem != null || cmbPeriodoAf.SelectedItem != null)
+                {
+                    if (cmbInteresAf.SelectedItem.Equals("Anual") && cmbPeriodoAf.SelectedItem.Equals("Años"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Anual") && cmbPeriodoAf.SelectedItem.Equals("Meses"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n / 12;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Anual") && cmbPeriodoAf.SelectedItem.Equals("Semestres"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n / 2;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Anual") && cmbPeriodoAf.SelectedItem.Equals("Semestres"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n / 2;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Anual") && cmbPeriodoAf.SelectedItem.Equals("Trimestres"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n / 4;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    //Final de tasa interes anual
+                    else if (cmbInteresAf.SelectedItem.Equals("Mensual") && cmbPeriodoAf.SelectedItem.Equals("Años"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n * 12;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Mensual") && cmbPeriodoAf.SelectedItem.Equals("Meses"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Mensual") && cmbPeriodoAf.SelectedItem.Equals("Semestres"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n * 6;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Mensual") && cmbPeriodoAf.SelectedItem.Equals("Trimestres"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n * 3;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    //Fin de interes Mensual
+
+                    else if (cmbInteresAf.SelectedItem.Equals("Semestral") && cmbPeriodoAf.SelectedItem.Equals("Años"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n * 2;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Semestral") && cmbPeriodoAf.SelectedItem.Equals("Meses"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n / 6;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Semestral") && cmbPeriodoAf.SelectedItem.Equals("Semestres"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Semestral") && cmbPeriodoAf.SelectedItem.Equals("Trimestres"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n / 2;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    // Fin de Interes Semestral
+                    else if (cmbInteresAf.SelectedItem.Equals("Trimestral") && cmbPeriodoAf.SelectedItem.Equals("Años"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n * 4;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Trimestral") && cmbPeriodoAf.SelectedItem.Equals("Meses"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n / 3;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Trimestral") && cmbPeriodoAf.SelectedItem.Equals("Semestres"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n * 2;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+                    else if (cmbInteresAf.SelectedItem.Equals("Trimestral") && cmbPeriodoAf.SelectedItem.Equals("Trimestres"))
+                    {
+                        TasaInteresAf = i1 / 100;
+                        PeriodoAf = n;
+                        double AnualidadFuturo = ValorFuturoAf * (TasaInteresAf / (Math.Pow(1 + TasaInteresAf, PeriodoAf) - 1));
+                        ResultadosAf.Add(new { Futuro = ValorFuturoAf, Interes = TasaInteresAf, Periodo = PeriodoAf, Anualidad = AnualidadFuturo });
+                        dgvResultadosAnualidadFuturo.DataSource = null;
+                        dgvResultadosAnualidadFuturo.DataSource = ResultadosAf.ToList();
+                    }
+
+                }
+                
+            }
+            catch(FormatException x)
+            {
+                MessageBox.Show("Rellene los campos necesarios"+x);
+            }
+        }
     }
 }

@@ -54,13 +54,11 @@ namespace ProyectoIng_Economica
             txtTasaInteres.Text = "";
             txtPeriodo.Text = "";
         }
-
+        private List<object> ResultadosAcumulado = new List<object>();
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             double P, i = 0, I = 0, n = 0;
-            double i1;
-            
-            double n1;
+            double i1,n1;
 
             try 
             {
@@ -72,13 +70,10 @@ namespace ProyectoIng_Economica
                 i = i1 / 100;
                 I = P * i * n;
 
-                int N = dtgvResultados.Rows.Add();
+                ResultadosAcumulado.Add(new{Presente = P, Periodo = n, Interes = i, TasaInteres = I });
 
-                dtgvResultados.Rows[N].Cells[0].Value = P;
-                dtgvResultados.Rows[N].Cells[1].Value = i;
-                dtgvResultados.Rows[N].Cells[2].Value = n;
-                dtgvResultados.Rows[N].Cells[3].Value = I;
-
+                dtgvResultadosAcumulados.DataSource = null;
+                dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
 
             }
             catch (FormatException x) 

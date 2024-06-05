@@ -28,18 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInteresAcumulado));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dtgvResultados = new System.Windows.Forms.DataGridView();
-            this.columnaValorPresente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnaInteres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnaPeriodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnaTasaInteres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgvResultadosAcumulados = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtPeriodo = new System.Windows.Forms.TextBox();
@@ -55,11 +51,9 @@
             this.pnlEcuacionInteres = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvResultados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvResultadosAcumulados)).BeginInit();
             this.panel1.SuspendLayout();
             this.pnlComceptoInteres.SuspendLayout();
             this.pnlEcuacionInteres.SuspendLayout();
@@ -86,60 +80,20 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel2.Controls.Add(this.dtgvResultados);
+            this.panel2.Controls.Add(this.dtgvResultadosAcumulados);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(557, 273);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(537, 327);
             this.panel2.TabIndex = 8;
             // 
-            // dtgvResultados
+            // dtgvResultadosAcumulados
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
-            this.dtgvResultados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dtgvResultados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.dtgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.columnaValorPresente,
-            this.ColumnaInteres,
-            this.ColumnaPeriodo,
-            this.ColumnaTasaInteres});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvResultados.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dtgvResultados.GridColor = System.Drawing.Color.White;
-            this.dtgvResultados.Location = new System.Drawing.Point(45, 77);
-            this.dtgvResultados.Name = "dtgvResultados";
-            this.dtgvResultados.Size = new System.Drawing.Size(445, 185);
-            this.dtgvResultados.TabIndex = 13;
-            // 
-            // columnaValorPresente
-            // 
-            this.columnaValorPresente.HeaderText = "Valor Presente";
-            this.columnaValorPresente.Name = "columnaValorPresente";
-            // 
-            // ColumnaInteres
-            // 
-            this.ColumnaInteres.HeaderText = "Interes";
-            this.ColumnaInteres.Name = "ColumnaInteres";
-            // 
-            // ColumnaPeriodo
-            // 
-            this.ColumnaPeriodo.HeaderText = "Periodo";
-            this.ColumnaPeriodo.Name = "ColumnaPeriodo";
-            // 
-            // ColumnaTasaInteres
-            // 
-            this.ColumnaTasaInteres.HeaderText = "Tasa Interés";
-            this.ColumnaTasaInteres.Name = "ColumnaTasaInteres";
+            this.dtgvResultadosAcumulados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvResultadosAcumulados.Location = new System.Drawing.Point(26, 70);
+            this.dtgvResultadosAcumulados.Name = "dtgvResultadosAcumulados";
+            this.dtgvResultadosAcumulados.Size = new System.Drawing.Size(487, 199);
+            this.dtgvResultadosAcumulados.TabIndex = 13;
             // 
             // label4
             // 
@@ -171,6 +125,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(537, 327);
             this.panel1.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(342, 201);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 24);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Meses";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(342, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 24);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Anual";
             // 
             // btnLimpiar
             // 
@@ -354,28 +330,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(342, 136);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 24);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Anual";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(342, 201);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 24);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Meses";
-            // 
             // FrmInteresAcumulado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -389,7 +343,7 @@
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvResultados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvResultadosAcumulados)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pnlComceptoInteres.ResumeLayout(false);
@@ -421,13 +375,9 @@
         private System.Windows.Forms.Label lblValorPresente;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dtgvResultados;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnaValorPresente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaInteres;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaPeriodo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaTasaInteres;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dtgvResultadosAcumulados;
     }
 }
