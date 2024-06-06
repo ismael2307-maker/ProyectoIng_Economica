@@ -56,7 +56,6 @@
     <Compile Include="FrmCalendarioPago.Designer.cs">
       <DependentUpon>FrmCalendarioPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="InteresCompuestoI.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
