@@ -58,6 +58,7 @@ namespace ProyectoIng_Economica
             }
         }
 
+
         private void btnLimpiarF_Click(object sender, EventArgs e)
         {
             txtValorPresenteF.Text = "";
