@@ -116,7 +116,6 @@
     <Compile Include="FrmPresentacionAnualidades.Designer.cs">
       <DependentUpon>FrmPresentacionAnualidades.cs</DependentUpon>
     </Compile>
-    <Compile Include="InteresCompuestoP.cs" />
     <Compile Include="InteresSimpleF.cs" />
     <Compile Include="InteresSimpleI.cs" />
     <Compile Include="InteresSimpleN.cs" />

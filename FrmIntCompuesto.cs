@@ -12,8 +12,6 @@ namespace ProyectoIng_Economica
 {
     public partial class FrmIntCompuesto : Form
     {
-        
-        public List<InteresCompuestoP> IntCompP = new List<InteresCompuestoP>();
         public FrmIntCompuesto()
         {
             InitializeComponent();
@@ -239,79 +237,84 @@ namespace ProyectoIng_Economica
             txtValorPresenteN.Text = "";
             txtTasaInteresN.Text = "";
         }
-
+        private List<object> ResultadosPeriodo = new List<object>();
         private void btnCalcularN_Click(object sender, EventArgs e)
         {
+            double ValorFut, ValorPresente;
+            double tasaint, periodo, baselog, baseF_P;
             try
             {
-                int ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text);
-                int ValorPresenteP = Convert.ToInt32(txtValorPresenteN.Text);
-                double TasaInteresP = Convert.ToDouble(txtTasaInteresN.Text);
-                double PeriodoP = Convert.ToDouble(txtPeriodoP.Text);
-                double baseLog = Convert.ToDouble(txtPeriodoP.Text);
-                double F_P = Convert.ToDouble(txtPeriodoP.Text);
+                ValorFut = Convert.ToDouble(txtValorFuturoP.Text);
+                ValorPresente = Convert.ToDouble(txtValorPresenteN.Text);
+                tasaint = Convert.ToDouble(txtTasaInteresN.Text);
+                 periodo= Convert.ToDouble(txtPeriodoP.Text);
+                baselog= Convert.ToDouble(txtPeriodoP.Text);
+                baseF_P = Convert.ToDouble(txtPeriodoP.Text);
 
 
                 if (cmbInteresN.SelectedItem != null)
                 {
+                    baselog = 1 + tasaint;
+                    baseF_P = Math.Log(ValorFut / ValorPresente);
+                    periodo = ((int)(baseF_P/ Math.Log(baselog)));
                     if (cmbInteresN.SelectedItem.Equals("Anual"))
                     {
-                        IntCompP.Add(new InteresCompuestoP
+                        ResultadosPeriodo.Add(new
                         {
-                            ValorFuturoCompP = Convert.ToInt32(txtValorFuturoP.Text),
-                            ValorPresenteCompP = Convert.ToInt32(txtValorPresenteN.Text),
-                            TasaInteresCompP = Convert.ToDouble(txtTasaInteresN.Text),
-                            baseLog = 1 + TasaInteresP,
-                            F_P = Math.Log(ValorFuturoP / ValorPresenteP),
-                            PeriodoCompP = ((int)(F_P / Math.Log(baseLog))),
+                            ValorFuturo = ValorFut,
+                            ValorPresente = ValorPresente,
+                            TasaInteres = tasaint,
+                            Periodo = periodo
                         });
                         dgvIntCompP.DataSource = null;
-                        dgvIntCompP.DataSource = IntCompP;
+                        dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
                     }
                     else if (cmbInteresN.SelectedItem.Equals("Semestral"))
                     {
-                        IntCompP.Add(new InteresCompuestoP
+                        baselog = 1 + tasaint;
+                        baseF_P = Math.Log(ValorFut / ValorPresente);
+                        periodo = ((int)(baseF_P / Math.Log(baselog))) / 2;
+                        ResultadosPeriodo.Add( new 
                         {
+                            ValorFuturo = ValorFut,
+                            ValorPresente = ValorPresente,
+                            TasaInteres = tasaint,
+                            Periodo = periodo
 
-                            ValorFuturoCompP = Convert.ToInt32(txtValorFuturoP.Text),
-                            ValorPresenteCompP = Convert.ToInt32(txtValorPresenteN.Text),
-                            TasaInteresCompP = Convert.ToDouble(txtTasaInteresN.Text),
-                            baseLog = 1 + TasaInteresP,
-                            F_P = Math.Log(ValorFuturoP / ValorPresenteP),
-                            PeriodoCompP = ((int)(F_P / Math.Log(baseLog))) / 2,
                         });
                         dgvIntCompP.DataSource = null;
-                        dgvIntCompP.DataSource = IntCompP;
+                        dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
                     }
                     else if (cmbInteresN.SelectedItem.Equals("Trimestral"))
                     {
-                        IntCompP.Add(new InteresCompuestoP
+                        baselog = 1 + tasaint;
+                        baseF_P = Math.Log(ValorFut / ValorPresente);
+                        periodo = ((int)(baseF_P / Math.Log(baselog))) /4;
+                        ResultadosPeriodo.Add(new 
                         {
-
-                            ValorFuturoCompP = Convert.ToInt32(txtValorFuturoP.Text),
-                            ValorPresenteCompP = Convert.ToInt32(txtValorPresenteN.Text),
-                            TasaInteresCompP = Convert.ToDouble(txtTasaInteresN.Text),
-                            baseLog = 1 + TasaInteresP,
-                            F_P = Math.Log(ValorFuturoP / ValorPresenteP),
-                            PeriodoCompP = ((int)(F_P / Math.Log(baseLog))) / 4,
+                            ValorFuturo = ValorFut,
+                            ValorPresente = ValorPresente,
+                            TasaInteres = tasaint,
+                            Periodo = periodo
                         });
                         dgvIntCompP.DataSource = null;
-                        dgvIntCompP.DataSource = IntCompP;
+                        dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
                     }
                     else if (cmbInteresN.SelectedItem.Equals("Mensual"))
                     {
-                        IntCompP.Add(new InteresCompuestoP
+                        baselog = 1 + tasaint;
+                        baseF_P = Math.Log(ValorFut / ValorPresente);
+                        periodo = ((int)(baseF_P / Math.Log(baselog))) / 12;
+                        ResultadosPeriodo.Add(new 
                         {
+                            ValorFuturo = ValorFut,
+                            ValorPresente = ValorPresente,
+                            TasaInteres = tasaint,
+                            Periodo = periodo
 
-                            ValorFuturoCompP = Convert.ToInt32(txtValorFuturoP.Text),
-                            ValorPresenteCompP = Convert.ToInt32(txtValorPresenteN.Text),
-                            TasaInteresCompP = Convert.ToDouble(txtTasaInteresN.Text),
-                            baseLog = 1 + TasaInteresP,
-                            F_P = Math.Log(ValorFuturoP / ValorPresenteP),
-                            PeriodoCompP = ((int)(F_P / Math.Log(baseLog))) / 12,
                         });
                         dgvIntCompP.DataSource = null;
-                        dgvIntCompP.DataSource = IntCompP;
+                        dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
                     }
                 }
             }
