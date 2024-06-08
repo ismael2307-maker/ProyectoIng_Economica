@@ -184,5 +184,11 @@ namespace ProyectoIng_Economica
             AbrirFormHija(new FrmTIR());
             hideSubMenu();
         }
+
+        private void btnCaue_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmCAUE());
+            hideSubMenu();
+        }
     }
 }

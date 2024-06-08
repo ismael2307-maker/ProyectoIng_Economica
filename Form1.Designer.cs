@@ -200,6 +200,7 @@
             this.btnCaue.Text = "CAUE";
             this.btnCaue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCaue.UseVisualStyleBackColor = true;
+            this.btnCaue.Click += new System.EventHandler(this.btnCaue_Click);
             // 
             // btnTir
             // 
