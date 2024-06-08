@@ -116,6 +116,30 @@
     <Compile Include="FrmPresentacionAnualidades.Designer.cs">
       <DependentUpon>FrmPresentacionAnualidades.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPresentacionIndicadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPresentacionIndicadores.Designer.cs">
+      <DependentUpon>FrmPresentacionIndicadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTIR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTIR.Designer.cs">
+      <DependentUpon>FrmTIR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTMAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTMAR.Designer.cs">
+      <DependentUpon>FrmTMAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVPN.Designer.cs">
+      <DependentUpon>FrmVPN.cs</DependentUpon>
+    </Compile>
     <Compile Include="InteresSimpleF.cs" />
     <Compile Include="InteresSimpleI.cs" />
     <Compile Include="InteresSimpleN.cs" />
@@ -151,6 +175,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPresentacionAnualidades.resx">
       <DependentUpon>FrmPresentacionAnualidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPresentacionIndicadores.resx">
+      <DependentUpon>FrmPresentacionIndicadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTIR.resx">
+      <DependentUpon>FrmTIR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTMAR.resx">
+      <DependentUpon>FrmTMAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVPN.resx">
+      <DependentUpon>FrmVPN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -157,12 +157,31 @@ namespace ProyectoIng_Economica
         private void button1_Click(object sender, EventArgs e)
         {
             //Indicadores
+            AbrirFormHija(new FrmPresentacionIndicadores());
             showSubMenu(pnlSubMenuIndicadores);
         }
 
         private void btnAnualidadesPerpetuas_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new FrmPerpetua());
+            hideSubMenu();
+        }
+
+        private void btnTmar_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmTMAR());
+            hideSubMenu();
+        }
+
+        private void btnVpn_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmVPN());
+            hideSubMenu();
+        }
+
+        private void btnTir_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmTIR());
             hideSubMenu();
         }
     }
