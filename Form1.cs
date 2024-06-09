@@ -190,5 +190,10 @@ namespace ProyectoIng_Economica
             AbrirFormHija(new FrmCAUE());
             hideSubMenu();
         }
+
+        private void btnCalendarioPago_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmCalendarioPago());
+        }
     }
 }
