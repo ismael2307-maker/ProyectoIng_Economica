@@ -973,7 +973,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoAF = Convert.ToInt32(txtValorFuturoAnualidadFuturo.Text),
                             TasaInteresAF = Convert.ToDouble(txtInteresAnualidadFuturo.Text),
                             PeriodoAF = Convert.ToInt32(txtPeriodoAnualidadFuturo.Text),
-                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf * 2)) - 1)),
+                            AnualidadFuturo = ValorFuturoAf * ((TasaInteresAf / 100) / (Math.Pow(1 + (TasaInteresAf / 100), (PeriodoAf * 4)) - 1)),
                         });
                         dgvResultadosAnualidadFuturo.DataSource = null;
                         dgvResultadosAnualidadFuturo.DataSource = AAF;
