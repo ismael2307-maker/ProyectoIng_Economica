@@ -201,9 +201,9 @@
             // dgvResultadosPresente
             // 
             this.dgvResultadosPresente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosPresente.Location = new System.Drawing.Point(3, 101);
+            this.dgvResultadosPresente.Location = new System.Drawing.Point(5, 86);
             this.dgvResultadosPresente.Name = "dgvResultadosPresente";
-            this.dgvResultadosPresente.Size = new System.Drawing.Size(615, 150);
+            this.dgvResultadosPresente.Size = new System.Drawing.Size(600, 150);
             this.dgvResultadosPresente.TabIndex = 13;
             // 
             // label24
@@ -247,7 +247,7 @@
             "Meses",
             "Semestres",
             "Trimestres"});
-            this.cmbPeriodoPresente.Location = new System.Drawing.Point(359, 197);
+            this.cmbPeriodoPresente.Location = new System.Drawing.Point(359, 229);
             this.cmbPeriodoPresente.Name = "cmbPeriodoPresente";
             this.cmbPeriodoPresente.Size = new System.Drawing.Size(121, 30);
             this.cmbPeriodoPresente.TabIndex = 13;
@@ -261,7 +261,7 @@
             "Mensual",
             "Semestral",
             "Trimestral"});
-            this.cmbInteresPresente.Location = new System.Drawing.Point(359, 133);
+            this.cmbInteresPresente.Location = new System.Drawing.Point(359, 162);
             this.cmbInteresPresente.Name = "cmbInteresPresente";
             this.cmbInteresPresente.Size = new System.Drawing.Size(121, 30);
             this.cmbInteresPresente.TabIndex = 12;
@@ -273,7 +273,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(264, 287);
+            this.button3.Location = new System.Drawing.Point(260, 278);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(102, 33);
             this.button3.TabIndex = 11;
@@ -288,7 +288,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(103, 287);
+            this.button4.Location = new System.Drawing.Point(96, 278);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(102, 33);
             this.button4.TabIndex = 10;
@@ -302,7 +302,7 @@
             this.txtPeriodoPresente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPeriodoPresente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPeriodoPresente.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodoPresente.Location = new System.Drawing.Point(190, 203);
+            this.txtPeriodoPresente.Location = new System.Drawing.Point(184, 229);
             this.txtPeriodoPresente.Name = "txtPeriodoPresente";
             this.txtPeriodoPresente.Size = new System.Drawing.Size(123, 24);
             this.txtPeriodoPresente.TabIndex = 9;
@@ -314,7 +314,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(9, 201);
+            this.label20.Location = new System.Drawing.Point(3, 227);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(87, 24);
             this.label20.TabIndex = 8;
@@ -326,7 +326,7 @@
             this.txtInteresPresente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtInteresPresente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInteresPresente.ForeColor = System.Drawing.Color.White;
-            this.txtInteresPresente.Location = new System.Drawing.Point(189, 136);
+            this.txtInteresPresente.Location = new System.Drawing.Point(183, 163);
             this.txtInteresPresente.Name = "txtInteresPresente";
             this.txtInteresPresente.Size = new System.Drawing.Size(123, 24);
             this.txtInteresPresente.TabIndex = 7;
@@ -338,7 +338,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(9, 136);
+            this.label21.Location = new System.Drawing.Point(3, 163);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(125, 24);
             this.label21.TabIndex = 6;
@@ -350,7 +350,7 @@
             this.txtValorAnualidadPresente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorAnualidadPresente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorAnualidadPresente.ForeColor = System.Drawing.Color.White;
-            this.txtValorAnualidadPresente.Location = new System.Drawing.Point(190, 70);
+            this.txtValorAnualidadPresente.Location = new System.Drawing.Point(184, 101);
             this.txtValorAnualidadPresente.Name = "txtValorAnualidadPresente";
             this.txtValorAnualidadPresente.Size = new System.Drawing.Size(123, 24);
             this.txtValorAnualidadPresente.TabIndex = 5;
@@ -362,7 +362,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(9, 68);
+            this.label22.Location = new System.Drawing.Point(3, 101);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(175, 24);
             this.label22.TabIndex = 4;
@@ -1212,7 +1212,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.DataGridView dgvResultadosPresente;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dgvResultadosFuturo;
@@ -1268,5 +1267,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.DataGridView dgvResultadosAnualidadFuturo;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridView dgvResultadosPresente;
     }
 }

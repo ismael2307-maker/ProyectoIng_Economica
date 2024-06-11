@@ -50,10 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnualidadAnticipadaAF.cs" />
-    <Compile Include="AnualidadAnticipadaAP.cs" />
-    <Compile Include="AnualidadAnticipadaF.cs" />
-    <Compile Include="AnualidadAnticipidaP.cs" />
     <Compile Include="FrmCalendarioPago.cs">
       <SubType>Form</SubType>
     </Compile>
