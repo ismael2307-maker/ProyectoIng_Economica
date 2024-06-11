@@ -154,6 +154,7 @@
     <Compile Include="InteresSimpleI.cs" />
     <Compile Include="InteresSimpleN.cs" />
     <Compile Include="InteresSimpleP.cs" />
+    <Compile Include="Metodos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
