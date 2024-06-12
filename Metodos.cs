@@ -615,5 +615,185 @@ namespace ProyectoIng_Economica
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
         }
+
+        public void CalcularFuturoAnticipado(string interesFuturo,string periodoFuturo,double tasaInteresFuturo,double valorAnualidadFuturo,int periodo1Futuro, List<object>resultadosFuturo,DataGridView dgvResultadosFuturo)
+        {
+            if (interesFuturo.Equals("Trimestral") && periodoFuturo.Equals("Trimestres"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1 / 4;
+                int p1 = periodo1Futuro;
+                double F  = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Trimestral") && periodoFuturo.Equals("Años"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1 / 4;
+                int p1 = periodo1Futuro * 4;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Trimestral") && periodoFuturo.Equals("Meses"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1 / 4;
+                int p1 = periodo1Futuro / 3;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Trimestral") && periodoFuturo.Equals("Semestres"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1 / 4;
+                int p1 = periodo1Futuro * 2;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Anual") && periodoFuturo.Equals("Años"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1;
+                int p1 = periodo1Futuro;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Anual") && periodoFuturo.Equals("Meses"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1;
+                int p1 = periodo1Futuro / 12;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Anual") && periodoFuturo.Equals("Semestres"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1;
+                int p1 = (int)(periodo1Futuro * 0.5);
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Anual") && periodoFuturo.Equals("Trimestres"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1;
+                int p1 = periodo1Futuro / 4;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Mensual") && periodoFuturo.Equals("Años"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1 / 12;
+                int p1 = periodo1Futuro * 12;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Mensual") && periodoFuturo.Equals("Meses"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1 / 12;
+                int p1 = periodo1Futuro;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Mensual") && periodoFuturo.Equals("Semestres"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1 / 12;
+                int p1 = periodo1Futuro * 6;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Mensual") && periodoFuturo.Equals("Trimestres"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1 / 12;
+                int p1 = periodo1Futuro * 3;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Semestral") && periodoFuturo.Equals("Años"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1 / 2;
+                int p1 = periodo1Futuro * 2;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Semestral") && periodoFuturo.Equals("Meses"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1 / 2;
+                int p1 = periodo1Futuro / 6;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Semestral") && periodoFuturo.Equals("Semestres"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1 / 2;
+                int p1 = periodo1Futuro;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+            else if (interesFuturo.Equals("Semestral") && periodoFuturo.Equals("Trimestres"))
+            {
+                double anualidad = valorAnualidadFuturo;
+                double i1 = tasaInteresFuturo / 100;
+                double interes = i1 / 2;
+                int p1 = periodo1Futuro / 2;
+                double F = (anualidad + anualidad * ((Math.Pow(1 + interes, p1 - 1) - 1) / (interes * Math.Pow(1 + interes, p1 - 1)))) * Math.Pow(1 + interes, p1);
+                resultadosFuturo.Add(new { Anualidad = anualidad, InteresFuturo = interes, PeriodoF = p1, Futuro = F });
+                dgvResultadosFuturo.DataSource = null;
+                dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+            }
+        }
     }
 }

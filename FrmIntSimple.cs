@@ -67,15 +67,202 @@ namespace ProyectoIng_Economica
                 double TasaInteresFu = Convert.ToDouble(txtTasaInteresF.Text);
                 int PeriodoFu = Convert.ToInt32(txtPeriodoF.Text);
                 double Futuro = ValorPresenteFu * (1 + (TasaInteresFu * PeriodoFu));
-                Fs.Add(new InteresSimpleF
+                if (cmbInteresSimple.SelectedItem != null || cmbPeriodoSimple.SelectedItem != null)
                 {
-                    ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
-                    TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
-                    PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
-                    Futuro = ValorPresenteFu * (1+TasaInteresFu/100 *  PeriodoFu/12)
-                 });
-                dgvResultadosF.DataSource = null;
-                dgvResultadosF.DataSource = Fs;
+                    if (cmbInteresSimple.SelectedItem.Equals("Anual") && cmbPeriodoSimple.SelectedItem.Equals("Meses"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu / 12)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Anual") && cmbPeriodoSimple.SelectedItem.Equals("Años"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Anual") && cmbPeriodoSimple.SelectedItem.Equals("Semestres"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu / 2)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Anual") && cmbPeriodoSimple.SelectedItem.Equals("Trimestres"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu / 4)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Mensual") && cmbPeriodoSimple.SelectedItem.Equals("Años"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu * 12)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Mensual") && cmbPeriodoSimple.SelectedItem.Equals("Meses"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Mensual") && cmbPeriodoSimple.SelectedItem.Equals("Semestres"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu * 6)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Mensual") && cmbPeriodoSimple.SelectedItem.Equals("Trimestres"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu * 3)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Semestral") && cmbPeriodoSimple.SelectedItem.Equals("Años"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu * 2)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Semestral") && cmbPeriodoSimple.SelectedItem.Equals("Meses"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu / 6)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Semestral") && cmbPeriodoSimple.SelectedItem.Equals("Semestres"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Semestral") && cmbPeriodoSimple.SelectedItem.Equals("Trimestres"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu / 2)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Trimestral") && cmbPeriodoSimple.SelectedItem.Equals("Años"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu * 4)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Trimestral") && cmbPeriodoSimple.SelectedItem.Equals("Meses"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu / 3)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Trimestral") && cmbPeriodoSimple.SelectedItem.Equals("Semestres"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu * 2)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                    else if (cmbInteresSimple.SelectedItem.Equals("Trimestral") && cmbPeriodoSimple.SelectedItem.Equals("Trimestres"))
+                    {
+                        Fs.Add(new InteresSimpleF
+                        {
+                            ValorPresenteF = Convert.ToInt32(txtValorPresenteF.Text),
+                            TasaInteresF = Convert.ToDouble(txtTasaInteresF.Text),
+                            PeriodoF = Convert.ToInt32(txtPeriodoF.Text),
+                            Futuro = ValorPresenteFu * (1 + TasaInteresFu / 100 * PeriodoFu * 2)
+                        });
+                        dgvResultadosF.DataSource = null;
+                        dgvResultadosF.DataSource = Fs;
+                    }
+                }
+               
             }
             catch (FormatException x)
             {
@@ -99,15 +286,204 @@ namespace ProyectoIng_Economica
                 int PeriodoPe = Convert.ToInt32(txtPeriodoP.Text);
                 double Presente = ValorFuturoPe / 1 + (TasaInteresPe * PeriodoPe);
 
-                Ps.Add(new InteresSimpleP
+                if (cmbInteresFuturoSimple.SelectedItem != null || cmbPeriodoFuturoSimple.SelectedItem !=null)
                 {
-                    ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
-                    TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
-                    PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                    Presente = ValorFuturoPe / (1 + (TasaInteresPe/100 * PeriodoPe)),
-                });
-                dgvResultadosP.DataSource = null;
-                dgvResultadosP.DataSource = Ps;
+                    if(cmbInteresFuturoSimple.SelectedItem.Equals("Anual") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Años"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Anual") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Meses"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 12)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Anual") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Semestres"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 2)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Anual") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Trimestres"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 4)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Mensual") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Años"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 12)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Mensual") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Meses"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Mensual") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Semestres"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 6)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Mensual") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Trimestres"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 3)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Semestral") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Años"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 2)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Semestral") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Meses"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 6)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Semestral") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Semestres"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 2)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Semestral") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Trimestres"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 2)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Trimestral") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Años"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 4)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Trimestral") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Meses"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 3)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Trimestral") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Semestres"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 2)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+                    else if (cmbInteresFuturoSimple.SelectedItem.Equals("Trimestral") && cmbPeriodoFuturoSimple.SelectedItem.Equals("Años"))
+                    {
+                        Ps.Add(new InteresSimpleP
+                        {
+                            ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
+                            TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
+                            PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
+                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe)),
+                        });
+                        dgvResultadosP.DataSource = null;
+                        dgvResultadosP.DataSource = Ps;
+                    }
+
+                }
+
+                
             }
             catch(FormatException x)
             {
@@ -132,22 +508,225 @@ namespace ProyectoIng_Economica
                 int PeriodoIn = Convert.ToInt32(txtPeriodoI.Text);
                 double TasaInteres = ValorFuturoIn / ValorPresenteIn - 1 / PeriodoIn;
 
-                Is.Add(new InteresSimpleI
+                if (cmbTipoTasa.SelectedItem != null || cmbPeriodoInteresSimple != null) 
                 {
-                    ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
-                    ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
-                    PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
-                    TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn/12.0),
-                });
-                dgvResultadosI.DataSource = null;
-                dgvResultadosI.DataSource = Is;
+                    if (cmbTipoTasa.SelectedItem.Equals("Anual") && cmbPeriodoInteresSimple.SelectedItem.Equals("Meses"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn / 12.0),
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Anual") && cmbPeriodoInteresSimple.SelectedItem.Equals("Años"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / PeriodoIn,
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Anual") && cmbPeriodoInteresSimple.SelectedItem.Equals("Semestres"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn / 2),
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Anual") && cmbPeriodoInteresSimple.SelectedItem.Equals("Trimestres"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn / 4),
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Mensual") && cmbPeriodoInteresSimple.SelectedItem.Equals("Años"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn * 12),
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Mensual") && cmbPeriodoInteresSimple.SelectedItem.Equals("Meses"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / PeriodoIn,
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Mensual") && cmbPeriodoInteresSimple.SelectedItem.Equals("Semestres"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn * 6),
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Mensual") && cmbPeriodoInteresSimple.SelectedItem.Equals("Trimestres"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn * 3),
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Semestral") && cmbPeriodoInteresSimple.SelectedItem.Equals("Años"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn * 2),
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Semestral") && cmbPeriodoInteresSimple.SelectedItem.Equals("Meses"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn / 6),
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Semestral") && cmbPeriodoInteresSimple.SelectedItem.Equals("Semestres"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / PeriodoIn,
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Semestral") && cmbPeriodoInteresSimple.SelectedItem.Equals("Trimestres"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn / 2),
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Trimestral") && cmbPeriodoInteresSimple.SelectedItem.Equals("Años"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn * 4),
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Trimestral") && cmbPeriodoInteresSimple.SelectedItem.Equals("Meses"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn / 3),
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Trimestral") && cmbPeriodoInteresSimple.SelectedItem.Equals("Semestres"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / (PeriodoIn * 2),
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+
+                    }
+                    else if (cmbTipoTasa.SelectedItem.Equals("Trimestral") && cmbPeriodoInteresSimple.SelectedItem.Equals("Trimestres"))
+                    {
+                        Is.Add(new InteresSimpleI
+                        {
+                            ValorFuturoI = Convert.ToInt32(txtValorFuturoI.Text),
+                            ValorPresenteI = Convert.ToInt32(txtValorPresenteI.Text),
+                            PeriodoI = Convert.ToInt32(txtPeriodoI.Text),
+                            TasaInteres = ((double)ValorFuturoIn / ValorPresenteIn - 1) / PeriodoIn,
+                        });
+                        dgvResultadosI.DataSource = null;
+                        dgvResultadosI.DataSource = Is;
+
+                    }
+
+
+                }
             }
             catch(FormatException x)
             {
                 MessageBox.Show("Rellene los campos necesarios " + x);
+
             }catch(DivideByZeroException ex)
             {
                 MessageBox.Show("El periodo no puede ser cero.", "Error de division por cero"+ex);
+            }catch(NullReferenceException i)
+            {
+                MessageBox.Show("Ha ocurrido un error. Vuelva digitar valores validos");
             }
         }
 
@@ -158,7 +737,7 @@ namespace ProyectoIng_Economica
                 int ValorFuturoNe = Convert.ToInt32(txtValorFuturoN.Text);
                 int ValorPresenteNe = Convert.ToInt32(txtValorPresenteN.Text);
                 double TasaInteresNe = Convert.ToDouble(txtTasaInteresN.Text);
-                double Periodo = (ValorFuturoNe / ValorPresenteNe - 1) / (TasaInteresNe);
+                int Periodo = (int)((ValorFuturoNe / ValorPresenteNe - 1) / (TasaInteresNe));
 
                 Ns.Add(new InteresSimpleN
                 {
