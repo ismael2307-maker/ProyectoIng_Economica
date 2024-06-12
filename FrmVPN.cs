@@ -59,5 +59,11 @@ namespace ProyectoIng_Economica
                 MessageBox.Show("ERROR: " + ex.Message);
             }
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtInversionInicial.Clear();
+            txtTasaDescuento.Clear();
+        }
     }
 }

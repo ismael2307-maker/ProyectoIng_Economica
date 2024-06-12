@@ -420,7 +420,7 @@ namespace ProyectoIng_Economica
                         // Cuando tenemos interes semestral con los diferentes periodos
                         else if (cmbInteresF.SelectedItem.Equals("Semestral") && cmbPeriodoF.SelectedItem.Equals("Años"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 2;
                             n = n1 * 2;
                             f = p * Math.Pow((1 + i), n);
 
@@ -472,7 +472,7 @@ namespace ProyectoIng_Economica
                         // Cuando tenemos interes trimestral con los diferentes periodos
                         else if (cmbInteresF.SelectedItem.Equals("Trimestral") && cmbPeriodoF.SelectedItem.Equals("Años"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 4;
                             n = n1 * 4;
                             f = p * Math.Pow((1 + i), n);
 
@@ -524,7 +524,7 @@ namespace ProyectoIng_Economica
                         // Cuando tenemos interes mensual con los diferentes periodos
                         else if (cmbInteresF.SelectedItem.Equals("Mensual") && cmbPeriodoF.SelectedItem.Equals("Años"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 12;
                             n = n1 * 12;
                             f = p * Math.Pow((1 + i), n);
 
@@ -671,7 +671,7 @@ namespace ProyectoIng_Economica
                         // Cuando tenemos interes semestral con los diferentes periodos
                         else if (cmbInteresP.SelectedItem.Equals("Semestral") && cmbPeriodoP.SelectedItem.Equals("Años"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 2;
                             n = n1 * 2;
                             p = f / (Math.Pow((1 + i), n));
 
@@ -723,7 +723,7 @@ namespace ProyectoIng_Economica
                         // Cuando tenemos interes trimestral con los diferentes periodos
                         else if (cmbInteresP.SelectedItem.Equals("Trimestral") && cmbPeriodoP.SelectedItem.Equals("Años"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 4;
                             n = n1 * 4;
                             p = f / (Math.Pow((1 + i), n));
 
@@ -736,7 +736,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresP.SelectedItem.Equals("Trimestral") && cmbPeriodoP.SelectedItem.Equals("Semestres"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 2;
                             n = n1 * 2;
                             p = f / (Math.Pow((1 + i), n));
 
@@ -775,7 +775,7 @@ namespace ProyectoIng_Economica
                         // Cuando tenemos interes mensual con los diferentes periodos
                         else if (cmbInteresP.SelectedItem.Equals("Mensual") && cmbPeriodoP.SelectedItem.Equals("Años"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 12;
                             n = n1 * 12;
                             p = f / (Math.Pow((1 + i), n));
 

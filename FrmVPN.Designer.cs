@@ -34,33 +34,33 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tbgCalculo = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtInversionInicial = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTasaDescuento = new System.Windows.Forms.TextBox();
-            this.dgvFlujosNetos = new System.Windows.Forms.DataGridView();
             this.dgvResultados = new System.Windows.Forms.DataGridView();
-            this.btnCalcular = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.AÑO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.flujoNE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ANIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.flujoNeE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ValPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.dgvFlujosNetos = new System.Windows.Forms.DataGridView();
+            this.AÑO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.flujoNE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtTasaDescuento = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtInversionInicial = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tbgCalculo.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFlujosNetos)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFlujosNetos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -120,6 +120,33 @@
             this.panel1.Size = new System.Drawing.Size(605, 381);
             this.panel1.TabIndex = 16;
             // 
+            // dgvResultados
+            // 
+            this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ANIO,
+            this.flujoNeE,
+            this.ValPN});
+            this.dgvResultados.Location = new System.Drawing.Point(12, 86);
+            this.dgvResultados.Name = "dgvResultados";
+            this.dgvResultados.Size = new System.Drawing.Size(450, 177);
+            this.dgvResultados.TabIndex = 5;
+            // 
+            // ANIO
+            // 
+            this.ANIO.HeaderText = "AÑO";
+            this.ANIO.Name = "ANIO";
+            // 
+            // flujoNeE
+            // 
+            this.flujoNeE.HeaderText = "FNE";
+            this.flujoNeE.Name = "flujoNeE";
+            // 
+            // ValPN
+            // 
+            this.ValPN.HeaderText = "VPN";
+            this.ValPN.Name = "ValPN";
+            // 
             // panel11
             // 
             this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -135,6 +162,79 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(523, 381);
             this.panel11.TabIndex = 15;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(412, 256);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(86, 31);
+            this.btnLimpiar.TabIndex = 6;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Location = new System.Drawing.Point(308, 256);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(86, 31);
+            this.btnCalcular.TabIndex = 5;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // dgvFlujosNetos
+            // 
+            this.dgvFlujosNetos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFlujosNetos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AÑO,
+            this.flujoNE});
+            this.dgvFlujosNetos.Location = new System.Drawing.Point(24, 77);
+            this.dgvFlujosNetos.Name = "dgvFlujosNetos";
+            this.dgvFlujosNetos.Size = new System.Drawing.Size(474, 150);
+            this.dgvFlujosNetos.TabIndex = 4;
+            // 
+            // AÑO
+            // 
+            this.AÑO.HeaderText = "AÑO";
+            this.AÑO.Name = "AÑO";
+            // 
+            // flujoNE
+            // 
+            this.flujoNE.HeaderText = "FNE";
+            this.flujoNE.Name = "flujoNE";
+            // 
+            // txtTasaDescuento
+            // 
+            this.txtTasaDescuento.Location = new System.Drawing.Point(420, 10);
+            this.txtTasaDescuento.Name = "txtTasaDescuento";
+            this.txtTasaDescuento.Size = new System.Drawing.Size(100, 29);
+            this.txtTasaDescuento.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(267, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(147, 24);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Tasa Descuento";
+            // 
+            // txtInversionInicial
+            // 
+            this.txtInversionInicial.Location = new System.Drawing.Point(147, 12);
+            this.txtInversionInicial.Name = "txtInversionInicial";
+            this.txtInversionInicial.Size = new System.Drawing.Size(100, 29);
+            this.txtInversionInicial.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Inversion Inicial";
             // 
             // panel4
             // 
@@ -171,105 +271,6 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Inversion Inicial";
-            // 
-            // txtInversionInicial
-            // 
-            this.txtInversionInicial.Location = new System.Drawing.Point(147, 12);
-            this.txtInversionInicial.Name = "txtInversionInicial";
-            this.txtInversionInicial.Size = new System.Drawing.Size(100, 29);
-            this.txtInversionInicial.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(267, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 24);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tasa Descuento";
-            // 
-            // txtTasaDescuento
-            // 
-            this.txtTasaDescuento.Location = new System.Drawing.Point(420, 10);
-            this.txtTasaDescuento.Name = "txtTasaDescuento";
-            this.txtTasaDescuento.Size = new System.Drawing.Size(100, 29);
-            this.txtTasaDescuento.TabIndex = 3;
-            // 
-            // dgvFlujosNetos
-            // 
-            this.dgvFlujosNetos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFlujosNetos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.AÑO,
-            this.flujoNE});
-            this.dgvFlujosNetos.Location = new System.Drawing.Point(24, 77);
-            this.dgvFlujosNetos.Name = "dgvFlujosNetos";
-            this.dgvFlujosNetos.Size = new System.Drawing.Size(474, 150);
-            this.dgvFlujosNetos.TabIndex = 4;
-            // 
-            // dgvResultados
-            // 
-            this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ANIO,
-            this.flujoNeE,
-            this.ValPN});
-            this.dgvResultados.Location = new System.Drawing.Point(12, 86);
-            this.dgvResultados.Name = "dgvResultados";
-            this.dgvResultados.Size = new System.Drawing.Size(450, 177);
-            this.dgvResultados.TabIndex = 5;
-            // 
-            // btnCalcular
-            // 
-            this.btnCalcular.Location = new System.Drawing.Point(308, 256);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(86, 31);
-            this.btnCalcular.TabIndex = 5;
-            this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.Location = new System.Drawing.Point(412, 256);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(86, 31);
-            this.btnLimpiar.TabIndex = 6;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            // 
-            // AÑO
-            // 
-            this.AÑO.HeaderText = "AÑO";
-            this.AÑO.Name = "AÑO";
-            // 
-            // flujoNE
-            // 
-            this.flujoNE.HeaderText = "FNE";
-            this.flujoNE.Name = "flujoNE";
-            // 
-            // ANIO
-            // 
-            this.ANIO.HeaderText = "AÑO";
-            this.ANIO.Name = "ANIO";
-            // 
-            // flujoNeE
-            // 
-            this.flujoNeE.HeaderText = "FNE";
-            this.flujoNeE.Name = "flujoNeE";
-            // 
-            // ValPN
-            // 
-            this.ValPN.HeaderText = "VPN";
-            this.ValPN.Name = "ValPN";
-            // 
             // FrmVPN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,13 +285,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tbgCalculo.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFlujosNetos)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFlujosNetos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
             this.ResumeLayout(false);
 
         }

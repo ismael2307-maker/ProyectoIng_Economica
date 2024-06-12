@@ -37,6 +37,9 @@
             this.dgvResultadosPresente = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rdbNop = new System.Windows.Forms.RadioButton();
+            this.rdbSip = new System.Windows.Forms.RadioButton();
             this.txtPeriodo2 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.cmbPeriodoPresente = new System.Windows.Forms.ComboBox();
@@ -59,6 +62,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbNo = new System.Windows.Forms.RadioButton();
+            this.rdbSi = new System.Windows.Forms.RadioButton();
             this.txtPeriodo2Futuro = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.cmbPeriodoFuturo = new System.Windows.Forms.ComboBox();
@@ -113,11 +118,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.rdbSi = new System.Windows.Forms.RadioButton();
-            this.rdbNo = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rdbNop = new System.Windows.Forms.RadioButton();
-            this.rdbSip = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tbgDefincion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -125,6 +125,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosPresente)).BeginInit();
             this.panel2.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tbgFuturo.SuspendLayout();
@@ -146,7 +147,6 @@
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -251,6 +251,40 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(523, 350);
             this.panel2.TabIndex = 14;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rdbNop);
+            this.groupBox2.Controls.Add(this.rdbSip);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox2.Location = new System.Drawing.Point(320, 42);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(200, 100);
+            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Capitalización";
+            // 
+            // rdbNop
+            // 
+            this.rdbNop.AutoSize = true;
+            this.rdbNop.Location = new System.Drawing.Point(7, 64);
+            this.rdbNop.Name = "rdbNop";
+            this.rdbNop.Size = new System.Drawing.Size(54, 26);
+            this.rdbNop.TabIndex = 1;
+            this.rdbNop.TabStop = true;
+            this.rdbNop.Text = "No";
+            this.rdbNop.UseVisualStyleBackColor = true;
+            // 
+            // rdbSip
+            // 
+            this.rdbSip.AutoSize = true;
+            this.rdbSip.Location = new System.Drawing.Point(7, 31);
+            this.rdbSip.Name = "rdbSip";
+            this.rdbSip.Size = new System.Drawing.Size(40, 26);
+            this.rdbSip.TabIndex = 0;
+            this.rdbSip.TabStop = true;
+            this.rdbSip.Text = "Si";
+            this.rdbSip.UseVisualStyleBackColor = true;
             // 
             // txtPeriodo2
             // 
@@ -531,6 +565,28 @@
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Capitalización";
+            // 
+            // rdbNo
+            // 
+            this.rdbNo.AutoSize = true;
+            this.rdbNo.Location = new System.Drawing.Point(7, 64);
+            this.rdbNo.Name = "rdbNo";
+            this.rdbNo.Size = new System.Drawing.Size(54, 26);
+            this.rdbNo.TabIndex = 1;
+            this.rdbNo.TabStop = true;
+            this.rdbNo.Text = "No";
+            this.rdbNo.UseVisualStyleBackColor = true;
+            // 
+            // rdbSi
+            // 
+            this.rdbSi.AutoSize = true;
+            this.rdbSi.Location = new System.Drawing.Point(7, 31);
+            this.rdbSi.Name = "rdbSi";
+            this.rdbSi.Size = new System.Drawing.Size(40, 26);
+            this.rdbSi.TabIndex = 0;
+            this.rdbSi.TabStop = true;
+            this.rdbSi.Text = "Si";
+            this.rdbSi.UseVisualStyleBackColor = true;
             // 
             // txtPeriodo2Futuro
             // 
@@ -1057,7 +1113,8 @@
             this.cmbInteresAf.Items.AddRange(new object[] {
             "Anual",
             "Mensual",
-            "Semestral"});
+            "Semestral",
+            "Trimestral"});
             this.cmbInteresAf.Location = new System.Drawing.Point(359, 133);
             this.cmbInteresAf.Name = "cmbInteresAf";
             this.cmbInteresAf.Size = new System.Drawing.Size(121, 30);
@@ -1212,62 +1269,6 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
-            // rdbSi
-            // 
-            this.rdbSi.AutoSize = true;
-            this.rdbSi.Location = new System.Drawing.Point(7, 31);
-            this.rdbSi.Name = "rdbSi";
-            this.rdbSi.Size = new System.Drawing.Size(40, 26);
-            this.rdbSi.TabIndex = 0;
-            this.rdbSi.TabStop = true;
-            this.rdbSi.Text = "Si";
-            this.rdbSi.UseVisualStyleBackColor = true;
-            // 
-            // rdbNo
-            // 
-            this.rdbNo.AutoSize = true;
-            this.rdbNo.Location = new System.Drawing.Point(7, 64);
-            this.rdbNo.Name = "rdbNo";
-            this.rdbNo.Size = new System.Drawing.Size(54, 26);
-            this.rdbNo.TabIndex = 1;
-            this.rdbNo.TabStop = true;
-            this.rdbNo.Text = "No";
-            this.rdbNo.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.rdbNop);
-            this.groupBox2.Controls.Add(this.rdbSip);
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.groupBox2.Location = new System.Drawing.Point(320, 42);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 100);
-            this.groupBox2.TabIndex = 17;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Capitalización";
-            // 
-            // rdbNop
-            // 
-            this.rdbNop.AutoSize = true;
-            this.rdbNop.Location = new System.Drawing.Point(7, 64);
-            this.rdbNop.Name = "rdbNop";
-            this.rdbNop.Size = new System.Drawing.Size(54, 26);
-            this.rdbNop.TabIndex = 1;
-            this.rdbNop.TabStop = true;
-            this.rdbNop.Text = "No";
-            this.rdbNop.UseVisualStyleBackColor = true;
-            // 
-            // rdbSip
-            // 
-            this.rdbSip.AutoSize = true;
-            this.rdbSip.Location = new System.Drawing.Point(7, 31);
-            this.rdbSip.Name = "rdbSip";
-            this.rdbSip.Size = new System.Drawing.Size(40, 26);
-            this.rdbSip.TabIndex = 0;
-            this.rdbSip.TabStop = true;
-            this.rdbSip.Text = "Si";
-            this.rdbSip.UseVisualStyleBackColor = true;
-            // 
             // FrmAnualidadDiferidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1286,6 +1287,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosPresente)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -1318,8 +1321,6 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
