@@ -37,6 +37,9 @@
             this.dgvResultadosPresente = new System.Windows.Forms.DataGridView();
             this.label24 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbNo = new System.Windows.Forms.RadioButton();
+            this.rdbSi = new System.Windows.Forms.RadioButton();
             this.cmbPeriodoPresente = new System.Windows.Forms.ComboBox();
             this.cmbInteresPresente = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -108,6 +111,9 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rdbSiAnticipadaFuturo = new System.Windows.Forms.RadioButton();
+            this.rdbNoAnticipadaFuturo = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -115,6 +121,7 @@
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosPresente)).BeginInit();
             this.panel11.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.cmbInteresFuturo.SuspendLayout();
@@ -135,6 +142,7 @@
             this.panel5.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -222,6 +230,7 @@
             // 
             this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel11.Controls.Add(this.groupBox1);
             this.panel11.Controls.Add(this.cmbPeriodoPresente);
             this.panel11.Controls.Add(this.cmbInteresPresente);
             this.panel11.Controls.Add(this.button3);
@@ -237,6 +246,40 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(523, 350);
             this.panel11.TabIndex = 14;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rdbNo);
+            this.groupBox1.Controls.Add(this.rdbSi);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox1.Location = new System.Drawing.Point(320, 46);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Capitalizable";
+            // 
+            // rdbNo
+            // 
+            this.rdbNo.AutoSize = true;
+            this.rdbNo.Location = new System.Drawing.Point(6, 62);
+            this.rdbNo.Name = "rdbNo";
+            this.rdbNo.Size = new System.Drawing.Size(54, 26);
+            this.rdbNo.TabIndex = 1;
+            this.rdbNo.TabStop = true;
+            this.rdbNo.Text = "No";
+            this.rdbNo.UseVisualStyleBackColor = true;
+            // 
+            // rdbSi
+            // 
+            this.rdbSi.AutoSize = true;
+            this.rdbSi.Location = new System.Drawing.Point(6, 30);
+            this.rdbSi.Name = "rdbSi";
+            this.rdbSi.Size = new System.Drawing.Size(40, 26);
+            this.rdbSi.TabIndex = 0;
+            this.rdbSi.TabStop = true;
+            this.rdbSi.Text = "Si";
+            this.rdbSi.UseVisualStyleBackColor = true;
             // 
             // cmbPeriodoPresente
             // 
@@ -462,6 +505,7 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.cmbPeriodoFuturo);
             this.panel2.Controls.Add(this.cmbInteresAnualidadF);
             this.panel2.Controls.Add(this.btnLimpiarFuturo);
@@ -487,7 +531,7 @@
             "Meses",
             "Semestres",
             "Trimestres"});
-            this.cmbPeriodoFuturo.Location = new System.Drawing.Point(359, 197);
+            this.cmbPeriodoFuturo.Location = new System.Drawing.Point(349, 226);
             this.cmbPeriodoFuturo.Name = "cmbPeriodoFuturo";
             this.cmbPeriodoFuturo.Size = new System.Drawing.Size(121, 30);
             this.cmbPeriodoFuturo.TabIndex = 13;
@@ -501,7 +545,7 @@
             "Mensual",
             "Semestral",
             "Trimestral"});
-            this.cmbInteresAnualidadF.Location = new System.Drawing.Point(359, 133);
+            this.cmbInteresAnualidadF.Location = new System.Drawing.Point(349, 165);
             this.cmbInteresAnualidadF.Name = "cmbInteresAnualidadF";
             this.cmbInteresAnualidadF.Size = new System.Drawing.Size(121, 30);
             this.cmbInteresAnualidadF.TabIndex = 12;
@@ -542,7 +586,7 @@
             this.txtPeriodoFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPeriodoFuturo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPeriodoFuturo.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodoFuturo.Location = new System.Drawing.Point(190, 203);
+            this.txtPeriodoFuturo.Location = new System.Drawing.Point(190, 229);
             this.txtPeriodoFuturo.Name = "txtPeriodoFuturo";
             this.txtPeriodoFuturo.Size = new System.Drawing.Size(123, 24);
             this.txtPeriodoFuturo.TabIndex = 9;
@@ -554,7 +598,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(9, 201);
+            this.label3.Location = new System.Drawing.Point(9, 227);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 24);
             this.label3.TabIndex = 8;
@@ -566,7 +610,7 @@
             this.txtTasaInteresFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtTasaInteresFuturo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTasaInteresFuturo.ForeColor = System.Drawing.Color.White;
-            this.txtTasaInteresFuturo.Location = new System.Drawing.Point(189, 136);
+            this.txtTasaInteresFuturo.Location = new System.Drawing.Point(190, 168);
             this.txtTasaInteresFuturo.Name = "txtTasaInteresFuturo";
             this.txtTasaInteresFuturo.Size = new System.Drawing.Size(123, 24);
             this.txtTasaInteresFuturo.TabIndex = 7;
@@ -578,7 +622,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(9, 136);
+            this.label4.Location = new System.Drawing.Point(10, 168);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 24);
             this.label4.TabIndex = 6;
@@ -614,7 +658,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label6.Location = new System.Drawing.Point(103, 13);
+            this.label6.Location = new System.Drawing.Point(114, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(276, 39);
             this.label6.TabIndex = 3;
@@ -1135,6 +1179,40 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rdbNoAnticipadaFuturo);
+            this.groupBox2.Controls.Add(this.rdbSiAnticipadaFuturo);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox2.Location = new System.Drawing.Point(319, 42);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(200, 100);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Capitalizable";
+            // 
+            // rdbSiAnticipadaFuturo
+            // 
+            this.rdbSiAnticipadaFuturo.AutoSize = true;
+            this.rdbSiAnticipadaFuturo.Location = new System.Drawing.Point(7, 31);
+            this.rdbSiAnticipadaFuturo.Name = "rdbSiAnticipadaFuturo";
+            this.rdbSiAnticipadaFuturo.Size = new System.Drawing.Size(40, 26);
+            this.rdbSiAnticipadaFuturo.TabIndex = 0;
+            this.rdbSiAnticipadaFuturo.TabStop = true;
+            this.rdbSiAnticipadaFuturo.Text = "Si";
+            this.rdbSiAnticipadaFuturo.UseVisualStyleBackColor = true;
+            // 
+            // rdbNoAnticipadaFuturo
+            // 
+            this.rdbNoAnticipadaFuturo.AutoSize = true;
+            this.rdbNoAnticipadaFuturo.Location = new System.Drawing.Point(7, 64);
+            this.rdbNoAnticipadaFuturo.Name = "rdbNoAnticipadaFuturo";
+            this.rdbNoAnticipadaFuturo.Size = new System.Drawing.Size(54, 26);
+            this.rdbNoAnticipadaFuturo.TabIndex = 1;
+            this.rdbNoAnticipadaFuturo.TabStop = true;
+            this.rdbNoAnticipadaFuturo.Text = "No";
+            this.rdbNoAnticipadaFuturo.UseVisualStyleBackColor = true;
+            // 
             // FrmaAnualidadAnticipada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1153,6 +1231,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosPresente)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -1183,6 +1263,8 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1268,5 +1350,11 @@
         private System.Windows.Forms.DataGridView dgvResultadosAnualidadFuturo;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView dgvResultadosPresente;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rdbNo;
+        private System.Windows.Forms.RadioButton rdbSi;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton rdbNoAnticipadaFuturo;
+        private System.Windows.Forms.RadioButton rdbSiAnticipadaFuturo;
     }
 }
