@@ -380,7 +380,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresF.SelectedItem.Equals("Anual") && cmbPeriodoF.SelectedItem.Equals("Semestres"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100);
                             n = n1 / 2;
                             f = p * Math.Pow((1 + i), n);
 
@@ -445,7 +445,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresF.SelectedItem.Equals("Semestral") && cmbPeriodoF.SelectedItem.Equals("Trimestres"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 2;
                             n = n1 / 2;
                             f = p * Math.Pow((1 + i), n);
 
