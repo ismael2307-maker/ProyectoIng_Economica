@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAritmetico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAritmetico.Designer.cs">
+      <DependentUpon>FrmAritmetico.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCalendarioPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,12 @@
     <Compile Include="FrmCAUE.Designer.cs">
       <DependentUpon>FrmCAUE.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmGeometrico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGeometrico.Designer.cs">
+      <DependentUpon>FrmGeometrico.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIntCompuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +133,12 @@
     </Compile>
     <Compile Include="FrmPresentacionAnualidades.Designer.cs">
       <DependentUpon>FrmPresentacionAnualidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPresentacionGradientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPresentacionGradientes.Designer.cs">
+      <DependentUpon>FrmPresentacionGradientes.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPresentacionIndicadores.cs">
       <SubType>Form</SubType>
@@ -165,11 +183,17 @@
     <EmbeddedResource Include="FrmAnualidadesVencidas.resx">
       <DependentUpon>FrmAnualidadesVencidas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAritmetico.resx">
+      <DependentUpon>FrmAritmetico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCalendarioPago.resx">
       <DependentUpon>FrmCalendarioPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCAUE.resx">
       <DependentUpon>FrmCAUE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGeometrico.resx">
+      <DependentUpon>FrmGeometrico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIntCompuesto.resx">
       <DependentUpon>FrmIntCompuesto.cs</DependentUpon>
@@ -188,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPresentacionAnualidades.resx">
       <DependentUpon>FrmPresentacionAnualidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPresentacionGradientes.resx">
+      <DependentUpon>FrmPresentacionGradientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPresentacionIndicadores.resx">
       <DependentUpon>FrmPresentacionIndicadores.cs</DependentUpon>

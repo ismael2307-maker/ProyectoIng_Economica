@@ -542,7 +542,7 @@ namespace ProyectoIng_Economica
                 }
                 catch (FormatException x)
                 {
-                    MessageBox.Show("Rellene los campos necesarios");
+                    MessageBox.Show("Rellene los campos necesarios"+x);
                 }
             }else if (rdbSi.Checked == true)
             {

@@ -1187,8 +1187,17 @@ namespace ProyectoIng_Economica
                 dgvResultadosPresentenualidad.DataSource = resultadosPresenteAp.ToList();
 
             }
+        }
+        public void PresenteCreciente(string interesGA,string periodoGA,double tasaInteresGA,double valorAnualidadGA,
+            int periodo1GA,List<object>resultadoGA,DataGridView dgvResultadosGA,double Gradiente)
+        {
+            if (interesGA.Equals("Anual") && periodoGA.Equals("Años"))
+            {
+                double anualidad = valorAnualidadGA;
 
+            }
 
         }
     }
+   
 }

@@ -81,6 +81,9 @@
             this.dgvResultadosAnualidadPresenteAnticipada = new System.Windows.Forms.DataGridView();
             this.label18 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.rdbNoAnualidadAnticipadaPresente = new System.Windows.Forms.RadioButton();
+            this.rdbSiAnualidadAnticipadaPresente = new System.Windows.Forms.RadioButton();
             this.cmbPeriodoAp = new System.Windows.Forms.ComboBox();
             this.cmbInteresAp = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -117,9 +120,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.rdbNoAnualidadAnticipadaPresente = new System.Windows.Forms.RadioButton();
-            this.rdbSiAnualidadAnticipadaPresente = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -141,6 +141,7 @@
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadPresenteAnticipada)).BeginInit();
             this.panel8.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tbgAnualidadFuturo.SuspendLayout();
@@ -150,7 +151,6 @@
             this.groupBox3.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -170,6 +170,7 @@
             // 
             // tbgDefinicion
             // 
+            this.tbgDefinicion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
             this.tbgDefinicion.Controls.Add(this.pictureBox1);
             this.tbgDefinicion.Location = new System.Drawing.Point(4, 31);
             this.tbgDefinicion.Name = "tbgDefinicion";
@@ -177,7 +178,6 @@
             this.tbgDefinicion.Size = new System.Drawing.Size(1150, 633);
             this.tbgDefinicion.TabIndex = 0;
             this.tbgDefinicion.Text = "Definicion";
-            this.tbgDefinicion.UseVisualStyleBackColor = true;
             this.tbgDefinicion.Click += new System.EventHandler(this.tbgDefinicion_Click);
             // 
             // pictureBox1
@@ -804,6 +804,40 @@
             this.panel8.Size = new System.Drawing.Size(523, 350);
             this.panel8.TabIndex = 13;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.rdbNoAnualidadAnticipadaPresente);
+            this.groupBox4.Controls.Add(this.rdbSiAnualidadAnticipadaPresente);
+            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox4.Location = new System.Drawing.Point(342, 42);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(152, 100);
+            this.groupBox4.TabIndex = 16;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Capitalizable";
+            // 
+            // rdbNoAnualidadAnticipadaPresente
+            // 
+            this.rdbNoAnualidadAnticipadaPresente.AutoSize = true;
+            this.rdbNoAnualidadAnticipadaPresente.Location = new System.Drawing.Point(6, 62);
+            this.rdbNoAnualidadAnticipadaPresente.Name = "rdbNoAnualidadAnticipadaPresente";
+            this.rdbNoAnualidadAnticipadaPresente.Size = new System.Drawing.Size(54, 26);
+            this.rdbNoAnualidadAnticipadaPresente.TabIndex = 1;
+            this.rdbNoAnualidadAnticipadaPresente.TabStop = true;
+            this.rdbNoAnualidadAnticipadaPresente.Text = "No";
+            this.rdbNoAnualidadAnticipadaPresente.UseVisualStyleBackColor = true;
+            // 
+            // rdbSiAnualidadAnticipadaPresente
+            // 
+            this.rdbSiAnualidadAnticipadaPresente.AutoSize = true;
+            this.rdbSiAnualidadAnticipadaPresente.Location = new System.Drawing.Point(6, 30);
+            this.rdbSiAnualidadAnticipadaPresente.Name = "rdbSiAnualidadAnticipadaPresente";
+            this.rdbSiAnualidadAnticipadaPresente.Size = new System.Drawing.Size(40, 26);
+            this.rdbSiAnualidadAnticipadaPresente.TabIndex = 0;
+            this.rdbSiAnualidadAnticipadaPresente.TabStop = true;
+            this.rdbSiAnualidadAnticipadaPresente.Text = "Si";
+            this.rdbSiAnualidadAnticipadaPresente.UseVisualStyleBackColor = true;
+            // 
             // cmbPeriodoAp
             // 
             this.cmbPeriodoAp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1259,40 +1293,6 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.rdbNoAnualidadAnticipadaPresente);
-            this.groupBox4.Controls.Add(this.rdbSiAnualidadAnticipadaPresente);
-            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.groupBox4.Location = new System.Drawing.Point(342, 42);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(152, 100);
-            this.groupBox4.TabIndex = 16;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Capitalizable";
-            // 
-            // rdbNoAnualidadAnticipadaPresente
-            // 
-            this.rdbNoAnualidadAnticipadaPresente.AutoSize = true;
-            this.rdbNoAnualidadAnticipadaPresente.Location = new System.Drawing.Point(6, 62);
-            this.rdbNoAnualidadAnticipadaPresente.Name = "rdbNoAnualidadAnticipadaPresente";
-            this.rdbNoAnualidadAnticipadaPresente.Size = new System.Drawing.Size(54, 26);
-            this.rdbNoAnualidadAnticipadaPresente.TabIndex = 1;
-            this.rdbNoAnualidadAnticipadaPresente.TabStop = true;
-            this.rdbNoAnualidadAnticipadaPresente.Text = "No";
-            this.rdbNoAnualidadAnticipadaPresente.UseVisualStyleBackColor = true;
-            // 
-            // rdbSiAnualidadAnticipadaPresente
-            // 
-            this.rdbSiAnualidadAnticipadaPresente.AutoSize = true;
-            this.rdbSiAnualidadAnticipadaPresente.Location = new System.Drawing.Point(6, 30);
-            this.rdbSiAnualidadAnticipadaPresente.Name = "rdbSiAnualidadAnticipadaPresente";
-            this.rdbSiAnualidadAnticipadaPresente.Size = new System.Drawing.Size(40, 26);
-            this.rdbSiAnualidadAnticipadaPresente.TabIndex = 0;
-            this.rdbSiAnualidadAnticipadaPresente.TabStop = true;
-            this.rdbSiAnualidadAnticipadaPresente.Text = "Si";
-            this.rdbSiAnualidadAnticipadaPresente.UseVisualStyleBackColor = true;
-            // 
             // FrmaAnualidadAnticipada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1333,6 +1333,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadPresenteAnticipada)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -1347,8 +1349,6 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }

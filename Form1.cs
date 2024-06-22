@@ -25,6 +25,7 @@ namespace ProyectoIng_Economica
             pnlSubMenuInteres.Visible = false;
             pnlSubMenus.Visible = false;
             pnlSubMenuIndicadores.Visible = false;
+            pnlGradientes.Visible = false;
         }
 
         private void hideSubMenu()
@@ -194,6 +195,30 @@ namespace ProyectoIng_Economica
         private void btnCalendarioPago_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new FrmCalendarioPago());
+        }
+
+        private void btnGradientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmPresentacionGradientes());
+            showSubMenu(pnlGradientes);
+            
+        }
+
+        private void pnlSideMenu_Paint(object sender, PaintEventArgs e)
+        {
+            //Ignorar
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmAritmetico());
+            hideSubMenu();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmGeometrico());
+            hideSubMenu();
         }
     }
 }
