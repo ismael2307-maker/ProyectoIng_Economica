@@ -42,9 +42,11 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tbgAnualidad = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.dgvPresenteGA = new System.Windows.Forms.DataGridView();
+            this.dgvresultadosGA = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cmbPeriodoGA = new System.Windows.Forms.ComboBox();
+            this.cmbInteresGA = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rdbPresenteDecrece = new System.Windows.Forms.RadioButton();
             this.rdbPresenteIncrementa = new System.Windows.Forms.RadioButton();
@@ -62,8 +64,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.cmbInteresGA = new System.Windows.Forms.ComboBox();
-            this.cmbPeriodoGA = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,7 +75,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tbgAnualidad.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPresenteGA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvresultadosGA)).BeginInit();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -225,20 +225,21 @@
             // 
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel6.Controls.Add(this.dgvPresenteGA);
+            this.panel6.Controls.Add(this.dgvresultadosGA);
             this.panel6.Controls.Add(this.label9);
             this.panel6.Location = new System.Drawing.Point(537, 174);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(621, 350);
             this.panel6.TabIndex = 16;
             // 
-            // dgvPresenteGA
+            // dgvresultadosGA
             // 
-            this.dgvPresenteGA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPresenteGA.Location = new System.Drawing.Point(3, 101);
-            this.dgvPresenteGA.Name = "dgvPresenteGA";
-            this.dgvPresenteGA.Size = new System.Drawing.Size(615, 150);
-            this.dgvPresenteGA.TabIndex = 13;
+            this.dgvresultadosGA.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvresultadosGA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvresultadosGA.Location = new System.Drawing.Point(39, 73);
+            this.dgvresultadosGA.Name = "dgvresultadosGA";
+            this.dgvresultadosGA.Size = new System.Drawing.Size(526, 230);
+            this.dgvresultadosGA.TabIndex = 13;
             // 
             // label9
             // 
@@ -246,7 +247,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label9.Location = new System.Drawing.Point(272, 13);
+            this.label9.Location = new System.Drawing.Point(209, 13);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(181, 39);
             this.label9.TabIndex = 12;
@@ -270,17 +271,48 @@
             this.panel3.Controls.Add(this.txtAnualidadGA);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(8, 174);
+            this.panel3.Location = new System.Drawing.Point(-32, 174);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(523, 350);
+            this.panel3.Size = new System.Drawing.Size(563, 350);
             this.panel3.TabIndex = 15;
+            // 
+            // cmbPeriodoGA
+            // 
+            this.cmbPeriodoGA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cmbPeriodoGA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPeriodoGA.FormattingEnabled = true;
+            this.cmbPeriodoGA.Items.AddRange(new object[] {
+            "Años",
+            "Meses",
+            "Semestres",
+            "Trimestres"});
+            this.cmbPeriodoGA.Location = new System.Drawing.Point(373, 205);
+            this.cmbPeriodoGA.Name = "cmbPeriodoGA";
+            this.cmbPeriodoGA.Size = new System.Drawing.Size(121, 30);
+            this.cmbPeriodoGA.TabIndex = 19;
+            // 
+            // cmbInteresGA
+            // 
+            this.cmbInteresGA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cmbInteresGA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbInteresGA.FormattingEnabled = true;
+            this.cmbInteresGA.Items.AddRange(new object[] {
+            "Anual",
+            "Mensual",
+            "Semestral",
+            "Trimestral"});
+            this.cmbInteresGA.Location = new System.Drawing.Point(373, 155);
+            this.cmbInteresGA.Name = "cmbInteresGA";
+            this.cmbInteresGA.Size = new System.Drawing.Size(121, 30);
+            this.cmbInteresGA.TabIndex = 18;
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox2.Controls.Add(this.rdbPresenteDecrece);
             this.groupBox2.Controls.Add(this.rdbPresenteIncrementa);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.groupBox2.Location = new System.Drawing.Point(320, 42);
+            this.groupBox2.Location = new System.Drawing.Point(345, 42);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 100);
             this.groupBox2.TabIndex = 17;
@@ -311,11 +343,11 @@
             // 
             // txtGradienteGA
             // 
-            this.txtGradienteGA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtGradienteGA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtGradienteGA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtGradienteGA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGradienteGA.ForeColor = System.Drawing.Color.White;
-            this.txtGradienteGA.Location = new System.Drawing.Point(189, 239);
+            this.txtGradienteGA.Location = new System.Drawing.Point(215, 250);
             this.txtGradienteGA.Name = "txtGradienteGA";
             this.txtGradienteGA.Size = new System.Drawing.Size(123, 24);
             this.txtGradienteGA.TabIndex = 15;
@@ -323,11 +355,11 @@
             // 
             // label25
             // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(9, 239);
+            this.label25.Location = new System.Drawing.Point(35, 250);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(113, 24);
             this.label25.TabIndex = 14;
@@ -340,7 +372,7 @@
             this.btnLimpiarPresenteGA.FlatAppearance.BorderSize = 0;
             this.btnLimpiarPresenteGA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarPresenteGA.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiarPresenteGA.Location = new System.Drawing.Point(253, 300);
+            this.btnLimpiarPresenteGA.Location = new System.Drawing.Point(273, 300);
             this.btnLimpiarPresenteGA.Name = "btnLimpiarPresenteGA";
             this.btnLimpiarPresenteGA.Size = new System.Drawing.Size(102, 33);
             this.btnLimpiarPresenteGA.TabIndex = 11;
@@ -355,7 +387,7 @@
             this.btnCalcularAnualidadGA.FlatAppearance.BorderSize = 0;
             this.btnCalcularAnualidadGA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcularAnualidadGA.ForeColor = System.Drawing.Color.White;
-            this.btnCalcularAnualidadGA.Location = new System.Drawing.Point(110, 300);
+            this.btnCalcularAnualidadGA.Location = new System.Drawing.Point(130, 300);
             this.btnCalcularAnualidadGA.Name = "btnCalcularAnualidadGA";
             this.btnCalcularAnualidadGA.Size = new System.Drawing.Size(102, 33);
             this.btnCalcularAnualidadGA.TabIndex = 10;
@@ -365,11 +397,11 @@
             // 
             // txtPeriodoGA
             // 
-            this.txtPeriodoGA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtPeriodoGA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtPeriodoGA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPeriodoGA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPeriodoGA.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodoGA.Location = new System.Drawing.Point(190, 194);
+            this.txtPeriodoGA.Location = new System.Drawing.Point(216, 205);
             this.txtPeriodoGA.Name = "txtPeriodoGA";
             this.txtPeriodoGA.Size = new System.Drawing.Size(123, 24);
             this.txtPeriodoGA.TabIndex = 9;
@@ -378,11 +410,11 @@
             // label4
             // 
             this.label4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(9, 192);
+            this.label4.Location = new System.Drawing.Point(35, 203);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 24);
             this.label4.TabIndex = 8;
@@ -390,11 +422,11 @@
             // 
             // txtInteresGA
             // 
-            this.txtInteresGA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtInteresGA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtInteresGA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtInteresGA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInteresGA.ForeColor = System.Drawing.Color.White;
-            this.txtInteresGA.Location = new System.Drawing.Point(189, 145);
+            this.txtInteresGA.Location = new System.Drawing.Point(215, 156);
             this.txtInteresGA.Name = "txtInteresGA";
             this.txtInteresGA.Size = new System.Drawing.Size(123, 24);
             this.txtInteresGA.TabIndex = 7;
@@ -402,11 +434,11 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(9, 145);
+            this.label5.Location = new System.Drawing.Point(35, 156);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(125, 24);
             this.label5.TabIndex = 6;
@@ -414,11 +446,11 @@
             // 
             // txtAnualidadGA
             // 
-            this.txtAnualidadGA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtAnualidadGA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtAnualidadGA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtAnualidadGA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAnualidadGA.ForeColor = System.Drawing.Color.White;
-            this.txtAnualidadGA.Location = new System.Drawing.Point(190, 88);
+            this.txtAnualidadGA.Location = new System.Drawing.Point(216, 99);
             this.txtAnualidadGA.Name = "txtAnualidadGA";
             this.txtAnualidadGA.Size = new System.Drawing.Size(123, 24);
             this.txtAnualidadGA.TabIndex = 5;
@@ -426,11 +458,11 @@
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(9, 86);
+            this.label6.Location = new System.Drawing.Point(35, 97);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(175, 24);
             this.label6.TabIndex = 4;
@@ -442,7 +474,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label7.Location = new System.Drawing.Point(103, 0);
+            this.label7.Location = new System.Drawing.Point(143, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(276, 39);
             this.label7.TabIndex = 3;
@@ -483,32 +515,6 @@
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
-            // cmbInteresGA
-            // 
-            this.cmbInteresGA.FormattingEnabled = true;
-            this.cmbInteresGA.Items.AddRange(new object[] {
-            "Anual",
-            "Mensual",
-            "Semestral",
-            "Trimestral"});
-            this.cmbInteresGA.Location = new System.Drawing.Point(353, 144);
-            this.cmbInteresGA.Name = "cmbInteresGA";
-            this.cmbInteresGA.Size = new System.Drawing.Size(121, 30);
-            this.cmbInteresGA.TabIndex = 18;
-            // 
-            // cmbPeriodoGA
-            // 
-            this.cmbPeriodoGA.FormattingEnabled = true;
-            this.cmbPeriodoGA.Items.AddRange(new object[] {
-            "Años",
-            "Meses",
-            "Semestres",
-            "Trimestres"});
-            this.cmbPeriodoGA.Location = new System.Drawing.Point(353, 194);
-            this.cmbPeriodoGA.Name = "cmbPeriodoGA";
-            this.cmbPeriodoGA.Size = new System.Drawing.Size(121, 30);
-            this.cmbPeriodoGA.TabIndex = 19;
-            // 
             // FrmAritmetico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -532,7 +538,7 @@
             this.tbgAnualidad.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPresenteGA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvresultadosGA)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -577,7 +583,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.DataGridView dgvPresenteGA;
+        private System.Windows.Forms.DataGridView dgvresultadosGA;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cmbPeriodoGA;
         private System.Windows.Forms.ComboBox cmbInteresGA;

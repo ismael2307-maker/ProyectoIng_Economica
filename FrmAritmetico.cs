@@ -64,20 +64,34 @@ namespace ProyectoIng_Economica
             txtPeriodoGA.Text = "";
             txtGradienteGA.Text = "";
         }
-
+        List<object> resultadosGA = new List<object>();
         private void btnCalcularAnualidadGA_Click(object sender, EventArgs e)
         {
-            double A1, G, i;
-            int n;
-
             try
             {
-                A1 = Convert.ToDouble(txtAnualidadGA.Text);
-                i = Convert.ToDouble(txtInteresGA.Text);
-                n = Convert.ToInt32(txtPeriodoGA.Text);
-                G = Convert.ToDouble(txtGradienteGA.Text);
+                if (rdbPresenteIncrementa.Checked == true)
+                {
+                    var GA = new Metodos();
+                    string interesA = cmbInteresGA.SelectedItem.ToString();
+                    string periodoA = cmbPeriodoGA.SelectedItem.ToString();
+                    double Anualidad =  Convert.ToDouble(txtAnualidadGA.Text);
+                    double interes = Convert.ToDouble(txtInteresGA.Text);
+                    int periodo1 = Convert.ToInt32(txtPeriodoGA.Text);
+                    double gradiente = Convert.ToDouble(txtGradienteGA.Text);
 
-                
+                    GA.PresenteCreciente(interesA,periodoA,interes,Anualidad,periodo1,resultadosGA, dgvresultadosGA,gradiente);
+                }
+                else if(rdbPresenteDecrece.Checked == true)
+                {
+                    var GA = new Metodos();
+                    string interesA = cmbInteresGA.SelectedItem.ToString();
+                    string periodoA = cmbPeriodoGA.SelectedItem.ToString();
+                    double Anualidad = Convert.ToDouble(txtAnualidadGA.Text);
+                    double interes = Convert.ToDouble(txtInteresGA.Text);
+                    int periodo1 = Convert.ToInt32(txtPeriodoGA.Text);
+                    double gradiente = Convert.ToDouble(txtGradienteGA.Text);
+                    GA.AnualidadDecreciente(interesA, periodoA, interes, Anualidad, periodo1, resultadosGA, dgvresultadosGA, gradiente);
+                }
             }catch(FormatException x)
             {
                 MessageBox.Show("Rellene los campos necesarios" + x);
