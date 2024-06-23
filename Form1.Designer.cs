@@ -168,7 +168,7 @@
             this.pnlGradientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlGradientes.Location = new System.Drawing.Point(0, 572);
             this.pnlGradientes.Name = "pnlGradientes";
-            this.pnlGradientes.Size = new System.Drawing.Size(192, 51);
+            this.pnlGradientes.Size = new System.Drawing.Size(192, 64);
             this.pnlGradientes.TabIndex = 9;
             // 
             // button4
@@ -182,7 +182,7 @@
             this.button4.Location = new System.Drawing.Point(0, 28);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(192, 24);
+            this.button4.Size = new System.Drawing.Size(192, 23);
             this.button4.TabIndex = 1;
             this.button4.Text = "Geometricos";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

@@ -13,10 +13,6 @@ namespace ProyectoIng_Economica
 {
     public partial class FrmaAnualidadAnticipada : Form
     {
-        //public List<AnualidadAnticipidaP> Ap = new List<AnualidadAnticipidaP> ();
-       // public List<AnualidadAnticipadaF> Af = new List<AnualidadAnticipadaF> ();
-       // public List<AnualidadAnticipadaAP> AAp = new List<AnualidadAnticipadaAP> ();
-       // public List<AnualidadAnticipadaAF> AAF = new List<AnualidadAnticipadaAF> ();
         public FrmaAnualidadAnticipada()
         {
             InitializeComponent();

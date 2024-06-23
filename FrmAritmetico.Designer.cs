@@ -64,6 +64,42 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.cmbPeriodoPG = new System.Windows.Forms.ComboBox();
+            this.cmbInteresPG = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbDecrecePG = new System.Windows.Forms.RadioButton();
+            this.rdbIncrementaPG = new System.Windows.Forms.RadioButton();
+            this.btnLimpiarPG = new System.Windows.Forms.Button();
+            this.btnCalcularPG = new System.Windows.Forms.Button();
+            this.txtPeriodoPG = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtInteresPG = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtGradientePG = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.dgvResultadosPG = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.cmbPeriodoFG = new System.Windows.Forms.ComboBox();
+            this.cmbInteresFG = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rdbDecreceFG = new System.Windows.Forms.RadioButton();
+            this.rdbIncrementaFG = new System.Windows.Forms.RadioButton();
+            this.btnLimpiarFG = new System.Windows.Forms.Button();
+            this.btnCalcularFG = new System.Windows.Forms.Button();
+            this.txtPeriodoFG = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtInteresFG = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtGradienteFG = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.dgvResultadosFG = new System.Windows.Forms.DataGridView();
+            this.label18 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,6 +116,14 @@
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosPG)).BeginInit();
+            this.panel8.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosFG)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -121,6 +165,8 @@
             // tbgValorPresente
             // 
             this.tbgValorPresente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.tbgValorPresente.Controls.Add(this.panel7);
+            this.tbgValorPresente.Controls.Add(this.panel5);
             this.tbgValorPresente.Controls.Add(this.panel4);
             this.tbgValorPresente.Location = new System.Drawing.Point(4, 31);
             this.tbgValorPresente.Name = "tbgValorPresente";
@@ -135,9 +181,9 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Location = new System.Drawing.Point(279, 6);
+            this.panel4.Location = new System.Drawing.Point(329, 6);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(486, 232);
+            this.panel4.Size = new System.Drawing.Size(437, 181);
             this.panel4.TabIndex = 12;
             // 
             // label2
@@ -146,7 +192,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label2.Location = new System.Drawing.Point(168, 24);
+            this.label2.Location = new System.Drawing.Point(137, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(174, 39);
             this.label2.TabIndex = 1;
@@ -157,7 +203,7 @@
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(49, 66);
+            this.pictureBox2.Location = new System.Drawing.Point(26, 51);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(388, 118);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -167,6 +213,8 @@
             // tbgValorFuturo
             // 
             this.tbgValorFuturo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.tbgValorFuturo.Controls.Add(this.panel9);
+            this.tbgValorFuturo.Controls.Add(this.panel8);
             this.tbgValorFuturo.Controls.Add(this.panel1);
             this.tbgValorFuturo.Location = new System.Drawing.Point(4, 31);
             this.tbgValorFuturo.Name = "tbgValorFuturo";
@@ -180,9 +228,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Location = new System.Drawing.Point(282, 16);
+            this.panel1.Location = new System.Drawing.Point(295, 13);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(486, 232);
+            this.panel1.Size = new System.Drawing.Size(458, 183);
             this.panel1.TabIndex = 13;
             // 
             // label1
@@ -191,7 +239,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label1.Location = new System.Drawing.Point(168, 24);
+            this.label1.Location = new System.Drawing.Point(151, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 39);
             this.label1.TabIndex = 1;
@@ -202,7 +250,7 @@
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(49, 66);
+            this.pictureBox3.Location = new System.Drawing.Point(46, 52);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(388, 118);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -515,6 +563,462 @@
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel5.Controls.Add(this.cmbPeriodoPG);
+            this.panel5.Controls.Add(this.cmbInteresPG);
+            this.panel5.Controls.Add(this.groupBox1);
+            this.panel5.Controls.Add(this.btnLimpiarPG);
+            this.panel5.Controls.Add(this.btnCalcularPG);
+            this.panel5.Controls.Add(this.txtPeriodoPG);
+            this.panel5.Controls.Add(this.label10);
+            this.panel5.Controls.Add(this.txtInteresPG);
+            this.panel5.Controls.Add(this.label11);
+            this.panel5.Controls.Add(this.txtGradientePG);
+            this.panel5.Controls.Add(this.label12);
+            this.panel5.Controls.Add(this.label13);
+            this.panel5.Location = new System.Drawing.Point(6, 192);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(563, 338);
+            this.panel5.TabIndex = 16;
+            // 
+            // cmbPeriodoPG
+            // 
+            this.cmbPeriodoPG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cmbPeriodoPG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPeriodoPG.FormattingEnabled = true;
+            this.cmbPeriodoPG.Items.AddRange(new object[] {
+            "Años",
+            "Meses",
+            "Semestres",
+            "Trimestres"});
+            this.cmbPeriodoPG.Location = new System.Drawing.Point(373, 201);
+            this.cmbPeriodoPG.Name = "cmbPeriodoPG";
+            this.cmbPeriodoPG.Size = new System.Drawing.Size(121, 30);
+            this.cmbPeriodoPG.TabIndex = 19;
+            // 
+            // cmbInteresPG
+            // 
+            this.cmbInteresPG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cmbInteresPG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbInteresPG.FormattingEnabled = true;
+            this.cmbInteresPG.Items.AddRange(new object[] {
+            "Anual",
+            "Mensual",
+            "Semestral",
+            "Trimestral"});
+            this.cmbInteresPG.Location = new System.Drawing.Point(373, 148);
+            this.cmbInteresPG.Name = "cmbInteresPG";
+            this.cmbInteresPG.Size = new System.Drawing.Size(121, 30);
+            this.cmbInteresPG.TabIndex = 18;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox1.Controls.Add(this.rdbDecrecePG);
+            this.groupBox1.Controls.Add(this.rdbIncrementaPG);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox1.Location = new System.Drawing.Point(360, 39);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Opcion";
+            // 
+            // rdbDecrecePG
+            // 
+            this.rdbDecrecePG.AutoSize = true;
+            this.rdbDecrecePG.Location = new System.Drawing.Point(7, 64);
+            this.rdbDecrecePG.Name = "rdbDecrecePG";
+            this.rdbDecrecePG.Size = new System.Drawing.Size(108, 26);
+            this.rdbDecrecePG.TabIndex = 1;
+            this.rdbDecrecePG.TabStop = true;
+            this.rdbDecrecePG.Text = "Decrece";
+            this.rdbDecrecePG.UseVisualStyleBackColor = true;
+            // 
+            // rdbIncrementaPG
+            // 
+            this.rdbIncrementaPG.AutoSize = true;
+            this.rdbIncrementaPG.Location = new System.Drawing.Point(7, 31);
+            this.rdbIncrementaPG.Name = "rdbIncrementaPG";
+            this.rdbIncrementaPG.Size = new System.Drawing.Size(136, 26);
+            this.rdbIncrementaPG.TabIndex = 0;
+            this.rdbIncrementaPG.TabStop = true;
+            this.rdbIncrementaPG.Text = "Incrementa";
+            this.rdbIncrementaPG.UseVisualStyleBackColor = true;
+            // 
+            // btnLimpiarPG
+            // 
+            this.btnLimpiarPG.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLimpiarPG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnLimpiarPG.FlatAppearance.BorderSize = 0;
+            this.btnLimpiarPG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarPG.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiarPG.Location = new System.Drawing.Point(277, 274);
+            this.btnLimpiarPG.Name = "btnLimpiarPG";
+            this.btnLimpiarPG.Size = new System.Drawing.Size(102, 33);
+            this.btnLimpiarPG.TabIndex = 11;
+            this.btnLimpiarPG.Text = "Limpiar";
+            this.btnLimpiarPG.UseVisualStyleBackColor = false;
+            // 
+            // btnCalcularPG
+            // 
+            this.btnCalcularPG.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCalcularPG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnCalcularPG.FlatAppearance.BorderSize = 0;
+            this.btnCalcularPG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcularPG.ForeColor = System.Drawing.Color.White;
+            this.btnCalcularPG.Location = new System.Drawing.Point(126, 274);
+            this.btnCalcularPG.Name = "btnCalcularPG";
+            this.btnCalcularPG.Size = new System.Drawing.Size(102, 33);
+            this.btnCalcularPG.TabIndex = 10;
+            this.btnCalcularPG.Text = "Calcular";
+            this.btnCalcularPG.UseVisualStyleBackColor = false;
+            // 
+            // txtPeriodoPG
+            // 
+            this.txtPeriodoPG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtPeriodoPG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtPeriodoPG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPeriodoPG.ForeColor = System.Drawing.Color.White;
+            this.txtPeriodoPG.Location = new System.Drawing.Point(202, 201);
+            this.txtPeriodoPG.Name = "txtPeriodoPG";
+            this.txtPeriodoPG.Size = new System.Drawing.Size(123, 24);
+            this.txtPeriodoPG.TabIndex = 9;
+            // 
+            // label10
+            // 
+            this.label10.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(21, 199);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(87, 24);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Periodo";
+            // 
+            // txtInteresPG
+            // 
+            this.txtInteresPG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtInteresPG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtInteresPG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtInteresPG.ForeColor = System.Drawing.Color.White;
+            this.txtInteresPG.Location = new System.Drawing.Point(201, 151);
+            this.txtInteresPG.Name = "txtInteresPG";
+            this.txtInteresPG.Size = new System.Drawing.Size(123, 24);
+            this.txtInteresPG.TabIndex = 7;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(21, 151);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(125, 24);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "Tasa interés";
+            // 
+            // txtGradientePG
+            // 
+            this.txtGradientePG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtGradientePG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtGradientePG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtGradientePG.ForeColor = System.Drawing.Color.White;
+            this.txtGradientePG.Location = new System.Drawing.Point(202, 93);
+            this.txtGradientePG.Name = "txtGradientePG";
+            this.txtGradientePG.Size = new System.Drawing.Size(123, 24);
+            this.txtGradientePG.TabIndex = 5;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(21, 91);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(113, 24);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "Gradiente";
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label13.Location = new System.Drawing.Point(119, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(276, 39);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "Ingresa los datos";
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel7.Controls.Add(this.dgvResultadosPG);
+            this.panel7.Controls.Add(this.label8);
+            this.panel7.Location = new System.Drawing.Point(575, 192);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(493, 338);
+            this.panel7.TabIndex = 17;
+            // 
+            // dgvResultadosPG
+            // 
+            this.dgvResultadosPG.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvResultadosPG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultadosPG.Location = new System.Drawing.Point(12, 114);
+            this.dgvResultadosPG.Name = "dgvResultadosPG";
+            this.dgvResultadosPG.Size = new System.Drawing.Size(468, 175);
+            this.dgvResultadosPG.TabIndex = 13;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label8.Location = new System.Drawing.Point(158, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(181, 39);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Resultados";
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel8.Controls.Add(this.cmbPeriodoFG);
+            this.panel8.Controls.Add(this.cmbInteresFG);
+            this.panel8.Controls.Add(this.groupBox3);
+            this.panel8.Controls.Add(this.btnLimpiarFG);
+            this.panel8.Controls.Add(this.btnCalcularFG);
+            this.panel8.Controls.Add(this.txtPeriodoFG);
+            this.panel8.Controls.Add(this.label14);
+            this.panel8.Controls.Add(this.txtInteresFG);
+            this.panel8.Controls.Add(this.label15);
+            this.panel8.Controls.Add(this.txtGradienteFG);
+            this.panel8.Controls.Add(this.label16);
+            this.panel8.Controls.Add(this.label17);
+            this.panel8.Location = new System.Drawing.Point(8, 204);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(563, 326);
+            this.panel8.TabIndex = 17;
+            // 
+            // cmbPeriodoFG
+            // 
+            this.cmbPeriodoFG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cmbPeriodoFG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPeriodoFG.FormattingEnabled = true;
+            this.cmbPeriodoFG.Items.AddRange(new object[] {
+            "Años",
+            "Meses",
+            "Semestres",
+            "Trimestres"});
+            this.cmbPeriodoFG.Location = new System.Drawing.Point(373, 201);
+            this.cmbPeriodoFG.Name = "cmbPeriodoFG";
+            this.cmbPeriodoFG.Size = new System.Drawing.Size(121, 30);
+            this.cmbPeriodoFG.TabIndex = 19;
+            // 
+            // cmbInteresFG
+            // 
+            this.cmbInteresFG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cmbInteresFG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbInteresFG.FormattingEnabled = true;
+            this.cmbInteresFG.Items.AddRange(new object[] {
+            "Anual",
+            "Mensual",
+            "Semestral",
+            "Trimestral"});
+            this.cmbInteresFG.Location = new System.Drawing.Point(373, 148);
+            this.cmbInteresFG.Name = "cmbInteresFG";
+            this.cmbInteresFG.Size = new System.Drawing.Size(121, 30);
+            this.cmbInteresFG.TabIndex = 18;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox3.Controls.Add(this.rdbDecreceFG);
+            this.groupBox3.Controls.Add(this.rdbIncrementaFG);
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox3.Location = new System.Drawing.Point(360, 39);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 100);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Opcion";
+            // 
+            // rdbDecreceFG
+            // 
+            this.rdbDecreceFG.AutoSize = true;
+            this.rdbDecreceFG.Location = new System.Drawing.Point(7, 64);
+            this.rdbDecreceFG.Name = "rdbDecreceFG";
+            this.rdbDecreceFG.Size = new System.Drawing.Size(108, 26);
+            this.rdbDecreceFG.TabIndex = 1;
+            this.rdbDecreceFG.TabStop = true;
+            this.rdbDecreceFG.Text = "Decrece";
+            this.rdbDecreceFG.UseVisualStyleBackColor = true;
+            // 
+            // rdbIncrementaFG
+            // 
+            this.rdbIncrementaFG.AutoSize = true;
+            this.rdbIncrementaFG.Location = new System.Drawing.Point(7, 31);
+            this.rdbIncrementaFG.Name = "rdbIncrementaFG";
+            this.rdbIncrementaFG.Size = new System.Drawing.Size(136, 26);
+            this.rdbIncrementaFG.TabIndex = 0;
+            this.rdbIncrementaFG.TabStop = true;
+            this.rdbIncrementaFG.Text = "Incrementa";
+            this.rdbIncrementaFG.UseVisualStyleBackColor = true;
+            // 
+            // btnLimpiarFG
+            // 
+            this.btnLimpiarFG.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLimpiarFG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnLimpiarFG.FlatAppearance.BorderSize = 0;
+            this.btnLimpiarFG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarFG.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiarFG.Location = new System.Drawing.Point(277, 268);
+            this.btnLimpiarFG.Name = "btnLimpiarFG";
+            this.btnLimpiarFG.Size = new System.Drawing.Size(102, 33);
+            this.btnLimpiarFG.TabIndex = 11;
+            this.btnLimpiarFG.Text = "Limpiar";
+            this.btnLimpiarFG.UseVisualStyleBackColor = false;
+            // 
+            // btnCalcularFG
+            // 
+            this.btnCalcularFG.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCalcularFG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnCalcularFG.FlatAppearance.BorderSize = 0;
+            this.btnCalcularFG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcularFG.ForeColor = System.Drawing.Color.White;
+            this.btnCalcularFG.Location = new System.Drawing.Point(126, 268);
+            this.btnCalcularFG.Name = "btnCalcularFG";
+            this.btnCalcularFG.Size = new System.Drawing.Size(102, 33);
+            this.btnCalcularFG.TabIndex = 10;
+            this.btnCalcularFG.Text = "Calcular";
+            this.btnCalcularFG.UseVisualStyleBackColor = false;
+            // 
+            // txtPeriodoFG
+            // 
+            this.txtPeriodoFG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtPeriodoFG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtPeriodoFG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPeriodoFG.ForeColor = System.Drawing.Color.White;
+            this.txtPeriodoFG.Location = new System.Drawing.Point(202, 201);
+            this.txtPeriodoFG.Name = "txtPeriodoFG";
+            this.txtPeriodoFG.Size = new System.Drawing.Size(123, 24);
+            this.txtPeriodoFG.TabIndex = 9;
+            // 
+            // label14
+            // 
+            this.label14.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(33, 199);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(87, 24);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Periodo";
+            // 
+            // txtInteresFG
+            // 
+            this.txtInteresFG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtInteresFG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtInteresFG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtInteresFG.ForeColor = System.Drawing.Color.White;
+            this.txtInteresFG.Location = new System.Drawing.Point(201, 151);
+            this.txtInteresFG.Name = "txtInteresFG";
+            this.txtInteresFG.Size = new System.Drawing.Size(123, 24);
+            this.txtInteresFG.TabIndex = 7;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(21, 149);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(125, 24);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "Tasa interés";
+            // 
+            // txtGradienteFG
+            // 
+            this.txtGradienteFG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtGradienteFG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtGradienteFG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtGradienteFG.ForeColor = System.Drawing.Color.White;
+            this.txtGradienteFG.Location = new System.Drawing.Point(202, 93);
+            this.txtGradienteFG.Name = "txtGradienteFG";
+            this.txtGradienteFG.Size = new System.Drawing.Size(123, 24);
+            this.txtGradienteFG.TabIndex = 5;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(33, 91);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(113, 24);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "Gradiente";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label17.Location = new System.Drawing.Point(103, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(276, 39);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "Ingresa los datos";
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel9.Controls.Add(this.dgvResultadosFG);
+            this.panel9.Controls.Add(this.label18);
+            this.panel9.Location = new System.Drawing.Point(580, 204);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(488, 326);
+            this.panel9.TabIndex = 18;
+            // 
+            // dgvResultadosFG
+            // 
+            this.dgvResultadosFG.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvResultadosFG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultadosFG.Location = new System.Drawing.Point(10, 108);
+            this.dgvResultadosFG.Name = "dgvResultadosFG";
+            this.dgvResultadosFG.Size = new System.Drawing.Size(468, 175);
+            this.dgvResultadosFG.TabIndex = 13;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.label18.Location = new System.Drawing.Point(153, 19);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(181, 39);
+            this.label18.TabIndex = 12;
+            this.label18.Text = "Resultados";
+            // 
             // FrmAritmetico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -546,6 +1050,20 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosPG)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosFG)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -587,5 +1105,41 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cmbPeriodoGA;
         private System.Windows.Forms.ComboBox cmbInteresGA;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.ComboBox cmbPeriodoPG;
+        private System.Windows.Forms.ComboBox cmbInteresPG;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rdbDecrecePG;
+        private System.Windows.Forms.RadioButton rdbIncrementaPG;
+        private System.Windows.Forms.Button btnLimpiarPG;
+        private System.Windows.Forms.Button btnCalcularPG;
+        private System.Windows.Forms.TextBox txtPeriodoPG;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtInteresPG;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtGradientePG;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.DataGridView dgvResultadosPG;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.ComboBox cmbPeriodoFG;
+        private System.Windows.Forms.ComboBox cmbInteresFG;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton rdbDecreceFG;
+        private System.Windows.Forms.RadioButton rdbIncrementaFG;
+        private System.Windows.Forms.Button btnLimpiarFG;
+        private System.Windows.Forms.Button btnCalcularFG;
+        private System.Windows.Forms.TextBox txtPeriodoFG;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtInteresFG;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtGradienteFG;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.DataGridView dgvResultadosFG;
+        private System.Windows.Forms.Label label18;
     }
 }

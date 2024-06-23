@@ -1444,6 +1444,176 @@ namespace ProyectoIng_Economica
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
+            else if (interesGA2.Equals("Anual") && periodoGA2.Equals("Trimestres"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2 / 4;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+            else if (interesGA2.Equals("Mensual") && periodoGA2.Equals("Años"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2 * 12;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+            else if (interesGA2.Equals("Mensual") && periodoGA2.Equals("Meses"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+            else if (interesGA2.Equals("Mensual") && periodoGA2.Equals("Semestres"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2 * 6;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+            else if (interesGA2.Equals("Mensual") && periodoGA2.Equals("Trimestres"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2 * 3;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+            else if (interesGA2.Equals("Semestral") && periodoGA2.Equals("Años"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2 * 2;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+            else if (interesGA2.Equals("Semestral") && periodoGA2.Equals("Meses"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2 / 6;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+            else if (interesGA2.Equals("Semestral") && periodoGA2.Equals("Semestres"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+            else if (interesGA2.Equals("Semestral") && periodoGA2.Equals("Trimestres"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2 / 2;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+            else if (interesGA2.Equals("Trimestral") && periodoGA2.Equals("Años"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2 * 4;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+            else if (interesGA2.Equals("Trimestral") && periodoGA2.Equals("Meses"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2 / 3;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+            else if (interesGA2.Equals("Trimestral") && periodoGA2.Equals("Semestres"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2 * 2;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+            else if (interesGA2.Equals("Trimestral") && periodoGA2.Equals("Trimestres"))
+            {
+                double anualidad = valorAnualidadGA2;
+                double i1 = tasaInteresGA2 / 100;
+                double interes = i1;
+                int periodo = periodo1GA2 * 4;
+                double GA = Gradiente2;
+                double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
+                double Ag = anualidad - resultado;
+                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                dgvResultadosGA2.DataSource = null;
+                dgvResultadosGA2.DataSource = resultadoGA2.ToList();
+            }
+
         }
     }
    

@@ -36,6 +36,8 @@ namespace ProyectoIng_Economica
                 pnlSubMenus.Visible = false;
             if (pnlSubMenuIndicadores.Visible == true)
                 pnlSubMenuIndicadores.Visible = false;
+            if (pnlGradientes.Visible == true)
+                pnlGradientes.Visible = false;
         }
 
         private void showSubMenu(Panel subMenu)
