@@ -97,5 +97,32 @@ namespace ProyectoIng_Economica
                 MessageBox.Show("Rellene los campos necesarios" + x);
             }
         }
+        List<object> resultadosPG = new List<object>();
+        private void btnCalcularPG_Click(object sender, EventArgs e)
+        {
+            if (rdbIncrementaPG.Checked == true)
+            {
+                var PG = new Metodos();
+                string interesP = cmbInteresPG.SelectedItem.ToString();
+                string periodoP =cmbPeriodoPG.SelectedItem.ToString();
+                double Anualidad = Convert.ToDouble(txtAnualidadPG.Text);
+                double interes = Convert.ToDouble(txtInteresPG.Text);
+                int Periodo1 = Convert.ToInt32(txtPeriodoPG.Text);
+                double gradiente = Convert.ToDouble(txtGradientePG.Text);
+                PG.preseCreciente(interesP,periodoP,interes,Anualidad,Periodo1,resultadosPG, dgvResultadosPG, gradiente);
+            }
+            else if(rdbDecrecePG.Checked == true)
+            {
+                var PG = new Metodos();
+                string interesP = cmbInteresPG.SelectedItem.ToString();
+                string periodoP = cmbPeriodoPG.SelectedItem.ToString();
+                double Anualidad = Convert.ToDouble(txtAnualidadPG.Text);
+                double interes = Convert.ToDouble(txtInteresPG.Text);
+                int Periodo1 = Convert.ToInt32(txtPeriodoPG.Text);
+                double gradiente = Convert.ToDouble(txtGradientePG.Text);
+                PG.preseDecrece(interesP, periodoP, interes, Anualidad, Periodo1, resultadosPG, dgvResultadosPG, gradiente);
+            }
+            
+        }
     }
 }
