@@ -1436,7 +1436,7 @@ namespace ProyectoIng_Economica
                 double anualidad = valorAnualidadGA2;
                 double i1 = tasaInteresGA2 / 100;
                 double interes = i1;
-                int periodo = periodo1GA2 / 12;
+                int periodo = periodo1GA2 / 2;
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
@@ -1637,12 +1637,507 @@ namespace ProyectoIng_Economica
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
+            else if (interesPG.Equals("Anual") && periodoPG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG / 12;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Anual") && periodoPG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = (int)(PeriodoPG * 0.5);
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Anual") && periodoPG.Equals("Trimestres"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG / 4;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Mensual") && periodoPG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG * 12;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Mensual") && periodoPG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG * 12;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Mensual") && periodoPG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG * 6;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Mensual") && periodoPG.Equals("Trimestres"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG * 3;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Semestral") && periodoPG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG * 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Semestral") && periodoPG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG / 6;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Semestral") && periodoPG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Semestral") && periodoPG.Equals("Trimestral"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG / 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+
         }
         public void preseDecrece(string interesPG, string periodoPG, double tasaInteresPG, double valorAnualidadPG, int PeriodoPG
             , List<object> resultadoPG, DataGridView dgvresultadosPG, double gradiente)
         {
 
             if (interesPG.Equals("Anual") && periodoPG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Anual") && periodoPG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG / 12;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Anual") && periodoPG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG / 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Anual") && periodoPG.Equals("Trimestres"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG / 4;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Mensual") && periodoPG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG * 12;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Mensual") && periodoPG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Mensual") && periodoPG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG * 6;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Mensual") && periodoPG.Equals("Trimestres"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG * 3;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Semestral") && periodoPG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG * 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Semestral") && periodoPG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG / 6;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Semestral") && periodoPG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Semestral") && periodoPG.Equals("Trimestres"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG / 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Trimestral") && periodoPG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG * 4;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Trimestral") && periodoPG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG / 3;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Trimestral") && periodoPG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadPG;
+                double i1 = tasaInteresPG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoPG * 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double PresenteVencida = ((Math.Pow(1 + Interes, Periodo) - 1) / (Interes * Math.Pow(1 + Interes, Periodo)));
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double Denominador = Interes * Math.Pow(1 + Interes, Periodo);
+                double result1 = Numerador / Denominador;
+                double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
+                double resultado = result1 - result2;
+                double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
+                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                dgvresultadosPG.DataSource = null;
+                dgvresultadosPG.DataSource = resultadoPG.ToList();
+            }
+            else if (interesPG.Equals("Trimestral") && periodoPG.Equals("Trimestres"))
             {
                 double Anualidad = valorAnualidadPG;
                 double i1 = tasaInteresPG / 100;
