@@ -1662,6 +1662,48 @@ namespace ProyectoIng_Economica
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
         }
+        public void FuturoCrece(string interesFG, string periodoFG, double tasaInteresFG, double valorAnualidadFG, int PeriodoFG,
+            List<object> resultadoFG,DataGridView dgvresultadosFG,double gradiente)
+        {
+            if (interesFG.Equals("Anual") && periodoFG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1+Interes,Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+        }
+        public void FuturoDecrece(string interesFG, string periodoFG, double tasaInteresFG, double valorAnualidadFG, int PeriodoFG,
+            List<object> resultadoFG, DataGridView dgvresultadosFG, double gradiente)
+        {
+            if (interesFG.Equals("Anual") && periodoFG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+        }
     }
    
 }

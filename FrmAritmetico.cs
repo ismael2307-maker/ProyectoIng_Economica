@@ -124,5 +124,71 @@ namespace ProyectoIng_Economica
             }
             
         }
+
+        private void txtGradientePG_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtAnualidadPG_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtInteresPG_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtPeriodoPG_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+        List<object> resultadosFG = new List<object>();
+        private void btnCalcularFG_Click(object sender, EventArgs e)
+        {
+            if (rdbIncrementaFG.Checked == true)
+            {
+                var FG = new Metodos();
+                string interesF = cmbInteresFG.SelectedItem.ToString();
+                string periodoF = cmbPeriodoFG.SelectedItem.ToString();
+                double Anualidad = Convert.ToDouble(txtAnualidadFG.Text);
+                double interes = Convert.ToDouble(txtInteresFG.Text);
+                int periodo1 = Convert.ToInt32(txtPeriodoFG.Text);
+                double gradiente = Convert.ToDouble(txtGradienteFG.Text);
+                FG.FuturoCrece(interesF, periodoF, interes, Anualidad, periodo1,resultadosFG, dgvResultadosFG,gradiente);
+            }
+            else if (rdbDecreceFG.Checked == true)
+            {
+                var FG = new Metodos();
+                string interesF = cmbInteresFG.SelectedItem.ToString();
+                string periodoF = cmbPeriodoFG.SelectedItem.ToString();
+                double Anualidad = Convert.ToDouble(txtAnualidadFG.Text);
+                double interes = Convert.ToDouble(txtInteresFG.Text);
+                int periodo1 = Convert.ToInt32(txtPeriodoFG.Text);
+                double gradiente = Convert.ToDouble(txtGradienteFG.Text);
+                FG.FuturoDecrece(interesF, periodoF, interes, Anualidad, periodo1, resultadosFG, dgvResultadosFG, gradiente);
+            }
+        }
     }
 }
