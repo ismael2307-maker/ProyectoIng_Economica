@@ -100,7 +100,7 @@ namespace ProyectoIng_Economica
                         {
                             Interes = i1 / 100;
                             Periodo1 = p1 / 12;
-                            Periodo2 = p2 / 12;
+                            Periodo2 = p2;
 
                             double P = (Anualidad * (Math.Pow((1 + Interes), (Periodo1 - Periodo2)) - 1) / (Interes * Math.Pow((1 + Interes), (Periodo1 - Periodo2)))) * Math.Pow((1 + Interes), -Periodo2);
                             ResultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = Periodo1, Periodo2P = Periodo2, Presente = P });
@@ -111,7 +111,7 @@ namespace ProyectoIng_Economica
                         {
                             Interes = i1 / 100;
                             Periodo1 = p1 / 2;
-                            Periodo2 = p2 / 2;
+                            Periodo2 = p2;
 
                             double P = (Anualidad * (Math.Pow((1 + Interes), (Periodo1 - Periodo2)) - 1) / (Interes * Math.Pow((1 + Interes), (Periodo1 - Periodo2)))) * Math.Pow((1 + Interes), -Periodo2);
                             ResultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = Periodo1, Periodo2P = Periodo2, Presente = P });
@@ -122,7 +122,7 @@ namespace ProyectoIng_Economica
                         {
                             Interes = i1 / 100;
                             Periodo1 = p1 / 4;
-                            Periodo2 = p2 / 4;
+                            Periodo2 = p2;
 
                             double P = (Anualidad * (Math.Pow((1 + Interes), (Periodo1 - Periodo2)) - 1) / (Interes * Math.Pow((1 + Interes), (Periodo1 - Periodo2)))) * Math.Pow((1 + Interes), -Periodo2);
                             ResultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = Periodo1, Periodo2P = Periodo2, Presente = P });
@@ -134,7 +134,7 @@ namespace ProyectoIng_Economica
                         {
                             Interes = i1 / 100;
                             Periodo1 = p1 * 12;
-                            Periodo2 = p2 * 12;
+                            Periodo2 = p2;
 
                             double P = (Anualidad * (Math.Pow((1 + Interes), (Periodo1 - Periodo2)) - 1) / (Interes * Math.Pow((1 + Interes), (Periodo1 - Periodo2)))) * Math.Pow((1 + Interes), -Periodo2);
                             ResultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = Periodo1, Periodo2P = Periodo2, Presente = P });
@@ -156,7 +156,7 @@ namespace ProyectoIng_Economica
                         {
                             Interes = i1 / 100;
                             Periodo1 = p1 * 6;
-                            Periodo2 = p2 * 6;
+                            Periodo2 = p2;
 
                             double P = (Anualidad * (Math.Pow((1 + Interes), (Periodo1 - Periodo2)) - 1) / (Interes * Math.Pow((1 + Interes), (Periodo1 - Periodo2)))) * Math.Pow((1 + Interes), -Periodo2);
                             ResultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = Periodo1, Periodo2P = Periodo2, Presente = P });
@@ -167,7 +167,7 @@ namespace ProyectoIng_Economica
                         {
                             Interes = i1 / 100;
                             Periodo1 = p1 * 3;
-                            Periodo2 = p2 * 3;
+                            Periodo2 = p2;
 
                             double P = (Anualidad * (Math.Pow((1 + Interes), (Periodo1 - Periodo2)) - 1) / (Interes * Math.Pow((1 + Interes), (Periodo1 - Periodo2)))) * Math.Pow((1 + Interes), -Periodo2);
                             ResultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = Periodo1, Periodo2P = Periodo2, Presente = P });
@@ -179,7 +179,7 @@ namespace ProyectoIng_Economica
                         {
                             Interes = i1 / 100;
                             Periodo1 = p1 * 2;
-                            Periodo2 = p2 * 2;
+                            Periodo2 = p2;
 
                             double P = (Anualidad * (Math.Pow((1 + Interes), (Periodo1 - Periodo2)) - 1) / (Interes * Math.Pow((1 + Interes), (Periodo1 - Periodo2)))) * Math.Pow((1 + Interes), -Periodo2);
                             ResultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = Periodo1, Periodo2P = Periodo2, Presente = P });
@@ -190,7 +190,7 @@ namespace ProyectoIng_Economica
                         {
                             Interes = i1 / 100;
                             Periodo1 = p1 / 6;
-                            Periodo2 = p2 / 6;
+                            Periodo2 = p2;
 
                             double P = (Anualidad * (Math.Pow((1 + Interes), (Periodo1 - Periodo2)) - 1) / (Interes * Math.Pow((1 + Interes), (Periodo1 - Periodo2)))) * Math.Pow((1 + Interes), -Periodo2);
                             ResultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = Periodo1, Periodo2P = Periodo2, Presente = P });
@@ -212,7 +212,7 @@ namespace ProyectoIng_Economica
                         {
                             Interes = i1 / 100;
                             Periodo1 = p1 / 2;
-                            Periodo2 = p2 / 2;
+                            Periodo2 = p2;
 
                             double P = (Anualidad * (Math.Pow((1 + Interes), (Periodo1 - Periodo2)) - 1) / (Interes * Math.Pow((1 + Interes), (Periodo1 - Periodo2)))) * Math.Pow((1 + Interes), -Periodo2);
                             ResultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = Periodo1, Periodo2P = Periodo2, Presente = P });
@@ -224,7 +224,7 @@ namespace ProyectoIng_Economica
                         {
                             Interes = i1 / 100;
                             Periodo1 = p1 * 4;
-                            Periodo2 = p2 * 4;
+                            Periodo2 = p2;
 
                             double P = (Anualidad * (Math.Pow((1 + Interes), (Periodo1 - Periodo2)) - 1) / (Interes * Math.Pow((1 + Interes), (Periodo1 - Periodo2)))) * Math.Pow((1 + Interes), -Periodo2);
                             ResultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = Periodo1, Periodo2P = Periodo2, Presente = P });
@@ -235,7 +235,7 @@ namespace ProyectoIng_Economica
                         {
                             Interes = i1 / 100;
                             Periodo1 = p1 / 3;
-                            Periodo2 = p2 / 3;
+                            Periodo2 = p2;
 
                             double P = (Anualidad * (Math.Pow((1 + Interes), (Periodo1 - Periodo2)) - 1) / (Interes * Math.Pow((1 + Interes), (Periodo1 - Periodo2)))) * Math.Pow((1 + Interes), -Periodo2);
                             ResultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = Periodo1, Periodo2P = Periodo2, Presente = P });
@@ -246,7 +246,7 @@ namespace ProyectoIng_Economica
                         {
                             Interes = i1 / 100;
                             Periodo1 = p1 * 2;
-                            Periodo2 = p2 * 2;
+                            Periodo2 = p2;
 
                             double P = (Anualidad * (Math.Pow((1 + Interes), (Periodo1 - Periodo2)) - 1) / (Interes * Math.Pow((1 + Interes), (Periodo1 - Periodo2)))) * Math.Pow((1 + Interes), -Periodo2);
                             ResultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = Periodo1, Periodo2P = Periodo2, Presente = P });

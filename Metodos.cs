@@ -2177,11 +2177,521 @@ namespace ProyectoIng_Economica
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
+            else if (interesFG.Equals("Anual") && periodoFG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG / 12;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Anual") && periodoFG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG / 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Anual") && periodoFG.Equals("Trimestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG / 4;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Mensual") && periodoFG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG * 12;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Mensual") && periodoFG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Mensual") && periodoFG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG * 6;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Mensual") && periodoFG.Equals("Trimestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG * 3;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Semestral") && periodoFG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG * 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Semestral") && periodoFG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG / 6;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Semestral") && periodoFG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Semestral") && periodoFG.Equals("Trimestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG / 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Trimestral") && periodoFG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG * 4;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Trimestral") && periodoFG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG / 3;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Trimestral") && periodoFG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG * 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Trimestral") && periodoFG.Equals("Trimestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
         }
         public void FuturoDecrece(string interesFG, string periodoFG, double tasaInteresFG, double valorAnualidadFG, int PeriodoFG,
             List<object> resultadoFG, DataGridView dgvresultadosFG, double gradiente)
         {
             if (interesFG.Equals("Anual") && periodoFG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Anual") && periodoFG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG / 12;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Anual") && periodoFG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG / 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Anual") && periodoFG.Equals("Trimestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG / 4;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Mensual") && periodoFG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG * 12;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Mensual") && periodoFG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Mensual") && periodoFG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG * 6;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Mensual") && periodoFG.Equals("Trimestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG * 3;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Semestral") && periodoFG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG * 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Semestral") && periodoFG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG / 6;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Semestral") && periodoFG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Semestral") && periodoFG.Equals("Trimestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG / 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Trimestral") && periodoFG.Equals("Años"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG * 4;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Trimestral") && periodoFG.Equals("Meses"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG / 3;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Trimestral") && periodoFG.Equals("Semestres"))
+            {
+                double Anualidad = valorAnualidadFG;
+                double i1 = tasaInteresFG / 100;
+                double Interes = i1;
+                int Periodo = PeriodoFG * 2;
+                double Gr = gradiente;
+                double Gradiente = Gr / Interes;
+                double FuturoVencido = ((Math.Pow(1 + Interes, Periodo) - 1) / Interes);
+                double Numerador = Math.Pow(1 + Interes, Periodo) - 1;
+                double operacion = Numerador / Interes;
+                double resultado = operacion - Periodo;
+                double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
+                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                dgvresultadosFG.DataSource = null;
+                dgvresultadosFG.DataSource = resultadoFG.ToList();
+            }
+            else if (interesFG.Equals("Trimestral") && periodoFG.Equals("Trimestres"))
             {
                 double Anualidad = valorAnualidadFG;
                 double i1 = tasaInteresFG / 100;
