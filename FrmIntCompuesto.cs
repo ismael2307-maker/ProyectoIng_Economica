@@ -199,6 +199,8 @@ namespace ProyectoIng_Economica
             txtValorFuturoI.Text = "";
             txtValorPresenteI.Text = "";
             txtPeriodoI.Text = "";
+            dgvIntCompIn.DataSource = null;
+            dgvIntCompIn.Rows.Clear();
         }
 
         private void txtValorFuturoN_KeyPress(object sender, KeyPressEventArgs e)
@@ -236,6 +238,8 @@ namespace ProyectoIng_Economica
             txtValorFuturoN.Text = "";
             txtValorPresenteN.Text = "";
             txtTasaInteresN.Text = "";
+            dgvIntCompP.DataSource = null;
+            dgvIntCompP.Rows.Clear();
         }
         private List<object> ResultadosPeriodo = new List<object>();
         private void btnCalcularN_Click(object sender, EventArgs e)
