@@ -34,8 +34,6 @@
             this.dtgvResultadosAcumulados = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtPeriodo = new System.Windows.Forms.TextBox();
@@ -51,6 +49,8 @@
             this.pnlEcuacionInteres = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmbInteresAcum = new System.Windows.Forms.ComboBox();
+            this.cmbPeriodoAcum = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvResultadosAcumulados)).BeginInit();
@@ -110,8 +110,8 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.cmbPeriodoAcum);
+            this.panel1.Controls.Add(this.cmbInteresAcum);
             this.panel1.Controls.Add(this.btnLimpiar);
             this.panel1.Controls.Add(this.btnCalcular);
             this.panel1.Controls.Add(this.txtPeriodo);
@@ -125,28 +125,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(537, 327);
             this.panel1.TabIndex = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(342, 201);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 24);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Meses";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(342, 136);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 24);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Anual";
             // 
             // btnLimpiar
             // 
@@ -330,6 +308,32 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // cmbInteresAcum
+            // 
+            this.cmbInteresAcum.FormattingEnabled = true;
+            this.cmbInteresAcum.Items.AddRange(new object[] {
+            "Anual",
+            "Mensual",
+            "Semestral",
+            "Trimestral"});
+            this.cmbInteresAcum.Location = new System.Drawing.Point(367, 133);
+            this.cmbInteresAcum.Name = "cmbInteresAcum";
+            this.cmbInteresAcum.Size = new System.Drawing.Size(121, 30);
+            this.cmbInteresAcum.TabIndex = 12;
+            // 
+            // cmbPeriodoAcum
+            // 
+            this.cmbPeriodoAcum.FormattingEnabled = true;
+            this.cmbPeriodoAcum.Items.AddRange(new object[] {
+            "Años",
+            "Meses",
+            "Semestres",
+            "Trimestres"});
+            this.cmbPeriodoAcum.Location = new System.Drawing.Point(367, 203);
+            this.cmbPeriodoAcum.Name = "cmbPeriodoAcum";
+            this.cmbPeriodoAcum.Size = new System.Drawing.Size(121, 30);
+            this.cmbPeriodoAcum.TabIndex = 13;
+            // 
             // FrmInteresAcumulado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,8 +380,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dtgvResultadosAcumulados;
+        private System.Windows.Forms.ComboBox cmbPeriodoAcum;
+        private System.Windows.Forms.ComboBox cmbInteresAcum;
     }
 }

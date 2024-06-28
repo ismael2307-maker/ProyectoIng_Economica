@@ -352,7 +352,7 @@ namespace ProyectoIng_Economica
                 double Anualidad = ValorAnualidadPresente;
                 double i1 = TasaInteresPresente / 100;
                 double Interes = i1 / 2;
-                int p1 = Periodo1Presente / 6;
+                int p1 = Periodo1Presente;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
                 resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
