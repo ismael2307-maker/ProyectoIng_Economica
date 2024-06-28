@@ -74,6 +74,8 @@ namespace ProyectoIng_Economica
             txtVpn2TIR.Text = " ";
             txtInt1Tir.Text = " ";
             txtInt2TIR.Text = " ";
+            dgvDatosTIR.DataSource = null;
+            dgvDatosTIR.Rows.Clear();
         }
 
         private List<object> ResultadosTIR = new List<object>();
