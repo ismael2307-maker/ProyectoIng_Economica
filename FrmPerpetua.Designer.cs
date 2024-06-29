@@ -41,12 +41,14 @@
             this.btnCalcularPerpetuo = new System.Windows.Forms.Button();
             this.txtTasaInteres = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtValorPresente = new System.Windows.Forms.TextBox();
+            this.txtValorAnualidad = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPeriodo = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tbgDefincion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -117,10 +119,12 @@
             // 
             // dgvResultadoresPerpetuos
             // 
+            this.dgvResultadoresPerpetuos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvResultadoresPerpetuos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResultadoresPerpetuos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadoresPerpetuos.Location = new System.Drawing.Point(3, 101);
+            this.dgvResultadoresPerpetuos.Location = new System.Drawing.Point(66, 105);
             this.dgvResultadoresPerpetuos.Name = "dgvResultadoresPerpetuos";
-            this.dgvResultadoresPerpetuos.Size = new System.Drawing.Size(615, 150);
+            this.dgvResultadoresPerpetuos.Size = new System.Drawing.Size(506, 150);
             this.dgvResultadoresPerpetuos.TabIndex = 13;
             // 
             // label9
@@ -129,7 +133,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label9.Location = new System.Drawing.Point(272, 13);
+            this.label9.Location = new System.Drawing.Point(239, 13);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(181, 39);
             this.label9.TabIndex = 12;
@@ -139,11 +143,13 @@
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel5.Controls.Add(this.txtPeriodo);
+            this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.btnLimpiarPerpetuo);
             this.panel5.Controls.Add(this.btnCalcularPerpetuo);
             this.panel5.Controls.Add(this.txtTasaInteres);
             this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.txtValorPresente);
+            this.panel5.Controls.Add(this.txtValorAnualidad);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Location = new System.Drawing.Point(8, 212);
@@ -158,7 +164,7 @@
             this.btnLimpiarPerpetuo.FlatAppearance.BorderSize = 0;
             this.btnLimpiarPerpetuo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarPerpetuo.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiarPerpetuo.Location = new System.Drawing.Point(277, 212);
+            this.btnLimpiarPerpetuo.Location = new System.Drawing.Point(277, 262);
             this.btnLimpiarPerpetuo.Name = "btnLimpiarPerpetuo";
             this.btnLimpiarPerpetuo.Size = new System.Drawing.Size(102, 33);
             this.btnLimpiarPerpetuo.TabIndex = 11;
@@ -173,7 +179,7 @@
             this.btnCalcularPerpetuo.FlatAppearance.BorderSize = 0;
             this.btnCalcularPerpetuo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcularPerpetuo.ForeColor = System.Drawing.Color.White;
-            this.btnCalcularPerpetuo.Location = new System.Drawing.Point(110, 212);
+            this.btnCalcularPerpetuo.Location = new System.Drawing.Point(110, 262);
             this.btnCalcularPerpetuo.Name = "btnCalcularPerpetuo";
             this.btnCalcularPerpetuo.Size = new System.Drawing.Size(102, 33);
             this.btnCalcularPerpetuo.TabIndex = 10;
@@ -205,17 +211,17 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Tasa interés";
             // 
-            // txtValorPresente
+            // txtValorAnualidad
             // 
-            this.txtValorPresente.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtValorPresente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtValorPresente.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtValorPresente.ForeColor = System.Drawing.Color.White;
-            this.txtValorPresente.Location = new System.Drawing.Point(190, 70);
-            this.txtValorPresente.Name = "txtValorPresente";
-            this.txtValorPresente.Size = new System.Drawing.Size(123, 24);
-            this.txtValorPresente.TabIndex = 5;
-            this.txtValorPresente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorPresente_KeyPress);
+            this.txtValorAnualidad.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtValorAnualidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtValorAnualidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtValorAnualidad.ForeColor = System.Drawing.Color.White;
+            this.txtValorAnualidad.Location = new System.Drawing.Point(190, 70);
+            this.txtValorAnualidad.Name = "txtValorAnualidad";
+            this.txtValorAnualidad.Size = new System.Drawing.Size(123, 24);
+            this.txtValorAnualidad.TabIndex = 5;
+            this.txtValorAnualidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorPresente_KeyPress);
             // 
             // label7
             // 
@@ -225,9 +231,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(9, 68);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(158, 24);
+            this.label7.Size = new System.Drawing.Size(175, 24);
             this.label7.TabIndex = 4;
-            this.label7.Text = "Valor Presente";
+            this.label7.Text = "Valor Anualidad";
             // 
             // label8
             // 
@@ -276,6 +282,29 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(9, 207);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 24);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Periodo";
+            // 
+            // txtPeriodo
+            // 
+            this.txtPeriodo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtPeriodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtPeriodo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPeriodo.ForeColor = System.Drawing.Color.White;
+            this.txtPeriodo.Location = new System.Drawing.Point(189, 207);
+            this.txtPeriodo.Name = "txtPeriodo";
+            this.txtPeriodo.Size = new System.Drawing.Size(123, 24);
+            this.txtPeriodo.TabIndex = 13;
+            // 
             // FrmPerpetua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,11 +344,13 @@
         private System.Windows.Forms.Button btnCalcularPerpetuo;
         private System.Windows.Forms.TextBox txtTasaInteres;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtValorPresente;
+        private System.Windows.Forms.TextBox txtValorAnualidad;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.DataGridView dgvResultadoresPerpetuos;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtPeriodo;
+        private System.Windows.Forms.Label label1;
     }
 }

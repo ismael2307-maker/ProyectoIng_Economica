@@ -156,6 +156,7 @@
             // 
             // dgvResultadosCAUE1
             // 
+            this.dgvResultadosCAUE1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResultadosCAUE1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosCAUE1.Location = new System.Drawing.Point(3, 133);
             this.dgvResultadosCAUE1.Name = "dgvResultadosCAUE1";
@@ -418,6 +419,7 @@
             // 
             // dgvResultados2
             // 
+            this.dgvResultados2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResultados2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultados2.Location = new System.Drawing.Point(3, 133);
             this.dgvResultados2.Name = "dgvResultados2";

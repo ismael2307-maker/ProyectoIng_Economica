@@ -37,6 +37,8 @@
             this.dgvResultadosF = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.cmbPeriodoSimple = new System.Windows.Forms.ComboBox();
+            this.cmbInteresSimple = new System.Windows.Forms.ComboBox();
             this.btnLimpiarF = new System.Windows.Forms.Button();
             this.btnCalcularF = new System.Windows.Forms.Button();
             this.txtPeriodoF = new System.Windows.Forms.TextBox();
@@ -54,6 +56,8 @@
             this.dgvResultadosP = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbPeriodoFuturoSimple = new System.Windows.Forms.ComboBox();
+            this.cmbInteresFuturoSimple = new System.Windows.Forms.ComboBox();
             this.btnLimpiarP = new System.Windows.Forms.Button();
             this.btnCalcularP = new System.Windows.Forms.Button();
             this.txtPeriodoP = new System.Windows.Forms.TextBox();
@@ -71,6 +75,8 @@
             this.dgvResultadosI = new System.Windows.Forms.DataGridView();
             this.label18 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.cmbTipoTasa = new System.Windows.Forms.ComboBox();
+            this.cmbPeriodoInteresSimple = new System.Windows.Forms.ComboBox();
             this.btnLimpiarI = new System.Windows.Forms.Button();
             this.btnCalcularI = new System.Windows.Forms.Button();
             this.txtPeriodoI = new System.Windows.Forms.TextBox();
@@ -100,12 +106,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.cmbInteresSimple = new System.Windows.Forms.ComboBox();
-            this.cmbPeriodoSimple = new System.Windows.Forms.ComboBox();
-            this.cmbInteresFuturoSimple = new System.Windows.Forms.ComboBox();
-            this.cmbPeriodoFuturoSimple = new System.Windows.Forms.ComboBox();
-            this.cmbPeriodoInteresSimple = new System.Windows.Forms.ComboBox();
-            this.cmbTipoTasa = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -197,6 +197,7 @@
             // 
             // dgvResultadosF
             // 
+            this.dgvResultadosF.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResultadosF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosF.Location = new System.Drawing.Point(16, 70);
             this.dgvResultadosF.Name = "dgvResultadosF";
@@ -234,6 +235,34 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(558, 311);
             this.panel5.TabIndex = 9;
+            // 
+            // cmbPeriodoSimple
+            // 
+            this.cmbPeriodoSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPeriodoSimple.FormattingEnabled = true;
+            this.cmbPeriodoSimple.Items.AddRange(new object[] {
+            "Años",
+            "Meses",
+            "Semestres",
+            "Trimestres"});
+            this.cmbPeriodoSimple.Location = new System.Drawing.Point(407, 195);
+            this.cmbPeriodoSimple.Name = "cmbPeriodoSimple";
+            this.cmbPeriodoSimple.Size = new System.Drawing.Size(121, 30);
+            this.cmbPeriodoSimple.TabIndex = 13;
+            // 
+            // cmbInteresSimple
+            // 
+            this.cmbInteresSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbInteresSimple.FormattingEnabled = true;
+            this.cmbInteresSimple.Items.AddRange(new object[] {
+            "Anual",
+            "Mensual",
+            "Semestral",
+            "Trimestral"});
+            this.cmbInteresSimple.Location = new System.Drawing.Point(407, 134);
+            this.cmbInteresSimple.Name = "cmbInteresSimple";
+            this.cmbInteresSimple.Size = new System.Drawing.Size(121, 30);
+            this.cmbInteresSimple.TabIndex = 12;
             // 
             // btnLimpiarF
             // 
@@ -409,6 +438,7 @@
             // 
             // dgvResultadosP
             // 
+            this.dgvResultadosP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResultadosP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosP.Location = new System.Drawing.Point(46, 79);
             this.dgvResultadosP.Name = "dgvResultadosP";
@@ -446,6 +476,34 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(523, 274);
             this.panel2.TabIndex = 10;
+            // 
+            // cmbPeriodoFuturoSimple
+            // 
+            this.cmbPeriodoFuturoSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPeriodoFuturoSimple.FormattingEnabled = true;
+            this.cmbPeriodoFuturoSimple.Items.AddRange(new object[] {
+            "Años",
+            "Meses",
+            "Semestres",
+            "Trimestres"});
+            this.cmbPeriodoFuturoSimple.Location = new System.Drawing.Point(373, 197);
+            this.cmbPeriodoFuturoSimple.Name = "cmbPeriodoFuturoSimple";
+            this.cmbPeriodoFuturoSimple.Size = new System.Drawing.Size(121, 30);
+            this.cmbPeriodoFuturoSimple.TabIndex = 14;
+            // 
+            // cmbInteresFuturoSimple
+            // 
+            this.cmbInteresFuturoSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbInteresFuturoSimple.FormattingEnabled = true;
+            this.cmbInteresFuturoSimple.Items.AddRange(new object[] {
+            "Anual",
+            "Mensual",
+            "Semestral",
+            "Trimestral"});
+            this.cmbInteresFuturoSimple.Location = new System.Drawing.Point(373, 135);
+            this.cmbInteresFuturoSimple.Name = "cmbInteresFuturoSimple";
+            this.cmbInteresFuturoSimple.Size = new System.Drawing.Size(121, 30);
+            this.cmbInteresFuturoSimple.TabIndex = 13;
             // 
             // btnLimpiarP
             // 
@@ -622,6 +680,7 @@
             // 
             // dgvResultadosI
             // 
+            this.dgvResultadosI.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResultadosI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosI.Location = new System.Drawing.Point(55, 78);
             this.dgvResultadosI.Name = "dgvResultadosI";
@@ -659,6 +718,34 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(524, 284);
             this.panel8.TabIndex = 11;
+            // 
+            // cmbTipoTasa
+            // 
+            this.cmbTipoTasa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoTasa.FormattingEnabled = true;
+            this.cmbTipoTasa.Items.AddRange(new object[] {
+            "Anual",
+            "Mensual",
+            "Semestral",
+            "Trimestral"});
+            this.cmbTipoTasa.Location = new System.Drawing.Point(366, 70);
+            this.cmbTipoTasa.Name = "cmbTipoTasa";
+            this.cmbTipoTasa.Size = new System.Drawing.Size(121, 30);
+            this.cmbTipoTasa.TabIndex = 16;
+            // 
+            // cmbPeriodoInteresSimple
+            // 
+            this.cmbPeriodoInteresSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPeriodoInteresSimple.FormattingEnabled = true;
+            this.cmbPeriodoInteresSimple.Items.AddRange(new object[] {
+            "Años",
+            "Meses",
+            "Semestres",
+            "Trimestres"});
+            this.cmbPeriodoInteresSimple.Location = new System.Drawing.Point(366, 195);
+            this.cmbPeriodoInteresSimple.Name = "cmbPeriodoInteresSimple";
+            this.cmbPeriodoInteresSimple.Size = new System.Drawing.Size(121, 30);
+            this.cmbPeriodoInteresSimple.TabIndex = 15;
             // 
             // btnLimpiarI
             // 
@@ -834,6 +921,7 @@
             // 
             // dgvResultadosN
             // 
+            this.dgvResultadosN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResultadosN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosN.Location = new System.Drawing.Point(33, 65);
             this.dgvResultadosN.Name = "dgvResultadosN";
@@ -1018,90 +1106,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
-            // 
-            // cmbInteresSimple
-            // 
-            this.cmbInteresSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbInteresSimple.FormattingEnabled = true;
-            this.cmbInteresSimple.Items.AddRange(new object[] {
-            "Anual",
-            "Mensual",
-            "Semestral",
-            "Trimestral"});
-            this.cmbInteresSimple.Location = new System.Drawing.Point(407, 134);
-            this.cmbInteresSimple.Name = "cmbInteresSimple";
-            this.cmbInteresSimple.Size = new System.Drawing.Size(121, 30);
-            this.cmbInteresSimple.TabIndex = 12;
-            // 
-            // cmbPeriodoSimple
-            // 
-            this.cmbPeriodoSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPeriodoSimple.FormattingEnabled = true;
-            this.cmbPeriodoSimple.Items.AddRange(new object[] {
-            "Años",
-            "Meses",
-            "Semestres",
-            "Trimestres"});
-            this.cmbPeriodoSimple.Location = new System.Drawing.Point(407, 195);
-            this.cmbPeriodoSimple.Name = "cmbPeriodoSimple";
-            this.cmbPeriodoSimple.Size = new System.Drawing.Size(121, 30);
-            this.cmbPeriodoSimple.TabIndex = 13;
-            // 
-            // cmbInteresFuturoSimple
-            // 
-            this.cmbInteresFuturoSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbInteresFuturoSimple.FormattingEnabled = true;
-            this.cmbInteresFuturoSimple.Items.AddRange(new object[] {
-            "Anual",
-            "Mensual",
-            "Semestral",
-            "Trimestral"});
-            this.cmbInteresFuturoSimple.Location = new System.Drawing.Point(373, 135);
-            this.cmbInteresFuturoSimple.Name = "cmbInteresFuturoSimple";
-            this.cmbInteresFuturoSimple.Size = new System.Drawing.Size(121, 30);
-            this.cmbInteresFuturoSimple.TabIndex = 13;
-            // 
-            // cmbPeriodoFuturoSimple
-            // 
-            this.cmbPeriodoFuturoSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPeriodoFuturoSimple.FormattingEnabled = true;
-            this.cmbPeriodoFuturoSimple.Items.AddRange(new object[] {
-            "Años",
-            "Meses",
-            "Semestres",
-            "Trimestres"});
-            this.cmbPeriodoFuturoSimple.Location = new System.Drawing.Point(373, 197);
-            this.cmbPeriodoFuturoSimple.Name = "cmbPeriodoFuturoSimple";
-            this.cmbPeriodoFuturoSimple.Size = new System.Drawing.Size(121, 30);
-            this.cmbPeriodoFuturoSimple.TabIndex = 14;
-            // 
-            // cmbPeriodoInteresSimple
-            // 
-            this.cmbPeriodoInteresSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPeriodoInteresSimple.FormattingEnabled = true;
-            this.cmbPeriodoInteresSimple.Items.AddRange(new object[] {
-            "Años",
-            "Meses",
-            "Semestres",
-            "Trimestres"});
-            this.cmbPeriodoInteresSimple.Location = new System.Drawing.Point(366, 195);
-            this.cmbPeriodoInteresSimple.Name = "cmbPeriodoInteresSimple";
-            this.cmbPeriodoInteresSimple.Size = new System.Drawing.Size(121, 30);
-            this.cmbPeriodoInteresSimple.TabIndex = 15;
-            // 
-            // cmbTipoTasa
-            // 
-            this.cmbTipoTasa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipoTasa.FormattingEnabled = true;
-            this.cmbTipoTasa.Items.AddRange(new object[] {
-            "Anual",
-            "Mensual",
-            "Semestral",
-            "Trimestral"});
-            this.cmbTipoTasa.Location = new System.Drawing.Point(366, 70);
-            this.cmbTipoTasa.Name = "cmbTipoTasa";
-            this.cmbTipoTasa.Size = new System.Drawing.Size(121, 30);
-            this.cmbTipoTasa.TabIndex = 16;
             // 
             // FrmIntSimple
             // 

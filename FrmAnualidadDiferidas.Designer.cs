@@ -85,6 +85,9 @@
             this.dgvResultadosAnualidadPresente = new System.Windows.Forms.DataGridView();
             this.label18 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.rdbNoAnualidadDiferidaFuturo = new System.Windows.Forms.RadioButton();
+            this.rdbSiAnualidadDiferidaFuturo = new System.Windows.Forms.RadioButton();
             this.cmbPeriodoA = new System.Windows.Forms.ComboBox();
             this.cmbInteresA = new System.Windows.Forms.ComboBox();
             this.btnLimpiarDiAp = new System.Windows.Forms.Button();
@@ -104,6 +107,9 @@
             this.dgvResultadosAnualidadFuturo = new System.Windows.Forms.DataGridView();
             this.label24 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rdbNoAnualidadFuturo = new System.Windows.Forms.RadioButton();
+            this.rdbSiAnualidadFuturo = new System.Windows.Forms.RadioButton();
             this.cmbPeriodoAf = new System.Windows.Forms.ComboBox();
             this.cmbInteresAf = new System.Windows.Forms.ComboBox();
             this.btnLimpiarAf = new System.Windows.Forms.Button();
@@ -118,12 +124,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.rdbSiAnualidadFuturo = new System.Windows.Forms.RadioButton();
-            this.rdbNoAnualidadFuturo = new System.Windows.Forms.RadioButton();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.rdbNoAnualidadDiferidaFuturo = new System.Windows.Forms.RadioButton();
-            this.rdbSiAnualidadDiferidaFuturo = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tbgDefincion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -145,16 +145,16 @@
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadPresente)).BeginInit();
             this.panel8.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tbgAnualidadFuturo.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadFuturo)).BeginInit();
             this.panel11.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -219,6 +219,7 @@
             // 
             // dgvResultadosPresente
             // 
+            this.dgvResultadosPresente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResultadosPresente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosPresente.Location = new System.Drawing.Point(3, 101);
             this.dgvResultadosPresente.Name = "dgvResultadosPresente";
@@ -521,6 +522,7 @@
             // 
             // dgvResultadosFuturo
             // 
+            this.dgvResultadosFuturo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResultadosFuturo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosFuturo.Location = new System.Drawing.Point(3, 101);
             this.dgvResultadosFuturo.Name = "dgvResultadosFuturo";
@@ -822,6 +824,7 @@
             // 
             // dgvResultadosAnualidadPresente
             // 
+            this.dgvResultadosAnualidadPresente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResultadosAnualidadPresente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosAnualidadPresente.Location = new System.Drawing.Point(3, 101);
             this.dgvResultadosAnualidadPresente.Name = "dgvResultadosAnualidadPresente";
@@ -860,6 +863,40 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(523, 350);
             this.panel8.TabIndex = 13;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.rdbNoAnualidadDiferidaFuturo);
+            this.groupBox4.Controls.Add(this.rdbSiAnualidadDiferidaFuturo);
+            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox4.Location = new System.Drawing.Point(350, 42);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(152, 100);
+            this.groupBox4.TabIndex = 15;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Capitalizable";
+            // 
+            // rdbNoAnualidadDiferidaFuturo
+            // 
+            this.rdbNoAnualidadDiferidaFuturo.AutoSize = true;
+            this.rdbNoAnualidadDiferidaFuturo.Location = new System.Drawing.Point(6, 62);
+            this.rdbNoAnualidadDiferidaFuturo.Name = "rdbNoAnualidadDiferidaFuturo";
+            this.rdbNoAnualidadDiferidaFuturo.Size = new System.Drawing.Size(54, 26);
+            this.rdbNoAnualidadDiferidaFuturo.TabIndex = 1;
+            this.rdbNoAnualidadDiferidaFuturo.TabStop = true;
+            this.rdbNoAnualidadDiferidaFuturo.Text = "No";
+            this.rdbNoAnualidadDiferidaFuturo.UseVisualStyleBackColor = true;
+            // 
+            // rdbSiAnualidadDiferidaFuturo
+            // 
+            this.rdbSiAnualidadDiferidaFuturo.AutoSize = true;
+            this.rdbSiAnualidadDiferidaFuturo.Location = new System.Drawing.Point(6, 30);
+            this.rdbSiAnualidadDiferidaFuturo.Name = "rdbSiAnualidadDiferidaFuturo";
+            this.rdbSiAnualidadDiferidaFuturo.Size = new System.Drawing.Size(40, 26);
+            this.rdbSiAnualidadDiferidaFuturo.TabIndex = 0;
+            this.rdbSiAnualidadDiferidaFuturo.TabStop = true;
+            this.rdbSiAnualidadDiferidaFuturo.Text = "Si";
+            this.rdbSiAnualidadDiferidaFuturo.UseVisualStyleBackColor = true;
             // 
             // cmbPeriodoA
             // 
@@ -1063,6 +1100,7 @@
             // 
             // dgvResultadosAnualidadFuturo
             // 
+            this.dgvResultadosAnualidadFuturo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResultadosAnualidadFuturo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosAnualidadFuturo.Location = new System.Drawing.Point(3, 101);
             this.dgvResultadosAnualidadFuturo.Name = "dgvResultadosAnualidadFuturo";
@@ -1102,6 +1140,40 @@
             this.panel11.Size = new System.Drawing.Size(523, 350);
             this.panel11.TabIndex = 14;
             this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.rdbNoAnualidadFuturo);
+            this.groupBox3.Controls.Add(this.rdbSiAnualidadFuturo);
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox3.Location = new System.Drawing.Point(357, 42);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(152, 100);
+            this.groupBox3.TabIndex = 14;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Capitalizable";
+            // 
+            // rdbNoAnualidadFuturo
+            // 
+            this.rdbNoAnualidadFuturo.AutoSize = true;
+            this.rdbNoAnualidadFuturo.Location = new System.Drawing.Point(6, 62);
+            this.rdbNoAnualidadFuturo.Name = "rdbNoAnualidadFuturo";
+            this.rdbNoAnualidadFuturo.Size = new System.Drawing.Size(54, 26);
+            this.rdbNoAnualidadFuturo.TabIndex = 1;
+            this.rdbNoAnualidadFuturo.TabStop = true;
+            this.rdbNoAnualidadFuturo.Text = "No";
+            this.rdbNoAnualidadFuturo.UseVisualStyleBackColor = true;
+            // 
+            // rdbSiAnualidadFuturo
+            // 
+            this.rdbSiAnualidadFuturo.AutoSize = true;
+            this.rdbSiAnualidadFuturo.Location = new System.Drawing.Point(6, 30);
+            this.rdbSiAnualidadFuturo.Name = "rdbSiAnualidadFuturo";
+            this.rdbSiAnualidadFuturo.Size = new System.Drawing.Size(40, 26);
+            this.rdbSiAnualidadFuturo.TabIndex = 0;
+            this.rdbSiAnualidadFuturo.TabStop = true;
+            this.rdbSiAnualidadFuturo.Text = "Si";
+            this.rdbSiAnualidadFuturo.UseVisualStyleBackColor = true;
             // 
             // cmbPeriodoAf
             // 
@@ -1280,74 +1352,6 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.rdbNoAnualidadFuturo);
-            this.groupBox3.Controls.Add(this.rdbSiAnualidadFuturo);
-            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.groupBox3.Location = new System.Drawing.Point(357, 42);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(152, 100);
-            this.groupBox3.TabIndex = 14;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Capitalizable";
-            // 
-            // rdbSiAnualidadFuturo
-            // 
-            this.rdbSiAnualidadFuturo.AutoSize = true;
-            this.rdbSiAnualidadFuturo.Location = new System.Drawing.Point(6, 30);
-            this.rdbSiAnualidadFuturo.Name = "rdbSiAnualidadFuturo";
-            this.rdbSiAnualidadFuturo.Size = new System.Drawing.Size(40, 26);
-            this.rdbSiAnualidadFuturo.TabIndex = 0;
-            this.rdbSiAnualidadFuturo.TabStop = true;
-            this.rdbSiAnualidadFuturo.Text = "Si";
-            this.rdbSiAnualidadFuturo.UseVisualStyleBackColor = true;
-            // 
-            // rdbNoAnualidadFuturo
-            // 
-            this.rdbNoAnualidadFuturo.AutoSize = true;
-            this.rdbNoAnualidadFuturo.Location = new System.Drawing.Point(6, 62);
-            this.rdbNoAnualidadFuturo.Name = "rdbNoAnualidadFuturo";
-            this.rdbNoAnualidadFuturo.Size = new System.Drawing.Size(54, 26);
-            this.rdbNoAnualidadFuturo.TabIndex = 1;
-            this.rdbNoAnualidadFuturo.TabStop = true;
-            this.rdbNoAnualidadFuturo.Text = "No";
-            this.rdbNoAnualidadFuturo.UseVisualStyleBackColor = true;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.rdbNoAnualidadDiferidaFuturo);
-            this.groupBox4.Controls.Add(this.rdbSiAnualidadDiferidaFuturo);
-            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.groupBox4.Location = new System.Drawing.Point(350, 42);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(152, 100);
-            this.groupBox4.TabIndex = 15;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Capitalizable";
-            // 
-            // rdbNoAnualidadDiferidaFuturo
-            // 
-            this.rdbNoAnualidadDiferidaFuturo.AutoSize = true;
-            this.rdbNoAnualidadDiferidaFuturo.Location = new System.Drawing.Point(6, 62);
-            this.rdbNoAnualidadDiferidaFuturo.Name = "rdbNoAnualidadDiferidaFuturo";
-            this.rdbNoAnualidadDiferidaFuturo.Size = new System.Drawing.Size(54, 26);
-            this.rdbNoAnualidadDiferidaFuturo.TabIndex = 1;
-            this.rdbNoAnualidadDiferidaFuturo.TabStop = true;
-            this.rdbNoAnualidadDiferidaFuturo.Text = "No";
-            this.rdbNoAnualidadDiferidaFuturo.UseVisualStyleBackColor = true;
-            // 
-            // rdbSiAnualidadDiferidaFuturo
-            // 
-            this.rdbSiAnualidadDiferidaFuturo.AutoSize = true;
-            this.rdbSiAnualidadDiferidaFuturo.Location = new System.Drawing.Point(6, 30);
-            this.rdbSiAnualidadDiferidaFuturo.Name = "rdbSiAnualidadDiferidaFuturo";
-            this.rdbSiAnualidadDiferidaFuturo.Size = new System.Drawing.Size(40, 26);
-            this.rdbSiAnualidadDiferidaFuturo.TabIndex = 0;
-            this.rdbSiAnualidadDiferidaFuturo.TabStop = true;
-            this.rdbSiAnualidadDiferidaFuturo.Text = "Si";
-            this.rdbSiAnualidadDiferidaFuturo.UseVisualStyleBackColor = true;
-            // 
             // FrmAnualidadDiferidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1388,6 +1392,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadPresente)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -1397,13 +1403,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosAnualidadFuturo)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
