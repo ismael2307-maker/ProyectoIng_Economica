@@ -29,6 +29,7 @@ namespace ProyectoIng_Economica
 
         private void txtIntPGeom_KeyPress(object sender, KeyPressEventArgs e)
         {
+
             if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
                 MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -39,11 +40,13 @@ namespace ProyectoIng_Economica
 
         private void txtIntNomPGeom_KeyPress(object sender, KeyPressEventArgs e)
         {
+
             if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
                 MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
                 return;
+            
             }
         }
 
@@ -60,109 +63,129 @@ namespace ProyectoIng_Economica
         private List<object> ResultadoGeométrico = new List<object>();
         private void btnLimpiarGeom_Click(object sender, EventArgs e)
         {
-            int Valor_Anualidad, Periodo,p1,p2,p3;
-            double tasaInteres, tasaNominal, resultados, Presente, i, i2,n,i3,n2,i4;
-
-            try
+            double interes, interesNominal;
+            if(double.TryParse(txtIntPGeom.Text, out interes)&& double.TryParse(txtIntNomPGeom.Text ,out interesNominal))
             {
-                Valor_Anualidad = Convert.ToInt32(txtAnuualidadPGeom.Text);
-                Periodo = Convert.ToInt32(txtPeriodoPGeom.Text);
-                p1 = Convert.ToInt32(txtPeriodoPGeom.Text);
-                p2 = Convert.ToInt32(txtPeriodoPGeom.Text);
-                p3 = Convert.ToInt32(txtPeriodoPGeom.Text);
-                tasaInteres = Convert.ToDouble(txtIntPGeom.Text);
-                tasaNominal = Convert.ToDouble(txtIntNomPGeom.Text);
-                i = Convert.ToDouble(txtIntNomPGeom.Text);
-                i2 = Convert.ToDouble(txtIntNomPGeom.Text);
-                n = Convert.ToDouble(txtIntNomPGeom.Text);
-                i3 = Convert.ToDouble(txtIntNomPGeom.Text);
-                n2 = Convert.ToDouble(txtIntNomPGeom.Text);
-                i4 = Convert.ToDouble(txtIntNomPGeom.Text);
-
-
-                if (cmbPeriodo.SelectedItem != null && cmbTasaInt.SelectedItem != null && cmbTasaNom.SelectedItem != null)
+                if (interes <= interesNominal)
                 {
-                    if (cmbPeriodo.SelectedItem.Equals("Anual") || cmbTasaInt.SelectedItem.Equals("Anual") || cmbTasaNom.SelectedItem.Equals("Anual"))
-                    {
+                    int Valor_Anualidad, Periodo, p1, p2, p3;
+                    double tasaInteres, tasaNominal, resultados, Presente, i, i2, n, i3, n2, i4;
 
-                        resultados = Valor_Anualidad * (((Math.Pow(1 + tasaNominal, Periodo) / Math.Pow(1 + tasaInteres, Periodo)) - 1) / (tasaNominal - tasaInteres));
+                   
+                        Valor_Anualidad = Convert.ToInt32(txtAnuualidadPGeom.Text);
+                        Periodo = Convert.ToInt32(txtPeriodoPGeom.Text);
+                        p1 = Convert.ToInt32(txtPeriodoPGeom.Text);
+                        p2 = Convert.ToInt32(txtPeriodoPGeom.Text);
+                        p3 = Convert.ToInt32(txtPeriodoPGeom.Text);
+                        tasaInteres = Convert.ToDouble(txtIntPGeom.Text);
+                        tasaNominal = Convert.ToDouble(txtIntNomPGeom.Text);
+                        i = Convert.ToDouble(txtIntNomPGeom.Text);
+                        i2 = Convert.ToDouble(txtIntNomPGeom.Text);
+                        n = Convert.ToDouble(txtIntNomPGeom.Text);
+                        i3 = Convert.ToDouble(txtIntNomPGeom.Text);
+                        n2 = Convert.ToDouble(txtIntNomPGeom.Text);
+                        i4 = Convert.ToDouble(txtIntNomPGeom.Text);
 
-                        ResultadoGeométrico.Add(new
+
+                        if (cmbPeriodo.SelectedItem != null && cmbTasaInt.SelectedItem != null && cmbTasaNom.SelectedItem != null)
                         {
-                            VAnualidad = Valor_Anualidad,
-                            Tasa_Interés = tasaInteres,
-                            Tasa_Nominal = tasaNominal,
-                            Periodo = Periodo,
-                            Presente_Geométrico = resultados
-                        });
-                        dgvCalculoPGeometrico.DataSource = null;
-                        dgvCalculoPGeometrico.DataSource = ResultadoGeométrico.ToList();
-                    }
-                    if (cmbPeriodo.SelectedItem.Equals("Semestral") || cmbTasaInt.SelectedItem.Equals("Semestral") || cmbTasaNom.SelectedItem.Equals("Semestral"))
+                            if (cmbPeriodo.SelectedItem.Equals("Anual") || cmbTasaInt.SelectedItem.Equals("Anual") || cmbTasaNom.SelectedItem.Equals("Anual"))
+                            {
+
+                                resultados = Valor_Anualidad * (((Math.Pow(1 + tasaNominal, Periodo) / Math.Pow(1 + tasaInteres, Periodo)) - 1) / (tasaNominal - tasaInteres));
+
+                                ResultadoGeométrico.Add(new
+                                {
+                                    VAnualidad = Valor_Anualidad,
+                                    Tasa_Interés = tasaInteres,
+                                    Tasa_Nominal = tasaNominal,
+                                    Periodo = Periodo,
+                                    Presente_Geométrico = resultados
+                                });
+                                dgvCalculoPGeometrico.DataSource = null;
+                                dgvCalculoPGeometrico.DataSource = ResultadoGeométrico.ToList();
+                            }
+                            if (cmbPeriodo.SelectedItem.Equals("Semestral") || cmbTasaInt.SelectedItem.Equals("Semestral") || cmbTasaNom.SelectedItem.Equals("Semestral"))
+                            {
+
+                                i = tasaNominal / 2;
+                                i2 = tasaInteres / 2;
+                                p1 = Periodo / 2;
+                                resultados = Valor_Anualidad * (((Math.Pow(1 + i, p1) / Math.Pow(1 + i2, p1)) - 1) / (i - i2));
+
+                                ResultadoGeométrico.Add(new
+                                {
+                                    VAnualidad = Valor_Anualidad,
+                                    Tasa_Interés = tasaInteres,
+                                    Tasa_Nominal = tasaNominal,
+                                    Periodo = Periodo,
+                                    Presente_Geométrico = resultados
+                                });
+                                dgvCalculoPGeometrico.DataSource = null;
+                                dgvCalculoPGeometrico.DataSource = ResultadoGeométrico.ToList();
+                            }
+                            if (cmbPeriodo.SelectedItem.Equals("Trimestral") || cmbTasaInt.SelectedItem.Equals("Trimestral") || cmbTasaNom.SelectedItem.Equals("Trimestral"))
+                            {
+
+                                n = tasaNominal / 4;
+                                i3 = tasaInteres / 4;
+                                p2 = Periodo / 4;
+                                resultados = Valor_Anualidad * (((Math.Pow(1 + n, p2) / Math.Pow(1 + i3, p2)) - 1) / (n - i3));
+
+                                ResultadoGeométrico.Add(new
+                                {
+                                    VAnualidad = Valor_Anualidad,
+                                    Tasa_Interés = tasaInteres,
+                                    Tasa_Nominal = tasaNominal,
+                                    Periodo = Periodo,
+                                    Presente_Geométrico = resultados
+                                });
+                                dgvCalculoPGeometrico.DataSource = null;
+                                dgvCalculoPGeometrico.DataSource = ResultadoGeométrico.ToList();
+                            }
+                            if (cmbPeriodo.SelectedItem.Equals("Mensual") || cmbTasaInt.SelectedItem.Equals("Mensual") || cmbTasaNom.SelectedItem.Equals("Mensual"))
+                            {
+
+                                n2 = tasaNominal / 12;
+                                i4 = tasaInteres / 12;
+                                p3 = Periodo / 12;
+                                resultados = Valor_Anualidad * (((Math.Pow(1 + n2, p3) / Math.Pow(1 + i4, p1)) - 1) / (n2 - i4));
+
+                                ResultadoGeométrico.Add(new
+                                {
+                                    VAnualidad = Valor_Anualidad,
+                                    Tasa_Interés = tasaInteres,
+                                    Tasa_Nominal = tasaNominal,
+                                    Periodo = Periodo,
+                                    Presente_Geométrico = resultados
+                                });
+                                dgvCalculoPGeometrico.DataSource = null;
+                                dgvCalculoPGeometrico.DataSource = ResultadoGeométrico.ToList();
+                            }
+                        }
+                    
+                    
+
+                 else
                     {
+                        MessageBox.Show("La Tasa de Intérés no puede ser mayor que la Tasa Nominal", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                        i = tasaNominal / 2;
-                        i2 = tasaInteres / 2;
-                        p1 = Periodo / 2;
-                        resultados = Valor_Anualidad * (((Math.Pow(1 + i, p1) / Math.Pow(1 + i2, p1)) - 1) / (i - i2));
-
-                        ResultadoGeométrico.Add(new
-                        {
-                            VAnualidad = Valor_Anualidad,
-                            Tasa_Interés = tasaInteres,
-                            Tasa_Nominal = tasaNominal,
-                            Periodo = Periodo,
-                            Presente_Geométrico = resultados
-                        });
-                        dgvCalculoPGeometrico.DataSource = null;
-                        dgvCalculoPGeometrico.DataSource = ResultadoGeométrico.ToList();
-                    }
-                    if (cmbPeriodo.SelectedItem.Equals("Trimestral") || cmbTasaInt.SelectedItem.Equals("Trimestral") || cmbTasaNom.SelectedItem.Equals("Trimestral"))
-                    {
-
-                        n = tasaNominal / 4;
-                        i3 = tasaInteres / 4;
-                        p2 = Periodo / 4;
-                        resultados = Valor_Anualidad * (((Math.Pow(1 + n, p2) / Math.Pow(1 + i3, p2)) - 1) / (n - i3));
-
-                        ResultadoGeométrico.Add(new
-                        {
-                            VAnualidad = Valor_Anualidad,
-                            Tasa_Interés = tasaInteres,
-                            Tasa_Nominal = tasaNominal,
-                            Periodo = Periodo,
-                            Presente_Geométrico = resultados
-                        });
-                        dgvCalculoPGeometrico.DataSource = null;
-                        dgvCalculoPGeometrico.DataSource = ResultadoGeométrico.ToList();
-                    }
-                    if (cmbPeriodo.SelectedItem.Equals("Mensual") || cmbTasaInt.SelectedItem.Equals("Mensual") || cmbTasaNom.SelectedItem.Equals("Mensual"))
-                    {
-
-                        n2 = tasaNominal / 12;
-                        i4 = tasaInteres / 12;
-                        p3 = Periodo / 12;
-                        resultados = Valor_Anualidad * (((Math.Pow(1 + n2, p3) / Math.Pow(1 + i4, p1)) - 1) / (n2 - i4));
-
-                        ResultadoGeométrico.Add(new
-                        {
-                            VAnualidad = Valor_Anualidad,
-                            Tasa_Interés = tasaInteres,
-                            Tasa_Nominal = tasaNominal,
-                            Periodo = Periodo,
-                            Presente_Geométrico = resultados
-                        });
-                        dgvCalculoPGeometrico.DataSource = null;
-                        dgvCalculoPGeometrico.DataSource = ResultadoGeométrico.ToList();
                     }
                 }
-            }
-            catch ( FormatException x)
-            {
+                else
+                {
+                    MessageBox.Show("Ingrese Valores Validos para ambos campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
 
-                MessageBox.Show("Rellene los campos necesarios " + x);
             }
-    }
+        }
+               
+
+
+
+
+            
 
         private void btnLimpGeom_Click(object sender, EventArgs e)
         {
