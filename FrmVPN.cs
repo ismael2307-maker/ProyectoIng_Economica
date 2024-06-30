@@ -46,6 +46,8 @@ namespace ProyectoIng_Economica
 
                 resultados.Add(new { Año = "Total", FNE = (double?)null, VPN = vpn });
 
+                dgvResultados.Rows.Clear(); // Limpiar el DataGridView antes de llenarlo
+
                 foreach (var resultado in resultados)
                 {
                     dgvResultados.Rows.Add(resultado.GetType().GetProperty("Año").GetValue(resultado),
@@ -55,7 +57,6 @@ namespace ProyectoIng_Economica
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show("ERROR: " + ex.Message);
             }
         }
@@ -64,6 +65,30 @@ namespace ProyectoIng_Economica
         {
             txtInversionInicial.Clear();
             txtTasaDescuento.Clear();
+            txtAnios.Clear();
+
+            dgvFlujosNetos.Rows.Clear();
+            dgvResultados.Rows.Clear();
+        }
+
+        private void txtAnios_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int años = int.Parse(txtAnios.Text);
+
+                dgvFlujosNetos.Rows.Clear(); // Limpiar el DataGridView antes de llenarlo
+
+                for (int año = 1; año <= años; año++)
+                {
+                    dgvFlujosNetos.Rows.Add(año, ""); // Agregar fila con el año, FNE inicialmente vacío
+                }
+            }
+            catch (FormatException)
+            {
+                // Manejar el caso en el que el usuario ingrese un valor no válido (no numérico)
+                dgvFlujosNetos.Rows.Clear(); // Limpiar el DataGridView si hay un error
+            }
         }
     }
 }

@@ -51,6 +51,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtAnios = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -151,6 +153,8 @@
             // 
             this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel11.Controls.Add(this.txtAnios);
+            this.panel11.Controls.Add(this.label4);
             this.panel11.Controls.Add(this.btnLimpiar);
             this.panel11.Controls.Add(this.btnCalcular);
             this.panel11.Controls.Add(this.dgvFlujosNetos);
@@ -165,7 +169,7 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(412, 256);
+            this.btnLimpiar.Location = new System.Drawing.Point(412, 305);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(86, 31);
             this.btnLimpiar.TabIndex = 6;
@@ -175,7 +179,7 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(308, 256);
+            this.btnCalcular.Location = new System.Drawing.Point(308, 305);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(86, 31);
             this.btnCalcular.TabIndex = 5;
@@ -189,7 +193,7 @@
             this.dgvFlujosNetos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.AÑO,
             this.flujoNE});
-            this.dgvFlujosNetos.Location = new System.Drawing.Point(24, 77);
+            this.dgvFlujosNetos.Location = new System.Drawing.Point(24, 132);
             this.dgvFlujosNetos.Name = "dgvFlujosNetos";
             this.dgvFlujosNetos.Size = new System.Drawing.Size(474, 150);
             this.dgvFlujosNetos.TabIndex = 4;
@@ -214,6 +218,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(267, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(147, 24);
@@ -230,6 +235,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(3, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 24);
@@ -270,6 +276,24 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(129, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 24);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Años";
+            // 
+            // txtAnios
+            // 
+            this.txtAnios.Location = new System.Drawing.Point(199, 68);
+            this.txtAnios.Name = "txtAnios";
+            this.txtAnios.Size = new System.Drawing.Size(112, 29);
+            this.txtAnios.TabIndex = 8;
+            this.txtAnios.TextChanged += new System.EventHandler(this.txtAnios_TextChanged);
             // 
             // FrmVPN
             // 
@@ -320,5 +344,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ANIO;
         private System.Windows.Forms.DataGridViewTextBoxColumn flujoNeE;
         private System.Windows.Forms.DataGridViewTextBoxColumn ValPN;
+        private System.Windows.Forms.TextBox txtAnios;
+        private System.Windows.Forms.Label label4;
     }
 }

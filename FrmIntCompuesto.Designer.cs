@@ -167,7 +167,7 @@
             this.tbgDefinicion.Controls.Add(this.pictureBox1);
             this.tbgDefinicion.Location = new System.Drawing.Point(4, 33);
             this.tbgDefinicion.Name = "tbgDefinicion";
-            this.tbgDefinicion.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbgDefinicion.Padding = new System.Windows.Forms.Padding(3);
             this.tbgDefinicion.Size = new System.Drawing.Size(1028, 603);
             this.tbgDefinicion.TabIndex = 0;
             this.tbgDefinicion.Text = "Definición ";
@@ -191,8 +191,8 @@
             this.tbgFuturo.Controls.Add(this.panel4);
             this.tbgFuturo.Location = new System.Drawing.Point(4, 33);
             this.tbgFuturo.Name = "tbgFuturo";
-            this.tbgFuturo.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tbgFuturo.Size = new System.Drawing.Size(1028, 623);
+            this.tbgFuturo.Padding = new System.Windows.Forms.Padding(3);
+            this.tbgFuturo.Size = new System.Drawing.Size(1028, 603);
             this.tbgFuturo.TabIndex = 1;
             this.tbgFuturo.Text = "Futuro";
             // 
@@ -202,9 +202,9 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel6.Controls.Add(this.dgvResultadosFU);
             this.panel6.Controls.Add(this.label9);
-            this.panel6.Location = new System.Drawing.Point(348, 204);
+            this.panel6.Location = new System.Drawing.Point(563, 230);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(506, 120);
+            this.panel6.Size = new System.Drawing.Size(545, 391);
             this.panel6.TabIndex = 11;
             // 
             // dgvResultadosFU
@@ -222,7 +222,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label9.Location = new System.Drawing.Point(158, 13);
+            this.label9.Location = new System.Drawing.Point(197, 13);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(176, 37);
             this.label9.TabIndex = 12;
@@ -244,9 +244,9 @@
             this.panel5.Controls.Add(this.txtValorPresenteF);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label8);
-            this.panel5.Location = new System.Drawing.Point(-170, 204);
+            this.panel5.Location = new System.Drawing.Point(24, 230);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(502, 120);
+            this.panel5.Size = new System.Drawing.Size(502, 391);
             this.panel5.TabIndex = 10;
             // 
             // groupBox1
@@ -318,7 +318,7 @@
             this.btnLimpiarF.FlatAppearance.BorderSize = 0;
             this.btnLimpiarF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarF.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiarF.Location = new System.Drawing.Point(253, 172);
+            this.btnLimpiarF.Location = new System.Drawing.Point(253, 307);
             this.btnLimpiarF.Name = "btnLimpiarF";
             this.btnLimpiarF.Size = new System.Drawing.Size(102, 33);
             this.btnLimpiarF.TabIndex = 11;
@@ -333,7 +333,7 @@
             this.btnCalcularF.FlatAppearance.BorderSize = 0;
             this.btnCalcularF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcularF.ForeColor = System.Drawing.Color.White;
-            this.btnCalcularF.Location = new System.Drawing.Point(93, 172);
+            this.btnCalcularF.Location = new System.Drawing.Point(93, 307);
             this.btnCalcularF.Name = "btnCalcularF";
             this.btnCalcularF.Size = new System.Drawing.Size(102, 33);
             this.btnCalcularF.TabIndex = 10;
@@ -428,7 +428,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Location = new System.Drawing.Point(154, 22);
+            this.panel4.Location = new System.Drawing.Point(340, 20);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(388, 165);
             this.panel4.TabIndex = 9;
@@ -465,7 +465,7 @@
             this.tbgPresente.Controls.Add(this.panel1);
             this.tbgPresente.Location = new System.Drawing.Point(4, 33);
             this.tbgPresente.Name = "tbgPresente";
-            this.tbgPresente.Size = new System.Drawing.Size(1028, 623);
+            this.tbgPresente.Size = new System.Drawing.Size(1028, 603);
             this.tbgPresente.TabIndex = 2;
             this.tbgPresente.Text = "Presente";
             // 
@@ -475,7 +475,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(146, 26);
+            this.panel2.Location = new System.Drawing.Point(343, 23);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(388, 165);
             this.panel2.TabIndex = 13;
@@ -510,15 +510,15 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel3.Controls.Add(this.dgvResultadosP);
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Location = new System.Drawing.Point(350, 227);
+            this.panel3.Location = new System.Drawing.Point(602, 230);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(504, 120);
+            this.panel3.Size = new System.Drawing.Size(497, 365);
             this.panel3.TabIndex = 12;
             // 
             // dgvResultadosP
             // 
             this.dgvResultadosP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosP.Location = new System.Drawing.Point(38, 90);
+            this.dgvResultadosP.Location = new System.Drawing.Point(26, 76);
             this.dgvResultadosP.Name = "dgvResultadosP";
             this.dgvResultadosP.RowHeadersWidth = 82;
             this.dgvResultadosP.Size = new System.Drawing.Size(425, 150);
@@ -530,7 +530,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label12.Location = new System.Drawing.Point(156, 13);
+            this.label12.Location = new System.Drawing.Point(149, 13);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(176, 37);
             this.label12.TabIndex = 12;
@@ -552,9 +552,9 @@
             this.panel1.Controls.Add(this.txtValorFuturoP);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Location = new System.Drawing.Point(-160, 227);
+            this.panel1.Location = new System.Drawing.Point(24, 230);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(504, 120);
+            this.panel1.Size = new System.Drawing.Size(549, 365);
             this.panel1.TabIndex = 11;
             // 
             // groupBox2
@@ -562,7 +562,7 @@
             this.groupBox2.Controls.Add(this.rdbNo1);
             this.groupBox2.Controls.Add(this.rdbSi1);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.groupBox2.Location = new System.Drawing.Point(356, 32);
+            this.groupBox2.Location = new System.Drawing.Point(399, 37);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(140, 86);
             this.groupBox2.TabIndex = 16;
@@ -600,7 +600,7 @@
             "Semestres",
             "Trimestres",
             "Meses"});
-            this.cmbPeriodoP.Location = new System.Drawing.Point(373, 197);
+            this.cmbPeriodoP.Location = new System.Drawing.Point(399, 194);
             this.cmbPeriodoP.Name = "cmbPeriodoP";
             this.cmbPeriodoP.Size = new System.Drawing.Size(121, 32);
             this.cmbPeriodoP.TabIndex = 13;
@@ -614,7 +614,7 @@
             "Semestral",
             "Trimestral",
             "Mensual"});
-            this.cmbInteresP.Location = new System.Drawing.Point(373, 133);
+            this.cmbInteresP.Location = new System.Drawing.Point(399, 129);
             this.cmbInteresP.Name = "cmbInteresP";
             this.cmbInteresP.Size = new System.Drawing.Size(121, 32);
             this.cmbInteresP.TabIndex = 12;
@@ -626,7 +626,7 @@
             this.btnLimpiarP.FlatAppearance.BorderSize = 0;
             this.btnLimpiarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarP.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiarP.Location = new System.Drawing.Point(269, 172);
+            this.btnLimpiarP.Location = new System.Drawing.Point(291, 294);
             this.btnLimpiarP.Name = "btnLimpiarP";
             this.btnLimpiarP.Size = new System.Drawing.Size(102, 33);
             this.btnLimpiarP.TabIndex = 11;
@@ -641,7 +641,7 @@
             this.btnCalcularP.FlatAppearance.BorderSize = 0;
             this.btnCalcularP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcularP.ForeColor = System.Drawing.Color.White;
-            this.btnCalcularP.Location = new System.Drawing.Point(108, 172);
+            this.btnCalcularP.Location = new System.Drawing.Point(130, 294);
             this.btnCalcularP.Name = "btnCalcularP";
             this.btnCalcularP.Size = new System.Drawing.Size(102, 33);
             this.btnCalcularP.TabIndex = 10;
@@ -655,7 +655,7 @@
             this.txtPeriodoP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPeriodoP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPeriodoP.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodoP.Location = new System.Drawing.Point(195, 203);
+            this.txtPeriodoP.Location = new System.Drawing.Point(217, 203);
             this.txtPeriodoP.Name = "txtPeriodoP";
             this.txtPeriodoP.Size = new System.Drawing.Size(123, 22);
             this.txtPeriodoP.TabIndex = 9;
@@ -666,7 +666,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(14, 201);
+            this.label1.Location = new System.Drawing.Point(36, 201);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 25);
             this.label1.TabIndex = 8;
@@ -678,7 +678,7 @@
             this.txtTasaInteresP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtTasaInteresP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTasaInteresP.ForeColor = System.Drawing.Color.White;
-            this.txtTasaInteresP.Location = new System.Drawing.Point(194, 136);
+            this.txtTasaInteresP.Location = new System.Drawing.Point(216, 136);
             this.txtTasaInteresP.Name = "txtTasaInteresP";
             this.txtTasaInteresP.Size = new System.Drawing.Size(123, 22);
             this.txtTasaInteresP.TabIndex = 7;
@@ -689,7 +689,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(14, 136);
+            this.label3.Location = new System.Drawing.Point(36, 136);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(131, 25);
             this.label3.TabIndex = 6;
@@ -701,7 +701,7 @@
             this.txtValorFuturoP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorFuturoP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorFuturoP.ForeColor = System.Drawing.Color.White;
-            this.txtValorFuturoP.Location = new System.Drawing.Point(195, 70);
+            this.txtValorFuturoP.Location = new System.Drawing.Point(217, 70);
             this.txtValorFuturoP.Name = "txtValorFuturoP";
             this.txtValorFuturoP.Size = new System.Drawing.Size(123, 22);
             this.txtValorFuturoP.TabIndex = 5;
@@ -712,7 +712,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(14, 68);
+            this.label4.Location = new System.Drawing.Point(36, 68);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(130, 25);
             this.label4.TabIndex = 4;
@@ -724,7 +724,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label10.Location = new System.Drawing.Point(98, 13);
+            this.label10.Location = new System.Drawing.Point(132, 10);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(261, 37);
             this.label10.TabIndex = 3;
@@ -804,9 +804,9 @@
             this.groupBox3.Controls.Add(this.cmbbInteres);
             this.groupBox3.ForeColor = System.Drawing.Color.Lime;
             this.groupBox3.Location = new System.Drawing.Point(330, 71);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(169, 98);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
@@ -822,7 +822,7 @@
             "Semestral",
             "Trimestral"});
             this.cmbbInteres.Location = new System.Drawing.Point(18, 43);
-            this.cmbbInteres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbbInteres.Margin = new System.Windows.Forms.Padding(2);
             this.cmbbInteres.Name = "cmbbInteres";
             this.cmbbInteres.Size = new System.Drawing.Size(137, 32);
             this.cmbbInteres.TabIndex = 0;
@@ -1000,7 +1000,7 @@
             this.tbgPeriodo.Controls.Add(this.panel10);
             this.tbgPeriodo.Location = new System.Drawing.Point(4, 33);
             this.tbgPeriodo.Name = "tbgPeriodo";
-            this.tbgPeriodo.Size = new System.Drawing.Size(1028, 623);
+            this.tbgPeriodo.Size = new System.Drawing.Size(1028, 603);
             this.tbgPeriodo.TabIndex = 4;
             this.tbgPeriodo.Text = "Periodo";
             // 

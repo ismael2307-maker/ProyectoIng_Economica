@@ -604,7 +604,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresF.SelectedItem.Equals("Semestral") && cmbPeriodoF.SelectedItem.Equals("Semestres"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 2;
                             f = p * Math.Pow((1 + i), n1);
 
 
@@ -617,7 +617,7 @@ namespace ProyectoIng_Economica
                         else if (cmbInteresF.SelectedItem.Equals("Semestral") && cmbPeriodoF.SelectedItem.Equals("Trimestres"))
                         {
                             i = (i1 / 100) / 2;
-                            n = n1 / 2;
+                            n = n1 * 2;
                             f = p * Math.Pow((1 + i), n);
 
 
@@ -629,7 +629,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresF.SelectedItem.Equals("Semestral") && cmbPeriodoF.SelectedItem.Equals("Meses"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 2;
                             n = n1 / 6;
                             f = p * Math.Pow((1 + i), n);
 
@@ -656,7 +656,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresF.SelectedItem.Equals("Trimestral") && cmbPeriodoF.SelectedItem.Equals("Semestres"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 4;
                             n = n1 * 2;
                             f = p * Math.Pow((1 + i), n);
 
@@ -669,7 +669,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresF.SelectedItem.Equals("Trimestral") && cmbPeriodoF.SelectedItem.Equals("Trimestres"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 4;
                             f = p * Math.Pow((1 + i), n1);
 
 
@@ -681,7 +681,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresF.SelectedItem.Equals("Trimestral") && cmbPeriodoF.SelectedItem.Equals("Meses"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 4;
                             n = n1 / 3;
                             f = p * Math.Pow((1 + i), n);
 
@@ -708,7 +708,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresF.SelectedItem.Equals("Mensual") && cmbPeriodoF.SelectedItem.Equals("Semestres"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 12;
                             n = n1 * 6;
                             f = p * Math.Pow((1 + i), n);
 
@@ -721,7 +721,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresF.SelectedItem.Equals("Mensual") && cmbPeriodoF.SelectedItem.Equals("Trimestres"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 12;
                             n = n1 * 3;
                             f = p * Math.Pow((1 + i), n);
 
@@ -734,7 +734,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresF.SelectedItem.Equals("Mensual") && cmbPeriodoF.SelectedItem.Equals("Meses"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 12;
                             f = p * Math.Pow((1 + i), n1);
 
 
@@ -855,7 +855,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresP.SelectedItem.Equals("Semestral") && cmbPeriodoP.SelectedItem.Equals("Semestres"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 2;
                             p = f / (Math.Pow((1 + i), n1));
 
 
@@ -867,8 +867,8 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresP.SelectedItem.Equals("Semestral") && cmbPeriodoP.SelectedItem.Equals("Trimestres"))
                         {
-                            i = i1 / 100;
-                            n = n1 / 2;
+                            i = (i1 / 100) / 2;
+                            n = n1 * 2;
                             p = f / (Math.Pow((1 + i), n));
 
 
@@ -880,7 +880,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresP.SelectedItem.Equals("Semestral") && cmbPeriodoP.SelectedItem.Equals("Meses"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 2;
                             n = n1 / 6;
                             p = f / (Math.Pow((1 + i), n));
 
@@ -907,7 +907,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresP.SelectedItem.Equals("Trimestral") && cmbPeriodoP.SelectedItem.Equals("Semestres"))
                         {
-                            i = (i1 / 100) / 2;
+                            i = (i1 / 100) / 4;
                             n = n1 * 2;
                             p = f / (Math.Pow((1 + i), n));
 
@@ -920,7 +920,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresP.SelectedItem.Equals("Trimestral") && cmbPeriodoP.SelectedItem.Equals("Trimestres"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 4;
                             p = f / (Math.Pow((1 + i), n1));
 
 
@@ -932,7 +932,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresP.SelectedItem.Equals("Trimestral") && cmbPeriodoP.SelectedItem.Equals("Meses"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 4;
                             n = n1 / 3;
                             p = f / (Math.Pow((1 + i), n));
 
@@ -959,7 +959,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresP.SelectedItem.Equals("Mensual") && cmbPeriodoP.SelectedItem.Equals("Semestres"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 12;
                             n = n1 * 6;
                             p = f / (Math.Pow((1 + i), n));
 
@@ -972,7 +972,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresP.SelectedItem.Equals("Mensual") && cmbPeriodoP.SelectedItem.Equals("Trimestres"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 12;
                             n = n1 * 3;
                             p = f / (Math.Pow((1 + i), n));
 
@@ -985,7 +985,7 @@ namespace ProyectoIng_Economica
 
                         else if (cmbInteresP.SelectedItem.Equals("Mensual") && cmbPeriodoP.SelectedItem.Equals("Meses"))
                         {
-                            i = i1 / 100;
+                            i = (i1 / 100) / 12;
                             p = f / (Math.Pow((1 + i), n1));
 
 
