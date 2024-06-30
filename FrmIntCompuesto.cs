@@ -138,7 +138,7 @@ namespace ProyectoIng_Economica
                     }
                     else if (cmbPeriodoI.SelectedItem.Equals("Anual") || cmbbInteres.Equals("Anual"))
                     {
-                       Tasa = Math.Pow(ValorFuturo/ValorPresent,1/ Periodo) -1;
+                       Tasa = Math.Pow((ValorFuturo/ValorPresent),1/ Periodo) -1;
                    
                         Resultados.Add(new
                         {

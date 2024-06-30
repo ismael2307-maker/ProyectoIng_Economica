@@ -34,33 +34,31 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tbgCalculo = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvDatosTIR = new System.Windows.Forms.DataGridView();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.btnLimpiarTIR = new System.Windows.Forms.Button();
+            this.btnCalCularTIR = new System.Windows.Forms.Button();
+            this.txtInt2TIR = new System.Windows.Forms.TextBox();
+            this.txtInt1Tir = new System.Windows.Forms.TextBox();
+            this.txtVpn2TIR = new System.Windows.Forms.TextBox();
+            this.txtVpn1TIR = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtIngTIR = new System.Windows.Forms.TextBox();
-            this.txtVpn1TIR = new System.Windows.Forms.TextBox();
-            this.txtVpn2TIR = new System.Windows.Forms.TextBox();
-            this.txtInt1Tir = new System.Windows.Forms.TextBox();
-            this.txtInt2TIR = new System.Windows.Forms.TextBox();
-            this.btnCalCularTIR = new System.Windows.Forms.Button();
-            this.btnLimpiarTIR = new System.Windows.Forms.Button();
-            this.dgvDatosTIR = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tbgCalculo.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatosTIR)).BeginInit();
             this.panel11.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDatosTIR)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -125,6 +123,17 @@
             this.panel1.Size = new System.Drawing.Size(751, 469);
             this.panel1.TabIndex = 17;
             // 
+            // dgvDatosTIR
+            // 
+            this.dgvDatosTIR.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dgvDatosTIR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatosTIR.Location = new System.Drawing.Point(37, 44);
+            this.dgvDatosTIR.Name = "dgvDatosTIR";
+            this.dgvDatosTIR.RowHeadersWidth = 51;
+            this.dgvDatosTIR.RowTemplate.Height = 24;
+            this.dgvDatosTIR.Size = new System.Drawing.Size(684, 366);
+            this.dgvDatosTIR.TabIndex = 0;
+            // 
             // panel11
             // 
             this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -135,18 +144,114 @@
             this.panel11.Controls.Add(this.txtInt1Tir);
             this.panel11.Controls.Add(this.txtVpn2TIR);
             this.panel11.Controls.Add(this.txtVpn1TIR);
-            this.panel11.Controls.Add(this.txtIngTIR);
             this.panel11.Controls.Add(this.label6);
             this.panel11.Controls.Add(this.label5);
             this.panel11.Controls.Add(this.label4);
             this.panel11.Controls.Add(this.label3);
-            this.panel11.Controls.Add(this.label1);
             this.panel11.Controls.Add(this.label10);
             this.panel11.Location = new System.Drawing.Point(4, 300);
             this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(763, 469);
             this.panel11.TabIndex = 16;
+            // 
+            // btnLimpiarTIR
+            // 
+            this.btnLimpiarTIR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnLimpiarTIR.Location = new System.Drawing.Point(568, 380);
+            this.btnLimpiarTIR.Name = "btnLimpiarTIR";
+            this.btnLimpiarTIR.Size = new System.Drawing.Size(165, 66);
+            this.btnLimpiarTIR.TabIndex = 16;
+            this.btnLimpiarTIR.Text = "Limpiar";
+            this.btnLimpiarTIR.UseVisualStyleBackColor = false;
+            this.btnLimpiarTIR.Click += new System.EventHandler(this.btnLimpiarTIR_Click);
+            // 
+            // btnCalCularTIR
+            // 
+            this.btnCalCularTIR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnCalCularTIR.Location = new System.Drawing.Point(361, 380);
+            this.btnCalCularTIR.Name = "btnCalCularTIR";
+            this.btnCalCularTIR.Size = new System.Drawing.Size(166, 66);
+            this.btnCalCularTIR.TabIndex = 15;
+            this.btnCalCularTIR.Text = "Calcular";
+            this.btnCalCularTIR.UseVisualStyleBackColor = false;
+            this.btnCalCularTIR.Click += new System.EventHandler(this.btnCalCularTIR_Click);
+            // 
+            // txtInt2TIR
+            // 
+            this.txtInt2TIR.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtInt2TIR.Location = new System.Drawing.Point(162, 325);
+            this.txtInt2TIR.Name = "txtInt2TIR";
+            this.txtInt2TIR.Size = new System.Drawing.Size(165, 37);
+            this.txtInt2TIR.TabIndex = 14;
+            this.txtInt2TIR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInt2TIR_KeyPress);
+            // 
+            // txtInt1Tir
+            // 
+            this.txtInt1Tir.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtInt1Tir.Location = new System.Drawing.Point(162, 250);
+            this.txtInt1Tir.Name = "txtInt1Tir";
+            this.txtInt1Tir.Size = new System.Drawing.Size(165, 37);
+            this.txtInt1Tir.TabIndex = 13;
+            this.txtInt1Tir.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInt1Tir_KeyPress);
+            // 
+            // txtVpn2TIR
+            // 
+            this.txtVpn2TIR.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtVpn2TIR.Location = new System.Drawing.Point(312, 194);
+            this.txtVpn2TIR.Name = "txtVpn2TIR";
+            this.txtVpn2TIR.Size = new System.Drawing.Size(165, 37);
+            this.txtVpn2TIR.TabIndex = 12;
+            this.txtVpn2TIR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVpn2TIR_KeyPress);
+            // 
+            // txtVpn1TIR
+            // 
+            this.txtVpn1TIR.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtVpn1TIR.Location = new System.Drawing.Point(312, 137);
+            this.txtVpn1TIR.Name = "txtVpn1TIR";
+            this.txtVpn1TIR.Size = new System.Drawing.Size(165, 37);
+            this.txtVpn1TIR.TabIndex = 11;
+            this.txtVpn1TIR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVpn1TIR_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(25, 325);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(111, 30);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Interés 2";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(25, 253);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(111, 30);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Interés 1";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(25, 194);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(269, 30);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Valor Presente Neto 2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(25, 137);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(269, 30);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Valor Presente Neto 1";
             // 
             // label10
             // 
@@ -199,134 +304,6 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(25, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 30);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Ingreso";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(25, 137);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(269, 30);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Valor Presente Neto 1";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(25, 194);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(269, 30);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Valor Presente Neto 2";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(25, 253);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 30);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Interés 1";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(25, 325);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 30);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Interés 2";
-            // 
-            // txtIngTIR
-            // 
-            this.txtIngTIR.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtIngTIR.Location = new System.Drawing.Point(146, 72);
-            this.txtIngTIR.Name = "txtIngTIR";
-            this.txtIngTIR.Size = new System.Drawing.Size(165, 37);
-            this.txtIngTIR.TabIndex = 10;
-            this.txtIngTIR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIngTIR_KeyPress);
-            // 
-            // txtVpn1TIR
-            // 
-            this.txtVpn1TIR.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtVpn1TIR.Location = new System.Drawing.Point(312, 137);
-            this.txtVpn1TIR.Name = "txtVpn1TIR";
-            this.txtVpn1TIR.Size = new System.Drawing.Size(165, 37);
-            this.txtVpn1TIR.TabIndex = 11;
-            this.txtVpn1TIR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVpn1TIR_KeyPress);
-            // 
-            // txtVpn2TIR
-            // 
-            this.txtVpn2TIR.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtVpn2TIR.Location = new System.Drawing.Point(312, 194);
-            this.txtVpn2TIR.Name = "txtVpn2TIR";
-            this.txtVpn2TIR.Size = new System.Drawing.Size(165, 37);
-            this.txtVpn2TIR.TabIndex = 12;
-            this.txtVpn2TIR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVpn2TIR_KeyPress);
-            // 
-            // txtInt1Tir
-            // 
-            this.txtInt1Tir.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtInt1Tir.Location = new System.Drawing.Point(162, 250);
-            this.txtInt1Tir.Name = "txtInt1Tir";
-            this.txtInt1Tir.Size = new System.Drawing.Size(165, 37);
-            this.txtInt1Tir.TabIndex = 13;
-            this.txtInt1Tir.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInt1Tir_KeyPress);
-            // 
-            // txtInt2TIR
-            // 
-            this.txtInt2TIR.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtInt2TIR.Location = new System.Drawing.Point(162, 325);
-            this.txtInt2TIR.Name = "txtInt2TIR";
-            this.txtInt2TIR.Size = new System.Drawing.Size(165, 37);
-            this.txtInt2TIR.TabIndex = 14;
-            this.txtInt2TIR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInt2TIR_KeyPress);
-            // 
-            // btnCalCularTIR
-            // 
-            this.btnCalCularTIR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnCalCularTIR.Location = new System.Drawing.Point(361, 380);
-            this.btnCalCularTIR.Name = "btnCalCularTIR";
-            this.btnCalCularTIR.Size = new System.Drawing.Size(166, 66);
-            this.btnCalCularTIR.TabIndex = 15;
-            this.btnCalCularTIR.Text = "Calcular";
-            this.btnCalCularTIR.UseVisualStyleBackColor = false;
-            this.btnCalCularTIR.Click += new System.EventHandler(this.btnCalCularTIR_Click);
-            // 
-            // btnLimpiarTIR
-            // 
-            this.btnLimpiarTIR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnLimpiarTIR.Location = new System.Drawing.Point(568, 380);
-            this.btnLimpiarTIR.Name = "btnLimpiarTIR";
-            this.btnLimpiarTIR.Size = new System.Drawing.Size(165, 66);
-            this.btnLimpiarTIR.TabIndex = 16;
-            this.btnLimpiarTIR.Text = "Limpiar";
-            this.btnLimpiarTIR.UseVisualStyleBackColor = false;
-            this.btnLimpiarTIR.Click += new System.EventHandler(this.btnLimpiarTIR_Click);
-            // 
-            // dgvDatosTIR
-            // 
-            this.dgvDatosTIR.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dgvDatosTIR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatosTIR.Location = new System.Drawing.Point(37, 44);
-            this.dgvDatosTIR.Name = "dgvDatosTIR";
-            this.dgvDatosTIR.RowHeadersWidth = 51;
-            this.dgvDatosTIR.RowTemplate.Height = 24;
-            this.dgvDatosTIR.Size = new System.Drawing.Size(684, 366);
-            this.dgvDatosTIR.TabIndex = 0;
-            // 
             // FrmTIR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -342,12 +319,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tbgCalculo.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatosTIR)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDatosTIR)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -369,12 +346,10 @@
         private System.Windows.Forms.TextBox txtInt1Tir;
         private System.Windows.Forms.TextBox txtVpn2TIR;
         private System.Windows.Forms.TextBox txtVpn1TIR;
-        private System.Windows.Forms.TextBox txtIngTIR;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLimpiarTIR;
         private System.Windows.Forms.DataGridView dgvDatosTIR;
     }
