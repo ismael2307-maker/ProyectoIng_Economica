@@ -112,6 +112,8 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cmbbInteres = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -141,6 +143,7 @@
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -193,7 +196,7 @@
             this.tbgFuturo.Margin = new System.Windows.Forms.Padding(4);
             this.tbgFuturo.Name = "tbgFuturo";
             this.tbgFuturo.Padding = new System.Windows.Forms.Padding(4);
-            this.tbgFuturo.Size = new System.Drawing.Size(916, 463);
+            this.tbgFuturo.Size = new System.Drawing.Size(1374, 770);
             this.tbgFuturo.TabIndex = 1;
             this.tbgFuturo.Text = "Futuro";
             // 
@@ -489,7 +492,7 @@
             this.tbgPresente.Location = new System.Drawing.Point(4, 38);
             this.tbgPresente.Margin = new System.Windows.Forms.Padding(4);
             this.tbgPresente.Name = "tbgPresente";
-            this.tbgPresente.Size = new System.Drawing.Size(916, 463);
+            this.tbgPresente.Size = new System.Drawing.Size(1374, 770);
             this.tbgPresente.TabIndex = 2;
             this.tbgPresente.Text = "Presente";
             // 
@@ -828,6 +831,7 @@
             // 
             this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel8.Controls.Add(this.groupBox3);
             this.panel8.Controls.Add(this.cmbPeriodoI);
             this.panel8.Controls.Add(this.btnLimpiarI);
             this.panel8.Controls.Add(this.btnCalcularI);
@@ -853,7 +857,7 @@
             "Mensual",
             "Trimestral",
             "Semestral"});
-            this.cmbPeriodoI.Location = new System.Drawing.Point(439, 246);
+            this.cmbPeriodoI.Location = new System.Drawing.Point(444, 320);
             this.cmbPeriodoI.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPeriodoI.Name = "cmbPeriodoI";
             this.cmbPeriodoI.Size = new System.Drawing.Size(160, 37);
@@ -897,7 +901,7 @@
             this.txtPeriodoI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPeriodoI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPeriodoI.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodoI.Location = new System.Drawing.Point(259, 250);
+            this.txtPeriodoI.Location = new System.Drawing.Point(237, 330);
             this.txtPeriodoI.Margin = new System.Windows.Forms.Padding(4);
             this.txtPeriodoI.Name = "txtPeriodoI";
             this.txtPeriodoI.Size = new System.Drawing.Size(164, 27);
@@ -910,7 +914,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(16, 247);
+            this.label14.Location = new System.Drawing.Point(27, 326);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(107, 31);
@@ -923,7 +927,7 @@
             this.txtValorPresenteI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorPresenteI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorPresenteI.ForeColor = System.Drawing.Color.White;
-            this.txtValorPresenteI.Location = new System.Drawing.Point(256, 167);
+            this.txtValorPresenteI.Location = new System.Drawing.Point(237, 256);
             this.txtValorPresenteI.Margin = new System.Windows.Forms.Padding(4);
             this.txtValorPresenteI.Name = "txtValorPresenteI";
             this.txtValorPresenteI.Size = new System.Drawing.Size(164, 27);
@@ -936,7 +940,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(16, 167);
+            this.label15.Location = new System.Drawing.Point(27, 252);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(193, 31);
@@ -949,7 +953,7 @@
             this.txtValorFuturoI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorFuturoI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorFuturoI.ForeColor = System.Drawing.Color.White;
-            this.txtValorFuturoI.Location = new System.Drawing.Point(259, 86);
+            this.txtValorFuturoI.Location = new System.Drawing.Point(237, 172);
             this.txtValorFuturoI.Margin = new System.Windows.Forms.Padding(4);
             this.txtValorFuturoI.Name = "txtValorFuturoI";
             this.txtValorFuturoI.Size = new System.Drawing.Size(164, 27);
@@ -962,7 +966,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(16, 84);
+            this.label16.Location = new System.Drawing.Point(27, 170);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(163, 31);
@@ -1264,6 +1268,30 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.cmbbInteres);
+            this.groupBox3.ForeColor = System.Drawing.Color.Lime;
+            this.groupBox3.Location = new System.Drawing.Point(432, 65);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(237, 121);
+            this.groupBox3.TabIndex = 15;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tipo de Interés";
+            // 
+            // cmbbInteres
+            // 
+            this.cmbbInteres.FormattingEnabled = true;
+            this.cmbbInteres.Items.AddRange(new object[] {
+            "Anual",
+            "Mensual",
+            "Semestral",
+            "Trimestral"});
+            this.cmbbInteres.Location = new System.Drawing.Point(24, 53);
+            this.cmbbInteres.Name = "cmbbInteres";
+            this.cmbbInteres.Size = new System.Drawing.Size(181, 37);
+            this.cmbbInteres.TabIndex = 0;
+            // 
             // FrmIntCompuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1317,6 +1345,7 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1406,5 +1435,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rdbNo1;
         private System.Windows.Forms.RadioButton rdbSi1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ComboBox cmbbInteres;
     }
 }
