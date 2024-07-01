@@ -108,6 +108,18 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbNo = new System.Windows.Forms.RadioButton();
+            this.rdbSi = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rdbNoF = new System.Windows.Forms.RadioButton();
+            this.rdbSiF = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rdbNoPP = new System.Windows.Forms.RadioButton();
+            this.rdbSiPP = new System.Windows.Forms.RadioButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.rdbNop = new System.Windows.Forms.RadioButton();
+            this.rdbSip = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicionVENCIDAS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -135,6 +147,10 @@
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -222,6 +238,7 @@
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel5.Controls.Add(this.groupBox1);
             this.panel5.Controls.Add(this.cmbPeriodoAnualidadPresente);
             this.panel5.Controls.Add(this.cmbInteresAnualidadPresente);
             this.panel5.Controls.Add(this.btnLimpiarAnualidadVencida);
@@ -374,7 +391,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label8.Location = new System.Drawing.Point(103, 13);
+            this.label8.Location = new System.Drawing.Point(90, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(276, 39);
             this.label8.TabIndex = 3;
@@ -462,6 +479,7 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.cmbPeriodoAnualidadVencida);
             this.panel2.Controls.Add(this.cmbInteresAnualidadVencidaFuturo);
             this.panel2.Controls.Add(this.btnLimpiarFuturo);
@@ -614,7 +632,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label11.Location = new System.Drawing.Point(103, 13);
+            this.label11.Location = new System.Drawing.Point(68, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(276, 39);
             this.label11.TabIndex = 3;
@@ -702,6 +720,7 @@
             // 
             this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel8.Controls.Add(this.groupBox3);
             this.panel8.Controls.Add(this.cmbPeriodoA);
             this.panel8.Controls.Add(this.cmbInteresA);
             this.panel8.Controls.Add(this.btnLimpiarAnualidadPresente);
@@ -854,7 +873,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label17.Location = new System.Drawing.Point(103, 13);
+            this.label17.Location = new System.Drawing.Point(73, 13);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(276, 39);
             this.label17.TabIndex = 3;
@@ -943,6 +962,7 @@
             // 
             this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel11.Controls.Add(this.groupBox4);
             this.panel11.Controls.Add(this.cmbPeriodoAF);
             this.panel11.Controls.Add(this.cmbInteresAF);
             this.panel11.Controls.Add(this.btnLimpiarAnualidadFuturo);
@@ -1095,7 +1115,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label23.Location = new System.Drawing.Point(103, 13);
+            this.label23.Location = new System.Drawing.Point(66, 13);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(276, 39);
             this.label23.TabIndex = 3;
@@ -1135,6 +1155,142 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rdbNo);
+            this.groupBox1.Controls.Add(this.rdbSi);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox1.Location = new System.Drawing.Point(359, 29);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(154, 85);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Capitalizable";
+            // 
+            // rdbNo
+            // 
+            this.rdbNo.AutoSize = true;
+            this.rdbNo.Location = new System.Drawing.Point(6, 62);
+            this.rdbNo.Name = "rdbNo";
+            this.rdbNo.Size = new System.Drawing.Size(54, 26);
+            this.rdbNo.TabIndex = 1;
+            this.rdbNo.TabStop = true;
+            this.rdbNo.Text = "No";
+            this.rdbNo.UseVisualStyleBackColor = true;
+            // 
+            // rdbSi
+            // 
+            this.rdbSi.AutoSize = true;
+            this.rdbSi.Location = new System.Drawing.Point(6, 30);
+            this.rdbSi.Name = "rdbSi";
+            this.rdbSi.Size = new System.Drawing.Size(40, 26);
+            this.rdbSi.TabIndex = 0;
+            this.rdbSi.TabStop = true;
+            this.rdbSi.Text = "Si";
+            this.rdbSi.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rdbNoF);
+            this.groupBox2.Controls.Add(this.rdbSiF);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox2.Location = new System.Drawing.Point(359, 32);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(154, 85);
+            this.groupBox2.TabIndex = 16;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Capitalizable";
+            // 
+            // rdbNoF
+            // 
+            this.rdbNoF.AutoSize = true;
+            this.rdbNoF.Location = new System.Drawing.Point(6, 62);
+            this.rdbNoF.Name = "rdbNoF";
+            this.rdbNoF.Size = new System.Drawing.Size(54, 26);
+            this.rdbNoF.TabIndex = 1;
+            this.rdbNoF.TabStop = true;
+            this.rdbNoF.Text = "No";
+            this.rdbNoF.UseVisualStyleBackColor = true;
+            // 
+            // rdbSiF
+            // 
+            this.rdbSiF.AutoSize = true;
+            this.rdbSiF.Location = new System.Drawing.Point(6, 30);
+            this.rdbSiF.Name = "rdbSiF";
+            this.rdbSiF.Size = new System.Drawing.Size(40, 26);
+            this.rdbSiF.TabIndex = 0;
+            this.rdbSiF.TabStop = true;
+            this.rdbSiF.Text = "Si";
+            this.rdbSiF.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.rdbNoPP);
+            this.groupBox3.Controls.Add(this.rdbSiPP);
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox3.Location = new System.Drawing.Point(366, 42);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(154, 85);
+            this.groupBox3.TabIndex = 16;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Capitalizable";
+            // 
+            // rdbNoPP
+            // 
+            this.rdbNoPP.AutoSize = true;
+            this.rdbNoPP.Location = new System.Drawing.Point(6, 62);
+            this.rdbNoPP.Name = "rdbNoPP";
+            this.rdbNoPP.Size = new System.Drawing.Size(54, 26);
+            this.rdbNoPP.TabIndex = 1;
+            this.rdbNoPP.TabStop = true;
+            this.rdbNoPP.Text = "No";
+            this.rdbNoPP.UseVisualStyleBackColor = true;
+            // 
+            // rdbSiPP
+            // 
+            this.rdbSiPP.AutoSize = true;
+            this.rdbSiPP.Location = new System.Drawing.Point(6, 30);
+            this.rdbSiPP.Name = "rdbSiPP";
+            this.rdbSiPP.Size = new System.Drawing.Size(40, 26);
+            this.rdbSiPP.TabIndex = 0;
+            this.rdbSiPP.TabStop = true;
+            this.rdbSiPP.Text = "Si";
+            this.rdbSiPP.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.rdbNop);
+            this.groupBox4.Controls.Add(this.rdbSip);
+            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox4.Location = new System.Drawing.Point(359, 29);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(154, 85);
+            this.groupBox4.TabIndex = 16;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Capitalizable";
+            // 
+            // rdbNop
+            // 
+            this.rdbNop.AutoSize = true;
+            this.rdbNop.Location = new System.Drawing.Point(6, 62);
+            this.rdbNop.Name = "rdbNop";
+            this.rdbNop.Size = new System.Drawing.Size(54, 26);
+            this.rdbNop.TabIndex = 1;
+            this.rdbNop.TabStop = true;
+            this.rdbNop.Text = "No";
+            this.rdbNop.UseVisualStyleBackColor = true;
+            // 
+            // rdbSip
+            // 
+            this.rdbSip.AutoSize = true;
+            this.rdbSip.Location = new System.Drawing.Point(6, 30);
+            this.rdbSip.Name = "rdbSip";
+            this.rdbSip.Size = new System.Drawing.Size(40, 26);
+            this.rdbSip.TabIndex = 0;
+            this.rdbSip.TabStop = true;
+            this.rdbSip.Text = "Si";
+            this.rdbSip.UseVisualStyleBackColor = true;
             // 
             // FrmAnualidadesVencidas
             // 
@@ -1184,6 +1340,14 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1269,5 +1433,17 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnLimpiarAnualidadPresente;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rdbNo;
+        private System.Windows.Forms.RadioButton rdbSi;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton rdbNoF;
+        private System.Windows.Forms.RadioButton rdbSiF;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton rdbNoPP;
+        private System.Windows.Forms.RadioButton rdbSiPP;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.RadioButton rdbNop;
+        private System.Windows.Forms.RadioButton rdbSip;
     }
 }

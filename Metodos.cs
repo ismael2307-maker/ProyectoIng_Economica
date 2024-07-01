@@ -223,6 +223,216 @@ namespace ProyectoIng_Economica
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
             }
         }
+        //Calcular el presente de la Anualidad Vencida
+        public void CalcularPresenteVencida(string interesPresente, string periodoPresente, double tasaInteresPresente, double valorAnualidadPresente, int periodo1Presente, List<object> resultadosPresente, DataGridView dgvResultadosPresente)
+        {
+            double anualidad = valorAnualidadPresente;
+            double i1 = tasaInteresPresente / 100;
+            double interes;
+            int p1;
+            double AnualidadPresente;
+
+            if (interesPresente.Equals("Trimestral"))
+            {
+                interes = i1 / 4;
+                if (periodoPresente.Equals("Trimestres"))
+                {
+                    p1 = periodo1Presente;
+                }
+                else if (periodoPresente.Equals("Años"))
+                {
+                    p1 = periodo1Presente * 4;
+                }
+                else if (periodoPresente.Equals("Meses"))
+                {
+                    p1 = periodo1Presente / 3;
+                }
+                else if (periodoPresente.Equals("Semestres"))
+                {
+                    p1 = periodo1Presente * 2;
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else if (interesPresente.Equals("Anual"))
+            {
+                interes = i1;
+                if (periodoPresente.Equals("Años"))
+                {
+                    p1 = periodo1Presente;
+                }
+                else if (periodoPresente.Equals("Meses"))
+                {
+                    p1 = periodo1Presente / 12;
+                }
+                else if (periodoPresente.Equals("Semestres"))
+                {
+                    p1 = (int)(periodo1Presente * 0.5);
+                }
+                else if (periodoPresente.Equals("Trimestres"))
+                {
+                    p1 = periodo1Presente / 4;
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else if (interesPresente.Equals("Mensual"))
+            {
+                interes = i1 / 12;
+                if (periodoPresente.Equals("Años"))
+                {
+                    p1 = periodo1Presente * 12;
+                }
+                else if (periodoPresente.Equals("Meses"))
+                {
+                    p1 = periodo1Presente;
+                }
+                else if (periodoPresente.Equals("Semestres"))
+                {
+                    p1 = periodo1Presente * 6;
+                }
+                else if (periodoPresente.Equals("Trimestres"))
+                {
+                    p1 = periodo1Presente * 3;
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else if (interesPresente.Equals("Semestral"))
+            {
+                interes = i1 / 2;
+                if (periodoPresente.Equals("Años"))
+                {
+                    p1 = periodo1Presente * 2;
+                }
+                else if (periodoPresente.Equals("Meses"))
+                {
+                    p1 = periodo1Presente / 6;
+                }
+                else if (periodoPresente.Equals("Semestres"))
+                {
+                    p1 = periodo1Presente;
+                }
+                else if (periodoPresente.Equals("Trimestres"))
+                {
+                    p1 = periodo1Presente * 2;
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else
+            {
+                return;
+            }
+
+            AnualidadPresente = anualidad * ((Math.Pow(1 + interes, p1) - 1) / (interes * Math.Pow(1 + interes, p1)));
+
+            resultadosPresente.Add(new { Anualidad = anualidad, Interes = interes, Periodo = p1, Presente = AnualidadPresente });
+
+            dgvResultadosPresente.DataSource = null;
+            dgvResultadosPresente.DataSource = resultadosPresente.ToList();
+        }
+        //Calcular Futuro de Anualidad Vencida
+        public void CalcularFuturoAnualidadVencida(string interesFuturo, string periodoFuturo, double tasaInteresFuturo, double valorAnualidadFuturo, int periodo1Futuro, List<object> resultadosFuturo, DataGridView dgvResultadosFuturo)
+        {
+            double anualidad = valorAnualidadFuturo;
+            double i1 = tasaInteresFuturo / 100;
+            double interes = 0;
+            int p1 = periodo1Futuro;
+
+            if (interesFuturo.Equals("Trimestral"))
+            {
+                interes = i1 / 4;
+            }
+            else if (interesFuturo.Equals("Anual"))
+            {
+                interes = i1;
+            }
+            else if (interesFuturo.Equals("Mensual"))
+            {
+                interes = i1 / 12;
+            }
+            else if (interesFuturo.Equals("Semestral"))
+            {
+                interes = i1 / 2;
+            }
+
+            if (periodoFuturo.Equals("Trimestres"))
+            {
+                if (interesFuturo.Equals("Anual"))
+                {
+                    p1 = periodo1Futuro / 4;
+                }
+                else if (interesFuturo.Equals("Mensual"))
+                {
+                    p1 = periodo1Futuro * 3;
+                }
+                else if (interesFuturo.Equals("Semestral"))
+                {
+                    p1 = periodo1Futuro * 2;
+                }
+            }
+            else if (periodoFuturo.Equals("Años"))
+            {
+                if (interesFuturo.Equals("Trimestral"))
+                {
+                    p1 = periodo1Futuro * 4;
+                }
+                else if (interesFuturo.Equals("Mensual"))
+                {
+                    p1 = periodo1Futuro * 12;
+                }
+                else if (interesFuturo.Equals("Semestral"))
+                {
+                    p1 = periodo1Futuro * 2;
+                }
+            }
+            else if (periodoFuturo.Equals("Meses"))
+            {
+                if (interesFuturo.Equals("Trimestral"))
+                {
+                    p1 = periodo1Futuro / 3;
+                }
+                else if (interesFuturo.Equals("Anual"))
+                {
+                    p1 = periodo1Futuro / 12;
+                }
+                else if (interesFuturo.Equals("Semestral"))
+                {
+                    p1 = periodo1Futuro / 6;
+                }
+            }
+            else if (periodoFuturo.Equals("Semestres"))
+            {
+                if (interesFuturo.Equals("Trimestral"))
+                {
+                    p1 = periodo1Futuro * 2;
+                }
+                else if (interesFuturo.Equals("Anual"))
+                {
+                    p1 = (int)(periodo1Futuro * 0.5);
+                }
+                else if (interesFuturo.Equals("Mensual"))
+                {
+                    p1 = periodo1Futuro * 6;
+                }
+            }
+
+            double F = anualidad * ((Math.Pow(1 + interes, p1) - 1) / interes);
+            resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo = p1, Futuro = F });
+
+            dgvResultadosFuturo.DataSource = null;
+            dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
+        }
+
         //Metodo de presente diferido
         public void CalcularPresente(string InteresPresente, string PeriodoPresente,double TasaInteresPresente,double ValorAnualidadPresente
             ,int Periodo1Presente,int Periodo2Presente,List<object> resultadosPresente,DataGridView dgvResultadosPresente)

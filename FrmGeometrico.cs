@@ -202,6 +202,121 @@ namespace ProyectoIng_Economica
             cmbTasaNom.SelectedIndex = -1;
             cmbTasaNom.Items.Clear();
         }
+        private List<Resultado> ResultadosGeométricoFuturo = new List<Resultado>();
+        private void btnCalcularFuturo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Validar que todos los campos de texto estén rellenos
+                if (string.IsNullOrEmpty(txtAnualidadFuturo.Text) ||
+                    string.IsNullOrEmpty(txtPeriodoF.Text) ||
+                    string.IsNullOrEmpty(txtInteresFuturo.Text) ||
+                    string.IsNullOrEmpty(txtInteresJ.Text))
+                {
+                    MessageBox.Show("Rellene todos los campos necesarios.");
+                    return;
+                }
+
+                // Validar que se haya seleccionado una opción en los ComboBox
+                if (cmbInteresF.SelectedItem == null ||
+                    cmbPeriodoF.SelectedItem == null ||
+                    cmbTasaNomF.SelectedItem == null)
+                {
+                    MessageBox.Show("Verifique que tiene ya Seleccionada su opción.");
+                    return;
+                }
+
+                // Obtener los datos de la interfaz
+                double Valor_Anualidad = Convert.ToDouble(txtAnualidadFuturo.Text);
+                double Periodo = Convert.ToDouble(txtPeriodoF.Text);
+                double tasaInteres = Convert.ToDouble(txtInteresFuturo.Text) / 100;
+                double tasaNominal = Convert.ToDouble(txtInteresJ.Text) / 100;
+
+                // Obtener la periodicidad de la tasa y del periodo
+                string periodicidadInteres = cmbInteresF.SelectedItem.ToString();
+                string unidadPeriodo = cmbPeriodoF.SelectedItem.ToString();
+                string periodicidadNominal = cmbTasaNomF.SelectedItem.ToString();
+
+                int periodicidadInteresNum = ObtenerPeriodicidad(periodicidadInteres);
+                int periodicidadNominalNum = ObtenerPeriodicidad(periodicidadNominal);
+                double PeriodoConvertido = ConvertirPeriodoAnios(Periodo, unidadPeriodo);
+
+                // Ajustar las tasas de interés y nominales a su periodicidad
+                double i = ConvertirTasaNominalAEfectivaAnual(tasaNominal, periodicidadNominalNum);
+                double g = tasaInteres / periodicidadInteresNum;
+                i = Math.Round(i, 4, MidpointRounding.AwayFromZero);
+
+                // Calcular el valor futuro
+                double resultados = CalcularValorFuturo(Valor_Anualidad, g, PeriodoConvertido, i);
+                resultados = Math.Round(resultados, 2);
+
+                // Agregar el resultado a la lista
+                ResultadosGeométricoFuturo.Add(new Resultado
+                {
+                    ValorAnualidad = Valor_Anualidad,
+                    TasaInteres = tasaInteres * 100,
+                    TasaNominal = tasaNominal * 100,
+                    Periodo = Periodo,
+                    ValorFuturo = resultados
+                });
+
+                // Actualizar el DataGridView
+                dgvFuturoGeometrico.DataSource = null;
+                dgvFuturoGeometrico.DataSource = ResultadosGeométricoFuturo.ToList();
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Formato inválido: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error: " + ex.Message);
+            }
+
+        }
+        private int ObtenerPeriodicidad(string periodicidad)
+        {
+            switch (periodicidad)
+            {
+                case "Anual":
+                    return 1; // Capitalización anual
+                case "Semestral":
+                    return 2; // Capitalización semestral
+                case "Trimestral":
+                    return 4; // Capitalización trimestral
+                case "Mensual":
+                    return 12; // Capitalización mensual
+                default:
+                    return 1; // Por defecto, capitalización anual
+            }
+        }
+
+        private double ConvertirPeriodoAnios(double n, string unidadPeriodo)
+        {
+            switch (unidadPeriodo)
+            {
+                case "Años":
+                    return n; // No se necesita conversión
+                case "Meses":
+                    return n / 12; // Convertir meses a años
+                case "Trimestres":
+                    return n / 4; // Convertir trimestres a años
+                case "Semestres":
+                    return n / 2; // Convertir semestres a años
+                default:
+                    return n; // Por defecto, asumir que está en años
+            }
+        }
+        private double ConvertirTasaNominalAEfectivaAnual(double tasaNominal, int periodicidad)
+        {
+            return Math.Pow(1 + tasaNominal / periodicidad, periodicidad) - 1;
+        }
+
+        private double CalcularValorFuturo(double A1, double g, double n, double i)
+        {
+            // Fórmula para calcular el valor futuro de un gradiente geométrico
+            return A1 * (Math.Pow(1 + g, n) - Math.Pow(1 + i, n)) / (g - i);
+        }
     }
 }
 
