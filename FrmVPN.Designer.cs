@@ -39,6 +39,8 @@
             this.flujoNeE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ValPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.txtAnios = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.dgvFlujosNetos = new System.Windows.Forms.DataGridView();
@@ -51,8 +53,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtAnios = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -167,6 +167,24 @@
             this.panel11.Size = new System.Drawing.Size(523, 381);
             this.panel11.TabIndex = 15;
             // 
+            // txtAnios
+            // 
+            this.txtAnios.Location = new System.Drawing.Point(199, 68);
+            this.txtAnios.Name = "txtAnios";
+            this.txtAnios.Size = new System.Drawing.Size(112, 29);
+            this.txtAnios.TabIndex = 8;
+            this.txtAnios.TextChanged += new System.EventHandler(this.txtAnios_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(129, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 24);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Años";
+            // 
             // btnLimpiar
             // 
             this.btnLimpiar.Location = new System.Drawing.Point(412, 305);
@@ -210,7 +228,7 @@
             // 
             // txtTasaDescuento
             // 
-            this.txtTasaDescuento.Location = new System.Drawing.Point(420, 10);
+            this.txtTasaDescuento.Location = new System.Drawing.Point(383, 10);
             this.txtTasaDescuento.Name = "txtTasaDescuento";
             this.txtTasaDescuento.Size = new System.Drawing.Size(100, 29);
             this.txtTasaDescuento.TabIndex = 3;
@@ -219,11 +237,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(267, 15);
+            this.label3.Location = new System.Drawing.Point(304, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 24);
+            this.label3.Size = new System.Drawing.Size(64, 24);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Tasa Descuento";
+            this.label3.Text = "TMAR\r\n";
             // 
             // txtInversionInicial
             // 
@@ -276,24 +294,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(129, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 24);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Años";
-            // 
-            // txtAnios
-            // 
-            this.txtAnios.Location = new System.Drawing.Point(199, 68);
-            this.txtAnios.Name = "txtAnios";
-            this.txtAnios.Size = new System.Drawing.Size(112, 29);
-            this.txtAnios.TabIndex = 8;
-            this.txtAnios.TextChanged += new System.EventHandler(this.txtAnios_TextChanged);
             // 
             // FrmVPN
             // 

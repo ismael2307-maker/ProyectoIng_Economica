@@ -34,6 +34,8 @@
             this.dtgvResultadosAcumulados = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbPeriodoAcum = new System.Windows.Forms.ComboBox();
+            this.cmbInteresAcum = new System.Windows.Forms.ComboBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtPeriodo = new System.Windows.Forms.TextBox();
@@ -49,8 +51,7 @@
             this.pnlEcuacionInteres = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cmbInteresAcum = new System.Windows.Forms.ComboBox();
-            this.cmbPeriodoAcum = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvResultadosAcumulados)).BeginInit();
@@ -110,6 +111,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.cmbPeriodoAcum);
             this.panel1.Controls.Add(this.cmbInteresAcum);
             this.panel1.Controls.Add(this.btnLimpiar);
@@ -125,6 +127,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(537, 327);
             this.panel1.TabIndex = 7;
+            // 
+            // cmbPeriodoAcum
+            // 
+            this.cmbPeriodoAcum.FormattingEnabled = true;
+            this.cmbPeriodoAcum.Items.AddRange(new object[] {
+            "Años",
+            "Meses",
+            "Semestres",
+            "Trimestres"});
+            this.cmbPeriodoAcum.Location = new System.Drawing.Point(381, 200);
+            this.cmbPeriodoAcum.Name = "cmbPeriodoAcum";
+            this.cmbPeriodoAcum.Size = new System.Drawing.Size(121, 30);
+            this.cmbPeriodoAcum.TabIndex = 13;
+            // 
+            // cmbInteresAcum
+            // 
+            this.cmbInteresAcum.FormattingEnabled = true;
+            this.cmbInteresAcum.Items.AddRange(new object[] {
+            "Anual",
+            "Mensual",
+            "Semestral",
+            "Trimestral"});
+            this.cmbInteresAcum.Location = new System.Drawing.Point(381, 133);
+            this.cmbInteresAcum.Name = "cmbInteresAcum";
+            this.cmbInteresAcum.Size = new System.Drawing.Size(121, 30);
+            this.cmbInteresAcum.TabIndex = 12;
             // 
             // btnLimpiar
             // 
@@ -162,7 +190,7 @@
             this.txtPeriodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPeriodo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPeriodo.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodo.Location = new System.Drawing.Point(197, 203);
+            this.txtPeriodo.Location = new System.Drawing.Point(220, 203);
             this.txtPeriodo.Name = "txtPeriodo";
             this.txtPeriodo.Size = new System.Drawing.Size(123, 24);
             this.txtPeriodo.TabIndex = 9;
@@ -174,7 +202,7 @@
             this.lblPeriodo.AutoSize = true;
             this.lblPeriodo.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPeriodo.ForeColor = System.Drawing.Color.White;
-            this.lblPeriodo.Location = new System.Drawing.Point(16, 201);
+            this.lblPeriodo.Location = new System.Drawing.Point(60, 201);
             this.lblPeriodo.Name = "lblPeriodo";
             this.lblPeriodo.Size = new System.Drawing.Size(87, 24);
             this.lblPeriodo.TabIndex = 8;
@@ -186,7 +214,7 @@
             this.txtTasaInteres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtTasaInteres.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTasaInteres.ForeColor = System.Drawing.Color.White;
-            this.txtTasaInteres.Location = new System.Drawing.Point(196, 136);
+            this.txtTasaInteres.Location = new System.Drawing.Point(220, 136);
             this.txtTasaInteres.Name = "txtTasaInteres";
             this.txtTasaInteres.Size = new System.Drawing.Size(123, 24);
             this.txtTasaInteres.TabIndex = 7;
@@ -198,7 +226,7 @@
             this.lblInteres.AutoSize = true;
             this.lblInteres.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInteres.ForeColor = System.Drawing.Color.White;
-            this.lblInteres.Location = new System.Drawing.Point(16, 136);
+            this.lblInteres.Location = new System.Drawing.Point(43, 136);
             this.lblInteres.Name = "lblInteres";
             this.lblInteres.Size = new System.Drawing.Size(125, 24);
             this.lblInteres.TabIndex = 6;
@@ -210,7 +238,7 @@
             this.txtValorPresente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorPresente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorPresente.ForeColor = System.Drawing.Color.White;
-            this.txtValorPresente.Location = new System.Drawing.Point(197, 70);
+            this.txtValorPresente.Location = new System.Drawing.Point(220, 70);
             this.txtValorPresente.Name = "txtValorPresente";
             this.txtValorPresente.Size = new System.Drawing.Size(123, 24);
             this.txtValorPresente.TabIndex = 5;
@@ -224,9 +252,9 @@
             this.lblValorPresente.ForeColor = System.Drawing.Color.White;
             this.lblValorPresente.Location = new System.Drawing.Point(16, 68);
             this.lblValorPresente.Name = "lblValorPresente";
-            this.lblValorPresente.Size = new System.Drawing.Size(158, 24);
+            this.lblValorPresente.Size = new System.Drawing.Size(198, 24);
             this.lblValorPresente.TabIndex = 4;
-            this.lblValorPresente.Text = "Valor Presente";
+            this.lblValorPresente.Text = "Valor Presente C$:";
             // 
             // label3
             // 
@@ -308,31 +336,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // cmbInteresAcum
+            // label5
             // 
-            this.cmbInteresAcum.FormattingEnabled = true;
-            this.cmbInteresAcum.Items.AddRange(new object[] {
-            "Anual",
-            "Mensual",
-            "Semestral",
-            "Trimestral"});
-            this.cmbInteresAcum.Location = new System.Drawing.Point(367, 133);
-            this.cmbInteresAcum.Name = "cmbInteresAcum";
-            this.cmbInteresAcum.Size = new System.Drawing.Size(121, 30);
-            this.cmbInteresAcum.TabIndex = 12;
-            // 
-            // cmbPeriodoAcum
-            // 
-            this.cmbPeriodoAcum.FormattingEnabled = true;
-            this.cmbPeriodoAcum.Items.AddRange(new object[] {
-            "Años",
-            "Meses",
-            "Semestres",
-            "Trimestres"});
-            this.cmbPeriodoAcum.Location = new System.Drawing.Point(367, 203);
-            this.cmbPeriodoAcum.Name = "cmbPeriodoAcum";
-            this.cmbPeriodoAcum.Size = new System.Drawing.Size(121, 30);
-            this.cmbPeriodoAcum.TabIndex = 13;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(349, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 24);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "%";
             // 
             // FrmInteresAcumulado
             // 
@@ -383,5 +397,6 @@
         private System.Windows.Forms.DataGridView dtgvResultadosAcumulados;
         private System.Windows.Forms.ComboBox cmbPeriodoAcum;
         private System.Windows.Forms.ComboBox cmbInteresAcum;
+        private System.Windows.Forms.Label label5;
     }
 }

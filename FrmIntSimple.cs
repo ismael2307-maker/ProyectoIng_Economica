@@ -295,7 +295,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe)),
+                            Presente =  Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe))) ,
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -307,7 +307,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 12)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 12))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -319,7 +319,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 2)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 2))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -331,7 +331,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 4)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 4))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -343,7 +343,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 12)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 12))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -355,7 +355,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -367,7 +367,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 6)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 6))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -379,7 +379,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 3)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 3))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -391,7 +391,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 2)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 2))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -403,7 +403,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 6)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 6))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -415,7 +415,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 2)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 2))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -427,7 +427,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 2)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 2))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -439,7 +439,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 4)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 4))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -451,7 +451,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 3)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe / 3))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -463,7 +463,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 2)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe * 2))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -475,7 +475,7 @@ namespace ProyectoIng_Economica
                             ValorFuturoP = Convert.ToInt32(txtValorFuturoP.Text),
                             TasaInteresP = Convert.ToDouble(txtTasaInteresP.Text),
                             PeriodoP = Convert.ToInt32(txtPeriodoP.Text),
-                            Presente = ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe)),
+                            Presente = Math.Round(ValorFuturoPe / (1 + (TasaInteresPe / 100 * PeriodoPe))),
                         });
                         dgvResultadosP.DataSource = null;
                         dgvResultadosP.DataSource = Ps;
@@ -858,6 +858,12 @@ namespace ProyectoIng_Economica
             txtValorFuturoI.Text = "";
             txtValorPresenteI.Text = "";
             txtPeriodoI.Text = "";
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            //ignorar
+
         }
     }
 }

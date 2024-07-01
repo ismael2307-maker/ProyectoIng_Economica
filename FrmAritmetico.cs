@@ -190,5 +190,21 @@ namespace ProyectoIng_Economica
                 FG.FuturoDecrece(interesF, periodoF, interes, Anualidad, periodo1, resultadosFG, dgvResultadosFG, gradiente);
             }
         }
+
+        private void btnLimpiarPG_Click(object sender, EventArgs e)
+        {
+            txtGradientePG.Text = "";
+            txtAnualidadPG.Text = "";
+            txtInteresPG.Text = "";
+            txtPeriodoPG.Text = "";
+        }
+
+        private void btnLimpiarFG_Click(object sender, EventArgs e)
+        {
+            txtGradienteFG.Text = "";
+            txtAnualidadFG.Text = "";
+            txtInteresFG.Text = "";
+            txtPeriodoFG.Text = "";
+        }
     }
 }

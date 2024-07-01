@@ -80,7 +80,7 @@ namespace ProyectoIng_Economica
                     }
                     else if (cmbInteresAcum.SelectedItem.Equals("Anual") && cmbPeriodoAcum.SelectedItem.Equals("Meses"))
                     {
-                        n = n1;
+                        n = n1 / 12;
                         i = i1 / 100;
                         I = P * i * n;
 

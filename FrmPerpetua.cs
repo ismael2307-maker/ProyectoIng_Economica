@@ -53,9 +53,9 @@ namespace ProyectoIng_Economica
                 int n3 = N2 - 1;
                 A = Convert.ToDouble(txtValorAnualidad.Text);
                 double i = Convert.ToDouble(txtTasaInteres.Text) / 100;
-                double P = A / i;
-                double p2 = P * (Math.Pow(1+i,-n3));
-                ResultadosPerpetuo.Add(new { Presente = p2, Interes = i,Anualidad = A});
+                double P = Math.Round(A / i);
+                double p2 = Math.Round(P * (Math.Pow(1+i,-n3)));
+                ResultadosPerpetuo.Add(new { Presente = p2, Interes = i,Anualidad = A, Presente2 = P });
                 dgvResultadoresPerpetuos.DataSource = null;
                 dgvResultadoresPerpetuos.DataSource = ResultadosPerpetuo.ToList();
             }catch(FormatException x)

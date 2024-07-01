@@ -1027,5 +1027,10 @@ namespace ProyectoIng_Economica
         {
             //Ignorar
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+            //Ignorar
+        }
     }
 }

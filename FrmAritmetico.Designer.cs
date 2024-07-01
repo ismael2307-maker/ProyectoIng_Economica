@@ -337,6 +337,7 @@
             this.btnLimpiarPG.TabIndex = 11;
             this.btnLimpiarPG.Text = "Limpiar";
             this.btnLimpiarPG.UseVisualStyleBackColor = false;
+            this.btnLimpiarPG.Click += new System.EventHandler(this.btnLimpiarPG_Click);
             // 
             // btnCalcularPG
             // 
@@ -642,6 +643,7 @@
             this.btnLimpiarFG.TabIndex = 11;
             this.btnLimpiarFG.Text = "Limpiar";
             this.btnLimpiarFG.UseVisualStyleBackColor = false;
+            this.btnLimpiarFG.Click += new System.EventHandler(this.btnLimpiarFG_Click);
             // 
             // btnCalcularFG
             // 
