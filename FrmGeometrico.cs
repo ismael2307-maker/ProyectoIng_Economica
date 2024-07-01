@@ -317,6 +317,114 @@ namespace ProyectoIng_Economica
             // Fórmula para calcular el valor futuro de un gradiente geométrico
             return A1 * (Math.Pow(1 + g, n) - Math.Pow(1 + i, n)) / (g - i);
         }
+
+        private List<Resultado> ResultadosGeométricoAnualidad = new List<Resultado>();
+        private void btnCalcularAnualidad_Click(object sender, EventArgs e)
+        {
+            // Validar que todos los campos de texto estén rellenos
+            if (string.IsNullOrEmpty(txtAnualidadA.Text) ||
+                string.IsNullOrEmpty(txtPeriodoAnualidad.Text) ||
+                string.IsNullOrEmpty(txtInteresAnualidad.Text) ||
+                string.IsNullOrEmpty(txtINominalAnualidad.Text))
+            {
+                MessageBox.Show("Rellene todos los campos necesarios.");
+                return;
+            }
+
+            // Validar que se haya seleccionado una opción en los ComboBox
+            if (cmbInteresA.SelectedItem == null ||
+                cmbPeriodoA.SelectedItem == null ||
+                cmbINominalA.SelectedItem == null)
+            {
+                MessageBox.Show("Verifique que tiene ya Seleccionada su opción.");
+                return;
+            }
+
+            // Obtener los datos de la interfaz
+            double Valor_AnualidadA = Convert.ToDouble(txtAnualidadA.Text);
+            double PeriodoA = Convert.ToDouble(txtPeriodoAnualidad.Text);
+            double tasaInteresA = Convert.ToDouble(txtInteresAnualidad.Text) / 100;
+            double tasaNominalA = Convert.ToDouble(txtINominalAnualidad.Text) / 100;
+
+            // Obtener la periodicidad de la tasa y del periodo
+            string periodicidadInteresA = cmbInteresA.SelectedItem.ToString();
+            string unidadPeriodoA = cmbPeriodoA.SelectedItem.ToString();
+            string periodicidadNominalA = cmbINominalA.SelectedItem.ToString();
+            //-------------------------------------------------------------------------//ARREGLANDO
+            int PeriodicidadInteresNum = obtenerPeriodicidad(periodicidadInteresA);
+            int PeriodicidadNominalNum = obtenerPeriodicidad(periodicidadNominalA);
+            double periodoConvertido = ConvertirPeriodoAños(PeriodoA, unidadPeriodoA);
+
+            // Ajustar las tasas de interés y nominales a su periodicidad
+            double I = convertirTasaNominalAEfectivaAnual(tasaNominalA, PeriodicidadNominalNum);
+            double J = tasaInteresA / PeriodicidadInteresNum;
+            I = Math.Round(I, 4, MidpointRounding.AwayFromZero);
+
+            // Calcular la Anualidad
+            double Resultados = calcularAnualidad(Valor_AnualidadA, J, periodoConvertido, I);
+            Resultados = Math.Round(Resultados, 2);
+
+            // Agregar el resultado a la lista
+            ResultadosGeométricoAnualidad.Add(new Resultado
+            {
+                ValorAnualidad = Valor_AnualidadA,
+                TasaInteres = tasaInteresA * 100,
+                TasaNominal = tasaNominalA * 100,
+                Periodo = PeriodoA,
+                ValorFuturo = Resultados
+            });
+
+            // Actualizar el DataGridView
+            dgvAnualidadGeometrico.DataSource = null;
+            dgvAnualidadGeometrico.DataSource = ResultadosGeométricoAnualidad.ToList();
+
+
+
+        }
+
+        private double calcularAnualidad(double Anualidad, double J, double N, double I)
+        {
+            // Fórmula para calcular la Anualidad de un gradiente geométrico
+            return Anualidad * ((Math.Pow(1 + J, N) - Math.Pow(1 + I, N)) / (J - I)) * I/Math.Pow(1+I, N)-1;
+        }
+
+        private double convertirTasaNominalAEfectivaAnual(double tasaNominalA, int periodicidadN)
+        {
+            return Math.Pow(1 + tasaNominalA / periodicidadN, periodicidadN) - 1;
+        }
+
+        private double ConvertirPeriodoAños(double N, string unidadPeriodoA)
+        {
+            switch (unidadPeriodoA)
+            {
+                case "Años.":
+                    return N; // No se necesita conversión
+                case "Meses.":
+                    return N / 12; // Convertir meses a años
+                case "Trimestres.":
+                    return N / 4; // Convertir trimestres a años
+                case "Semestres.":
+                    return N / 2; // Convertir semestres a años
+                default:
+                    return N; // Por defecto, asumir que está en años
+            }
+        }
+
+        private int obtenerPeriodicidad(string Periodicidad)
+        {
+            switch (Periodicidad)
+            {
+                case "Anual.":
+                    return 1; // Capitalización anual
+                case "Semestral.":
+                    return 2; // Capitalización semestral
+                case "Trimestral.":
+                    return 4; // Capitalización trimestral
+                case "Mensual.":
+                    return 12; // Capitalización mensual
+                default:
+                    return 1; // Por defecto, capitalización anual
+            }
+        }
     }
 }
-
