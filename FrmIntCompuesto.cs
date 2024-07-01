@@ -59,9 +59,11 @@ namespace ProyectoIng_Economica
 
         private void btnLimpiarF_Click(object sender, EventArgs e)
         {
-            txtValorPresenteF.Text = "";
-            txtTasaInteresF.Text = "";
-            txtPeriodoF.Text = "";
+            txtValorPresenteF.Clear();
+            txtTasaInteresF.Clear();
+            dgvResultadosFU.DataSource = null;
+            dgvResultadosFU.Rows.Clear();
+            txtPeriodoF.Clear();
         }
         private List<object> Resultados = new  List<object>();
         private void btnCalcularI_Click(object sender, EventArgs e)
@@ -771,6 +773,7 @@ namespace ProyectoIng_Economica
 
         }
 
+        private List<object> resultadosP = new List<object>();
         private void btnCalcularP_Click(object sender, EventArgs e)
         {
             // SI en dado caso que quiera capitalizar
@@ -793,10 +796,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n1));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
 
                         }
 
@@ -807,10 +810,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         else if (cmbInteresP.SelectedItem.Equals("Anual") && cmbPeriodoP.SelectedItem.Equals("Trimestres"))
@@ -820,10 +823,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         if (cmbInteresP.SelectedItem.Equals("Anual") && cmbPeriodoP.SelectedItem.Equals("Meses"))
@@ -833,10 +836,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         // Cuando tenemos interes semestral con los diferentes periodos
@@ -847,10 +850,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         else if (cmbInteresP.SelectedItem.Equals("Semestral") && cmbPeriodoP.SelectedItem.Equals("Semestres"))
@@ -859,10 +862,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n1));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         else if (cmbInteresP.SelectedItem.Equals("Semestral") && cmbPeriodoP.SelectedItem.Equals("Trimestres"))
@@ -872,10 +875,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         else if (cmbInteresP.SelectedItem.Equals("Semestral") && cmbPeriodoP.SelectedItem.Equals("Meses"))
@@ -885,10 +888,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         // Cuando tenemos interes trimestral con los diferentes periodos
@@ -899,10 +902,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         else if (cmbInteresP.SelectedItem.Equals("Trimestral") && cmbPeriodoP.SelectedItem.Equals("Semestres"))
@@ -912,10 +915,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         else if (cmbInteresP.SelectedItem.Equals("Trimestral") && cmbPeriodoP.SelectedItem.Equals("Trimestres"))
@@ -924,10 +927,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n1));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         else if (cmbInteresP.SelectedItem.Equals("Trimestral") && cmbPeriodoP.SelectedItem.Equals("Meses"))
@@ -937,10 +940,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         // Cuando tenemos interes mensual con los diferentes periodos
@@ -951,10 +954,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         else if (cmbInteresP.SelectedItem.Equals("Mensual") && cmbPeriodoP.SelectedItem.Equals("Semestres"))
@@ -964,10 +967,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         else if (cmbInteresP.SelectedItem.Equals("Mensual") && cmbPeriodoP.SelectedItem.Equals("Trimestres"))
@@ -977,10 +980,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                         else if (cmbInteresP.SelectedItem.Equals("Mensual") && cmbPeriodoP.SelectedItem.Equals("Meses"))
@@ -989,10 +992,10 @@ namespace ProyectoIng_Economica
                             p = f / (Math.Pow((1 + i), n1));
 
 
-                            resultados.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
+                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
 
                             dgvResultadosP.DataSource = null;
-                            dgvResultadosP.DataSource = resultados.ToList();
+                            dgvResultadosP.DataSource = resultadosP.ToList();
                         }
 
                     }
@@ -1014,10 +1017,10 @@ namespace ProyectoIng_Economica
                 P = Fno / (Math.Pow((1 + Int), Nno));
 
 
-                resultados.Add(new { Futuro = Fno, Interes = Int, Periodo = Nno, Presente = P });
+                resultadosP.Add(new { Futuro = Fno, Interes = Int, Periodo = Nno, Presente = P });
 
                 dgvResultadosP.DataSource = null;
-                dgvResultadosP.DataSource = resultados.ToList();
+                dgvResultadosP.DataSource = resultadosP.ToList();
             }
 
         }
@@ -1027,6 +1030,8 @@ namespace ProyectoIng_Economica
             txtValorFuturoP.Clear();
             txtTasaInteresP.Clear();
             txtPeriodoP.Clear();
+            dgvResultadosP.DataSource = null;
+            dgvResultadosP.Rows.Clear();
             txtValorFuturoP.Focus();
         }
     }
