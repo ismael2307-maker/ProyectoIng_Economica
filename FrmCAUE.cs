@@ -89,7 +89,11 @@ namespace ProyectoIng_Economica
                 double Resultado1 = CalcularAnualidadVencidaPresente(Interes, Periodo);
                 double Resultado2 = CalcularAnualidadVencipdaFuturo(Interes, Periodo);
                 double CAUE = ValorI * (Resultado1) - 2600 * (Resultado2) + 500;
-                ResultadosCAUE1.Add(new {ValorI = ValorI, ValorVs = ValorVs, Interes = Interes,Periodo = Periodo,ValorC = ValorC,Caue = CAUE });
+                string formattedI = ValorI.ToString("N0");
+                string formattedAVS = ValorVs.ToString("N0");
+                string formattedC = ValorC.ToString("N0");
+                string formattedCAUE = CAUE.ToString("N0");
+                ResultadosCAUE1.Add(new {ValorI = formattedI, ValorVs = formattedAVS, Interes = Interes,Periodo = Periodo,ValorC = formattedC,Caue = formattedCAUE });
                 dgvResultadosCAUE1.DataSource = null;
                 dgvResultadosCAUE1.DataSource = ResultadosCAUE1.ToList();
 
@@ -211,7 +215,13 @@ namespace ProyectoIng_Economica
                 double Resultado3 = CalcularAnualidadVencidaPresente(Interes, Periodo1);
 
                 double Caue = (ValorP - ValorVs * (Resultado1) + Cre * (Resultado2)) * (Resultado3) + ValorC;
-                ResultadosCAUE2.Add(new {ValorP = ValorP, ValorVs = ValorVs, Interes = Interes, Plazo1 = Periodo1, Plazo2 = Periodo2,ValorC = ValorC,Cre = Cre, CAUE = Caue });
+                string formattedP = ValorP.ToString("N0");
+                string formattedVS = ValorVs.ToString("N0");
+                string formattedVC = ValorC.ToString("N0");
+                string formattedCRE = Cre.ToString("N0");
+                string formattedcaue = Caue.ToString("N0");
+               
+                ResultadosCAUE2.Add(new {ValorP = formattedP, ValorVs = formattedVS, Interes = Interes, Plazo1 = Periodo1, Plazo2 = Periodo2,ValorC = formattedVC,Cre = formattedCRE, CAUE = formattedcaue });
                 dgvResultados2.DataSource = null;
                 dgvResultados2.DataSource = ResultadosCAUE2.ToList();
             }

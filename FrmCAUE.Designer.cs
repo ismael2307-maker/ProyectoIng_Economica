@@ -78,6 +78,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tbgDefincion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -179,6 +181,7 @@
             // 
             this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel11.Controls.Add(this.label17);
             this.panel11.Controls.Add(this.txtValorC);
             this.panel11.Controls.Add(this.label5);
             this.panel11.Controls.Add(this.txtPeriodo);
@@ -192,7 +195,7 @@
             this.panel11.Controls.Add(this.btnLimpiarCAUE1);
             this.panel11.Controls.Add(this.btnCalcularCAUE1);
             this.panel11.Controls.Add(this.label23);
-            this.panel11.Location = new System.Drawing.Point(8, 241);
+            this.panel11.Location = new System.Drawing.Point(8, 243);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(523, 350);
             this.panel11.TabIndex = 15;
@@ -203,7 +206,7 @@
             this.txtValorC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorC.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorC.ForeColor = System.Drawing.Color.White;
-            this.txtValorC.Location = new System.Drawing.Point(115, 277);
+            this.txtValorC.Location = new System.Drawing.Point(150, 277);
             this.txtValorC.Name = "txtValorC";
             this.txtValorC.Size = new System.Drawing.Size(123, 24);
             this.txtValorC.TabIndex = 21;
@@ -217,9 +220,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(16, 275);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 24);
+            this.label5.Size = new System.Drawing.Size(127, 24);
             this.label5.TabIndex = 20;
-            this.label5.Text = "Valor C";
+            this.label5.Text = "Valor C C$:";
             // 
             // txtPeriodo
             // 
@@ -227,7 +230,7 @@
             this.txtPeriodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPeriodo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPeriodo.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodo.Location = new System.Drawing.Point(115, 224);
+            this.txtPeriodo.Location = new System.Drawing.Point(150, 222);
             this.txtPeriodo.Name = "txtPeriodo";
             this.txtPeriodo.Size = new System.Drawing.Size(123, 24);
             this.txtPeriodo.TabIndex = 19;
@@ -239,11 +242,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(16, 222);
+            this.label4.Location = new System.Drawing.Point(30, 222);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 24);
+            this.label4.Size = new System.Drawing.Size(92, 24);
             this.label4.TabIndex = 18;
-            this.label4.Text = "Periodo";
+            this.label4.Text = "Periodo:";
             // 
             // txtInteres
             // 
@@ -251,7 +254,7 @@
             this.txtInteres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtInteres.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInteres.ForeColor = System.Drawing.Color.White;
-            this.txtInteres.Location = new System.Drawing.Point(113, 170);
+            this.txtInteres.Location = new System.Drawing.Point(150, 168);
             this.txtInteres.Name = "txtInteres";
             this.txtInteres.Size = new System.Drawing.Size(123, 24);
             this.txtInteres.TabIndex = 17;
@@ -263,11 +266,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(14, 168);
+            this.label3.Location = new System.Drawing.Point(40, 168);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 24);
+            this.label3.Size = new System.Drawing.Size(82, 24);
             this.label3.TabIndex = 16;
-            this.label3.Text = "Interes";
+            this.label3.Text = "Interes:";
             // 
             // txtValorVs
             // 
@@ -275,7 +278,7 @@
             this.txtValorVs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorVs.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorVs.ForeColor = System.Drawing.Color.White;
-            this.txtValorVs.Location = new System.Drawing.Point(113, 118);
+            this.txtValorVs.Location = new System.Drawing.Point(150, 118);
             this.txtValorVs.Name = "txtValorVs";
             this.txtValorVs.Size = new System.Drawing.Size(123, 24);
             this.txtValorVs.TabIndex = 15;
@@ -289,9 +292,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(14, 116);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 24);
+            this.label1.Size = new System.Drawing.Size(133, 24);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Valor Vs";
+            this.label1.Text = "Valor Vs C$:";
             // 
             // txtValorI
             // 
@@ -299,7 +302,7 @@
             this.txtValorI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorI.ForeColor = System.Drawing.Color.White;
-            this.txtValorI.Location = new System.Drawing.Point(115, 71);
+            this.txtValorI.Location = new System.Drawing.Point(150, 69);
             this.txtValorI.Name = "txtValorI";
             this.txtValorI.Size = new System.Drawing.Size(123, 24);
             this.txtValorI.TabIndex = 13;
@@ -313,9 +316,9 @@
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(16, 69);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(75, 24);
+            this.label16.Size = new System.Drawing.Size(115, 24);
             this.label16.TabIndex = 12;
-            this.label16.Text = "Valor I";
+            this.label16.Text = "Valor I C$:";
             // 
             // btnLimpiarCAUE1
             // 
@@ -324,7 +327,7 @@
             this.btnLimpiarCAUE1.FlatAppearance.BorderSize = 0;
             this.btnLimpiarCAUE1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarCAUE1.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiarCAUE1.Location = new System.Drawing.Point(277, 199);
+            this.btnLimpiarCAUE1.Location = new System.Drawing.Point(307, 196);
             this.btnLimpiarCAUE1.Name = "btnLimpiarCAUE1";
             this.btnLimpiarCAUE1.Size = new System.Drawing.Size(102, 33);
             this.btnLimpiarCAUE1.TabIndex = 11;
@@ -339,7 +342,7 @@
             this.btnCalcularCAUE1.FlatAppearance.BorderSize = 0;
             this.btnCalcularCAUE1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcularCAUE1.ForeColor = System.Drawing.Color.White;
-            this.btnCalcularCAUE1.Location = new System.Drawing.Point(277, 133);
+            this.btnCalcularCAUE1.Location = new System.Drawing.Point(307, 133);
             this.btnCalcularCAUE1.Name = "btnCalcularCAUE1";
             this.btnCalcularCAUE1.Size = new System.Drawing.Size(102, 33);
             this.btnCalcularCAUE1.TabIndex = 10;
@@ -442,14 +445,15 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.txtCRE);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.txtPlazo2);
             this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.txtPlazo2);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.txtPlazo1);
+            this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.txtValorC2);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.txtPlazo1);
-            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.txtInteres2);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.txtValorVs2);
@@ -470,7 +474,7 @@
             this.txtCRE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtCRE.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCRE.ForeColor = System.Drawing.Color.White;
-            this.txtCRE.Location = new System.Drawing.Point(245, 204);
+            this.txtCRE.Location = new System.Drawing.Point(256, 204);
             this.txtCRE.Name = "txtCRE";
             this.txtCRE.Size = new System.Drawing.Size(123, 24);
             this.txtCRE.TabIndex = 25;
@@ -484,9 +488,9 @@
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(106, 204);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(111, 24);
+            this.label15.Size = new System.Drawing.Size(151, 24);
             this.label15.TabIndex = 24;
-            this.label15.Text = "Valor CRE";
+            this.label15.Text = "Valor CRE C$:";
             // 
             // txtPlazo2
             // 
@@ -494,7 +498,7 @@
             this.txtPlazo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPlazo2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPlazo2.ForeColor = System.Drawing.Color.White;
-            this.txtPlazo2.Location = new System.Drawing.Point(371, 120);
+            this.txtPlazo2.Location = new System.Drawing.Point(398, 160);
             this.txtPlazo2.Name = "txtPlazo2";
             this.txtPlazo2.Size = new System.Drawing.Size(123, 24);
             this.txtPlazo2.TabIndex = 23;
@@ -506,11 +510,11 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(272, 118);
+            this.label14.Location = new System.Drawing.Point(299, 160);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(82, 24);
+            this.label14.Size = new System.Drawing.Size(87, 24);
             this.label14.TabIndex = 22;
-            this.label14.Text = "Plazo 2";
+            this.label14.Text = "Plazo 2:";
             // 
             // txtValorC2
             // 
@@ -518,7 +522,7 @@
             this.txtValorC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorC2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorC2.ForeColor = System.Drawing.Color.White;
-            this.txtValorC2.Location = new System.Drawing.Point(371, 160);
+            this.txtValorC2.Location = new System.Drawing.Point(398, 69);
             this.txtValorC2.Name = "txtValorC2";
             this.txtValorC2.Size = new System.Drawing.Size(123, 24);
             this.txtValorC2.TabIndex = 21;
@@ -530,11 +534,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(272, 158);
+            this.label7.Location = new System.Drawing.Point(273, 69);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 24);
+            this.label7.Size = new System.Drawing.Size(127, 24);
             this.label7.TabIndex = 20;
-            this.label7.Text = "Valor C";
+            this.label7.Text = "Valor C C$:";
             // 
             // txtPlazo1
             // 
@@ -542,7 +546,7 @@
             this.txtPlazo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPlazo1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPlazo1.ForeColor = System.Drawing.Color.White;
-            this.txtPlazo1.Location = new System.Drawing.Point(371, 73);
+            this.txtPlazo1.Location = new System.Drawing.Point(398, 118);
             this.txtPlazo1.Name = "txtPlazo1";
             this.txtPlazo1.Size = new System.Drawing.Size(123, 24);
             this.txtPlazo1.TabIndex = 19;
@@ -554,11 +558,11 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(272, 71);
+            this.label8.Location = new System.Drawing.Point(299, 116);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 24);
+            this.label8.Size = new System.Drawing.Size(87, 24);
             this.label8.TabIndex = 18;
-            this.label8.Text = "Plazo 1";
+            this.label8.Text = "Plazo 1:";
             // 
             // txtInteres2
             // 
@@ -566,7 +570,7 @@
             this.txtInteres2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtInteres2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInteres2.ForeColor = System.Drawing.Color.White;
-            this.txtInteres2.Location = new System.Drawing.Point(113, 160);
+            this.txtInteres2.Location = new System.Drawing.Point(131, 158);
             this.txtInteres2.Name = "txtInteres2";
             this.txtInteres2.Size = new System.Drawing.Size(123, 24);
             this.txtInteres2.TabIndex = 17;
@@ -580,9 +584,9 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(14, 158);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 24);
+            this.label9.Size = new System.Drawing.Size(82, 24);
             this.label9.TabIndex = 16;
-            this.label9.Text = "Interes";
+            this.label9.Text = "Interes:";
             // 
             // txtValorVs2
             // 
@@ -590,7 +594,7 @@
             this.txtValorVs2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorVs2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorVs2.ForeColor = System.Drawing.Color.White;
-            this.txtValorVs2.Location = new System.Drawing.Point(113, 118);
+            this.txtValorVs2.Location = new System.Drawing.Point(131, 118);
             this.txtValorVs2.Name = "txtValorVs2";
             this.txtValorVs2.Size = new System.Drawing.Size(123, 24);
             this.txtValorVs2.TabIndex = 15;
@@ -602,11 +606,11 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(14, 116);
+            this.label10.Location = new System.Drawing.Point(3, 116);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(93, 24);
+            this.label10.Size = new System.Drawing.Size(133, 24);
             this.label10.TabIndex = 14;
-            this.label10.Text = "Valor Vs";
+            this.label10.Text = "Valor Vs C$:";
             // 
             // txtValorP2
             // 
@@ -614,7 +618,7 @@
             this.txtValorP2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtValorP2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValorP2.ForeColor = System.Drawing.Color.White;
-            this.txtValorP2.Location = new System.Drawing.Point(115, 71);
+            this.txtValorP2.Location = new System.Drawing.Point(131, 71);
             this.txtValorP2.Name = "txtValorP2";
             this.txtValorP2.Size = new System.Drawing.Size(123, 24);
             this.txtValorP2.TabIndex = 13;
@@ -626,11 +630,11 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(16, 69);
+            this.label11.Location = new System.Drawing.Point(3, 69);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 24);
+            this.label11.Size = new System.Drawing.Size(122, 24);
             this.label11.TabIndex = 12;
-            this.label11.Text = "Valor P";
+            this.label11.Text = "Valor P C$:";
             // 
             // btnLimpiar2
             // 
@@ -708,6 +712,30 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(279, 166);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(26, 24);
+            this.label17.TabIndex = 22;
+            this.label17.Text = "%";
+            // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(260, 156);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(26, 24);
+            this.label18.TabIndex = 26;
+            this.label18.Text = "%";
             // 
             // FrmCAUE
             // 
@@ -794,5 +822,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtCRE;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
     }
 }
