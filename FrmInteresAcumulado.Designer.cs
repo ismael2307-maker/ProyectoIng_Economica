@@ -34,6 +34,7 @@
             this.dtgvResultadosAcumulados = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.cmbPeriodoAcum = new System.Windows.Forms.ComboBox();
             this.cmbInteresAcum = new System.Windows.Forms.ComboBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@
             this.pnlEcuacionInteres = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvResultadosAcumulados)).BeginInit();
@@ -128,8 +128,21 @@
             this.panel1.Size = new System.Drawing.Size(537, 327);
             this.panel1.TabIndex = 7;
             // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(349, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 24);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "%";
+            // 
             // cmbPeriodoAcum
             // 
+            this.cmbPeriodoAcum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPeriodoAcum.FormattingEnabled = true;
             this.cmbPeriodoAcum.Items.AddRange(new object[] {
             "Años",
@@ -143,6 +156,7 @@
             // 
             // cmbInteresAcum
             // 
+            this.cmbInteresAcum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbInteresAcum.FormattingEnabled = true;
             this.cmbInteresAcum.Items.AddRange(new object[] {
             "Anual",
@@ -335,18 +349,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(349, 136);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 24);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "%";
             // 
             // FrmInteresAcumulado
             // 

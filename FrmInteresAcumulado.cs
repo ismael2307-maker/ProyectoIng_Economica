@@ -72,8 +72,10 @@ namespace ProyectoIng_Economica
                         n = n1;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -83,8 +85,10 @@ namespace ProyectoIng_Economica
                         n = n1 / 12;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -94,8 +98,10 @@ namespace ProyectoIng_Economica
                         n = (int)(n1 * 0.5);
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -105,8 +111,10 @@ namespace ProyectoIng_Economica
                         n = n1 / 4;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -116,8 +124,10 @@ namespace ProyectoIng_Economica
                         n = n1 * 12;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -127,8 +137,10 @@ namespace ProyectoIng_Economica
                         n = n1;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -138,8 +150,10 @@ namespace ProyectoIng_Economica
                         n = n1 * 6;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -149,8 +163,10 @@ namespace ProyectoIng_Economica
                         n = n1 * 3;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -160,8 +176,10 @@ namespace ProyectoIng_Economica
                         n = n1* 2;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -171,8 +189,10 @@ namespace ProyectoIng_Economica
                         n = n1 / 6;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -182,19 +202,23 @@ namespace ProyectoIng_Economica
                         n = n1;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
                     }
-                    else if (cmbInteresAcum.SelectedItem.Equals("Semestral") && cmbPeriodoAcum.SelectedItem.Equals("Trimestral"))
+                    else if (cmbInteresAcum.SelectedItem.Equals("Semestral") && cmbPeriodoAcum.SelectedItem.Equals("Trimestres"))
                     {
                         n = n1 / 2;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -204,8 +228,10 @@ namespace ProyectoIng_Economica
                         n = n1 * 4;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -215,8 +241,10 @@ namespace ProyectoIng_Economica
                         n = n1 / 3;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -226,8 +254,10 @@ namespace ProyectoIng_Economica
                         n = n1 * 2;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;
@@ -237,8 +267,10 @@ namespace ProyectoIng_Economica
                         n = n1;
                         i = i1 / 100;
                         I = P * i * n;
+                        string formattedP = P.ToString("N0");
+                        string formattedI = I.ToString("N0");
 
-                        ResultadosAcumulado.Add(new { Presente = P, Periodo = n, Interes = i, TasaInteres = I });
+                        ResultadosAcumulado.Add(new { Presente = formattedP, Periodo = n, Interes = i, TasaInteres = formattedI });
 
                         dtgvResultadosAcumulados.DataSource = null;
                         dtgvResultadosAcumulados.DataSource = ResultadosAcumulado;

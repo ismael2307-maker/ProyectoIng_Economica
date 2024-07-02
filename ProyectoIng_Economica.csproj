@@ -164,10 +164,6 @@
     <Compile Include="FrmVPN.Designer.cs">
       <DependentUpon>FrmVPN.cs</DependentUpon>
     </Compile>
-    <Compile Include="InteresSimpleF.cs" />
-    <Compile Include="InteresSimpleI.cs" />
-    <Compile Include="InteresSimpleN.cs" />
-    <Compile Include="InteresSimpleP.cs" />
     <Compile Include="Metodos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

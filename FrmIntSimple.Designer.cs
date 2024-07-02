@@ -189,22 +189,23 @@
             // 
             // panel6
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel6.Controls.Add(this.dgvResultadosF);
             this.panel6.Controls.Add(this.label9);
             this.panel6.Location = new System.Drawing.Point(486, 189);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(391, 309);
+            this.panel6.Size = new System.Drawing.Size(474, 311);
             this.panel6.TabIndex = 10;
             // 
             // dgvResultadosF
             // 
             this.dgvResultadosF.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResultadosF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosF.Location = new System.Drawing.Point(44, 78);
+            this.dgvResultadosF.Location = new System.Drawing.Point(53, 78);
             this.dgvResultadosF.Name = "dgvResultadosF";
-            this.dgvResultadosF.Size = new System.Drawing.Size(325, 174);
+            this.dgvResultadosF.Size = new System.Drawing.Size(385, 174);
             this.dgvResultadosF.TabIndex = 13;
             // 
             // label9
@@ -213,7 +214,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.label9.Location = new System.Drawing.Point(74, 13);
+            this.label9.Location = new System.Drawing.Point(186, 13);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(181, 39);
             this.label9.TabIndex = 12;
@@ -221,7 +222,8 @@
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel5.Controls.Add(this.label25);
             this.panel5.Controls.Add(this.cmbPeriodoSimple);
@@ -515,7 +517,7 @@
             "Meses",
             "Semestres",
             "Trimestres"});
-            this.cmbPeriodoFuturoSimple.Location = new System.Drawing.Point(402, 197);
+            this.cmbPeriodoFuturoSimple.Location = new System.Drawing.Point(399, 194);
             this.cmbPeriodoFuturoSimple.Name = "cmbPeriodoFuturoSimple";
             this.cmbPeriodoFuturoSimple.Size = new System.Drawing.Size(121, 30);
             this.cmbPeriodoFuturoSimple.TabIndex = 14;

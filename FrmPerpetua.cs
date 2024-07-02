@@ -55,9 +55,13 @@ namespace ProyectoIng_Economica
                 double i = Convert.ToDouble(txtTasaInteres.Text) / 100;
                 double P = Math.Round(A / i);
                 double p2 = Math.Round(P * (Math.Pow(1+i,-n3)));
-                ResultadosPerpetuo.Add(new { Presente = p2, Interes = i,Anualidad = A, Presente2 = P });
+                string formattedA = A.ToString("N0");
+                string formattedP1 = P.ToString("N0");
+                string formattedP2 = p2.ToString("N0");
+                ResultadosPerpetuo.Add(new { Presente = formattedP1, Interes = i,Anualidad = formattedA, Presente2 = formattedP2 });
                 dgvResultadoresPerpetuos.DataSource = null;
                 dgvResultadoresPerpetuos.DataSource = ResultadosPerpetuo.ToList();
+
             }catch(FormatException x)
             {
                 MessageBox.Show("Rellene los campos necesarios"+x);
