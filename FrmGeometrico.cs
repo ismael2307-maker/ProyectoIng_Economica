@@ -93,10 +93,10 @@ namespace ProyectoIng_Economica
                             {
 
                                 resultados = Valor_Anualidad * (((Math.Pow(1 + tasaNominal, Periodo) / Math.Pow(1 + tasaInteres, Periodo)) - 1) / (tasaNominal - tasaInteres));
-
+                            string formattedVAnuaida = Valor_Anualidad.ToString("N0");
                                 ResultadoGeométrico.Add(new
                                 {
-                                    VAnualidad = Valor_Anualidad,
+                                    Valor_Anualidad = formattedVAnuaida,
                                     Tasa_Interés = tasaInteres,
                                     Tasa_Nominal = tasaNominal,
                                     Periodo = Periodo,
@@ -112,10 +112,10 @@ namespace ProyectoIng_Economica
                                 i2 = tasaInteres / 2;
                                 p1 = Periodo / 2;
                                 resultados = Valor_Anualidad * (((Math.Pow(1 + i, p1) / Math.Pow(1 + i2, p1)) - 1) / (i - i2));
-
-                                ResultadoGeométrico.Add(new
+                            string formattedVAnuaida2 = Valor_Anualidad.ToString("N0");
+                            ResultadoGeométrico.Add(new
                                 {
-                                    VAnualidad = Valor_Anualidad,
+                                    Valor_Anualidad = formattedVAnuaida2,
                                     Tasa_Interés = tasaInteres,
                                     Tasa_Nominal = tasaNominal,
                                     Periodo = Periodo,
@@ -131,10 +131,10 @@ namespace ProyectoIng_Economica
                                 i3 = tasaInteres / 4;
                                 p2 = Periodo / 4;
                                 resultados = Valor_Anualidad * (((Math.Pow(1 + n, p2) / Math.Pow(1 + i3, p2)) - 1) / (n - i3));
-
-                                ResultadoGeométrico.Add(new
+                            string formattedVAnuaida3 = Valor_Anualidad.ToString("N0");
+                            ResultadoGeométrico.Add(new
                                 {
-                                    VAnualidad = Valor_Anualidad,
+                                    Valor_Anualidad = formattedVAnuaida3,
                                     Tasa_Interés = tasaInteres,
                                     Tasa_Nominal = tasaNominal,
                                     Periodo = Periodo,
@@ -150,10 +150,10 @@ namespace ProyectoIng_Economica
                                 i4 = tasaInteres / 12;
                                 p3 = Periodo / 12;
                                 resultados = Valor_Anualidad * (((Math.Pow(1 + n2, p3) / Math.Pow(1 + i4, p1)) - 1) / (n2 - i4));
-
-                                ResultadoGeométrico.Add(new
+                            string formattedVAnuaida4 = Valor_Anualidad.ToString("N0");
+                            ResultadoGeométrico.Add(new
                                 {
-                                    VAnualidad = Valor_Anualidad,
+                                   Valor_Anualidad = formattedVAnuaida4,
                                     Tasa_Interés = tasaInteres,
                                     Tasa_Nominal = tasaNominal,
                                     Periodo = Periodo,

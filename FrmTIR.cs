@@ -81,14 +81,16 @@ namespace ProyectoIng_Economica
                 VPN2 = Convert.ToDouble(txtVpn2TIR.Text);
                 INT2 = Convert.ToDouble(txtInt2TIR.Text);
                 TIR = Convert.ToDouble(txtInt2TIR.Text);
-                
+               
 
                 TIR = INT1 - (VPN1 * (INT2 - INT1)/(VPN2 -VPN1));
+                string formattedVPN = VPN1.ToString("N0");
+                string formattedVPN2 = VPN2.ToString("N0");
                 ResultadosTIR.Add(new
                 {
                   
-                    ValorPresente = VPN1,
-                    ValorPresenteNeto2 = VPN2,
+                    VPN1 = formattedVPN,
+                    VPN2 = formattedVPN2,
                     Interes1 = INT1,
                     Interes2 = INT2,
                     TIR = TIR,

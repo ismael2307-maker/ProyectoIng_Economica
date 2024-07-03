@@ -82,11 +82,13 @@ namespace ProyectoIng_Economica
                     if (cmbPeriodoI.SelectedItem.Equals("Anual") || cmbbInteres.Equals("Semestral"))
                     {
                      Tasa = Math.Pow(ValorFuturo/ValorPresent,1/ (Periodo * 2)) -1;
+                     string formattedPresent1 = ValorPresent.ToString("N0");
+                     string formattedFut1 = ValorFuturo.ToString("N0");
                    
                         Resultados.Add(new
                         {
-                            ValorPresente = ValorPresent,
-                            ValorFut = ValorFuturo,
+                           ValorPresent = formattedPresent1 ,
+                           ValorFuturo = formattedFut1,
                             Periodo = Periodo,
                             Tasa = Tasa
                         });
@@ -97,11 +99,13 @@ namespace ProyectoIng_Economica
                     else if (cmbPeriodoI.SelectedItem.Equals("Mensual") || cmbbInteres.Equals("Semestral"))
                     {
                        Tasa = Math.Pow(ValorFuturo/ValorPresent,1/ (Periodo / 6)) -1;
-                   
-                        Resultados.Add(new
+                    string formattedPresent2 = ValorPresent.ToString("N0");
+                    string formattedFut2 = ValorFuturo.ToString("N0");
+
+                    Resultados.Add(new
                         {
-                            ValorPresente = ValorPresent,
-                            ValorFut = ValorFuturo,
+                            ValorPresent = formattedPresent2 ,
+                            ValorFuturo = formattedFut2,
                             Periodo = Periodo,
                             Tasa = Tasa
                         });
@@ -111,11 +115,13 @@ namespace ProyectoIng_Economica
                     else if (cmbPeriodoI.SelectedItem.Equals("Semestral") || cmbbInteres.Equals("Semestral"))
                     {
                        Tasa = Math.Pow(ValorFuturo/ValorPresent,1/ Periodo) -1;
-                   
-                        Resultados.Add(new
+                    string formattedPresent3 = ValorPresent.ToString("N0");
+                    string formattedFut3 = ValorFuturo.ToString("N0");
+
+                    Resultados.Add(new
                         {
-                            ValorPresente = ValorPresent,
-                            ValorFut = ValorFuturo,
+                           ValorPresent= formattedPresent3 ,
+                           ValorFuturo = formattedFut3,
                             Periodo = Periodo,
                             Tasa = Tasa
                         });
@@ -126,11 +132,12 @@ namespace ProyectoIng_Economica
                     else if (cmbPeriodoI.SelectedItem.Equals("Trimestral") || cmbbInteres.Equals("Semestral"))
                     {
                        Tasa = Math.Pow(ValorFuturo/ValorPresent,1/ (Periodo / 2)) -1;
-                   
-                        Resultados.Add(new
+                    string formattedPresent4 = ValorPresent.ToString("N0");
+                    string formattedFut4 = ValorFuturo.ToString("N0");
+                    Resultados.Add(new
                         {
-                            ValorPresente = ValorPresent,
-                            ValorFut = ValorFuturo,
+                            ValorPresent = formattedPresent4 ,
+                            ValorFuturo = formattedFut4,
                             Periodo = Periodo,
                             Tasa = Tasa
                         });
@@ -141,11 +148,13 @@ namespace ProyectoIng_Economica
                     else if (cmbPeriodoI.SelectedItem.Equals("Anual") || cmbbInteres.Equals("Anual"))
                     {
                        Tasa = Math.Pow((ValorFuturo/ValorPresent),1/ Periodo) -1;
-                   
-                        Resultados.Add(new
+                    string formattedPresent5 = ValorPresent.ToString("N0");
+                    string formattedFut5 = ValorFuturo.ToString("N0");
+
+                    Resultados.Add(new
                         {
-                            ValorPresente = ValorPresent,
-                            ValorFut = ValorFuturo,
+                           ValorPresent= formattedPresent5 ,
+                           ValorFuturo = formattedFut5,
                             Periodo = Periodo,
                             Tasa = Tasa
                         });
@@ -156,11 +165,12 @@ namespace ProyectoIng_Economica
                     else if (cmbPeriodoI.SelectedItem.Equals("Mensual") || cmbbInteres.Equals("Anual"))
                     {
                       Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo / 12)) - 1;
-
-                      Resultados.Add(new
+                    string formattedPresent6 = ValorPresent.ToString("N0");
+                    string formattedFut6 = ValorFuturo.ToString("N0");
+                    Resultados.Add(new
                       {
-                        ValorPresente = ValorPresent,
-                        ValorFut = ValorFuturo,
+                        ValorPresent = formattedPresent6 ,
+                        ValorFuturo = formattedFut6,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -171,11 +181,12 @@ namespace ProyectoIng_Economica
                     else if (cmbPeriodoI.SelectedItem.Equals("Semestral") || cmbbInteres.Equals("Anual"))
                     {
                       Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo / 2)) - 1;
-
-                      Resultados.Add(new
+                    string formattedPresent7 = ValorPresent.ToString("N0");
+                    string formattedFut7 = ValorFuturo.ToString("N0");
+                    Resultados.Add(new
                       {
-                        ValorPresente = ValorPresent,
-                        ValorFut = ValorFuturo,
+                       ValorPresent = formattedPresent7,
+                       ValorFuturo = formattedFut7,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -186,11 +197,12 @@ namespace ProyectoIng_Economica
                     else if (cmbPeriodoI.SelectedItem.Equals("Trimestral") || cmbbInteres.Equals("Anual"))
                     {
                       Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo / 4)) - 1;
-
-                      Resultados.Add(new
+                    string formattedPresent8 = ValorPresent.ToString("N0");
+                    string formattedFut18 = ValorFuturo.ToString("N0");
+                    Resultados.Add(new
                       {
-                        ValorPresente = ValorPresent,
-                        ValorFut = ValorFuturo,
+                      ValorPresent = formattedPresent8,
+                      ValorFuturo = formattedFut18,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -201,11 +213,12 @@ namespace ProyectoIng_Economica
                     else if (cmbPeriodoI.SelectedItem.Equals("Anual") || cmbbInteres.Equals("Mensual"))
                     {
                       Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo * 12)) - 1;
-
-                      Resultados.Add(new
+                    string formattedPresent9 = ValorPresent.ToString("N0");
+                    string formattedFut9 = ValorFuturo.ToString("N0");
+                    Resultados.Add(new
                       {
-                        ValorPresente = ValorPresent,
-                        ValorFut = ValorFuturo,
+                        ValorPresent = formattedPresent9,
+                        ValorFuturo = formattedFut9,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -216,11 +229,12 @@ namespace ProyectoIng_Economica
                     else if (cmbPeriodoI.SelectedItem.Equals("Mensual") || cmbbInteres.Equals("Mensual"))
                     {
                       Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / Periodo) - 1;
-
-                      Resultados.Add(new
+                    string formattedPresent0 = ValorPresent.ToString("N0");
+                    string formattedFut0= ValorFuturo.ToString("N0");
+                    Resultados.Add(new
                       {
-                        ValorPresente = ValorPresent,
-                        ValorFut = ValorFuturo,
+                        ValorPresent= formattedPresent0,
+                        ValorFuturo = formattedFut0,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -231,11 +245,12 @@ namespace ProyectoIng_Economica
                     else if (cmbPeriodoI.SelectedItem.Equals("Semestral") || cmbbInteres.Equals("Mensual"))
                     {
                       Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo * 6)) - 1;
-
-                      Resultados.Add(new
+                    string formattedPresent11 = ValorPresent.ToString("N0");
+                    string formattedFut11 = ValorFuturo.ToString("N0");
+                    Resultados.Add(new
                       {
-                        ValorPresente = ValorPresent,
-                        ValorFut = ValorFuturo,
+                       ValorPresent = formattedPresent11,
+                       ValorFuturo = formattedFut11,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -246,11 +261,12 @@ namespace ProyectoIng_Economica
                     else if (cmbPeriodoI.SelectedItem.Equals("Trimestral") || cmbbInteres.Equals("Mensual"))
                     {
                      Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo * 12)) - 1;
-
-                     Resultados.Add(new
+                    string formattedPresent12 = ValorPresent.ToString("N0");
+                    string formattedFut12 = ValorFuturo.ToString("N0");
+                    Resultados.Add(new
                      {
-                        ValorPresente = ValorPresent,
-                        ValorFut = ValorFuturo,
+                        ValorPresent = formattedPresent12,
+                        ValorFuturo = formattedFut12,
                         Periodo = Periodo,
                         Tasa = Tasa
                      });
@@ -261,11 +277,12 @@ namespace ProyectoIng_Economica
                     else if (cmbPeriodoI.SelectedItem.Equals("Anual") || cmbbInteres.Equals("Trimestral"))
                     {
                       Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo * 4)) - 1;
-
-                      Resultados.Add(new
+                    string formattedPresent13 = ValorPresent.ToString("N0");
+                    string formattedFut13 = ValorFuturo.ToString("N0");
+                    Resultados.Add(new
                       {
-                        ValorPresente = ValorPresent,
-                        ValorFut = ValorFuturo,
+                       ValorPresent = formattedPresent13,
+                       ValorFuturo = formattedFut13,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -276,11 +293,12 @@ namespace ProyectoIng_Economica
                      else if (cmbPeriodoI.SelectedItem.Equals("Mensual") || cmbbInteres.Equals("Trimestral"))
                      {
                       Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo / 3)) - 1;
-
-                      Resultados.Add(new
+                    string formattedPresent14 = ValorPresent.ToString("N0");
+                    string formattedFut14 = ValorFuturo.ToString("N0");
+                    Resultados.Add(new
                       {
-                        ValorPresente = ValorPresent,
-                        ValorFut = ValorFuturo,
+                        ValorPresent = formattedPresent14,
+                        ValorFuturo = formattedFut14,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -291,11 +309,12 @@ namespace ProyectoIng_Economica
                      else if (cmbPeriodoI.SelectedItem.Equals("Semestral") || cmbbInteres.Equals("Trimestral"))
                      {
                       Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo * 2)) - 1;
-
-                      Resultados.Add(new
+                    string formattedPresent15 = ValorPresent.ToString("N0");
+                    string formattedFut15 = ValorFuturo.ToString("N0");
+                    Resultados.Add(new
                       {
-                        ValorPresente = ValorPresent,
-                        ValorFut = ValorFuturo,
+                        ValorPresent = formattedPresent15,
+                        ValorFuturo = formattedFut15,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -306,11 +325,12 @@ namespace ProyectoIng_Economica
                      else if (cmbPeriodoI.SelectedItem.Equals("Trimestral") || cmbbInteres.Equals("Trimestral"))
                      {
                       Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo * 4)) - 1;
-
-                      Resultados.Add(new
+                    string formattedPresent16 = ValorPresent.ToString("N0");
+                    string formattedFut16 = ValorFuturo.ToString("N0");
+                    Resultados.Add(new
                       {
-                        ValorPresente = ValorPresent,
-                        ValorFut = ValorFuturo,
+                       ValorPresent = formattedPresent16,
+                       ValorFuturo = formattedFut16,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -437,10 +457,12 @@ namespace ProyectoIng_Economica
                         double Numerador = Math.Log(ValorFut / ValorPresente);
                         double Denominador = Math.Log(1 + tasaint);
                         Periodo = Numerador / Denominador;
+                        string formattedPres1 = ValorPresente.ToString("N0");
+                        string formattedFut1 = ValorFut.ToString("N0");
                         ResultadosPeriodo.Add(new
                         {
-                            ValorFuturo = ValorFut,
-                            ValorPresente = ValorPresente,
+                            ValorPresente = formattedPres1,
+                            ValorFut = formattedFut1,
                             TasaInteres = tasaint,
                             Periodo = Periodo,
                         });
@@ -458,10 +480,12 @@ namespace ProyectoIng_Economica
                         double Numerador = Math.Log(ValorFut / ValorPresente);
                         double Denominador = Math.Log(1 + tasaint);
                         Periodo = Numerador / Denominador;
+                        string formattedPres = ValorPresente.ToString("N0");
+                        string formattedFut= ValorFut.ToString("N0");
                         ResultadosPeriodo.Add( new 
                         {
-                            ValorFuturo = ValorFut,
-                            ValorPresente = ValorPresente,
+                           ValorPresente = formattedPres,
+                           ValorFut = formattedFut,
                             TasaInteres = tasaint,
                             Periodo = Periodo
 
@@ -480,10 +504,12 @@ namespace ProyectoIng_Economica
                         double Numerador = Math.Log(ValorFut / ValorPresente);
                         double Denominador = Math.Log(1 + tasaint);
                         Periodo = Numerador / Denominador;
+                        string formattedPres2 = ValorPresente.ToString("N0");
+                        string formattedFut2 = ValorFut.ToString("N0");
                         ResultadosPeriodo.Add(new 
                         {
-                            ValorFuturo = ValorFut,
-                            ValorPresente = ValorPresente,
+                            ValorPresente = formattedPres2,
+                            ValorFut = formattedFut2,
                             TasaInteres = tasaint,
                             Periodo = Periodo
                         });
@@ -501,10 +527,12 @@ namespace ProyectoIng_Economica
                         double Numerador = Math.Log(ValorFut / ValorPresente);
                         double Denominador = Math.Log(1 + tasaint);
                         Periodo = Numerador / Denominador;
+                        string formattedPres3 = ValorPresente.ToString("N0");
+                        string formattedFut3 = ValorFut.ToString("N0");
                         ResultadosPeriodo.Add(new 
                         {
-                            ValorFuturo = ValorFut,
-                            ValorPresente = ValorPresente,
+                           ValorPresente = formattedPres3,
+                           ValorFut = formattedFut3,
                             TasaInteres = tasaint,
                             Periodo = Periodo
 
