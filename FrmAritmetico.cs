@@ -206,5 +206,11 @@ namespace ProyectoIng_Economica
             txtInteresFG.Text = "";
             txtPeriodoFG.Text = "";
         }
+
+        private void txtGradientePG_TextChanged(object sender, EventArgs e)
+        {
+            //iGNORAR
+
+        }
     }
 }

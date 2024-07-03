@@ -104,6 +104,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -216,6 +219,7 @@
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel5.Controls.Add(this.label23);
             this.panel5.Controls.Add(this.txtAnualidadPG);
             this.panel5.Controls.Add(this.label19);
             this.panel5.Controls.Add(this.cmbPeriodoPG);
@@ -241,7 +245,7 @@
             this.txtAnualidadPG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtAnualidadPG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAnualidadPG.ForeColor = System.Drawing.Color.White;
-            this.txtAnualidadPG.Location = new System.Drawing.Point(202, 105);
+            this.txtAnualidadPG.Location = new System.Drawing.Point(237, 103);
             this.txtAnualidadPG.Name = "txtAnualidadPG";
             this.txtAnualidadPG.Size = new System.Drawing.Size(123, 24);
             this.txtAnualidadPG.TabIndex = 21;
@@ -255,9 +259,9 @@
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(21, 103);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(175, 24);
+            this.label19.Size = new System.Drawing.Size(215, 24);
             this.label19.TabIndex = 20;
-            this.label19.Text = "Valor Anualidad";
+            this.label19.Text = "Valor Anualidad C$:";
             // 
             // cmbPeriodoPG
             // 
@@ -269,7 +273,7 @@
             "Meses",
             "Semestres",
             "Trimestres"});
-            this.cmbPeriodoPG.Location = new System.Drawing.Point(373, 201);
+            this.cmbPeriodoPG.Location = new System.Drawing.Point(411, 195);
             this.cmbPeriodoPG.Name = "cmbPeriodoPG";
             this.cmbPeriodoPG.Size = new System.Drawing.Size(121, 30);
             this.cmbPeriodoPG.TabIndex = 19;
@@ -284,7 +288,7 @@
             "Mensual",
             "Semestral",
             "Trimestral"});
-            this.cmbInteresPG.Location = new System.Drawing.Point(373, 148);
+            this.cmbInteresPG.Location = new System.Drawing.Point(411, 145);
             this.cmbInteresPG.Name = "cmbInteresPG";
             this.cmbInteresPG.Size = new System.Drawing.Size(121, 30);
             this.cmbInteresPG.TabIndex = 18;
@@ -295,9 +299,9 @@
             this.groupBox1.Controls.Add(this.rdbDecrecePG);
             this.groupBox1.Controls.Add(this.rdbIncrementaPG);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.groupBox1.Location = new System.Drawing.Point(360, 39);
+            this.groupBox1.Location = new System.Drawing.Point(404, 29);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.Size = new System.Drawing.Size(145, 100);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opcion";
@@ -360,7 +364,7 @@
             this.txtPeriodoPG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPeriodoPG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPeriodoPG.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodoPG.Location = new System.Drawing.Point(202, 201);
+            this.txtPeriodoPG.Location = new System.Drawing.Point(237, 198);
             this.txtPeriodoPG.Name = "txtPeriodoPG";
             this.txtPeriodoPG.Size = new System.Drawing.Size(123, 24);
             this.txtPeriodoPG.TabIndex = 9;
@@ -373,11 +377,11 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(21, 199);
+            this.label10.Location = new System.Drawing.Point(74, 195);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(87, 24);
+            this.label10.Size = new System.Drawing.Size(92, 24);
             this.label10.TabIndex = 8;
-            this.label10.Text = "Periodo";
+            this.label10.Text = "Periodo:";
             // 
             // txtInteresPG
             // 
@@ -385,7 +389,7 @@
             this.txtInteresPG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtInteresPG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInteresPG.ForeColor = System.Drawing.Color.White;
-            this.txtInteresPG.Location = new System.Drawing.Point(201, 151);
+            this.txtInteresPG.Location = new System.Drawing.Point(237, 151);
             this.txtInteresPG.Name = "txtInteresPG";
             this.txtInteresPG.Size = new System.Drawing.Size(123, 24);
             this.txtInteresPG.TabIndex = 7;
@@ -397,11 +401,11 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(21, 151);
+            this.label11.Location = new System.Drawing.Point(53, 149);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(125, 24);
+            this.label11.Size = new System.Drawing.Size(130, 24);
             this.label11.TabIndex = 6;
-            this.label11.Text = "Tasa interés";
+            this.label11.Text = "Tasa interés:";
             // 
             // txtGradientePG
             // 
@@ -409,10 +413,11 @@
             this.txtGradientePG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtGradientePG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGradientePG.ForeColor = System.Drawing.Color.White;
-            this.txtGradientePG.Location = new System.Drawing.Point(202, 58);
+            this.txtGradientePG.Location = new System.Drawing.Point(237, 56);
             this.txtGradientePG.Name = "txtGradientePG";
             this.txtGradientePG.Size = new System.Drawing.Size(123, 24);
             this.txtGradientePG.TabIndex = 5;
+            this.txtGradientePG.TextChanged += new System.EventHandler(this.txtGradientePG_TextChanged);
             this.txtGradientePG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGradientePG_KeyPress);
             // 
             // label12
@@ -423,9 +428,9 @@
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(21, 56);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(113, 24);
+            this.label12.Size = new System.Drawing.Size(153, 24);
             this.label12.TabIndex = 4;
-            this.label12.Text = "Gradiente";
+            this.label12.Text = "Gradiente C$:";
             // 
             // label13
             // 
@@ -523,6 +528,7 @@
             // 
             this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel8.Controls.Add(this.label22);
             this.panel8.Controls.Add(this.txtAnualidadFG);
             this.panel8.Controls.Add(this.label20);
             this.panel8.Controls.Add(this.cmbPeriodoFG);
@@ -561,9 +567,9 @@
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(33, 103);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(115, 24);
+            this.label20.Size = new System.Drawing.Size(155, 24);
             this.label20.TabIndex = 20;
-            this.label20.Text = "Anualidad";
+            this.label20.Text = "Anualidad C$:";
             // 
             // cmbPeriodoFG
             // 
@@ -575,7 +581,7 @@
             "Meses",
             "Semestres",
             "Trimestres"});
-            this.cmbPeriodoFG.Location = new System.Drawing.Point(373, 201);
+            this.cmbPeriodoFG.Location = new System.Drawing.Point(393, 201);
             this.cmbPeriodoFG.Name = "cmbPeriodoFG";
             this.cmbPeriodoFG.Size = new System.Drawing.Size(121, 30);
             this.cmbPeriodoFG.TabIndex = 19;
@@ -590,7 +596,7 @@
             "Mensual",
             "Semestral",
             "Trimestral"});
-            this.cmbInteresFG.Location = new System.Drawing.Point(373, 148);
+            this.cmbInteresFG.Location = new System.Drawing.Point(393, 149);
             this.cmbInteresFG.Name = "cmbInteresFG";
             this.cmbInteresFG.Size = new System.Drawing.Size(121, 30);
             this.cmbInteresFG.TabIndex = 18;
@@ -678,11 +684,11 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(33, 199);
+            this.label14.Location = new System.Drawing.Point(65, 199);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(87, 24);
+            this.label14.Size = new System.Drawing.Size(92, 24);
             this.label14.TabIndex = 8;
-            this.label14.Text = "Periodo";
+            this.label14.Text = "Periodo:";
             // 
             // txtInteresFG
             // 
@@ -701,11 +707,11 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(21, 149);
+            this.label15.Location = new System.Drawing.Point(47, 149);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(125, 24);
+            this.label15.Size = new System.Drawing.Size(130, 24);
             this.label15.TabIndex = 6;
-            this.label15.Text = "Tasa interés";
+            this.label15.Text = "Tasa interés:";
             // 
             // txtGradienteFG
             // 
@@ -726,9 +732,9 @@
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(33, 53);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(113, 24);
+            this.label16.Size = new System.Drawing.Size(153, 24);
             this.label16.TabIndex = 4;
-            this.label16.Text = "Gradiente";
+            this.label16.Text = "Gradiente C$:";
             // 
             // label17
             // 
@@ -826,6 +832,7 @@
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel3.Controls.Add(this.label21);
             this.panel3.Controls.Add(this.cmbPeriodoGA);
             this.panel3.Controls.Add(this.cmbInteresGA);
             this.panel3.Controls.Add(this.groupBox2);
@@ -855,7 +862,7 @@
             "Meses",
             "Semestres",
             "Trimestres"});
-            this.cmbPeriodoGA.Location = new System.Drawing.Point(373, 205);
+            this.cmbPeriodoGA.Location = new System.Drawing.Point(433, 202);
             this.cmbPeriodoGA.Name = "cmbPeriodoGA";
             this.cmbPeriodoGA.Size = new System.Drawing.Size(121, 30);
             this.cmbPeriodoGA.TabIndex = 19;
@@ -870,7 +877,7 @@
             "Mensual",
             "Semestral",
             "Trimestral"});
-            this.cmbInteresGA.Location = new System.Drawing.Point(373, 155);
+            this.cmbInteresGA.Location = new System.Drawing.Point(433, 156);
             this.cmbInteresGA.Name = "cmbInteresGA";
             this.cmbInteresGA.Size = new System.Drawing.Size(121, 30);
             this.cmbInteresGA.TabIndex = 18;
@@ -881,9 +888,9 @@
             this.groupBox2.Controls.Add(this.rdbPresenteDecrece);
             this.groupBox2.Controls.Add(this.rdbPresenteIncrementa);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
-            this.groupBox2.Location = new System.Drawing.Point(345, 42);
+            this.groupBox2.Location = new System.Drawing.Point(411, 42);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 100);
+            this.groupBox2.Size = new System.Drawing.Size(149, 100);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Opcion";
@@ -916,7 +923,7 @@
             this.txtGradienteGA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtGradienteGA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGradienteGA.ForeColor = System.Drawing.Color.White;
-            this.txtGradienteGA.Location = new System.Drawing.Point(215, 250);
+            this.txtGradienteGA.Location = new System.Drawing.Point(252, 252);
             this.txtGradienteGA.Name = "txtGradienteGA";
             this.txtGradienteGA.Size = new System.Drawing.Size(123, 24);
             this.txtGradienteGA.TabIndex = 15;
@@ -928,11 +935,11 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(35, 250);
+            this.label25.Location = new System.Drawing.Point(78, 250);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(113, 24);
+            this.label25.Size = new System.Drawing.Size(153, 24);
             this.label25.TabIndex = 14;
-            this.label25.Text = "Gradiente";
+            this.label25.Text = "Gradiente C$:";
             // 
             // btnLimpiarPresenteGA
             // 
@@ -970,7 +977,7 @@
             this.txtPeriodoGA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPeriodoGA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPeriodoGA.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodoGA.Location = new System.Drawing.Point(216, 205);
+            this.txtPeriodoGA.Location = new System.Drawing.Point(252, 205);
             this.txtPeriodoGA.Name = "txtPeriodoGA";
             this.txtPeriodoGA.Size = new System.Drawing.Size(123, 24);
             this.txtPeriodoGA.TabIndex = 9;
@@ -983,11 +990,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(35, 203);
+            this.label4.Location = new System.Drawing.Point(93, 203);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 24);
+            this.label4.Size = new System.Drawing.Size(92, 24);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Periodo";
+            this.label4.Text = "Periodo:";
             // 
             // txtInteresGA
             // 
@@ -995,7 +1002,7 @@
             this.txtInteresGA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtInteresGA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInteresGA.ForeColor = System.Drawing.Color.White;
-            this.txtInteresGA.Location = new System.Drawing.Point(215, 156);
+            this.txtInteresGA.Location = new System.Drawing.Point(252, 156);
             this.txtInteresGA.Name = "txtInteresGA";
             this.txtInteresGA.Size = new System.Drawing.Size(123, 24);
             this.txtInteresGA.TabIndex = 7;
@@ -1007,11 +1014,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(35, 156);
+            this.label5.Location = new System.Drawing.Point(78, 154);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 24);
+            this.label5.Size = new System.Drawing.Size(130, 24);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Tasa interés";
+            this.label5.Text = "Tasa interés:";
             // 
             // txtAnualidadGA
             // 
@@ -1019,7 +1026,7 @@
             this.txtAnualidadGA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtAnualidadGA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAnualidadGA.ForeColor = System.Drawing.Color.White;
-            this.txtAnualidadGA.Location = new System.Drawing.Point(216, 99);
+            this.txtAnualidadGA.Location = new System.Drawing.Point(252, 99);
             this.txtAnualidadGA.Name = "txtAnualidadGA";
             this.txtAnualidadGA.Size = new System.Drawing.Size(123, 24);
             this.txtAnualidadGA.TabIndex = 5;
@@ -1033,9 +1040,9 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(35, 97);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 24);
+            this.label6.Size = new System.Drawing.Size(215, 24);
             this.label6.TabIndex = 4;
-            this.label6.Text = "Valor Anualidad";
+            this.label6.Text = "Valor Anualidad C$:";
             // 
             // label7
             // 
@@ -1083,6 +1090,42 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(381, 157);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(26, 24);
+            this.label21.TabIndex = 20;
+            this.label21.Text = "%";
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(329, 150);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(26, 24);
+            this.label22.TabIndex = 22;
+            this.label22.Text = "%";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(366, 151);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(26, 24);
+            this.label23.TabIndex = 22;
+            this.label23.Text = "%";
             // 
             // FrmAritmetico
             // 
@@ -1210,5 +1253,8 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtAnualidadFG;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
     }
 }

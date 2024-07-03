@@ -22,7 +22,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -35,7 +37,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro * 4;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -48,7 +52,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro / 3;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -61,7 +67,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro * 2;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -74,7 +82,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -87,7 +97,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro / 12;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -100,7 +112,9 @@ namespace ProyectoIng_Economica
                 int p1 = (int)(periodo1Futuro * 0.5);
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -113,7 +127,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro / 4;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -126,7 +142,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro * 12;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro =formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -139,7 +157,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -152,7 +172,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro * 6;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -165,7 +187,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro * 3;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -178,7 +202,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro * 2;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -191,7 +217,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro / 6;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD});
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -204,7 +232,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -217,7 +247,9 @@ namespace ProyectoIng_Economica
                 int p1 = periodo1Futuro / 2;
                 int p2 = periodo2Futuro;
                 double F = (anualidad * (Math.Pow((1 + interes), (p1 - p2)) - 1) / interes);
-                resultadosFuturo.Add(new { Anualidad = anualidad, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = F });
+                string formattedA = anualidad.ToString("N0");
+                string formattedFD = F.ToString("N0");
+                resultadosFuturo.Add(new { Anualidad = formattedA, Interes = interes, Periodo1F = p1, Periodo2F = p2, Futuro = formattedFD });
 
                 dgvResultadosFuturo.DataSource = null;
                 dgvResultadosFuturo.DataSource = resultadosFuturo.ToList();
@@ -445,7 +477,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -457,7 +491,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente / 12;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -469,7 +505,9 @@ namespace ProyectoIng_Economica
                 int p1 = (int)(Periodo1Presente * 0.5);
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -481,7 +519,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente / 4;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -493,7 +533,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente *12;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -505,7 +547,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -517,7 +561,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente * 6;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -529,7 +575,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente * 3;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -541,7 +589,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente * 2;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -553,7 +603,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente / 6;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -565,7 +617,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -577,7 +631,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente / 2;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -589,7 +645,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente * 4;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -601,7 +659,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente / 3;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -613,7 +673,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente * 2;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -625,7 +687,9 @@ namespace ProyectoIng_Economica
                 int p1 = Periodo1Presente;
                 int p2 = Periodo2Presente;
                 double P = (Anualidad * (Math.Pow((1 + Interes), (p1 - p2)) - 1) / (Interes * Math.Pow((1 + Interes), (p1 - p2)))) * Math.Pow((1 + Interes), -p2);
-                resultadosPresente.Add(new { AnualidadP = Anualidad, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = P });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPD = P.ToString("N0");
+                resultadosPresente.Add(new { AnualidadP = formattedA, InteresP = Interes, Periodo1P = p1, Periodo2P = p2, Presente = formattedPD });
                 dgvResultadosPresente.DataSource = null;
                 dgvResultadosPresente.DataSource = resultadosPresente.ToList();
             }
@@ -1538,7 +1602,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA*(1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag});
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG});
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
 
@@ -1552,7 +1619,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1565,7 +1635,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1578,7 +1651,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1591,7 +1667,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1604,7 +1683,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1617,7 +1699,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1630,7 +1715,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1643,7 +1731,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1656,7 +1747,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1669,7 +1763,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1682,7 +1779,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1695,7 +1795,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1708,7 +1811,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1721,7 +1827,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1734,7 +1843,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad + resultado;
-                resultadoGA.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA.DataSource = null;
                 dgvResultadosGA.DataSource = resultadoGA.ToList();
             }
@@ -1752,7 +1864,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1765,7 +1880,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1778,7 +1896,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1791,7 +1912,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1804,7 +1928,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1817,7 +1944,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1830,7 +1960,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedA });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1843,7 +1976,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1856,7 +1992,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1869,7 +2008,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1882,7 +2024,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1895,7 +2040,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1908,7 +2056,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1921,7 +2072,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1934,7 +2088,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1947,7 +2104,10 @@ namespace ProyectoIng_Economica
                 double GA = Gradiente2;
                 double resultado = GA * (1 / interes - periodo / (Math.Pow(1 + interes, periodo) - 1));
                 double Ag = anualidad - resultado;
-                resultadoGA2.Add(new { Anualidad = anualidad, Interes = interes, Periodo = periodo, Gradiente = GA, AnualidadGradiente = Ag });
+                string formattedA = anualidad.ToString("N0");
+                string formattedAG = Ag.ToString("N0");
+                string formattedG = GA.ToString("N0");
+                resultadoGA2.Add(new { Anualidad = formattedA, Interes = interes, Periodo = periodo, Gradiente = formattedG, AnualidadGradiente = formattedAG });
                 dgvResultadosGA2.DataSource = null;
                 dgvResultadosGA2.DataSource = resultadoGA2.ToList();
             }
@@ -1971,7 +2131,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1+Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -1990,7 +2152,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2009,7 +2173,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2028,7 +2194,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2047,7 +2215,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2066,7 +2236,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2085,7 +2257,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2104,7 +2278,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2123,7 +2299,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2142,7 +2320,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2161,7 +2341,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2180,7 +2362,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) + Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2205,7 +2389,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2224,7 +2410,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2243,7 +2431,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2262,7 +2452,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2281,7 +2473,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2300,7 +2494,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2319,7 +2515,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2338,7 +2536,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2357,7 +2557,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2376,7 +2578,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2395,7 +2599,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2414,7 +2620,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2433,7 +2641,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2452,7 +2662,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2471,7 +2683,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2490,7 +2704,9 @@ namespace ProyectoIng_Economica
                 double result2 = (double)Periodo / Math.Pow(1 + Interes, Periodo);
                 double resultado = result1 - result2;
                 double Pg = Anualidad * (PresenteVencida) - Gradiente * (resultado);
-                resultadoPG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = Pg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedPG = Pg.ToString("N0");
+                resultadoPG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Presente = formattedPG });
                 dgvresultadosPG.DataSource = null;
                 dgvresultadosPG.DataSource = resultadoPG.ToList();
             }
@@ -2511,7 +2727,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2528,7 +2746,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2545,7 +2765,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2562,7 +2784,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2579,7 +2803,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2596,7 +2822,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2613,7 +2841,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2630,7 +2860,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2647,7 +2879,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2664,7 +2898,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2681,7 +2917,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2698,7 +2936,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2715,7 +2955,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2732,7 +2974,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2749,7 +2993,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2766,7 +3012,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) + Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2787,7 +3035,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2804,7 +3054,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2821,7 +3073,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2838,7 +3092,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2855,7 +3111,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2872,7 +3130,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2889,7 +3149,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG});
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2906,7 +3168,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2923,7 +3187,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2940,7 +3206,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2957,7 +3225,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2974,7 +3244,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -2991,7 +3263,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -3008,7 +3282,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG});
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -3025,7 +3301,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
@@ -3042,7 +3320,9 @@ namespace ProyectoIng_Economica
                 double operacion = Numerador / Interes;
                 double resultado = operacion - Periodo;
                 double Fg = Anualidad * (FuturoVencido) - Gradiente * (resultado);
-                resultadoFG.Add(new { Anualidad = Anualidad, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = Fg });
+                string formattedA = Anualidad.ToString("N0");
+                string formattedFG = Fg.ToString("N0");
+                resultadoFG.Add(new { Anualidad = formattedA, Interes = Interes, Periodo = Periodo, Gradiente = Gr, Futuro = formattedFG });
                 dgvresultadosFG.DataSource = null;
                 dgvresultadosFG.DataSource = resultadoFG.ToList();
             }
