@@ -15,6 +15,17 @@ namespace ProyectoIng_Economica
         public FrmVPN()
         {
             InitializeComponent();
+            dgvFlujosNetos.CellFormatting += dgv_CellFormatting;
+            dgvResultados.CellFormatting += dgv_CellFormatting;
+        }
+        private void dgv_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            // Formatear solo las celdas que son de tipo numérico y no son nulas
+            if (e.Value != null && e.Value is double)
+            {
+                e.Value = string.Format("{0:N0}", e.Value);
+                e.FormattingApplied = true;
+            }
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)

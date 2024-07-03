@@ -53,6 +53,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -153,6 +154,7 @@
             // 
             this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel11.Controls.Add(this.label26);
             this.panel11.Controls.Add(this.txtAnios);
             this.panel11.Controls.Add(this.label4);
             this.panel11.Controls.Add(this.btnLimpiar);
@@ -228,7 +230,7 @@
             // 
             // txtTasaDescuento
             // 
-            this.txtTasaDescuento.Location = new System.Drawing.Point(383, 10);
+            this.txtTasaDescuento.Location = new System.Drawing.Point(383, 12);
             this.txtTasaDescuento.Name = "txtTasaDescuento";
             this.txtTasaDescuento.Size = new System.Drawing.Size(100, 29);
             this.txtTasaDescuento.TabIndex = 3;
@@ -237,7 +239,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(304, 13);
+            this.label3.Location = new System.Drawing.Point(313, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 24);
             this.label3.TabIndex = 2;
@@ -245,7 +247,7 @@
             // 
             // txtInversionInicial
             // 
-            this.txtInversionInicial.Location = new System.Drawing.Point(147, 12);
+            this.txtInversionInicial.Location = new System.Drawing.Point(180, 12);
             this.txtInversionInicial.Name = "txtInversionInicial";
             this.txtInversionInicial.Size = new System.Drawing.Size(100, 29);
             this.txtInversionInicial.TabIndex = 1;
@@ -256,9 +258,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(3, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 24);
+            this.label1.Size = new System.Drawing.Size(171, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Inversion Inicial";
+            this.label1.Text = "Inversion Inicial C$:";
             // 
             // panel4
             // 
@@ -294,6 +296,18 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            // 
+            // label26
+            // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(489, 14);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(31, 25);
+            this.label26.TabIndex = 16;
+            this.label26.Text = "%";
             // 
             // FrmVPN
             // 
@@ -346,5 +360,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ValPN;
         private System.Windows.Forms.TextBox txtAnios;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label26;
     }
 }

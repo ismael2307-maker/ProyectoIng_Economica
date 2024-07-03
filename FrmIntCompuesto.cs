@@ -570,9 +570,11 @@ namespace ProyectoIng_Economica
                         {
                             i = i1 / 100;
                             f = p * Math.Pow((1 + i), n1);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n1, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n1, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -584,9 +586,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100);
                             n = n1 / 2;
                             f = p * Math.Pow((1 + i), n);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -597,9 +601,11 @@ namespace ProyectoIng_Economica
                             i = i1 / 100;
                             n = n1 / 4;
                             f = p * Math.Pow((1 + i), n);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -610,9 +616,11 @@ namespace ProyectoIng_Economica
                             i = i1 / 100;
                             n = n1 / 12;
                             f = p * Math.Pow((1 + i), n);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -624,9 +632,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 2;
                             n = n1 * 2;
                             f = p * Math.Pow((1 + i), n);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -636,9 +646,11 @@ namespace ProyectoIng_Economica
                         {
                             i = (i1 / 100) / 2;
                             f = p * Math.Pow((1 + i), n1);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n1, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n1, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -649,9 +661,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 2;
                             n = n1 * 2;
                             f = p * Math.Pow((1 + i), n);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -662,9 +676,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 2;
                             n = n1 / 6;
                             f = p * Math.Pow((1 + i), n);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -676,9 +692,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 4;
                             n = n1 * 4;
                             f = p * Math.Pow((1 + i), n);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -689,9 +707,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 4;
                             n = n1 * 2;
                             f = p * Math.Pow((1 + i), n);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -701,9 +721,11 @@ namespace ProyectoIng_Economica
                         {
                             i = (i1 / 100) / 4;
                             f = p * Math.Pow((1 + i), n1);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n1, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n1, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -714,9 +736,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 4;
                             n = n1 / 3;
                             f = p * Math.Pow((1 + i), n);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -728,9 +752,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 12;
                             n = n1 * 12;
                             f = p * Math.Pow((1 + i), n);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -741,9 +767,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 12;
                             n = n1 * 6;
                             f = p * Math.Pow((1 + i), n);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -754,9 +782,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 12;
                             n = n1 * 3;
                             f = p * Math.Pow((1 + i), n);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -766,9 +796,11 @@ namespace ProyectoIng_Economica
                         {
                             i = (i1 / 100) / 12;
                             f = p * Math.Pow((1 + i), n1);
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = p, Interes = i, Periodo = n1, Futuro = f });
+                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n1, Futuro = formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -790,8 +822,10 @@ namespace ProyectoIng_Economica
                 double Fo;
 
                 Fo = Pno * Math.Pow((1 + Ino/100), Nno);
+                string formattedP = Pno.ToString("N0");
+                string formattedF = Fo.ToString("N0");
 
-                resultados.Add(new { Presente = Pno, Interes = Ino, Periodo = Nno, Futuro = Fo });
+                resultados.Add(new { Presente = formattedP, Interes = Ino, Periodo = Nno, Futuro = formattedF });
 
                 dgvResultadosFU.DataSource = null;
                 dgvResultadosFU.DataSource = resultados.ToList();
@@ -822,9 +856,11 @@ namespace ProyectoIng_Economica
                         {
                             i = i1 / 100;
                             p = f / (Math.Pow((1 + i), n1));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n1, Presente = formattedF });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -836,9 +872,11 @@ namespace ProyectoIng_Economica
                             i = i1 / 100;
                             n = n1 / 2;
                             p = f / (Math.Pow((1 + i), n));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -849,9 +887,11 @@ namespace ProyectoIng_Economica
                             i = i1 / 100;
                             n = n1 / 4;
                             p = f / (Math.Pow((1 + i), n));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -862,9 +902,11 @@ namespace ProyectoIng_Economica
                             i = i1 / 100;
                             n = n1 / 12;
                             p = f / (Math.Pow((1 + i), n));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -876,9 +918,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 2;
                             n = n1 * 2;
                             p = f / (Math.Pow((1 + i), n));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -888,9 +932,10 @@ namespace ProyectoIng_Economica
                         {
                             i = (i1 / 100) / 2;
                             p = f / (Math.Pow((1 + i), n1));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
-
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n1, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -901,9 +946,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 2;
                             n = n1 * 2;
                             p = f / (Math.Pow((1 + i), n));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -914,9 +961,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 2;
                             n = n1 / 6;
                             p = f / (Math.Pow((1 + i), n));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -928,9 +977,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 4;
                             n = n1 * 4;
                             p = f / (Math.Pow((1 + i), n));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -941,9 +992,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 4;
                             n = n1 * 2;
                             p = f / (Math.Pow((1 + i), n));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -953,9 +1006,10 @@ namespace ProyectoIng_Economica
                         {
                             i = (i1 / 100) / 4;
                             p = f / (Math.Pow((1 + i), n1));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
-
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n1, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -966,9 +1020,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 4;
                             n = n1 / 3;
                             p = f / (Math.Pow((1 + i), n));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -980,9 +1036,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 12;
                             n = n1 * 12;
                             p = f / (Math.Pow((1 + i), n));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -993,9 +1051,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 12;
                             n = n1 * 6;
                             p = f / (Math.Pow((1 + i), n));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -1006,9 +1066,11 @@ namespace ProyectoIng_Economica
                             i = (i1 / 100) / 12;
                             n = n1 * 3;
                             p = f / (Math.Pow((1 + i), n));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -1018,9 +1080,10 @@ namespace ProyectoIng_Economica
                         {
                             i = (i1 / 100) / 12;
                             p = f / (Math.Pow((1 + i), n1));
+                            string formattedP = p.ToString("N0");
+                            string formattedF = f.ToString("N0");
 
-
-                            resultadosP.Add(new { Futuro = f, Interes = i, Periodo = n1, Presente = p });
+                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n1, Presente = formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -1043,9 +1106,11 @@ namespace ProyectoIng_Economica
                 double Int = Ino / 100;
 
                 P = Fno / (Math.Pow((1 + Int), Nno));
+                string formattedP = P.ToString("N0");
+                string formattedF = Fno.ToString("N0");
 
 
-                resultadosP.Add(new { Futuro = Fno, Interes = Int, Periodo = Nno, Presente = P });
+                resultadosP.Add(new { Futuro = formattedF, Interes = Int, Periodo = Nno, Presente = formattedP });
 
                 dgvResultadosP.DataSource = null;
                 dgvResultadosP.DataSource = resultadosP.ToList();
