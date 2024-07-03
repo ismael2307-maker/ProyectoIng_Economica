@@ -95,6 +95,7 @@ namespace ProyectoIng_Economica
 
 
             });
+
                 dgvDatosTIR.DataSource = null;
                 dgvDatosTIR.DataSource = ResultadosTIR.ToList();
             }
