@@ -37,6 +37,8 @@
             this.dgvResultadosFU = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdbNo = new System.Windows.Forms.RadioButton();
             this.rdbSi = new System.Windows.Forms.RadioButton();
@@ -61,6 +63,8 @@
             this.dgvResultadosP = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rdbNo1 = new System.Windows.Forms.RadioButton();
             this.rdbSi1 = new System.Windows.Forms.RadioButton();
@@ -117,10 +121,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -174,7 +174,7 @@
             this.tbgDefinicion.Controls.Add(this.pictureBox1);
             this.tbgDefinicion.Location = new System.Drawing.Point(4, 33);
             this.tbgDefinicion.Name = "tbgDefinicion";
-            this.tbgDefinicion.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbgDefinicion.Padding = new System.Windows.Forms.Padding(3);
             this.tbgDefinicion.Size = new System.Drawing.Size(1028, 603);
             this.tbgDefinicion.TabIndex = 0;
             this.tbgDefinicion.Text = "Definición ";
@@ -198,7 +198,7 @@
             this.tbgFuturo.Controls.Add(this.panel4);
             this.tbgFuturo.Location = new System.Drawing.Point(4, 33);
             this.tbgFuturo.Name = "tbgFuturo";
-            this.tbgFuturo.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbgFuturo.Padding = new System.Windows.Forms.Padding(3);
             this.tbgFuturo.Size = new System.Drawing.Size(1028, 603);
             this.tbgFuturo.TabIndex = 1;
             this.tbgFuturo.Text = "Futuro";
@@ -256,6 +256,30 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(502, 391);
             this.panel5.TabIndex = 10;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(324, 133);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(31, 25);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "%";
+            // 
+            // label30
+            // 
+            this.label30.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(1, 65);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(193, 25);
+            this.label30.TabIndex = 16;
+            this.label30.Text = "Valor Presente C$:";
             // 
             // groupBox1
             // 
@@ -513,6 +537,7 @@
             // 
             // dgvResultadosP
             // 
+            this.dgvResultadosP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvResultadosP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosP.Location = new System.Drawing.Point(26, 76);
             this.dgvResultadosP.Name = "dgvResultadosP";
@@ -553,6 +578,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(549, 365);
             this.panel1.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(345, 135);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 25);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "%";
+            // 
+            // label31
+            // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.Location = new System.Drawing.Point(36, 67);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(169, 25);
+            this.label31.TabIndex = 17;
+            this.label31.Text = "Valor Futuro C$:";
             // 
             // groupBox2
             // 
@@ -743,6 +792,7 @@
             // dgvIntCompIn
             // 
             this.dgvIntCompIn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvIntCompIn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvIntCompIn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvIntCompIn.Location = new System.Drawing.Point(3, 127);
             this.dgvIntCompIn.Name = "dgvIntCompIn";
@@ -787,6 +837,7 @@
             // 
             // label26
             // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -799,6 +850,7 @@
             // 
             // label25
             // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -815,9 +867,9 @@
             this.groupBox3.Controls.Add(this.cmbbInteres);
             this.groupBox3.ForeColor = System.Drawing.Color.Lime;
             this.groupBox3.Location = new System.Drawing.Point(330, 71);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(169, 98);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
@@ -826,6 +878,7 @@
             // cmbbInteres
             // 
             this.cmbbInteres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cmbbInteres.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbbInteres.FormattingEnabled = true;
             this.cmbbInteres.Items.AddRange(new object[] {
             "Anual",
@@ -833,7 +886,7 @@
             "Semestral",
             "Trimestral"});
             this.cmbbInteres.Location = new System.Drawing.Point(18, 43);
-            this.cmbbInteres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbbInteres.Margin = new System.Windows.Forms.Padding(2);
             this.cmbbInteres.Name = "cmbbInteres";
             this.cmbbInteres.Size = new System.Drawing.Size(137, 32);
             this.cmbbInteres.TabIndex = 0;
@@ -1028,6 +1081,7 @@
             // 
             // dgvIntCompP
             // 
+            this.dgvIntCompP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvIntCompP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvIntCompP.Location = new System.Drawing.Point(31, 81);
             this.dgvIntCompP.Name = "dgvIntCompP";
@@ -1267,54 +1321,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
-            // 
-            // label30
-            // 
-            this.label30.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(1, 65);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(193, 25);
-            this.label30.TabIndex = 16;
-            this.label30.Text = "Valor Presente C$:";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(324, 133);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 25);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "%";
-            // 
-            // label31
-            // 
-            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(36, 67);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(169, 25);
-            this.label31.TabIndex = 17;
-            this.label31.Text = "Valor Futuro C$:";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(345, 135);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 25);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "%";
             // 
             // FrmIntCompuesto
             // 

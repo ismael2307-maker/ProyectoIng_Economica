@@ -96,11 +96,11 @@ namespace ProyectoIng_Economica
                             string formattedVAnuaida = Valor_Anualidad.ToString("N0");
                                 ResultadoGeométrico.Add(new
                                 {
-                                    Valor_Anualidad = formattedVAnuaida,
+                                    Valor_Anualidad = "$ " + formattedVAnuaida,
                                     Tasa_Interés = tasaInteres,
                                     Tasa_Nominal = tasaNominal,
                                     Periodo = Periodo,
-                                    Presente_Geométrico = resultados
+                                    Presente_Geométrico = "$ " + resultados
                                 });
                                 dgvCalculoPGeometrico.DataSource = null;
                                 dgvCalculoPGeometrico.DataSource = ResultadoGeométrico.ToList();
@@ -115,11 +115,11 @@ namespace ProyectoIng_Economica
                             string formattedVAnuaida2 = Valor_Anualidad.ToString("N0");
                             ResultadoGeométrico.Add(new
                                 {
-                                    Valor_Anualidad = formattedVAnuaida2,
+                                    Valor_Anualidad = "$ " + formattedVAnuaida2,
                                     Tasa_Interés = tasaInteres,
                                     Tasa_Nominal = tasaNominal,
                                     Periodo = Periodo,
-                                    Presente_Geométrico = resultados
+                                    Presente_Geométrico = "$ " + resultados
                                 });
                                 dgvCalculoPGeometrico.DataSource = null;
                                 dgvCalculoPGeometrico.DataSource = ResultadoGeométrico.ToList();
@@ -134,11 +134,11 @@ namespace ProyectoIng_Economica
                             string formattedVAnuaida3 = Valor_Anualidad.ToString("N0");
                             ResultadoGeométrico.Add(new
                                 {
-                                    Valor_Anualidad = formattedVAnuaida3,
+                                    Valor_Anualidad = "$ " + formattedVAnuaida3,
                                     Tasa_Interés = tasaInteres,
                                     Tasa_Nominal = tasaNominal,
                                     Periodo = Periodo,
-                                    Presente_Geométrico = resultados
+                                    Presente_Geométrico = "$ " + resultados
                                 });
                                 dgvCalculoPGeometrico.DataSource = null;
                                 dgvCalculoPGeometrico.DataSource = ResultadoGeométrico.ToList();
@@ -153,11 +153,11 @@ namespace ProyectoIng_Economica
                             string formattedVAnuaida4 = Valor_Anualidad.ToString("N0");
                             ResultadoGeométrico.Add(new
                                 {
-                                   Valor_Anualidad = formattedVAnuaida4,
+                                   Valor_Anualidad = "$ " + formattedVAnuaida4,
                                     Tasa_Interés = tasaInteres,
                                     Tasa_Nominal = tasaNominal,
                                     Periodo = Periodo,
-                                    Presente_Geométrico = resultados
+                                    Presente_Geométrico = "$ " + resultados
                                 });
                                 dgvCalculoPGeometrico.DataSource = null;
                                 dgvCalculoPGeometrico.DataSource = ResultadoGeométrico.ToList();

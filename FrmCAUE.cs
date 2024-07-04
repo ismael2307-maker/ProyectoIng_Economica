@@ -93,7 +93,7 @@ namespace ProyectoIng_Economica
                 string formattedAVS = ValorVs.ToString("N0");
                 string formattedC = ValorC.ToString("N0");
                 string formattedCAUE = CAUE.ToString("N0");
-                ResultadosCAUE1.Add(new {ValorI = formattedI, ValorVs = formattedAVS, Interes = Interes,Periodo = Periodo,ValorC = formattedC,Caue = formattedCAUE });
+                ResultadosCAUE1.Add(new {ValorI = "C$ " + formattedI, ValorVs = "C$ " + formattedAVS, Interes = Interes,Periodo = Periodo,ValorC = "C$ " + formattedC,Caue = "C$ " + formattedCAUE });
                 dgvResultadosCAUE1.DataSource = null;
                 dgvResultadosCAUE1.DataSource = ResultadosCAUE1.ToList();
 
@@ -221,7 +221,7 @@ namespace ProyectoIng_Economica
                 string formattedCRE = Cre.ToString("N0");
                 string formattedcaue = Caue.ToString("N0");
                
-                ResultadosCAUE2.Add(new {ValorP = formattedP, ValorVs = formattedVS, Interes = Interes, Plazo1 = Periodo1, Plazo2 = Periodo2,ValorC = formattedVC,Cre = formattedCRE, CAUE = formattedcaue });
+                ResultadosCAUE2.Add(new {ValorP = "C$ " + formattedP, ValorVs = "C$ " + formattedVS, Interes = Interes, Plazo1 = Periodo1, Plazo2 = Periodo2,ValorC = "C$ " + formattedVC,Cre = "C$ " + formattedCRE, CAUE = "C$ " + formattedcaue });
                 dgvResultados2.DataSource = null;
                 dgvResultados2.DataSource = ResultadosCAUE2.ToList();
             }

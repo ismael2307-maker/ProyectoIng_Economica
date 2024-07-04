@@ -220,7 +220,7 @@
             // 
             // dgvResultadosPresente
             // 
-            this.dgvResultadosPresente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultadosPresente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvResultadosPresente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosPresente.Location = new System.Drawing.Point(5, 86);
             this.dgvResultadosPresente.Name = "dgvResultadosPresente";
@@ -509,7 +509,7 @@
             // 
             // dgvResultadosFuturo
             // 
-            this.dgvResultadosFuturo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultadosFuturo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvResultadosFuturo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosFuturo.Location = new System.Drawing.Point(3, 101);
             this.dgvResultadosFuturo.Name = "dgvResultadosFuturo";
@@ -1086,7 +1086,7 @@
             // 
             // dgvResultadosAnualidadFuturo
             // 
-            this.dgvResultadosAnualidadFuturo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultadosAnualidadFuturo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvResultadosAnualidadFuturo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosAnualidadFuturo.Location = new System.Drawing.Point(3, 101);
             this.dgvResultadosAnualidadFuturo.Name = "dgvResultadosAnualidadFuturo";

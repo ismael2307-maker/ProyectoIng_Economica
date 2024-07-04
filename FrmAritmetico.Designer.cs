@@ -37,6 +37,7 @@
             this.dgvResultadosPG = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
             this.txtAnualidadPG = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.cmbPeriodoPG = new System.Windows.Forms.ComboBox();
@@ -61,6 +62,7 @@
             this.dgvResultadosFG = new System.Windows.Forms.DataGridView();
             this.label18 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
             this.txtAnualidadFG = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.cmbPeriodoFG = new System.Windows.Forms.ComboBox();
@@ -85,6 +87,7 @@
             this.dgvresultadosGA = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
             this.cmbPeriodoGA = new System.Windows.Forms.ComboBox();
             this.cmbInteresGA = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -104,9 +107,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -196,7 +196,7 @@
             // dgvResultadosPG
             // 
             this.dgvResultadosPG.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgvResultadosPG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultadosPG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvResultadosPG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosPG.Location = new System.Drawing.Point(12, 114);
             this.dgvResultadosPG.Name = "dgvResultadosPG";
@@ -238,6 +238,18 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(563, 338);
             this.panel5.TabIndex = 16;
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(366, 151);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(26, 24);
+            this.label23.TabIndex = 22;
+            this.label23.Text = "%";
             // 
             // txtAnualidadPG
             // 
@@ -505,7 +517,7 @@
             // dgvResultadosFG
             // 
             this.dgvResultadosFG.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgvResultadosFG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultadosFG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvResultadosFG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosFG.Location = new System.Drawing.Point(10, 108);
             this.dgvResultadosFG.Name = "dgvResultadosFG";
@@ -547,6 +559,18 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(563, 326);
             this.panel8.TabIndex = 17;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(329, 150);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(26, 24);
+            this.label22.TabIndex = 22;
+            this.label22.Text = "%";
             // 
             // txtAnualidadFG
             // 
@@ -809,7 +833,7 @@
             // dgvresultadosGA
             // 
             this.dgvresultadosGA.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgvresultadosGA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvresultadosGA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvresultadosGA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvresultadosGA.Location = new System.Drawing.Point(39, 73);
             this.dgvresultadosGA.Name = "dgvresultadosGA";
@@ -851,6 +875,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(563, 350);
             this.panel3.TabIndex = 15;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(381, 157);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(26, 24);
+            this.label21.TabIndex = 20;
+            this.label21.Text = "%";
             // 
             // cmbPeriodoGA
             // 
@@ -1090,42 +1126,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
-            // 
-            // label21
-            // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(381, 157);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(26, 24);
-            this.label21.TabIndex = 20;
-            this.label21.Text = "%";
-            // 
-            // label22
-            // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(329, 150);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(26, 24);
-            this.label22.TabIndex = 22;
-            this.label22.Text = "%";
-            // 
-            // label23
-            // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(366, 151);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(26, 24);
-            this.label23.TabIndex = 22;
-            this.label23.Text = "%";
             // 
             // FrmAritmetico
             // 

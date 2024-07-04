@@ -109,6 +109,7 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -136,6 +137,7 @@
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -201,7 +203,7 @@
             // 
             // dgvResultadosF
             // 
-            this.dgvResultadosF.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultadosF.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvResultadosF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosF.Location = new System.Drawing.Point(53, 78);
             this.dgvResultadosF.Name = "dgvResultadosF";
@@ -456,7 +458,7 @@
             // 
             // dgvResultadosP
             // 
-            this.dgvResultadosP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultadosP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvResultadosP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosP.Location = new System.Drawing.Point(46, 79);
             this.dgvResultadosP.Name = "dgvResultadosP";
@@ -712,7 +714,7 @@
             // 
             // dgvResultadosI
             // 
-            this.dgvResultadosI.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultadosI.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvResultadosI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosI.Location = new System.Drawing.Point(55, 78);
             this.dgvResultadosI.Name = "dgvResultadosI";
@@ -735,7 +737,7 @@
             // 
             this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel8.Controls.Add(this.cmbTipoTasa);
+            this.panel8.Controls.Add(this.groupBox3);
             this.panel8.Controls.Add(this.cmbPeriodoInteresSimple);
             this.panel8.Controls.Add(this.btnLimpiarI);
             this.panel8.Controls.Add(this.btnCalcularI);
@@ -760,7 +762,7 @@
             "Mensual",
             "Semestral",
             "Trimestral"});
-            this.cmbTipoTasa.Location = new System.Drawing.Point(391, 68);
+            this.cmbTipoTasa.Location = new System.Drawing.Point(12, 48);
             this.cmbTipoTasa.Name = "cmbTipoTasa";
             this.cmbTipoTasa.Size = new System.Drawing.Size(121, 30);
             this.cmbTipoTasa.TabIndex = 16;
@@ -1152,6 +1154,20 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox3.Controls.Add(this.cmbTipoTasa);
+            this.groupBox3.ForeColor = System.Drawing.Color.Lime;
+            this.groupBox3.Location = new System.Drawing.Point(379, 41);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Size = new System.Drawing.Size(138, 98);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tipo de Interés";
+            // 
             // FrmIntSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1200,6 +1216,7 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1286,5 +1303,6 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

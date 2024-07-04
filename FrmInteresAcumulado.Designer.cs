@@ -90,6 +90,7 @@
             // 
             // dtgvResultadosAcumulados
             // 
+            this.dtgvResultadosAcumulados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dtgvResultadosAcumulados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvResultadosAcumulados.Location = new System.Drawing.Point(26, 70);
             this.dtgvResultadosAcumulados.Name = "dtgvResultadosAcumulados";

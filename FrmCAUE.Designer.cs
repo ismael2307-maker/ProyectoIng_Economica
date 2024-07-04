@@ -37,6 +37,7 @@
             this.dgvResultadosCAUE1 = new System.Windows.Forms.DataGridView();
             this.label24 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.txtValorC = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtPeriodo = new System.Windows.Forms.TextBox();
@@ -58,14 +59,15 @@
             this.dgvResultados2 = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
             this.txtCRE = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtPlazo2 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.txtPlazo2 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtPlazo1 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.txtValorC2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtPlazo1 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.txtInteres2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtValorVs2 = new System.Windows.Forms.TextBox();
@@ -78,8 +80,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tbgDefincion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -158,7 +158,7 @@
             // 
             // dgvResultadosCAUE1
             // 
-            this.dgvResultadosCAUE1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultadosCAUE1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvResultadosCAUE1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadosCAUE1.Location = new System.Drawing.Point(3, 133);
             this.dgvResultadosCAUE1.Name = "dgvResultadosCAUE1";
@@ -199,6 +199,18 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(523, 350);
             this.panel11.TabIndex = 15;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(279, 166);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(26, 24);
+            this.label17.TabIndex = 22;
+            this.label17.Text = "%";
             // 
             // txtValorC
             // 
@@ -422,7 +434,7 @@
             // 
             // dgvResultados2
             // 
-            this.dgvResultados2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultados2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvResultados2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultados2.Location = new System.Drawing.Point(3, 133);
             this.dgvResultados2.Name = "dgvResultados2";
@@ -468,6 +480,18 @@
             this.panel2.Size = new System.Drawing.Size(523, 350);
             this.panel2.TabIndex = 16;
             // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(260, 156);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(26, 24);
+            this.label18.TabIndex = 26;
+            this.label18.Text = "%";
+            // 
             // txtCRE
             // 
             this.txtCRE.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -480,17 +504,17 @@
             this.txtCRE.TabIndex = 25;
             this.txtCRE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCRE_KeyPress);
             // 
-            // label15
+            // label14
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(106, 204);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(151, 24);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "Valor CRE C$:";
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(299, 160);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(87, 24);
+            this.label14.TabIndex = 22;
+            this.label14.Text = "Plazo 2:";
             // 
             // txtPlazo2
             // 
@@ -504,17 +528,41 @@
             this.txtPlazo2.TabIndex = 23;
             this.txtPlazo2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPlazo2_KeyPress);
             // 
-            // label14
+            // label8
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(299, 160);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(87, 24);
-            this.label14.TabIndex = 22;
-            this.label14.Text = "Plazo 2:";
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(299, 116);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(87, 24);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Plazo 1:";
+            // 
+            // txtPlazo1
+            // 
+            this.txtPlazo1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtPlazo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtPlazo1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPlazo1.ForeColor = System.Drawing.Color.White;
+            this.txtPlazo1.Location = new System.Drawing.Point(398, 118);
+            this.txtPlazo1.Name = "txtPlazo1";
+            this.txtPlazo1.Size = new System.Drawing.Size(123, 24);
+            this.txtPlazo1.TabIndex = 19;
+            this.txtPlazo1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPlazo1_KeyPress);
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(106, 204);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(151, 24);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "Valor CRE C$:";
             // 
             // txtValorC2
             // 
@@ -539,30 +587,6 @@
             this.label7.Size = new System.Drawing.Size(127, 24);
             this.label7.TabIndex = 20;
             this.label7.Text = "Valor C C$:";
-            // 
-            // txtPlazo1
-            // 
-            this.txtPlazo1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtPlazo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.txtPlazo1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPlazo1.ForeColor = System.Drawing.Color.White;
-            this.txtPlazo1.Location = new System.Drawing.Point(398, 118);
-            this.txtPlazo1.Name = "txtPlazo1";
-            this.txtPlazo1.Size = new System.Drawing.Size(123, 24);
-            this.txtPlazo1.TabIndex = 19;
-            this.txtPlazo1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPlazo1_KeyPress);
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(299, 116);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 24);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Plazo 1:";
             // 
             // txtInteres2
             // 
@@ -712,30 +736,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
-            // 
-            // label17
-            // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(279, 166);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(26, 24);
-            this.label17.TabIndex = 22;
-            this.label17.Text = "%";
-            // 
-            // label18
-            // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(260, 156);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(26, 24);
-            this.label18.TabIndex = 26;
-            this.label18.Text = "%";
             // 
             // FrmCAUE
             // 

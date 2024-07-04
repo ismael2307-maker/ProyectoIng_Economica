@@ -72,10 +72,10 @@ namespace ProyectoIng_Economica
                 // Agregar los resultados a la lista
                 resultadosTMAR.Add(new
                 {
-                    InversionTotal = inversionTotal,
-                    MontoCapitalPropio = deuda,
+                    InversionTotal = "$ " + inversionTotal,
+                    MontoCapitalPropio = "$ " + deuda,
                     CostoDeuda = costoDeuda * 100, // Volver a convertir a porcentaje para mostrar
-                    PatrimonioAportado = patrimonio,
+                    PatrimonioAportado = "$ " + patrimonio,
                     CostoPatrimonio = costoPatrimonio * 100, // Volver a convertir a porcentaje para mostrar
                     TMARMixta = tmarMixta
                 });

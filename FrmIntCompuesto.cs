@@ -87,8 +87,8 @@ namespace ProyectoIng_Economica
                    
                         Resultados.Add(new
                         {
-                           ValorPresent = formattedPresent1 ,
-                           ValorFuturo = formattedFut1,
+                           ValorPresent = "$ " + formattedPresent1 ,
+                           ValorFuturo = "$ " + formattedFut1,
                             Periodo = Periodo,
                             Tasa = Tasa
                         });
@@ -104,8 +104,8 @@ namespace ProyectoIng_Economica
 
                     Resultados.Add(new
                         {
-                            ValorPresent = formattedPresent2 ,
-                            ValorFuturo = formattedFut2,
+                            ValorPresent = "$ " + formattedPresent2 ,
+                            ValorFuturo = "$ " + formattedFut2,
                             Periodo = Periodo,
                             Tasa = Tasa
                         });
@@ -120,8 +120,8 @@ namespace ProyectoIng_Economica
 
                     Resultados.Add(new
                         {
-                           ValorPresent= formattedPresent3 ,
-                           ValorFuturo = formattedFut3,
+                           ValorPresent= "$ " + formattedPresent3 ,
+                           ValorFuturo = "$ " + formattedFut3,
                             Periodo = Periodo,
                             Tasa = Tasa
                         });
@@ -136,8 +136,8 @@ namespace ProyectoIng_Economica
                     string formattedFut4 = ValorFuturo.ToString("N0");
                     Resultados.Add(new
                         {
-                            ValorPresent = formattedPresent4 ,
-                            ValorFuturo = formattedFut4,
+                            ValorPresent = "$ " + formattedPresent4 ,
+                            ValorFuturo = "$ " + formattedFut4,
                             Periodo = Periodo,
                             Tasa = Tasa
                         });
@@ -153,8 +153,8 @@ namespace ProyectoIng_Economica
 
                     Resultados.Add(new
                         {
-                           ValorPresent= formattedPresent5 ,
-                           ValorFuturo = formattedFut5,
+                           ValorPresent= "$ " + formattedPresent5 ,
+                           ValorFuturo = "$ " + formattedFut5,
                             Periodo = Periodo,
                             Tasa = Tasa
                         });
@@ -169,8 +169,8 @@ namespace ProyectoIng_Economica
                     string formattedFut6 = ValorFuturo.ToString("N0");
                     Resultados.Add(new
                       {
-                        ValorPresent = formattedPresent6 ,
-                        ValorFuturo = formattedFut6,
+                        ValorPresent = "$ " + formattedPresent6 ,
+                        ValorFuturo = "$ " + formattedFut6,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -185,8 +185,8 @@ namespace ProyectoIng_Economica
                     string formattedFut7 = ValorFuturo.ToString("N0");
                     Resultados.Add(new
                       {
-                       ValorPresent = formattedPresent7,
-                       ValorFuturo = formattedFut7,
+                       ValorPresent = "$ " + formattedPresent7,
+                       ValorFuturo = "$ " + formattedFut7,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -201,8 +201,8 @@ namespace ProyectoIng_Economica
                     string formattedFut18 = ValorFuturo.ToString("N0");
                     Resultados.Add(new
                       {
-                      ValorPresent = formattedPresent8,
-                      ValorFuturo = formattedFut18,
+                      ValorPresent = "$ " + formattedPresent8,
+                      ValorFuturo = "$ " + formattedFut18,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -217,8 +217,8 @@ namespace ProyectoIng_Economica
                     string formattedFut9 = ValorFuturo.ToString("N0");
                     Resultados.Add(new
                       {
-                        ValorPresent = formattedPresent9,
-                        ValorFuturo = formattedFut9,
+                        ValorPresent = "$ " + formattedPresent9,
+                        ValorFuturo = "$ " + formattedFut9,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -233,8 +233,8 @@ namespace ProyectoIng_Economica
                     string formattedFut0= ValorFuturo.ToString("N0");
                     Resultados.Add(new
                       {
-                        ValorPresent= formattedPresent0,
-                        ValorFuturo = formattedFut0,
+                        ValorPresent= "$ " + formattedPresent0,
+                        ValorFuturo = "$ " + formattedFut0,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -249,8 +249,8 @@ namespace ProyectoIng_Economica
                     string formattedFut11 = ValorFuturo.ToString("N0");
                     Resultados.Add(new
                       {
-                       ValorPresent = formattedPresent11,
-                       ValorFuturo = formattedFut11,
+                       ValorPresent = "$ " + formattedPresent11,
+                       ValorFuturo = "$ " + formattedFut11,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -265,8 +265,8 @@ namespace ProyectoIng_Economica
                     string formattedFut12 = ValorFuturo.ToString("N0");
                     Resultados.Add(new
                      {
-                        ValorPresent = formattedPresent12,
-                        ValorFuturo = formattedFut12,
+                        ValorPresent = "$ " + formattedPresent12,
+                        ValorFuturo = "$ " + formattedFut12,
                         Periodo = Periodo,
                         Tasa = Tasa
                      });
@@ -281,8 +281,8 @@ namespace ProyectoIng_Economica
                     string formattedFut13 = ValorFuturo.ToString("N0");
                     Resultados.Add(new
                       {
-                       ValorPresent = formattedPresent13,
-                       ValorFuturo = formattedFut13,
+                       ValorPresent = "$ " + formattedPresent13,
+                       ValorFuturo = "$ " + formattedFut13,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -297,8 +297,8 @@ namespace ProyectoIng_Economica
                     string formattedFut14 = ValorFuturo.ToString("N0");
                     Resultados.Add(new
                       {
-                        ValorPresent = formattedPresent14,
-                        ValorFuturo = formattedFut14,
+                        ValorPresent = "$ " + formattedPresent14,
+                        ValorFuturo = "$ " + formattedFut14,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -313,8 +313,8 @@ namespace ProyectoIng_Economica
                     string formattedFut15 = ValorFuturo.ToString("N0");
                     Resultados.Add(new
                       {
-                        ValorPresent = formattedPresent15,
-                        ValorFuturo = formattedFut15,
+                        ValorPresent = "$ " + formattedPresent15,
+                        ValorFuturo = "$ " + formattedFut15,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -329,8 +329,8 @@ namespace ProyectoIng_Economica
                     string formattedFut16 = ValorFuturo.ToString("N0");
                     Resultados.Add(new
                       {
-                       ValorPresent = formattedPresent16,
-                       ValorFuturo = formattedFut16,
+                       ValorPresent = "$ " + formattedPresent16,
+                       ValorFuturo = "$ " + formattedFut16,
                         Periodo = Periodo,
                         Tasa = Tasa
                       });
@@ -461,8 +461,8 @@ namespace ProyectoIng_Economica
                         string formattedFut1 = ValorFut.ToString("N0");
                         ResultadosPeriodo.Add(new
                         {
-                            ValorPresente = formattedPres1,
-                            ValorFut = formattedFut1,
+                            ValorPresente = "$ " + formattedPres1,
+                            ValorFut = "$ " + formattedFut1,
                             TasaInteres = tasaint,
                             Periodo = Periodo,
                         });
@@ -484,8 +484,8 @@ namespace ProyectoIng_Economica
                         string formattedFut= ValorFut.ToString("N0");
                         ResultadosPeriodo.Add( new 
                         {
-                           ValorPresente = formattedPres,
-                           ValorFut = formattedFut,
+                           ValorPresente = "$ " + formattedPres,
+                           ValorFut = "$ " + formattedFut,
                             TasaInteres = tasaint,
                             Periodo = Periodo
 
@@ -508,8 +508,8 @@ namespace ProyectoIng_Economica
                         string formattedFut2 = ValorFut.ToString("N0");
                         ResultadosPeriodo.Add(new 
                         {
-                            ValorPresente = formattedPres2,
-                            ValorFut = formattedFut2,
+                            ValorPresente = "$ " + formattedPres2,
+                            ValorFut = "$ " + formattedFut2,
                             TasaInteres = tasaint,
                             Periodo = Periodo
                         });
@@ -531,8 +531,8 @@ namespace ProyectoIng_Economica
                         string formattedFut3 = ValorFut.ToString("N0");
                         ResultadosPeriodo.Add(new 
                         {
-                           ValorPresente = formattedPres3,
-                           ValorFut = formattedFut3,
+                           ValorPresente = "$ " + formattedPres3,
+                           ValorFut = "$ " + formattedFut3,
                             TasaInteres = tasaint,
                             Periodo = Periodo
 
@@ -574,7 +574,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n1, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ "+ formattedP, Interes = i, Periodo = n1, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -590,7 +590,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -605,7 +605,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -620,7 +620,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -636,7 +636,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -650,7 +650,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n1, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n1, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -665,7 +665,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -680,7 +680,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -696,7 +696,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -711,7 +711,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -725,7 +725,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n1, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n1, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -740,7 +740,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -756,7 +756,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -771,7 +771,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -786,7 +786,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -800,7 +800,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultados.Add(new { Presente = formattedP, Interes = i, Periodo = n1, Futuro = formattedF });
+                            resultados.Add(new { Presente = "C$ " + formattedP, Interes = i, Periodo = n1, Futuro = "C$ " + formattedF });
 
                             dgvResultadosFU.DataSource = null;
                             dgvResultadosFU.DataSource = resultados.ToList();
@@ -825,7 +825,7 @@ namespace ProyectoIng_Economica
                 string formattedP = Pno.ToString("N0");
                 string formattedF = Fo.ToString("N0");
 
-                resultados.Add(new { Presente = formattedP, Interes = Ino, Periodo = Nno, Futuro = formattedF });
+                resultados.Add(new { Presente = "C$ " + formattedP, Interes = Ino, Periodo = Nno, Futuro = "C$ " + formattedF });
 
                 dgvResultadosFU.DataSource = null;
                 dgvResultadosFU.DataSource = resultados.ToList();
@@ -860,7 +860,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n1, Presente = formattedF });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n1, Presente = "C$ " + formattedF });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -876,7 +876,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -891,7 +891,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -906,7 +906,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -922,7 +922,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -935,7 +935,7 @@ namespace ProyectoIng_Economica
                             string formattedP = p.ToString("N0");
                             string formattedF = f.ToString("N0");
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n1, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n1, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -950,7 +950,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -965,7 +965,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -981,7 +981,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -996,7 +996,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -1009,7 +1009,7 @@ namespace ProyectoIng_Economica
                             string formattedP = p.ToString("N0");
                             string formattedF = f.ToString("N0");
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n1, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n1, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -1024,7 +1024,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -1040,7 +1040,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -1055,7 +1055,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -1070,7 +1070,7 @@ namespace ProyectoIng_Economica
                             string formattedF = f.ToString("N0");
 
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -1083,7 +1083,7 @@ namespace ProyectoIng_Economica
                             string formattedP = p.ToString("N0");
                             string formattedF = f.ToString("N0");
 
-                            resultadosP.Add(new { Futuro = formattedF, Interes = i, Periodo = n1, Presente = formattedP });
+                            resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = i, Periodo = n1, Presente = "C$ " + formattedP });
 
                             dgvResultadosP.DataSource = null;
                             dgvResultadosP.DataSource = resultadosP.ToList();
@@ -1110,7 +1110,7 @@ namespace ProyectoIng_Economica
                 string formattedF = Fno.ToString("N0");
 
 
-                resultadosP.Add(new { Futuro = formattedF, Interes = Int, Periodo = Nno, Presente = formattedP });
+                resultadosP.Add(new { Futuro = "C$ " + formattedF, Interes = Int, Periodo = Nno, Presente = "C$ " + formattedP });
 
                 dgvResultadosP.DataSource = null;
                 dgvResultadosP.DataSource = resultadosP.ToList();

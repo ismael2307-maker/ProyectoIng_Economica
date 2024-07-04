@@ -58,7 +58,7 @@ namespace ProyectoIng_Economica
                 string formattedA = A.ToString("N0");
                 string formattedP1 = P.ToString("N0");
                 string formattedP2 = p2.ToString("N0");
-                ResultadosPerpetuo.Add(new { Presente = formattedP1, Interes = i,Anualidad = formattedA, Presente2 = formattedP2 });
+                ResultadosPerpetuo.Add(new { Presente = "C$ " + formattedP1, Interes = i,Anualidad = formattedA, Presente2 = "C$ " + formattedP2 });
                 dgvResultadoresPerpetuos.DataSource = null;
                 dgvResultadoresPerpetuos.DataSource = ResultadosPerpetuo.ToList();
 

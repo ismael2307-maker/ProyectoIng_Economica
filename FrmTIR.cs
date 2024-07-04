@@ -89,8 +89,8 @@ namespace ProyectoIng_Economica
                 ResultadosTIR.Add(new
                 {
                   
-                    VPN1 = formattedVPN,
-                    VPN2 = formattedVPN2,
+                    VPN1 = "$ " + formattedVPN,
+                    VPN2 = "$ " + formattedVPN2,
                     Interes1 = INT1,
                     Interes2 = INT2,
                     TIR = TIR,
