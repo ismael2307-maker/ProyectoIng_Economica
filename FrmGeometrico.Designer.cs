@@ -146,7 +146,7 @@
             this.tbgDefinicion.Controls.Add(this.pictureBox1);
             this.tbgDefinicion.Location = new System.Drawing.Point(4, 31);
             this.tbgDefinicion.Name = "tbgDefinicion";
-            this.tbgDefinicion.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbgDefinicion.Padding = new System.Windows.Forms.Padding(3);
             this.tbgDefinicion.Size = new System.Drawing.Size(963, 538);
             this.tbgDefinicion.TabIndex = 0;
             this.tbgDefinicion.Text = "Definicion";
@@ -171,7 +171,7 @@
             this.tbgPresente.Controls.Add(this.panel4);
             this.tbgPresente.Location = new System.Drawing.Point(4, 31);
             this.tbgPresente.Name = "tbgPresente";
-            this.tbgPresente.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbgPresente.Padding = new System.Windows.Forms.Padding(3);
             this.tbgPresente.Size = new System.Drawing.Size(963, 538);
             this.tbgPresente.TabIndex = 1;
             this.tbgPresente.Text = "Presente";
@@ -260,6 +260,7 @@
             // 
             // cmbPeriodo
             // 
+            this.cmbPeriodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPeriodo.FormattingEnabled = true;
             this.cmbPeriodo.Items.AddRange(new object[] {
             "Anual",
@@ -273,6 +274,7 @@
             // 
             // cmbTasaNom
             // 
+            this.cmbTasaNom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTasaNom.FormattingEnabled = true;
             this.cmbTasaNom.Items.AddRange(new object[] {
             "Anual",
@@ -286,6 +288,7 @@
             // 
             // cmbTasaInt
             // 
+            this.cmbTasaInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTasaInt.FormattingEnabled = true;
             this.cmbTasaInt.Items.AddRange(new object[] {
             "Anual",
@@ -533,6 +536,7 @@
             // 
             // cmbPeriodoF
             // 
+            this.cmbPeriodoF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPeriodoF.FormattingEnabled = true;
             this.cmbPeriodoF.Items.AddRange(new object[] {
             "Años",
@@ -546,6 +550,7 @@
             // 
             // cmbTasaNomF
             // 
+            this.cmbTasaNomF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTasaNomF.FormattingEnabled = true;
             this.cmbTasaNomF.Items.AddRange(new object[] {
             "Anual",
@@ -559,6 +564,7 @@
             // 
             // cmbInteresF
             // 
+            this.cmbInteresF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbInteresF.FormattingEnabled = true;
             this.cmbInteresF.Items.AddRange(new object[] {
             "Anual",
@@ -801,6 +807,7 @@
             // 
             // cmbPeriodoA
             // 
+            this.cmbPeriodoA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPeriodoA.FormattingEnabled = true;
             this.cmbPeriodoA.Items.AddRange(new object[] {
             "Años.",
@@ -814,6 +821,7 @@
             // 
             // cmbINominalA
             // 
+            this.cmbINominalA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbINominalA.FormattingEnabled = true;
             this.cmbINominalA.Items.AddRange(new object[] {
             "Anual.",
@@ -827,6 +835,7 @@
             // 
             // cmbInteresA
             // 
+            this.cmbInteresA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbInteresA.FormattingEnabled = true;
             this.cmbInteresA.Items.AddRange(new object[] {
             "Anual.",

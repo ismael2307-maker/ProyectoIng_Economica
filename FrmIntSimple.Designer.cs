@@ -77,6 +77,7 @@
             this.dgvResultadosI = new System.Windows.Forms.DataGridView();
             this.label18 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cmbTipoTasa = new System.Windows.Forms.ComboBox();
             this.cmbPeriodoInteresSimple = new System.Windows.Forms.ComboBox();
             this.btnLimpiarI = new System.Windows.Forms.Button();
@@ -109,7 +110,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -129,6 +129,7 @@
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosI)).BeginInit();
             this.panel8.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tbgPeriodoAcumulado.SuspendLayout();
@@ -137,7 +138,6 @@
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -753,8 +753,23 @@
             this.panel8.Size = new System.Drawing.Size(524, 284);
             this.panel8.TabIndex = 11;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox3.Controls.Add(this.cmbTipoTasa);
+            this.groupBox3.ForeColor = System.Drawing.Color.Lime;
+            this.groupBox3.Location = new System.Drawing.Point(379, 41);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Size = new System.Drawing.Size(138, 98);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tipo de Interés";
+            // 
             // cmbTipoTasa
             // 
+            this.cmbTipoTasa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbTipoTasa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoTasa.FormattingEnabled = true;
             this.cmbTipoTasa.Items.AddRange(new object[] {
@@ -769,6 +784,7 @@
             // 
             // cmbPeriodoInteresSimple
             // 
+            this.cmbPeriodoInteresSimple.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbPeriodoInteresSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPeriodoInteresSimple.FormattingEnabled = true;
             this.cmbPeriodoInteresSimple.Items.AddRange(new object[] {
@@ -1154,20 +1170,6 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox3.Controls.Add(this.cmbTipoTasa);
-            this.groupBox3.ForeColor = System.Drawing.Color.Lime;
-            this.groupBox3.Location = new System.Drawing.Point(379, 41);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(138, 98);
-            this.groupBox3.TabIndex = 17;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Tipo de Interés";
-            // 
             // FrmIntSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1204,6 +1206,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosI)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -1216,7 +1219,6 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
