@@ -435,119 +435,204 @@ namespace ProyectoIng_Economica
         {
             double ValorFut, ValorPresente;
             double tasaint = 0, Periodo,i1,i2;
-            try
+            if (rbdSicapiP.Checked == true)
+            {
+                try
+                {
+                    ValorFut = Convert.ToDouble(txtValorFuturoN.Text);
+                    ValorPresente = Convert.ToDouble(txtValorPresenteN.Text);
+                    i2 = Convert.ToDouble(txtTasaInteresN.Text);
+                  
+
+                    if (cmbInteresN.SelectedItem != null)
+                    {
+
+                        if (cmbInteresN.SelectedItem.Equals("Anual"))
+                        {
+                            tasaint = i2 / 100; //  Esto pasar el valor del textob a decimal. Ejemplo: Si meto 5, pasa a 0.05
+                            double Numerador = Math.Log(ValorFut / ValorPresente);
+                            double Denominador = Math.Log(1 + tasaint);
+                            Periodo = Math.Round(Numerador / Denominador);
+                            string formattedPres1 = ValorPresente.ToString("N0");
+                            string formattedFut1 = ValorFut.ToString("N0");
+                            ResultadosPeriodo.Add(new
+                            {
+                                ValorPresente = "$ " + formattedPres1,
+                                ValorFut = "$ " + formattedFut1,
+                                TasaInteres = tasaint,
+                                Periodo = Periodo,
+                            });
+                            dgvIntCompP.DataSource = null;
+                            dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
+                        }
+                        else if (cmbInteresN.SelectedItem.Equals("Semestral"))
+                        {
+                           
+                            i1 = i2 / 100; // Esto pasar el valor del textob a decimal. Ejemplo: Si meto 5, pasa a 0.05
+                            tasaint = i1 / 2; // Una vez ya pasado a decimal, corvertimos a Semestres. Ejemplo: 0.05 pasa a 0.025
+                            double Numerador = Math.Log(ValorFut / ValorPresente);
+                            double Denominador = Math.Log(1 + tasaint);
+                            Periodo = Math.Round(Numerador / Denominador);
+                            string formattedPres = ValorPresente.ToString("N0");
+                            string formattedFut = ValorFut.ToString("N0");
+                            ResultadosPeriodo.Add(new
+                            {
+                                ValorPresente = "$ " + formattedPres,
+                                ValorFut = "$ " + formattedFut,
+                                TasaInteres = tasaint,
+                                Periodo = Periodo
+
+                            });
+                            dgvIntCompP.DataSource = null;
+                            dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
+                        }
+                        else if (cmbInteresN.SelectedItem.Equals("Trimestral"))
+                        {
+                           
+                            i1 = i2 / 100; // Esto pasar el valor del textob a decimal. Ejemplo: Si meto 5, pasa a 0.05
+                            tasaint = i1 / 4; // Una vez ya pasado a decimal, corvertimos a trimestres. Ejemplo: 0.05 pasa a 0.125
+                            double Numerador = Math.Log(ValorFut / ValorPresente);
+                            double Denominador = Math.Log(1 + tasaint);
+                            Periodo = Math.Round(Numerador / Denominador);
+                            string formattedPres2 = ValorPresente.ToString("N0");
+                            string formattedFut2 = ValorFut.ToString("N0");
+                            ResultadosPeriodo.Add(new
+                            {
+                                ValorPresente = "$ " + formattedPres2,
+                                ValorFut = "$ " + formattedFut2,
+                                TasaInteres = tasaint,
+                                Periodo = Periodo
+                            });
+                            dgvIntCompP.DataSource = null;
+                            dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
+                        }
+                        else if (cmbInteresN.SelectedItem.Equals("Mensual"))
+                        {
+
+                            i1 = i2 / 100; // Esto pasar el valor del textob a decimal. Ejemplo: Si meto 5, pasa a 0.05
+                            tasaint = i1 / 12; // Una vez ya pasado a decimal, corvertimos a Mensual. Ejemplo: 0.05 pasa a 0.00416666666
+                            double Numerador = Math.Log(ValorFut / ValorPresente);
+                            double Denominador = Math.Log(1 + tasaint);
+                            Periodo = Math.Round(Numerador / Denominador);
+                            string formattedPres3 = ValorPresente.ToString("N0");
+                            string formattedFut3 = ValorFut.ToString("N0");
+                            ResultadosPeriodo.Add(new
+                            {
+                                ValorPresente = "$ " + formattedPres3,
+                                ValorFut = "$ " + formattedFut3,
+                                TasaInteres = tasaint,
+                                Periodo = Periodo
+
+                            });
+                            dgvIntCompP.DataSource = null;
+                            dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
+                        }
+                    }
+                }
+                catch (FormatException x)
+                {
+
+                    MessageBox.Show("Rellene los campos necesarios " + x);
+                }
+            }
+            else if (rbdNocapiP.Checked == true) 
             {
                 ValorFut = Convert.ToDouble(txtValorFuturoN.Text);
                 ValorPresente = Convert.ToDouble(txtValorPresenteN.Text);
                 i2 = Convert.ToDouble(txtTasaInteresN.Text);
-                 /*periodo= Convert.ToDouble(txtPeriodoP.Text);
-                baselog= Convert.ToDouble(txtPeriodoP.Text);
-                baseF_P = Convert.ToDouble(txtPeriodoP.Text);
-                 */
 
-                if (cmbInteresN.SelectedItem != null)
+                if (cmbInteresN.SelectedItem.Equals("Anual"))
                 {
-                   /* baselog = 1 + tasaint;
-                    baseF_P = Math.Log(ValorFut / ValorPresente);
-                    periodo = ((int)(baseF_P/ Math.Log(baselog)));
-                   */
-                    if (cmbInteresN.SelectedItem.Equals("Anual"))
+                    tasaint = i2 / 100; //  Esto pasar el valor del textob a decimal. Ejemplo: Si meto 5, pasa a 0.05
+                    double Numerador = Math.Log(ValorFut / ValorPresente);
+                    double Denominador = Math.Log(1 + tasaint);
+                    Periodo = Math.Round(Numerador / Denominador);
+                    string formattedPres1 = ValorPresente.ToString("N0");
+                    string formattedFut1 = ValorFut.ToString("N0");
+                    ResultadosPeriodo.Add(new
                     {
-                        tasaint = i2 / 100; //  Esto pasar el valor del textob a decimal. Ejemplo: Si meto 5, pasa a 0.05
-                        double Numerador = Math.Log(ValorFut / ValorPresente);
-                        double Denominador = Math.Log(1 + tasaint);
-                        Periodo = Numerador / Denominador;
-                        string formattedPres1 = ValorPresente.ToString("N0");
-                        string formattedFut1 = ValorFut.ToString("N0");
-                        ResultadosPeriodo.Add(new
-                        {
-                            ValorPresente = "$ " + formattedPres1,
-                            ValorFut = "$ " + formattedFut1,
-                            TasaInteres = tasaint,
-                            Periodo = Periodo,
-                        });
-                        dgvIntCompP.DataSource = null;
-                        dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
-                    }
-                    else if (cmbInteresN.SelectedItem.Equals("Semestral"))
-                    {
-                        /*baselog = 1 + tasaint;
-                        baseF_P = Math.Log(ValorFut / ValorPresente);
-                        Periodo = ((int)(baseF_P / Math.Log(baselog))) / 2;
-                        */
-                        i1 = i2 / 100; // Esto pasar el valor del textob a decimal. Ejemplo: Si meto 5, pasa a 0.05
-                        tasaint = i1 / 2; // Una vez ya pasado a decimal, corvertimos a Semestres. Ejemplo: 0.05 pasa a 0.025
-                        double Numerador = Math.Log(ValorFut / ValorPresente);
-                        double Denominador = Math.Log(1 + tasaint);
-                        Periodo = Numerador / Denominador;
-                        string formattedPres = ValorPresente.ToString("N0");
-                        string formattedFut= ValorFut.ToString("N0");
-                        ResultadosPeriodo.Add( new 
-                        {
-                           ValorPresente = "$ " + formattedPres,
-                           ValorFut = "$ " + formattedFut,
-                            TasaInteres = tasaint,
-                            Periodo = Periodo
-
-                        });
-                        dgvIntCompP.DataSource = null;
-                        dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
-                    }
-                    else if (cmbInteresN.SelectedItem.Equals("Trimestral"))
-                    {
-                        /*baselog = 1 + tasaint;
-                        baseF_P = Math.Log(ValorFut / ValorPresente);
-                        Periodo = ((int)(baseF_P / Math.Log(baselog))) /4;
-                        */
-                        i1 = i2 / 100; // Esto pasar el valor del textob a decimal. Ejemplo: Si meto 5, pasa a 0.05
-                        tasaint = i1 / 4; // Una vez ya pasado a decimal, corvertimos a trimestres. Ejemplo: 0.05 pasa a 0.125
-                        double Numerador = Math.Log(ValorFut / ValorPresente);
-                        double Denominador = Math.Log(1 + tasaint);
-                        Periodo = Numerador / Denominador;
-                        string formattedPres2 = ValorPresente.ToString("N0");
-                        string formattedFut2 = ValorFut.ToString("N0");
-                        ResultadosPeriodo.Add(new 
-                        {
-                            ValorPresente = "$ " + formattedPres2,
-                            ValorFut = "$ " + formattedFut2,
-                            TasaInteres = tasaint,
-                            Periodo = Periodo
-                        });
-                        dgvIntCompP.DataSource = null;
-                        dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
-                    }
-                    else if (cmbInteresN.SelectedItem.Equals("Mensual"))
-                    {
-                        /*baselog = 1 + tasaint;
-                        baseF_P = Math.Log(ValorFut / ValorPresente);
-                        Periodo = ((int)(baseF_P / Math.Log(baselog))) / 12;
-                        */
-                        i1 = i2 / 100; // Esto pasar el valor del textob a decimal. Ejemplo: Si meto 5, pasa a 0.05
-                        tasaint = i1 / 12; // Una vez ya pasado a decimal, corvertimos a Mensual. Ejemplo: 0.05 pasa a 0.00416666666
-                        double Numerador = Math.Log(ValorFut / ValorPresente);
-                        double Denominador = Math.Log(1 + tasaint);
-                        Periodo = Numerador / Denominador;
-                        string formattedPres3 = ValorPresente.ToString("N0");
-                        string formattedFut3 = ValorFut.ToString("N0");
-                        ResultadosPeriodo.Add(new 
-                        {
-                           ValorPresente = "$ " + formattedPres3,
-                           ValorFut = "$ " + formattedFut3,
-                            TasaInteres = tasaint,
-                            Periodo = Periodo
-
-                        });
-                        dgvIntCompP.DataSource = null;
-                        dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
-                    }
+                        ValorPresente = "$ " + formattedPres1,
+                        ValorFut = "$ " + formattedFut1,
+                        TasaInteres = tasaint,
+                        Periodo = Periodo,
+                    });
+                    dgvIntCompP.DataSource = null;
+                    dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
                 }
-            }
-            catch (FormatException x)
-            {
+                else if (cmbInteresN.SelectedItem.Equals("Semestral"))
+                {
+                    /*baselog = 1 + tasaint;
+                    baseF_P = Math.Log(ValorFut / ValorPresente);
+                    Periodo = ((int)(baseF_P / Math.Log(baselog))) / 2;
+                    */
+                    i1 = i2 / 100; // Esto pasar el valor del textob a decimal. Ejemplo: Si meto 5, pasa a 0.05
+                    tasaint = i1; // Una vez ya pasado a decimal, corvertimos a Semestres. Ejemplo: 0.05 pasa a 0.025
+                    double Numerador = Math.Log(ValorFut / ValorPresente);
+                    double Denominador = Math.Log(1 + tasaint);
+                    Periodo = Math.Round(Numerador / Denominador);
+                    string formattedPres = ValorPresente.ToString("N0");
+                    string formattedFut = ValorFut.ToString("N0");
+                    ResultadosPeriodo.Add(new
+                    {
+                        ValorPresente = "$ " + formattedPres,
+                        ValorFut = "$ " + formattedFut,
+                        TasaInteres = tasaint,
+                        Periodo = Periodo
 
-                MessageBox.Show("Rellene los campos necesarios " + x);
+                    });
+                    dgvIntCompP.DataSource = null;
+                    dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
+                }
+                else if (cmbInteresN.SelectedItem.Equals("Trimestral"))
+                {
+                    /*baselog = 1 + tasaint;
+                    baseF_P = Math.Log(ValorFut / ValorPresente);
+                    Periodo = ((int)(baseF_P / Math.Log(baselog))) /4;
+                    */
+                    i1 = i2 / 100; // Esto pasar el valor del textob a decimal. Ejemplo: Si meto 5, pasa a 0.05
+                    tasaint = i1; // Una vez ya pasado a decimal, corvertimos a trimestres. Ejemplo: 0.05 pasa a 0.125
+                    double Numerador = Math.Log(ValorFut / ValorPresente);
+                    double Denominador = Math.Log(1 + tasaint);
+                    Periodo = Math.Round(Numerador / Denominador);
+                    string formattedPres2 = ValorPresente.ToString("N0");
+                    string formattedFut2 = ValorFut.ToString("N0");
+                    ResultadosPeriodo.Add(new
+                    {
+                        ValorPresente = "$ " + formattedPres2,
+                        ValorFut = "$ " + formattedFut2,
+                        TasaInteres = tasaint,
+                        Periodo = Periodo
+                    });
+                    dgvIntCompP.DataSource = null;
+                    dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
+                }
+                else if (cmbInteresN.SelectedItem.Equals("Mensual"))
+                {
+                    /*baselog = 1 + tasaint;
+                    baseF_P = Math.Log(ValorFut / ValorPresente);
+                    Periodo = ((int)(baseF_P / Math.Log(baselog))) / 12;
+                    */
+                    i1 = i2 / 100; // Esto pasar el valor del textob a decimal. Ejemplo: Si meto 5, pasa a 0.05
+                    tasaint = i1; // Una vez ya pasado a decimal, corvertimos a Mensual. Ejemplo: 0.05 pasa a 0.00416666666
+                    double Numerador = Math.Log(ValorFut / ValorPresente);
+                    double Denominador = Math.Log(1 + tasaint);
+                    Periodo = Math.Round(Numerador / Denominador);
+                    string formattedPres3 = ValorPresente.ToString("N0");
+                    string formattedFut3 = ValorFut.ToString("N0");
+                    ResultadosPeriodo.Add(new
+                    {
+                        ValorPresente = "$ " + formattedPres3,
+                        ValorFut = "$ " + formattedFut3,
+                        TasaInteres = tasaint,
+                        Periodo = Periodo
+
+                    });
+                    dgvIntCompP.DataSource = null;
+                    dgvIntCompP.DataSource = ResultadosPeriodo.ToList();
+                }
+
             }
-        }
+         }
         
         private List<object> resultados = new List<object>();
         private void btnCalcularF_Click(object sender, EventArgs e)

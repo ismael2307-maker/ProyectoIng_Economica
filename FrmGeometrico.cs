@@ -108,9 +108,9 @@ namespace ProyectoIng_Economica
                             if (cmbPeriodo.SelectedItem.Equals("Semestral") || cmbTasaInt.SelectedItem.Equals("Semestral") || cmbTasaNom.SelectedItem.Equals("Semestral"))
                             {
 
-                                i = tasaNominal / 2;
-                                i2 = tasaInteres / 2;
-                                p1 = Periodo / 2;
+                                i = tasaNominal;
+                                i2 = tasaInteres;
+                                p1 = Periodo;
                                 resultados = Valor_Anualidad * (((Math.Pow(1 + i, p1) / Math.Pow(1 + i2, p1)) - 1) / (i - i2));
                             string formattedVAnuaida2 = Valor_Anualidad.ToString("N0");
                             ResultadoGeométrico.Add(new

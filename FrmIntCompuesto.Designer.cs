@@ -105,6 +105,7 @@
             this.dgvIntCompP = new System.Windows.Forms.DataGridView();
             this.label24 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -121,6 +122,8 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.rbdSicapiP = new System.Windows.Forms.RadioButton();
+            this.rbdNocapiP = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -149,6 +152,7 @@
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIntCompP)).BeginInit();
             this.panel11.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
@@ -1105,6 +1109,7 @@
             // 
             this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel11.Controls.Add(this.groupBox4);
             this.panel11.Controls.Add(this.label29);
             this.panel11.Controls.Add(this.label28);
             this.panel11.Controls.Add(this.label27);
@@ -1122,6 +1127,18 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(506, 526);
             this.panel11.TabIndex = 16;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.rbdNocapiP);
+            this.groupBox4.Controls.Add(this.rbdSicapiP);
+            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(235)))), ((int)(((byte)(103)))));
+            this.groupBox4.Location = new System.Drawing.Point(356, 58);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(134, 100);
+            this.groupBox4.TabIndex = 20;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Capitalizable";
             // 
             // label29
             // 
@@ -1322,6 +1339,28 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
+            // rbdSicapiP
+            // 
+            this.rbdSicapiP.AutoSize = true;
+            this.rbdSicapiP.Location = new System.Drawing.Point(7, 29);
+            this.rbdSicapiP.Name = "rbdSicapiP";
+            this.rbdSicapiP.Size = new System.Drawing.Size(44, 28);
+            this.rbdSicapiP.TabIndex = 0;
+            this.rbdSicapiP.TabStop = true;
+            this.rbdSicapiP.Text = "Si";
+            this.rbdSicapiP.UseVisualStyleBackColor = true;
+            // 
+            // rbdNocapiP
+            // 
+            this.rbdNocapiP.AutoSize = true;
+            this.rbdNocapiP.Location = new System.Drawing.Point(6, 63);
+            this.rbdNocapiP.Name = "rbdNocapiP";
+            this.rbdNocapiP.Size = new System.Drawing.Size(53, 28);
+            this.rbdNocapiP.TabIndex = 1;
+            this.rbdNocapiP.TabStop = true;
+            this.rbdNocapiP.Text = "No";
+            this.rbdNocapiP.UseVisualStyleBackColor = true;
+            // 
             // FrmIntCompuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1372,6 +1411,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvIntCompP)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -1473,5 +1514,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.RadioButton rbdNocapiP;
+        private System.Windows.Forms.RadioButton rbdSicapiP;
     }
 }
