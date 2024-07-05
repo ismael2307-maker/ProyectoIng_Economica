@@ -28,7 +28,7 @@ namespace ProyectoIng_Economica
 
         private void txtPeriodoF_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
                 MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
@@ -74,270 +74,155 @@ namespace ProyectoIng_Economica
 
             try
             {
-               ValorFuturo = Convert.ToDouble(txtValorFuturoI.Text);
-               ValorPresent = Convert.ToDouble(txtValorPresenteI.Text);
-               Periodo = Convert.ToDouble(txtPeriodoI.Text);
-               Tasa = Convert.ToDouble(txtPeriodoI.Text);
-              
-                    if (cmbPeriodoI.SelectedItem.Equals("Anual") || cmbbInteres.Equals("Semestral"))
-                    {
-                     Tasa = Math.Pow(ValorFuturo/ValorPresent,1/ (Periodo * 2)) -1;
-                     string formattedPresent1 = ValorPresent.ToString("N0");
-                     string formattedFut1 = ValorFuturo.ToString("N0");
-                   
-                        Resultados.Add(new
-                        {
-                           ValorPresent = "$ " + formattedPresent1 ,
-                           ValorFuturo = "$ " + formattedFut1,
-                            Periodo = Periodo,
-                            Tasa = Tasa
-                        });
-                        dgvIntCompIn.DataSource = null;
-                        dgvIntCompIn.DataSource = Resultados.ToList();
+                ValorPresent = Convert.ToDouble(txtValorPresenteI.Text);
+                ValorFuturo = Convert.ToDouble(txtValorFuturoI.Text);
+                Periodo = Convert.ToDouble(txtPeriodoI.Text);
 
-                    }
-                    else if (cmbPeriodoI.SelectedItem.Equals("Mensual") || cmbbInteres.Equals("Semestral"))
-                    {
-                       Tasa = Math.Pow(ValorFuturo/ValorPresent,1/ (Periodo / 6)) -1;
-                    string formattedPresent2 = ValorPresent.ToString("N0");
-                    string formattedFut2 = ValorFuturo.ToString("N0");
+                if (cmbbInteres.SelectedItem.Equals("Trimestral") || cmbPeriodoI.SelectedItem.Equals("Años"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf,Periodo = Periodo,Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
 
-                    Resultados.Add(new
-                        {
-                            ValorPresent = "$ " + formattedPresent2 ,
-                            ValorFuturo = "$ " + formattedFut2,
-                            Periodo = Periodo,
-                            Tasa = Tasa
-                        });
-                        dgvIntCompIn.DataSource = null;
-                        dgvIntCompIn.DataSource = Resultados.ToList();
-                    }
-                    else if (cmbPeriodoI.SelectedItem.Equals("Semestral") || cmbbInteres.Equals("Semestral"))
-                    {
-                       Tasa = Math.Pow(ValorFuturo/ValorPresent,1/ Periodo) -1;
-                    string formattedPresent3 = ValorPresent.ToString("N0");
-                    string formattedFut3 = ValorFuturo.ToString("N0");
-
-                    Resultados.Add(new
-                        {
-                           ValorPresent= "$ " + formattedPresent3 ,
-                           ValorFuturo = "$ " + formattedFut3,
-                            Periodo = Periodo,
-                            Tasa = Tasa
-                        });
-                        dgvIntCompIn.DataSource = null;
-                        dgvIntCompIn.DataSource = Resultados.ToList();
-
-                    }
-                    else if (cmbPeriodoI.SelectedItem.Equals("Trimestral") || cmbbInteres.Equals("Semestral"))
-                    {
-                       Tasa = Math.Pow(ValorFuturo/ValorPresent,1/ (Periodo / 2)) -1;
-                    string formattedPresent4 = ValorPresent.ToString("N0");
-                    string formattedFut4 = ValorFuturo.ToString("N0");
-                    Resultados.Add(new
-                        {
-                            ValorPresent = "$ " + formattedPresent4 ,
-                            ValorFuturo = "$ " + formattedFut4,
-                            Periodo = Periodo,
-                            Tasa = Tasa
-                        });
-                        dgvIntCompIn.DataSource = null;
-                        dgvIntCompIn.DataSource = Resultados.ToList();
-
-                    }
-                    else if (cmbPeriodoI.SelectedItem.Equals("Anual") || cmbbInteres.Equals("Anual"))
-                    {
-                       Tasa = Math.Pow((ValorFuturo/ValorPresent),1/ Periodo) -1;
-                    string formattedPresent5 = ValorPresent.ToString("N0");
-                    string formattedFut5 = ValorFuturo.ToString("N0");
-
-                    Resultados.Add(new
-                        {
-                           ValorPresent= "$ " + formattedPresent5 ,
-                           ValorFuturo = "$ " + formattedFut5,
-                            Periodo = Periodo,
-                            Tasa = Tasa
-                        });
-                        dgvIntCompIn.DataSource = null;
-                        dgvIntCompIn.DataSource = Resultados.ToList();
-
-                    }
-                    else if (cmbPeriodoI.SelectedItem.Equals("Mensual") || cmbbInteres.Equals("Anual"))
-                    {
-                      Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo / 12)) - 1;
-                    string formattedPresent6 = ValorPresent.ToString("N0");
-                    string formattedFut6 = ValorFuturo.ToString("N0");
-                    Resultados.Add(new
-                      {
-                        ValorPresent = "$ " + formattedPresent6 ,
-                        ValorFuturo = "$ " + formattedFut6,
-                        Periodo = Periodo,
-                        Tasa = Tasa
-                      });
-                       dgvIntCompIn.DataSource = null;
-                      dgvIntCompIn.DataSource = Resultados.ToList();
-
-                    }
-                    else if (cmbPeriodoI.SelectedItem.Equals("Semestral") || cmbbInteres.Equals("Anual"))
-                    {
-                      Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo / 2)) - 1;
-                    string formattedPresent7 = ValorPresent.ToString("N0");
-                    string formattedFut7 = ValorFuturo.ToString("N0");
-                    Resultados.Add(new
-                      {
-                       ValorPresent = "$ " + formattedPresent7,
-                       ValorFuturo = "$ " + formattedFut7,
-                        Periodo = Periodo,
-                        Tasa = Tasa
-                      });
-                       dgvIntCompIn.DataSource = null;
-                      dgvIntCompIn.DataSource = Resultados.ToList();
-
-                    }
-                    else if (cmbPeriodoI.SelectedItem.Equals("Trimestral") || cmbbInteres.Equals("Anual"))
-                    {
-                      Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo / 4)) - 1;
-                    string formattedPresent8 = ValorPresent.ToString("N0");
-                    string formattedFut18 = ValorFuturo.ToString("N0");
-                    Resultados.Add(new
-                      {
-                      ValorPresent = "$ " + formattedPresent8,
-                      ValorFuturo = "$ " + formattedFut18,
-                        Periodo = Periodo,
-                        Tasa = Tasa
-                      });
-                       dgvIntCompIn.DataSource = null;
-                      dgvIntCompIn.DataSource = Resultados.ToList();
-
-                    }
-                    else if (cmbPeriodoI.SelectedItem.Equals("Anual") || cmbbInteres.Equals("Mensual"))
-                    {
-                      Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo * 12)) - 1;
-                    string formattedPresent9 = ValorPresent.ToString("N0");
-                    string formattedFut9 = ValorFuturo.ToString("N0");
-                    Resultados.Add(new
-                      {
-                        ValorPresent = "$ " + formattedPresent9,
-                        ValorFuturo = "$ " + formattedFut9,
-                        Periodo = Periodo,
-                        Tasa = Tasa
-                      });
-                       dgvIntCompIn.DataSource = null;
-                      dgvIntCompIn.DataSource = Resultados.ToList();
-
-                    }
-                    else if (cmbPeriodoI.SelectedItem.Equals("Mensual") || cmbbInteres.Equals("Mensual"))
-                    {
-                      Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / Periodo) - 1;
-                    string formattedPresent0 = ValorPresent.ToString("N0");
-                    string formattedFut0= ValorFuturo.ToString("N0");
-                    Resultados.Add(new
-                      {
-                        ValorPresent= "$ " + formattedPresent0,
-                        ValorFuturo = "$ " + formattedFut0,
-                        Periodo = Periodo,
-                        Tasa = Tasa
-                      });
-                       dgvIntCompIn.DataSource = null;
-                      dgvIntCompIn.DataSource = Resultados.ToList();
-
-                    }
-                    else if (cmbPeriodoI.SelectedItem.Equals("Semestral") || cmbbInteres.Equals("Mensual"))
-                    {
-                      Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo * 6)) - 1;
-                    string formattedPresent11 = ValorPresent.ToString("N0");
-                    string formattedFut11 = ValorFuturo.ToString("N0");
-                    Resultados.Add(new
-                      {
-                       ValorPresent = "$ " + formattedPresent11,
-                       ValorFuturo = "$ " + formattedFut11,
-                        Periodo = Periodo,
-                        Tasa = Tasa
-                      });
-                       dgvIntCompIn.DataSource = null;
-                      dgvIntCompIn.DataSource = Resultados.ToList();
-
-                    }
-                    else if (cmbPeriodoI.SelectedItem.Equals("Trimestral") || cmbbInteres.Equals("Mensual"))
-                    {
-                     Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo * 12)) - 1;
-                    string formattedPresent12 = ValorPresent.ToString("N0");
-                    string formattedFut12 = ValorFuturo.ToString("N0");
-                    Resultados.Add(new
-                     {
-                        ValorPresent = "$ " + formattedPresent12,
-                        ValorFuturo = "$ " + formattedFut12,
-                        Periodo = Periodo,
-                        Tasa = Tasa
-                     });
-                     dgvIntCompIn.DataSource = null;
-                     dgvIntCompIn.DataSource = Resultados.ToList();
-
-                    }
-                    else if (cmbPeriodoI.SelectedItem.Equals("Anual") || cmbbInteres.Equals("Trimestral"))
-                    {
-                      Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo * 4)) - 1;
-                    string formattedPresent13 = ValorPresent.ToString("N0");
-                    string formattedFut13 = ValorFuturo.ToString("N0");
-                    Resultados.Add(new
-                      {
-                       ValorPresent = "$ " + formattedPresent13,
-                       ValorFuturo = "$ " + formattedFut13,
-                        Periodo = Periodo,
-                        Tasa = Tasa
-                      });
-                       dgvIntCompIn.DataSource = null;
-                      dgvIntCompIn.DataSource = Resultados.ToList();
-
-                    }
-                     else if (cmbPeriodoI.SelectedItem.Equals("Mensual") || cmbbInteres.Equals("Trimestral"))
-                     {
-                      Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo / 3)) - 1;
-                    string formattedPresent14 = ValorPresent.ToString("N0");
-                    string formattedFut14 = ValorFuturo.ToString("N0");
-                    Resultados.Add(new
-                      {
-                        ValorPresent = "$ " + formattedPresent14,
-                        ValorFuturo = "$ " + formattedFut14,
-                        Periodo = Periodo,
-                        Tasa = Tasa
-                      });
-                       dgvIntCompIn.DataSource = null;
-                      dgvIntCompIn.DataSource = Resultados.ToList();
-
-                     }
-                     else if (cmbPeriodoI.SelectedItem.Equals("Semestral") || cmbbInteres.Equals("Trimestral"))
-                     {
-                      Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo * 2)) - 1;
-                    string formattedPresent15 = ValorPresent.ToString("N0");
-                    string formattedFut15 = ValorFuturo.ToString("N0");
-                    Resultados.Add(new
-                      {
-                        ValorPresent = "$ " + formattedPresent15,
-                        ValorFuturo = "$ " + formattedFut15,
-                        Periodo = Periodo,
-                        Tasa = Tasa
-                      });
-                       dgvIntCompIn.DataSource = null;
-                      dgvIntCompIn.DataSource = Resultados.ToList();
-
-                     }
-                     else if (cmbPeriodoI.SelectedItem.Equals("Trimestral") || cmbbInteres.Equals("Trimestral"))
-                     {
-                      Tasa = Math.Pow(ValorFuturo / ValorPresent, 1 / (Periodo * 4)) - 1;
-                    string formattedPresent16 = ValorPresent.ToString("N0");
-                    string formattedFut16 = ValorFuturo.ToString("N0");
-                    Resultados.Add(new
-                      {
-                       ValorPresent = "$ " + formattedPresent16,
-                       ValorFuturo = "$ " + formattedFut16,
-                        Periodo = Periodo,
-                        Tasa = Tasa
-                      });
-                       dgvIntCompIn.DataSource = null;
-                      dgvIntCompIn.DataSource = Resultados.ToList();
-
-                     }
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Trimestral") || cmbPeriodoI.SelectedItem.Equals("Meses"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Trimestral") || cmbPeriodoI.SelectedItem.Equals("Semestres"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Trimestral") || cmbPeriodoI.SelectedItem.Equals("Trimestres"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Anual") || cmbPeriodoI.SelectedItem.Equals("Años"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Anual") || cmbPeriodoI.SelectedItem.Equals("Meses"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Anual") || cmbPeriodoI.SelectedItem.Equals("Semestres"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Anual") || cmbPeriodoI.SelectedItem.Equals("Trimestres"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Mensual") || cmbPeriodoI.SelectedItem.Equals("Años"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Mensual") || cmbPeriodoI.SelectedItem.Equals("Meses"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Mensual") || cmbPeriodoI.SelectedItem.Equals("Semestres"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Mensual") || cmbPeriodoI.SelectedItem.Equals("Trimestres"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Semestral") || cmbPeriodoI.SelectedItem.Equals("Años"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Semestral") || cmbPeriodoI.SelectedItem.Equals("Meses"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Semestral") || cmbPeriodoI.SelectedItem.Equals("Semestres"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
+                else if (cmbbInteres.SelectedItem.Equals("Semestral") || cmbPeriodoI.SelectedItem.Equals("Trimestres"))
+                {
+                    Tasa = Math.Pow((ValorFuturo / ValorPresent), 1 / Periodo) - 1;
+                    string formattedP = ValorPresent.ToString("N0");
+                    string formattedf = ValorFuturo.ToString("N0");
+                    Resultados.Add(new { Presente = "$ " + formattedP, Futuro = "$ " + formattedf, Periodo = Periodo, Interes = Tasa });
+                    dgvIntCompIn.DataSource = null;
+                    dgvIntCompIn.DataSource = Resultados.ToList();
+                }
 
             }
             catch (FormatException x)

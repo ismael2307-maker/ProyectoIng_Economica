@@ -106,6 +106,8 @@
             this.label24 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.rbdNocapiP = new System.Windows.Forms.RadioButton();
+            this.rbdSicapiP = new System.Windows.Forms.RadioButton();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -122,8 +124,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.rbdSicapiP = new System.Windows.Forms.RadioButton();
-            this.rbdNocapiP = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tbgDefinicion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -845,7 +845,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label26.Location = new System.Drawing.Point(173, 162);
+            this.label26.Location = new System.Drawing.Point(161, 159);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(27, 29);
@@ -887,8 +887,8 @@
             this.cmbbInteres.Items.AddRange(new object[] {
             "Anual",
             "Mensual",
-            "Semestral",
-            "Trimestral"});
+            "Trimestral",
+            "Semestral"});
             this.cmbbInteres.Location = new System.Drawing.Point(18, 43);
             this.cmbbInteres.Margin = new System.Windows.Forms.Padding(2);
             this.cmbbInteres.Name = "cmbbInteres";
@@ -901,10 +901,10 @@
             this.cmbPeriodoI.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPeriodoI.FormattingEnabled = true;
             this.cmbPeriodoI.Items.AddRange(new object[] {
-            "Anual",
-            "Mensual",
-            "Trimestral",
-            "Semestral"});
+            "Años",
+            "Meses",
+            "Semestres",
+            "Trimestres"});
             this.cmbPeriodoI.Location = new System.Drawing.Point(347, 212);
             this.cmbPeriodoI.Name = "cmbPeriodoI";
             this.cmbPeriodoI.Size = new System.Drawing.Size(121, 32);
@@ -1140,6 +1140,28 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Capitalizable";
             // 
+            // rbdNocapiP
+            // 
+            this.rbdNocapiP.AutoSize = true;
+            this.rbdNocapiP.Location = new System.Drawing.Point(6, 63);
+            this.rbdNocapiP.Name = "rbdNocapiP";
+            this.rbdNocapiP.Size = new System.Drawing.Size(53, 28);
+            this.rbdNocapiP.TabIndex = 1;
+            this.rbdNocapiP.TabStop = true;
+            this.rbdNocapiP.Text = "No";
+            this.rbdNocapiP.UseVisualStyleBackColor = true;
+            // 
+            // rbdSicapiP
+            // 
+            this.rbdSicapiP.AutoSize = true;
+            this.rbdSicapiP.Location = new System.Drawing.Point(7, 29);
+            this.rbdSicapiP.Name = "rbdSicapiP";
+            this.rbdSicapiP.Size = new System.Drawing.Size(44, 28);
+            this.rbdSicapiP.TabIndex = 0;
+            this.rbdSicapiP.TabStop = true;
+            this.rbdSicapiP.Text = "Si";
+            this.rbdSicapiP.UseVisualStyleBackColor = true;
+            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -1338,28 +1360,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
-            // 
-            // rbdSicapiP
-            // 
-            this.rbdSicapiP.AutoSize = true;
-            this.rbdSicapiP.Location = new System.Drawing.Point(7, 29);
-            this.rbdSicapiP.Name = "rbdSicapiP";
-            this.rbdSicapiP.Size = new System.Drawing.Size(44, 28);
-            this.rbdSicapiP.TabIndex = 0;
-            this.rbdSicapiP.TabStop = true;
-            this.rbdSicapiP.Text = "Si";
-            this.rbdSicapiP.UseVisualStyleBackColor = true;
-            // 
-            // rbdNocapiP
-            // 
-            this.rbdNocapiP.AutoSize = true;
-            this.rbdNocapiP.Location = new System.Drawing.Point(6, 63);
-            this.rbdNocapiP.Name = "rbdNocapiP";
-            this.rbdNocapiP.Size = new System.Drawing.Size(53, 28);
-            this.rbdNocapiP.TabIndex = 1;
-            this.rbdNocapiP.TabStop = true;
-            this.rbdNocapiP.Text = "No";
-            this.rbdNocapiP.UseVisualStyleBackColor = true;
             // 
             // FrmIntCompuesto
             // 
