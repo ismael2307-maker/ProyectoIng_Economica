@@ -42,6 +42,9 @@ namespace ProyectoIng_Economica
             double cuota = saldoInicial * (tasaInteres * Math.Pow(1 + tasaInteres, numPeriodos)) / (Math.Pow(1 + tasaInteres, numPeriodos) - 1);
             cuota = Math.Round(cuota, 2);
 
+            double TotalCuotas = 0;
+            double TotalAmortizacion = 0;
+
             // Generar el calendario de pagos
             double saldo = saldoInicial;
 
@@ -53,6 +56,7 @@ namespace ProyectoIng_Economica
                 if (i == numPeriodos)
                 {
                     amortizacion = saldo;
+                    cuota = interes + amortizacion;
                     saldo = 0;
                 }
                 else
@@ -62,8 +66,12 @@ namespace ProyectoIng_Economica
 
                 dgvCalendario.Rows.Add(i, FormatMoney(saldo), FormatMoney(interes), FormatMoney(cuota), FormatMoney(amortizacion));
 
+                TotalCuotas += cuota;
+                TotalAmortizacion += amortizacion;
+
 
             }
+            dgvCalendario.Rows.Add("Totales", "", "", FormatMoney(TotalCuotas), FormatMoney(TotalAmortizacion));
 
 
 
@@ -71,7 +79,7 @@ namespace ProyectoIng_Economica
 
         private string FormatMoney(double valor)
         {
-            return "$" + valor.ToString("N2");
+            return "C$" + valor.ToString("N2");
         }
 
         private void btnLimpiarCampos_Click(object sender, EventArgs e)
